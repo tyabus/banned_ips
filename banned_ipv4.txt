@@ -8,23 +8,46 @@
 -A INPUT -s 199.45.154.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 199.45.155.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 206.168.32.0/22 -j REJECT --reject-with icmp-host-unreachable
-# CENSYS Unlisted
+# CENSYS Unlisted (Old legacy netblock)
 -A INPUT -s 192.35.168.0/23 -j REJECT --reject-with icmp-host-unreachable
-# Expanse, a Palo Alto Networks Company. https://www.weaverconsulting.ca/banned.html
--A INPUT -s 34.96.130.0/24 -j REJECT --reject-with icmp-host-unreachable
+# Expanse, a Palo Alto Networks Company. https://www.weaverconsulting.ca/banned.html  + ARIN "OrgName:"
 -A INPUT -s 34.77.162.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 34.86.35.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 205.210.31.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 34.96.130.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 35.216.183.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 66.159.192.0/19 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 74.221.130.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 114.141.120.0/21 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 128.77.0.0/18 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 128.77.64.0/19 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 128.77.124.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 130.41.0.0/17 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 134.238.0.0/16 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 137.83.224.0/20 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 137.83.240.0/21 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 140.209.252.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 147.185.132.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 165.1.128.0/19 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 165.1.176.0/20 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 165.1.192.0/18 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 165.85.0.0/16 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 198.135.184.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 198.235.24.0/24 -j REJECT --reject-with icmp-host-unreachable
-# Shodan LLC (Hurricane Electric LLC)
+-A INPUT -s 204.87.186.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 205.210.31.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 208.127.0.0/17 -j REJECT --reject-with icmp-host-unreachable
+# Shodan LLC (Hurricane Electric LLC Customer)
 -A INPUT -s 207.90.244.0/24 -j REJECT --reject-with icmp-host-unreachable
-# CariNet LLC (shodan)
+# CariNet LLC (Shodan LLC)
 -A INPUT -s 135.84.216.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 209.126.128.0/17 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 216.75.0.0/18 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 216.98.128.0/19 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 66.240.192.0/18 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 71.6.128.0/17 -j REJECT --reject-with icmp-host-unreachable
+# AS211680 NSEC - Sistemas Informaticos, S.A. (Shodan LLC)
+-A INPUT -s 45.156.128.0/22 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.180.140.0/22 -j REJECT --reject-with icmp-port-unreachable
 # Chang Way Technologies Co. Limited
 -A INPUT -s 45.93.20.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 62.122.184.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -247,6 +270,12 @@
 -A INPUT -s 185.165.190.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.165.191.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 195.144.21.0/24 -j REJECT --reject-with icmp-host-unreachable
+# The Shadowserver Foundation, Inc. (Hurricane Electric LLC Customer)
+-A ip_filter -s 64.62.128.0/17 -j REJECT --reject-with icmp-port-unreachable
+-A ip_filter -s 65.49.0.0/17 -j REJECT --reject-with icmp-port-unreachable
+-A ip_filter -s 74.82.0.0/18 -j REJECT --reject-with icmp-port-unreachable
+-A ip_filter -s 184.104.0.0/15 -j REJECT --reject-with icmp-port-unreachable
+-A ip_filter -s 216.218.128.0/17 -j REJECT --reject-with icmp-port-unreachable
 # Emanuel Hosting Ltd.
 -A INPUT -s 79.110.62.0/24 -j REJECT --reject-with icmp-host-unreachable
 # UAB Host Baltic
@@ -524,9 +553,24 @@
 # AS207423 STEIL-SOUTH LTD
 -A INPUT -s 94.231.212.0/24 -j REJECT --reject-with icmp-port-unreachable
 -A INPUT -s 185.238.198.0/23 -j REJECT --reject-with icmp-port-unreachable
-# AS211607 Securitytrails LLC
--A INPUT -s 193.3.53.0/24 -j REJECT --reject-with icmp-port-unreachable
--A INPUT -s 195.230.103.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS48721 Flyservers S.A.
+-A INPUT -s 194.165.16.0/23 -j REJECT --reject-with icmp-port-unreachable
+# AS209588 Flyservers S.A.
+-A INPUT -s 81.19.135.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 92.51.2.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 141.98.9.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 141.98.81.0/22 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 147.78.47.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 179.60.147.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS267784 Flyservers S.A.
+-A INPUT -s 45.227.252.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 45.227.254.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 193.57.40.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS269855 WORLD CONNECTION
+-A INPUT -s 45.187.48.0/22  -j REJECT --reject-with icmp-port-unreachable
+# AS52469 Offshore Racks S.A
+-A INPUT -s 181.174.164.0/22 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 190.14.36.0/22 -j REJECT --reject-with icmp-port-unreachable
 # AS208843 Alpha Strike Labs GmbH
 -A INPUT -s 45.83.64.0/22 -j REJECT --reject-with icmp-port-unreachable
 -A INPUT -s 194.187.176.0/22 -j REJECT --reject-with icmp-port-unreachable
@@ -557,5 +601,15 @@
 -A INPUT -s 185.224.130.0/23 -j REJECT --reject-with icmp-port-unreachable
 -A INPUT -s 185.244.36.0/23 -j REJECT --reject-with icmp-port-unreachable
 -A INPUT -s 185.244.38.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS64439 IT Outsourcing LLC
+-A INPUT -s 45.156.21.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 45.156.22.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 45.156.24.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 45.156.26.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 109.205.56.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.159.129.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.159.130.0/23 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.228.232.0/23 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.228.234.0/24 -j REJECT --reject-with icmp-port-unreachable
 
-# Last Update: 17/06/2024 19:07 (GMT+2)
+# Last Update: 17/06/2024 19:30 (GMT+2)
