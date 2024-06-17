@@ -42,6 +42,15 @@
 -A INPUT -s 185.234.216.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 188.119.66.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.26.135.0/24 -j REJECT --reject-with icmp-host-unreachable
+# Red Byte LLC (Changway)
+-A INPUT -s 2.57.149.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.97.73.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 109.196.166.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 213.109.202.0/24 -j REJECT --reject-with icmp-host-unreachable
+# Chang Way Technologies Co. Limited
+-A INPUT -s 92.255.57.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 92.255.85.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.7.214.0/24 -j REJECT --reject-with icmp-host-unreachable
 # PPTechnology Limited
 -A INPUT -s 45.148.10.0/24 -j REJECT --reject-with icmp-host-unreachable
 # Constantine Cybersecurity Ltd.
@@ -50,11 +59,6 @@
 # Securitytrails LLC
 -A INPUT -s 193.3.53.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 195.230.103.0/24 -j REJECT --reject-with icmp-host-unreachable
-# Red Byte LLC
--A INPUT -s 109.196.166.0/23 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 213.109.202.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 2.57.149.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 83.97.73.0/24 -j REJECT --reject-with icmp-host-unreachable
 # Academy for Internet Research LLC 
 -A INPUT -s 104.156.155.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 195.96.137.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -103,6 +107,7 @@
 -A INPUT -s 185.242.226.0/24 -j REJECT --reject-with icmp-host-unreachable
 # Hong Kong Zhengxing Technology Ltd.
 -A INPUT -s 185.233.19.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.235.165.0/24 -j REJECT --reject-with icmp-host-unreachable
 # Miti 2000 EOOD
 -A INPUT -s 78.128.113.0/24 -j REJECT --reject-with icmp-host-unreachable
 # Cat Technologies Co. Ltd.
