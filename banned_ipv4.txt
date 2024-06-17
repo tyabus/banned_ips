@@ -108,13 +108,55 @@
 # Hong Kong Zhengxing Technology Ltd.
 -A INPUT -s 185.233.19.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.235.165.0/24 -j REJECT --reject-with icmp-host-unreachable
-# Miti 2000 EOOD
--A INPUT -s 78.128.113.0/24 -j REJECT --reject-with icmp-host-unreachable
 # Cat Technologies Co. Ltd.
 -A INPUT -s 31.41.244.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 176.113.115.0/24 -j REJECT --reject-with icmp-host-unreachable
-# 4Media Ltd.
+# AS50360 Tamatiya EOOD
+-A INPUT -s 5.181.80.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 78.128.114.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.124.40.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.124.45.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.124.49.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.124.56.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.124.58.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.124.60.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.148.128.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.148.190.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.191.220.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.230.24.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS212677 Terinet EOOD
+-A INPUT -s 79.124.54.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.124.61.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS60441 ELITKOM Ltd. -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 95.169.208.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.167.172.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.245.68.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.245.70.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS202325 4Media Ltd.
 -A INPUT -s 78.128.112.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS212115 IN TRADE 87 LTD
+-A INPUT -s 91.148.130.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.204.221.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.204.222.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS205872 EXTRANET 2010
+-A INPUT -s 79.124.72.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.222.180.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS209696 NILSAT Ltd.
+-A INPUT -s 45.141.157.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS204428 SS-Net
+-A INPUT -s 80.94.95.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 87.246.7.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 212.70.149.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS206370 Next Generation Technologies Ltd
+-A INPUT -s 185.165.223.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS200391 KREZ 999 EOOD
+-A INPUT -s 5.188.206.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS207812 DM AUTO EOOD
+-A INPUT -s 79.124.62.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS209160 Miti 2000 EOOD
+-A INPUT -s 78.128.113.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS57509 L&L Investment Ltd.
+-A INPUT -s 91.191.209.0/24 -j REJECT --reject-with icmp-host-unreachable
 # Amarutu Technology Ltd.
 -A INPUT -s 5.183.209.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 31.220.0.0/22 -j REJECT --reject-with icmp-host-unreachable
@@ -442,5 +484,10 @@
 -A INPUT -s 185.220.100.0/24 -j REJECT --reject-with icmp-port-unreachable
 # AS14987 Rethem Hosting LLC
 -A INPUT -s 104.152.52.0/22 -j REJECT --reject-with icmp-port-unreachable
+# AS200593 PROSPERO OOO
+-A ip_filter -s 91.202.233.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A ip_filter -s 91.215.85.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS214961 Stellar Group SAS
+-A ip_filter -s 178.215.236.0/24 -j DROP
 
-# Last Update: 17/06/2024 18:22 (GMT+2)
+# Last Update: 17/06/2024 18:25 (GMT+2)
