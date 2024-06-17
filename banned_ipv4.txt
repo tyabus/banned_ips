@@ -36,7 +36,7 @@
 -A INPUT -s 204.87.186.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 205.210.31.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 208.127.0.0/17 -j REJECT --reject-with icmp-host-unreachable
-# Shodan LLC (Hurricane Electric LLC Customer)
+# Shodan LLC (Hurricane Electric rented netblock)
 -A INPUT -s 207.90.244.0/24 -j REJECT --reject-with icmp-host-unreachable
 # CariNet LLC (Shodan LLC)
 -A INPUT -s 135.84.216.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -270,12 +270,12 @@
 -A INPUT -s 185.165.190.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.165.191.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 195.144.21.0/24 -j REJECT --reject-with icmp-host-unreachable
-# The Shadowserver Foundation, Inc. (Hurricane Electric LLC Customer)
--A ip_filter -s 64.62.128.0/17 -j REJECT --reject-with icmp-port-unreachable
--A ip_filter -s 65.49.0.0/17 -j REJECT --reject-with icmp-port-unreachable
--A ip_filter -s 74.82.0.0/18 -j REJECT --reject-with icmp-port-unreachable
--A ip_filter -s 184.104.0.0/15 -j REJECT --reject-with icmp-port-unreachable
--A ip_filter -s 216.218.128.0/17 -j REJECT --reject-with icmp-port-unreachable
+# The Shadowserver Foundation, Inc. (Hurricane Electric rented netblock)
+-A INPUT -s 64.62.128.0/17 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 65.49.0.0/17 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 74.82.0.0/18 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 184.104.0.0/15 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 216.218.128.0/17 -j REJECT --reject-with icmp-port-unreachable
 # Emanuel Hosting Ltd.
 -A INPUT -s 79.110.62.0/24 -j REJECT --reject-with icmp-host-unreachable
 # UAB Host Baltic
