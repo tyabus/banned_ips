@@ -425,5 +425,22 @@
 -A INPUT -s 211.152.148.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 211.152.154.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 211.152.158.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS198039 Shneider Group LLC
+-A INPUT -s 192.166.123.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS15828 Robat Blue Diamond Network Co., Ltd.
+-A INPUT -s 80.244.11.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS11938 NCRYPTD LLC
+-A INPUT -s 94.156.78.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 109.206.237.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.255.114.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS136180 Beijing Tiantexin Tech. Co., Ltd.
+-A INPUT -s 103.203.56.0/22 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 116.213.45.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS150860 JETCLOUD TECHNOLOGY CO., LTD
+-A INPUT -s 103.237.86.0/23 -j REJECT --reject-with icmp-port-unreachable
+# AS205100 F3 Netze e.V.
+-A INPUT -s 185.220.100.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS14987 Rethem Hosting LLC
+-A INPUT -s 104.152.52.0/22 -j REJECT --reject-with icmp-port-unreachable
 
-# Last Update: 17/05/2024 00:22 (GMT+5)
+# Last Update: 17/06/2024 18:22 (GMT+2)
