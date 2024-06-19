@@ -1,0 +1,130 @@
+# IPv6 static ingoing traffic blocklist
+# AS398324, AS398722, AS398705 CENSYS 
+-A INPUT -s 2602:80d:1000::/48 -j DROP
+-A INPUT -s 2602:80d:1001::/48 -j DROP
+-A INPUT -s 2602:80d:1002::/48 -j DROP
+-A INPUT -s 2602:80d:1003::/48 -j DROP
+-A INPUT -s 2602:80d:1004::/48 -j DROP
+-A INPUT -s 2602:80d:1005::/48 -j DROP
+-A INPUT -s 2602:80d:1006::/48 -j DROP
+-A INPUT -s 2620:96:e000::/48 -j DROP
+# AS10439 CariNet LLC (Shodan LLC)
+-A INPUT -s 2607:ff10::/32 -j DROP
+# AS211680 NSEC - Sistemas Informaticos, S.A. (Shodan LLC)
+-A INPUT -s 2a10:3c0:1::/48 -j DROP
+# AS211298 Constantine Cybersecurity Ltd.
+-A INPUT -s 2a06:4880::/32 -j DROP
+# AS211607 Securitytrails LLC -j DROP
+-A INPUT -s 2001:678:e70::/48 -j DROP
+-A INPUT -s 2a10:b640:3000::/36 -j DROP
+-A INPUT -s 2a10:b641::/36 -j DROP
+# AS49870 Alsycon B.V.
+-A INPUT -s 2a0e:3980::/29 -j DROP
+# AS57717 FiberXpress BV
+-A INPUT -s 2a0b:b7c0::/30 -j DROP
+-A INPUT -s 2a0b:b7c4::/30 -j DROP
+# AS202425 IP Volume inc
+-A INPUT -s 2a02:6c8:8000::/33 -j DROP
+# AS50360 Tamatiya EOOD
+-A INPUT -s 2001:67c:15e0::/48 -j DROP
+# AS202325 4Media Ltd.
+-A INPUT -s 2001:678:f08::/48 -j DROP
+# AS207812 DM AUTO EOOD
+-A INPUT -s 2001:678:ff8::/48 -j DROP
+# AS206264 Amarutu Technology Ltd.
+-A INPUT -s 2001:590:3803::/48 -j DROP
+-A INPUT -s 2402:7840::/32 -j DROP
+-A INPUT -s 2a00:1ca8:2c::/48 -j DROP
+-A INPUT -s 2a0d:1000::/30 -j DROP
+-A INPUT -s 2a0d:1004::/30 -j DROP
+# AS63961 Bangladesh Research and Education Network (BdREN)
+-A INPUT -s 2402:f500::/32 -j DROP
+# AS17884 PT. Uninet Media Sakti
+-A INPUT -s 2402:7980::/32 -j DROP
+# AS209605 UAB Host Baltic
+-A INPUT -s 2a0f:8a40:1::/48 -j DROP
+-A INPUT -s 2a0f:8a40:11::/48 -j DROP
+-A INPUT -s 2a0f:8a40:91::/48 -j DROP
+# AS132203 Tencent Building, Kejizhongyi Avenue
+-A INPUT -s 240d:c010::/48 -j DROP
+# AS136180 Beijing Tiantexin Tech. Co., Ltd.
+-A INPUT -s 2400:87c0::/32 -j DROP
+# AS150860 JETCLOUD TECHNOLOGY CO., LTD
+-A INPUT -s 2401:1760::/48 -j DROP
+# AS205100 F3 Netze e.V.
+-A INPUT -s 2a0b:f4c0::/40 -j DROP
+# AS14987 Rethem Hosting LLC
+-A INPUT -s 2607:8500::/32 -j DROP
+# AS198644 NET42, svetovanje in razvoj internetnih resitev, d.o.o.
+-A INPUT -s 2001:67c:27e4::/48 -j DROP
+# AS150156 99IT
+-A INPUT -s 2001:df1:1940::/48 -j DROP
+# AS133398 Tele Asia Limited
+-A INPUT -s 2401:f9c0:2600::/40 -j DROP
+-A INPUT -s 2406:4300::/32 -j DROP
+-A INPUT -s 2a10:1fc0::/48 -j DROP
+# AS204333 Witalij Koweschnikow
+-A INPUT -s 2a13:5681:1::/48 -j DROP
+-A INPUT -s 2a13:5681:3::/48 -j DROP
+-A INPUT -s 2a13:5681:4::/48 -j DROP
+-A INPUT -s 2a13:5681:6::/48 -j DROP
+-A INPUT -s 2a13:5681:7::/48 -j DROP
+-A INPUT -s 2a13:5681:8::/48 -j DROP
+-A INPUT -s 2a13:5681:9::/48 -j DROP
+# AS48721 Flyservers S.A.
+-A INPUT -s 2a10:9100:3::/48 -j DROP
+# AS209588 Flyservers S.A.
+-A INPUT -s 2a10:9100:7::/48 -j DROP
+-A INPUT -s 2a10:9100:9::/48 -j DROP
+-A INPUT -s 2a10:9107:f000::/36 -j DROP
+# AS267784 Flyservers S.A.
+-A INPUT -s 2803:5120:c000::/36 -j DROP
+-A INPUT -s 2a10:9100:5::/48 -j DROP
+# AS269855 WORLD CONNECTION
+-A INPUT -s 2803:a760::/32 -j DROP
+# AS60729 Stiftung Erneuerbare Freiheit
+-A INPUT -s 2a0a:4587:2010::/46 -j DROP
+-A INPUT -s 2a0b:f4c1:2::/48 -j DROP
+-A INPUT -s 2a0b:f4c2::/40 -j DROP
+# AS62068 SpectraIP B.V.
+-A INPUT -s 2a0d:2400::/30  -j DROP
+-A INPUT -s 2a0d:2400::/32  -j DROP
+-A INPUT -s 2a0d:2405::/32  -j DROP
+-A INPUT -s 2a0d:2406::/39  -j DROP
+-A INPUT -s 2a0d:2407::/32  -j DROP
+-A INPUT -s 2a0d:2784::/31 -j DROP
+-A INPUT -s 2a0d:2786::/32  -j DROP
+-A INPUT -s 2a0d:2787::/32  -j DROP
+-A INPUT -s 2a0e:16c0::/29  -j DROP
+-A INPUT -s 2a0e:1740::/29  -j DROP
+-A INPUT -s 2a0e:2000::/29  -j DROP
+-A INPUT -s 2a11:b244::/32  -j DROP
+-A INPUT -s 2a12:a8c0::/29 -j DROP
+# AS64439 IT Outsourcing LLC
+-A INPUT -s 2a0b:b200::/32 -j DROP
+# AS215208 Dolphin 1337 Limited
+# AS51115 HLL LLC
+-A INPUT -s 2a03:70c0::/32 -j DROP
+# AS208091 XHOST INTERNET SOLUTIONS LP
+-A INPUT -s 2a0d:65c0::/29 -j DROP
+# AS210630 IncogNET LLC
+-A INPUT -s 2602:fc24::/44 -j DROP
+# AS212461 Nemtcov Nikolai Alexandrovich
+-A INPUT -s 2a0b:6900:1ad::/48 -j DROP
+# AS13627 Ambyre LLC
+-A INPUT -s 2602:fba3::/40 -j DROP
+# AS201814 MEVSPACE sp. z o.o.
+-A INPUT -s 2a03:cfc0::/32 -j DROP
+-A INPUT -s 2a12:a800:2::/48 -j DROP
+# AS61280 FGUP "GRCHC"
+-A INPUT -s 2a0c:a9c7:156::/48 -j DROP
+-A INPUT -s 2a0c:a9c7:157::/48 -j DROP
+-A INPUT -s 2a0c:a9c7:158::/48 -j DROP
+# AS61272 Informacines sistemos ir technologijos, UAB
+-A INPUT -s 2a02:e00:ffe7::/48 -j DROP
+-A INPUT -s 2a04:2180::/32 -j DROP
+-A INPUT -s 2a04:2181:c010::/48 -j DROP
+-A INPUT -s 2a04:2181:c011::/48 -j DROP
+-A INPUT -s 2a04:2181:c012::/48 -j DROP
+
+# Last Update: 19/06/2024 20:14 (GMT+2)
