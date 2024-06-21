@@ -126,5 +126,20 @@
 -A INPUT -s 2a04:2181:c010::/48 -j DROP
 -A INPUT -s 2a04:2181:c011::/48 -j DROP
 -A INPUT -s 2a04:2181:c012::/48 -j DROP
+# AS399486 Virtuo Holdings Inc (12651980 CANADA INC.)
+-A INPUT -s 2001:550:601::/48 -j DROP
+# AS400130 Hebergement Serv3r.net inc.
+-A INPUT -s 2602:fb53::/40 -j DROP
+# AS200136 LibraHost
+-A INPUT -s 2a0e:b107:12d::/48 -j DROP
+# AS198831 Association HOLYCLOUD
+-A INPUT -s 2a10:4646:2d0::/44 -j DROP
+-A INPUT -s 2a10:4646:3f0::/44 -j DROP
+-A INPUT -s 2a10:4646:9a0::/44 -j DROP
+# AS210558 1337 Services GmbH
+-A INPUT -s 2a12:a800:1::/48 -j DROP
+-A INPUT -s 2a12:a800:7::/48 -j DROP
+# AS215599 Zkillu SAS
+-A INPUT -s 2a10:4646:410::/44 -j DROP
 
-# Last Update: 19/06/2024 20:14 (GMT+2)
+# Last Update: 21/06/2024 14:15 (GMT+2)

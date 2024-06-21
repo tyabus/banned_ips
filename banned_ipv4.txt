@@ -150,7 +150,7 @@
 # AS212677 Terinet EOOD
 -A INPUT -s 79.124.54.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 79.124.61.0/24 -j REJECT --reject-with icmp-host-unreachable
-# AS60441 ELITKOM Ltd. -j REJECT --reject-with icmp-host-unreachable
+# AS60441 ELITKOM Ltd.
 -A INPUT -s 95.169.208.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.167.172.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.245.68.0/23 -j REJECT --reject-with icmp-host-unreachable
@@ -714,5 +714,67 @@
 -A INPUT -s 194.32.122.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 213.252.232.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 213.252.244.0/22 -j REJECT --reject-with icmp-host-unreachable
+# AS399486 Virtuo Holdings Inc (12651980 CANADA INC.)
+-A INPUT -s 23.26.76.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 38.22.104.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.88.91.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 66.225.254.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.110.49.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.76.49.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.147.52.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 85.209.133.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 85.209.176.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 104.234.204.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 141.11.117.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 157.254.164.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 157.254.236.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.32.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.64.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.106.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.112.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.160.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.169.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.181.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.210.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.59.30.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 205.234.144.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 205.234.181.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS400130 Hebergement Serv3r.net inc.
+-A INPUT -s 23.247.253.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 38.128.250.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 166.0.147.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS200136 LibraHost
+-A INPUT -s 163.5.141.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.143.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS400897 PETROSKY CLOUD LLC
+-A INPUT -s 38.128.251.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.254.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS200450 SiteGround Hosting EOOD
+-A INPUT -s 185.225.236.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS204372 Vincent PICCO
+-A INPUT -s 199.178.168.0/22 -j REJECT --reject-with icmp-host-unreachable
+# AS216167 Skoali SAS
+-A INPUT -s 103.102.228.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.102.230.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 203.55.81.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS198831 Association HOLYCLOUD
+-A INPUT -s 141.11.113.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.59.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.253.54.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS210558 1337 Services GmbH
+-A INPUT -s 2.58.56.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.80.158.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.92.1.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.94.31.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.138.16.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.141.215.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.152.149.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.154.98.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.206.169.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.241.208.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.26.192.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 203.159.90.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215599 Zkillu SAS
+-A INPUT -s 147.79.5.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 19/06/2024 19:52 (GMT+2)
+# Last Update: 21/06/2024 14:15 (GMT+2)
