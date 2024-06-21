@@ -13,6 +13,7 @@
 # Expanse, a Palo Alto Networks Company. https://www.weaverconsulting.ca/banned.html  + ARIN "OrgName:"
 -A INPUT -s 34.77.162.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 34.86.35.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 35.203.210.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 34.96.130.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 35.216.183.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 66.159.192.0/19 -j REJECT --reject-with icmp-host-unreachable
@@ -27,6 +28,7 @@
 -A INPUT -s 137.83.240.0/21 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 140.209.252.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 147.185.132.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 162.216.148.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 165.1.128.0/19 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 165.1.176.0/20 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 165.1.192.0/18 -j REJECT --reject-with icmp-host-unreachable
