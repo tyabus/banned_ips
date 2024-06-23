@@ -780,5 +780,52 @@
 -A INPUT -s 203.159.90.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS215599 Zkillu SAS
 -A INPUT -s 147.79.5.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS47890 UNMANAGED LTD
+-A INPUT -s 2.57.120.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.8.44.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.13.37.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.13.213.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.129.14.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.138.96.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.138.98.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.148.11.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.94.92.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 92.118.39.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 140.228.17.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 140.228.18.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 140.228.20.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 141.140.0.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 154.214.128.0/17 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.232.64.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.232.66.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.32.162.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.46.254.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.47.69.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 200.229.31.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 207.182.48.0/20 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 216.24.221.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS42397 Bunea TELECOM SRL
+-A INPUT -s 185.232.65.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.29.13.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.29.14.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS35478 Bunea TELECOM SRL
+-A INPUT -s 45.13.38.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.13.212.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.134.48.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.134.51.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.142.153.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.142.195.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 46.20.103.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 92.118.38.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.31.208.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.171.136.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 159.148.195.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.26.223.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.47.68.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.50.82.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.126.219.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.252.180.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.252.182.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.252.184.0/22 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 21/06/2024 19:14 (GMT+2)
+# Last Update: 23/06/2024 16:47 (GMT+2)
