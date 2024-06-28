@@ -156,5 +156,8 @@
 -A INPUT -s 2a0a:c802:3::/48 -j DROP
 -A INPUT -s 2a0a:c802:4::/48 -j DROP
 -A INPUT -s 2a0a:c804::/48 -j DROP
+# AS41436 Kamatera Inc
+-A INPUT -s 2a06:c5c0:200::/48 -j DROP
+-A INPUT -s 2a07:3b80:3::/48 -j DROP
 
 # Last Update: 28/06/2024 13:31 (GMT+2)

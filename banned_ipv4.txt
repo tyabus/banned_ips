@@ -841,5 +841,27 @@
 -A INPUT -s 194.180.157.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.180.174.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.180.191.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS41436 Kamatera Inc
+-A INPUT -s 5.180.180.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.91.168.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 63.250.56.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.229.82.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.13.210.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.45.247.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 113.30.188.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.167.96.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.181.8.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.220.204.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.227.110.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.229.224.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.229.227.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.247.117.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.168.173.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.37.81.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.146.38.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.238.121.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215009 BELERAFON, razvoj in programiranje, d.o.o.
+-A INPUT -s 193.34.49.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 28/06/2024 13:31 (GMT+2)
+
+# Last Update: 28/06/2024 14:17 (GMT+2)
