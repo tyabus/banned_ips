@@ -861,7 +861,57 @@
 -A INPUT -s 194.146.38.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 195.238.121.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS215009 BELERAFON, razvoj in programiranje, d.o.o.
+-A INPUT -s 2.59.118.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.34.49.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215728 Kamatera Inc
+-A INPUT -s 81.168.119.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS204548 Kamatera Inc
+-A INPUT -s 45.83.41.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.147.248.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 63.250.59.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 63.250.60.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 81.28.6.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.229.84.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.13.211.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 113.30.190.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.47.174.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.53.210.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.139.230.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.181.10.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.227.108.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.227.111.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.237.14.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.237.96.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.247.118.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.36.88.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.37.80.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.238.122.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 212.115.110.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS210329 Kamatera Inc
+-A INPUT -s 45.91.170.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.147.249.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 63.250.58.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 81.28.4.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.229.68.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.229.75.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.223.236.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.13.208.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.241.64.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.53.211.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.127.16.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.181.9.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.181.11.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.227.109.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.237.12.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.237.98.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.247.116.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.247.119.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.37.82.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.146.24.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.238.123.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 212.86.104.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 212.115.108.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS9039 Institute of information & analytical technologies IIAT, Limited
+-A INPUT -s 212.83.0.0/19 -j REJECT --reject-with icmp-host-unreachable
 
-
-# Last Update: 28/06/2024 14:17 (GMT+2)
+# Last Update: 28/06/2024 14:43 (GMT+2)

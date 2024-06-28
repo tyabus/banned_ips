@@ -159,5 +159,11 @@
 # AS41436 Kamatera Inc
 -A INPUT -s 2a06:c5c0:200::/48 -j DROP
 -A INPUT -s 2a07:3b80:3::/48 -j DROP
+# AS204548 Kamatera Inc
+-A INPUT -s 2a06:c5c0:1100::/48 -j DROP
+-A INPUT -s 2a07:3b80:1::/48 -j DROP
+# AS210329 Kamatera Inc
+-A INPUT -s 2a06:c5c0:600::/48 -j DROP
+-A INPUT -s 2a07:3b80:2::/48 -j DROP
 
-# Last Update: 28/06/2024 13:31 (GMT+2)
+# Last Update: 28/06/2024 14:43 (GMT+2)
