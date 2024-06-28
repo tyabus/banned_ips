@@ -20,6 +20,8 @@
 -A INPUT -s 2a10:b641::/36 -j DROP
 # AS49870 Alsycon B.V.
 -A INPUT -s 2a0e:3980::/29 -j DROP
+# AS49305 Alsycon B.V.
+-A INPUT -s 2a0e:3ec0::/29 -j DROP
 # AS57717 FiberXpress BV
 -A INPUT -s 2a0b:b7c0::/30 -j DROP
 -A INPUT -s 2a0b:b7c4::/30 -j DROP
@@ -145,6 +147,14 @@
 -A INPUT -s 2a0e:1d80:7::/48 -j DROP
 -A INPUT -s 2a10:9100:6::/48 -j DROP
 -A INPUT -s 2a10:9100:a::/48 -j DROP
+# AS39798 MivoCloud SRL
+-A INPUT -s 2001:67c:2db8::/48 -j DROP
+-A INPUT -s 2a0a:c800::/32 -j DROP
+-A INPUT -s 2a0a:c801::/32 -j DROP
+-A INPUT -s 2a0a:c802::/48 -j DROP
+-A INPUT -s 2a0a:c802:1::/48 -j DROP
+-A INPUT -s 2a0a:c802:3::/48 -j DROP
+-A INPUT -s 2a0a:c802:4::/48 -j DROP
+-A INPUT -s 2a0a:c804::/48 -j DROP
 
-
-# Last Update: 23/06/2024 16:39 (GMT+2)
+# Last Update: 28/06/2024 13:31 (GMT+2)

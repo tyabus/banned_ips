@@ -106,6 +106,11 @@
 -A INPUT -s 194.50.16.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.50.17.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 212.107.12.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS49305 Alsycon B.V.
+-A INPUT -s 62.204.50.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 94.247.136.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 178.255.217.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.228.251.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS47154 HUSAM A. H. HIJAZI
 -A INPUT -s 45.155.91.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS57717 FiberXpress BV
@@ -827,5 +832,14 @@
 -A INPUT -s 195.252.180.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 195.252.182.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 195.252.184.0/22 -j REJECT --reject-with icmp-host-unreachable
+# AS39798 MivoCloud SRL
+-A INPUT -s 5.181.156.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 5.252.176.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 94.158.244.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.163.44.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.225.16.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.180.157.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.180.174.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.180.191.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 23/06/2024 16:47 (GMT+2)
+# Last Update: 28/06/2024 13:31 (GMT+2)
