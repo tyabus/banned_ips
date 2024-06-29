@@ -165,5 +165,7 @@
 # AS210329 Kamatera Inc
 -A INPUT -s 2a06:c5c0:600::/48 -j DROP
 -A INPUT -s 2a07:3b80:2::/48 -j DROP
+# AS39421 Sapinet SAS
+-A INPUT -s 2a0c:8880::/29 -j DROP
 
-# Last Update: 28/06/2024 14:43 (GMT+2)
+# Last Update: 29/06/2024 19:07 (GMT+2)
