@@ -76,6 +76,12 @@
 -A INPUT -s 92.255.57.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 92.255.85.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.7.214.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS57678 Cat Technologies Co. Ltd. (Changway)
+-A INPUT -s 31.41.244.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 176.113.115.0/24 -j REJECT --reject-with icmp-host-unreachable
+# Chang Way Technologies Co. Limited (OOO "Network of data-centers "Selectel" AS50340/AS49505 rented netblock)
+-A INPUT -s 193.3.19.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.201.8.0/23 -j REJECT --reject-with icmp-host-unreachable
 # AS48090 PPTechnology Limited
 -A INPUT -s 45.148.10.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS211298 Constantine Cybersecurity Ltd.
@@ -140,9 +146,6 @@
 # AS150706 Hong Kong Zhengxing Technology Ltd.
 -A INPUT -s 185.233.19.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.235.165.0/24 -j REJECT --reject-with icmp-host-unreachable
-# AS57678 Cat Technologies Co. Ltd.
--A INPUT -s 31.41.244.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 176.113.115.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS50360 Tamatiya EOOD
 -A INPUT -s 5.181.80.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.128.114.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -1000,4 +1003,4 @@
 -A INPUT -s 185.44.81.0/24 -j REJECT --reject-with icmp-host-unreachable
 
 
-# Last Update: 29/06/2024 19:07 (GMT+2)
+# Last Update: 30/06/2024 10:32 (GMT+2)
