@@ -1001,6 +1001,81 @@
 # AS39421 Sapinet SAS
 -A INPUT -s 45.90.160.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.44.81.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS49581 Ferdinand Zink trading as Tube-Hosting
+-A INPUT -s 2.58.113.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 5.253.246.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 31.6.50.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 37.221.92.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 37.221.94.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.13.227.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.84.198.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.131.108.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.131.111.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.137.98.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.137.201.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.137.203.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.142.104.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.142.107.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.75.212.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.76.51.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.91.223.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.149.229.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.149.230.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.212.121.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 92.118.207.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 141.195.113.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 144.172.73.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 146.19.191.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 176.97.210.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.91.127.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.117.3.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 192.109.206.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.111.248.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.111.250.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.141.60.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS216240 MortalSoft Ltd.
+-A INPUT -s 93.123.85.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS212762 Casper Krook trading as Ck IT Solutions
+-A INPUT -s 109.176.202.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 146.103.47.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS204914 LABIXE LTD
+-A INPUT -s 2.56.165.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 2.57.19.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.88.9.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.139.196.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 77.83.242.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.234.75.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215026 Alessandro Accorsi trading as Len Service SRL
+-A INPUT -s 91.227.114.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS216061 Trillium Host LLC
+-A INPUT -s 185.186.65.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215681 Loris Domeniconi trading as Scheggia Services (DL)
+-A INPUT -s 5.180.34.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS203728 BAHU LTD
+-A INPUT -s 81.21.4.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS216063 24fire GmbH
+-A INPUT -s 2.56.244.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.84.196.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.147.7.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 88.151.194.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215365 Tom Gewiese
+-A INPUT -s 2.56.247.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 37.114.35.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS58052 Tomas William Smith trading as TomasSystems
+-A INPUT -s 194.15.38.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS199654 Oxide Group Limited
+-A INPUT -s 89.33.85.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.49.126.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 191.96.207.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.87.87.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.58.58.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215039 Semih Gokcalik
+-A INPUT -s 77.90.5.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 77.90.14.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215987 Taylan Gueler trading as Soliaweb
+-A INPUT -s 141.98.7.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS216221 Marco Rossi trading as XeniaHosting
+-A INPUT -s 2.58.84.0/24 -j REJECT --reject-with icmp-host-unreachable
 
 
-# Last Update: 30/06/2024 10:32 (GMT+2)
+# Last Update: 30/06/2024 17:16 (GMT+2)
