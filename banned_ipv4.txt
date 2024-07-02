@@ -308,6 +308,8 @@
 -A INPUT -s 185.169.4.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.31.6.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.169.175.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215476 Inside Network LTD ( UAB Host Baltic )
+-A INPUT -s 77.90.185.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS216246 Aeza Group Ltd.
 -A INPUT -s 45.15.158.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.142.122.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -1103,4 +1105,4 @@
 -A INPUT -s 185.169.220.0/24 -j REJECT --reject-with icmp-host-unreachable
 
 
-# Last Update: 02/07/2024 20:44 (GMT+2)
+# Last Update: 02/07/2024 23:31 (GMT+2)
