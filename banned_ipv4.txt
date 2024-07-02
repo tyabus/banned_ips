@@ -192,6 +192,13 @@
 -A INPUT -s 78.128.113.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS57509 L&L Investment Ltd.
 -A INPUT -s 91.191.209.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS199173 TechnoLux Ltd.
+-A INPUT -s 85.187.218.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 85.187.224.0/21 -j REJECT --reject-with icmp-host-unreachable
+# AS209272 Alviva Holding Limited
+-A INPUT -s 81.19.136.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 81.19.138.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 88.214.27.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS206264 Amarutu Technology Ltd.
 -A INPUT -s 5.183.209.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 31.220.0.0/22 -j REJECT --reject-with icmp-host-unreachable
