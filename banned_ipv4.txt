@@ -247,7 +247,7 @@
 -A INPUT -s 103.159.2.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 163.47.36.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 203.96.188.0/22 -j REJECT --reject-with icmp-host-unreachable
-# AS215240 Silent Connection Ltd.
+# AS215240 Silent Connection Ltd. ( UAB Host Baltic )
 -A INPUT -s 93.123.39.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 94.156.8.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 94.156.79.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -290,9 +290,9 @@
 -A INPUT -s 74.82.0.0/18 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 184.104.0.0/15 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 216.218.128.0/17 -j REJECT --reject-with icmp-host-unreachable
-# AS215766 Emanuel Hosting Ltd.
+# AS215766 Emanuel Hosting Ltd. ( UAB Host Baltic )
 -A INPUT -s 79.110.62.0/24 -j REJECT --reject-with icmp-host-unreachable
-# AS209605 UAB Host Baltic
+# AS209605 UAB Host Baltic 
 -A INPUT -s 91.224.92.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 141.98.8.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 141.98.10.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -512,7 +512,7 @@
 -A INPUT -s 211.152.158.0/23 -j REJECT --reject-with icmp-host-unreachable
 # AS198039 Shneider Group LLC
 -A INPUT -s 192.166.123.0/24 -j REJECT --reject-with icmp-host-unreachable
-# AS15828 Robat Blue Diamond Network Co., Ltd.
+# AS15828 Robat Blue Diamond Network Co., Ltd. 
 -A INPUT -s 80.244.11.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS11938 NCRYPTD LLC
 -A INPUT -s 94.156.78.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -546,7 +546,7 @@
 -A INPUT -s 194.87.162.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS150156 99IT
 -A INPUT -s 103.112.62.0/23 -j REJECT --reject-with icmp-host-unreachable
-# AS133398 Tele Asia Limited
+# AS133398 Tele Asia Limited ( UAB Host Baltic )
 -A INPUT -s 45.123.88.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.123.188.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.125.64.0/22 -j REJECT --reject-with icmp-host-unreachable
@@ -567,16 +567,16 @@
 # AS207423 STEIL-SOUTH LTD
 -A INPUT -s 94.231.212.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.238.198.0/23 -j REJECT --reject-with icmp-host-unreachable
-# AS48721 Flyservers S.A.
+# AS48721 Flyservers S.A. ( UAB Host Baltic )
 -A INPUT -s 194.165.16.0/23 -j REJECT --reject-with icmp-host-unreachable
-# AS209588 Flyservers S.A.
+# AS209588 Flyservers S.A. ( UAB Host Baltic )
 -A INPUT -s 81.19.135.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 92.51.2.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 141.98.9.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 141.98.81.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 147.78.47.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 179.60.147.0/24 -j REJECT --reject-with icmp-host-unreachable
-# AS267784 Flyservers S.A.
+# AS267784 Flyservers S.A. ( UAB Host Baltic )
 -A INPUT -s 45.227.252.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.227.254.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.57.40.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -625,7 +625,7 @@
 -A INPUT -s 185.159.130.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.228.232.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.228.234.0/24 -j REJECT --reject-with icmp-host-unreachable
-# AS215208 Dolphin 1337 Limited
+# AS215208 Dolphin 1337 Limited ( UAB Host Baltic )
 -A INPUT -s 45.8.92.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.222.96.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS51115 HLL LLC
@@ -1076,6 +1076,17 @@
 -A INPUT -s 141.98.7.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS216221 Marco Rossi trading as XeniaHosting
 -A INPUT -s 2.58.84.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215898 Julian Achter 
+-A INPUT -s 185.132.53.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS400328 Intelligence Hosting LLC 
+-A INPUT -s 204.76.203.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS214995 Charged IT Solutions LLC
+-A INPUT -s 23.150.24.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 23.167.232.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 64.112.127.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.193.252.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 130.51.94.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.169.220.0/24 -j REJECT --reject-with icmp-host-unreachable
 
 
-# Last Update: 30/06/2024 17:16 (GMT+2)
+# Last Update: 02/07/2024 20:21 (GMT+2)

@@ -208,5 +208,10 @@
 -A INPUT -s 2a12:bec0:20c::/48 -j DROP
 # AS215039 Semih Gokcalik
 -A INPUT -s 2a0f:85c1:3c9::/48 -j DROP
+# AS215898 Julian Achter
+-A INPUT -s 2a13:df85:bd00::/48 -j DROP
+# AS214995 Charged IT Solutions LLC
+2-A INPUT -s 602:299::/44 -j DROP
+-A INPUT -s 2602:fed2:7300::/48 -j DROP
 
-# Last Update: 30/06/2024 17:18 (GMT+2)
+# Last Update: 02/07/2024 20:13 (GMT+2)
