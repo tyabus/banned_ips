@@ -211,7 +211,10 @@
 # AS215898 Julian Achter
 -A INPUT -s 2a13:df85:bd00::/48 -j DROP
 # AS214995 Charged IT Solutions LLC
-2-A INPUT -s 602:299::/44 -j DROP
+-A INPUT -s 602:299::/44 -j DROP
 -A INPUT -s 2602:fed2:7300::/48 -j DROP
+# AS34465 NCRYPTD NET LTD
+-A INPUT -s 2602:29f:270::/44 -j DROP
 
-# Last Update: 02/07/2024 20:13 (GMT+2)
+
+# Last Update: 02/07/2024 20:44 (GMT+2)
