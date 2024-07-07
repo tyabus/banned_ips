@@ -1135,5 +1135,12 @@
 # AS52284 Panamaserver.com
 -A INPUT -s 142.202.136.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 190.123.44.0/22 -j REJECT --reject-with icmp-host-unreachable
+# AS149148 Phu Hai Computer Co., Ltd
+-A INPUT -s 103.38.236.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 202.158.248.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS140817 ODS ONLINE DATA SOLUTION JOINT STOCK COMPANY
+-A INPUT -s 103.20.102.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.169.34.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.186.100.0/23 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 07/07/2024 12:53 (GMT+2)
+# Last Update: 07/07/2024 14:23 (GMT+2)
