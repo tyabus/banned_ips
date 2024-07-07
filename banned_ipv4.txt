@@ -1103,6 +1103,37 @@
 -A INPUT -s 91.193.252.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 130.51.94.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.169.220.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215479 Perfecto Consultoria E Apoio Administrativo LTDA
+-A INPUT -s 95.214.27.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS54990 1337 Services LLC
+-A INPUT -s 185.193.124.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS34534 FBW NETWORKS SAS
+-A INPUT -s 37.44.238.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 170.39.218.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.142.53.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.157.246.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.177.182.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 213.5.130.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS141039 Packethub s.a.
+-A INPUT -s 2.59.157.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 5.182.32.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.14.195.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.82.33.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.85.144.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.88.220.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.88.222.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.136.182.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 116.204.195.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.65.50.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.169.0.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.202.220.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.203.218.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 192.145.116.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.42.0.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.43.135.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.146.14.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS52284 Panamaserver.com
+-A INPUT -s 142.202.136.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 190.123.44.0/22 -j REJECT --reject-with icmp-host-unreachable
 
-
-# Last Update: 02/07/2024 23:31 (GMT+2)
+# Last Update: 07/07/2024 12:53 (GMT+2)
