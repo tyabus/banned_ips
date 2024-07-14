@@ -1180,5 +1180,47 @@
 -A INPUT -s 80.66.82.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 87.251.65.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.169.132.0/22 -j REJECT --reject-with icmp-host-unreachable
+# AS198584 PIO-Hosting GmbH
+-A INPUT -s 82.153.35.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 93.95.115.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.69.224.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.161.34.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 147.79.0.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 176.65.128.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 176.65.131.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.253.1.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.120.230.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.62.32.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS216213 Lexistar Alliance Ltd.
+-A INPUT -s 45.117.53.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.123.145.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS213058 Private Internet Hosting LTD
+-A INPUT -s 91.234.99.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 178.159.36.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.150.70.0/24 -j REJECT --reject-with icmp-host-unreachable 
+# AS206776 Ophidian Network Limited
+-A INPUT -s 45.141.156.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 45.141.159.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 185.165.154.0/24 -j REJECT --reject-with icmp-host-unreachable 
+# AS207557 BeetleNetwork Ltd.
+-A INPUT -s 194.9.188.0/24 -j REJECT --reject-with icmp-host-unreachable 
+# AS215789 Karina Rashkovska
+-A INPUT -s 82.115.223.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 147.45.44.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 147.45.47.0/24 -j REJECT --reject-with icmp-host-unreachable 
+# AS215826 Partner Hosting LTD
+-A INPUT -s 91.214.78.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 92.42.96.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 94.141.122.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 147.45.45.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 193.233.112.0/23 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 193.233.254.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 195.10.205.0/24 -j REJECT --reject-with icmp-host-unreachable 
+# AS52053 REDHEBERG Association declaree
+-A INPUT -s 170.39.216.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 170.39.217.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 185.255.112.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 193.38.250.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 193.41.206.0/24 -j REJECT --reject-with icmp-host-unreachable 
 
-# Last Update: 14/07/2024 10:10 (GMT+2)
+# Last Update: 14/07/2024 10:14 (GMT+2)

@@ -288,5 +288,15 @@
 # AS215420 James Freeman
 -A INPUT -s 2a13:a700::/31 -j DROP
 -A INPUT -s 2a14:7c0:30::/44 -j DROP
+# AS198584 PIO-Hosting GmbH
+-A INPUT -s 2a10:ca80::/48 -j DROP
+# AS216213 Lexistar Alliance Ltd.
+-A INPUT -s 2a13:e0c0::/29 -j DROP
+-A INPUT -s 2a14:17c0::/29 -j DROP
+-A INPUT -s 2a14:1840::/29 -j DROP
+# AS215826 Partner Hosting LTD
+-A INPUT -s 2a0c:9a40:9400::/48 -j DROP
+# AS52053 REDHEBERG Association declaree
+-A INPUT -s 2a14:1d00::/44 -j DROP
 
-# Last Update: 11/07/2024 10:37 (GMT+2)
+# Last Update: 14/07/2024 10:16 (GMT+2)
