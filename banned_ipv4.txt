@@ -1175,5 +1175,10 @@
 -A INPUT -s 130.51.94.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 179.61.227.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.169.220.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS206980 AntiDDoS Solutions LLC
+-A INPUT -s 80.66.71.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.66.82.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 87.251.65.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.169.132.0/22 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 11/07/2024 10:37 (GMT+2)
+# Last Update: 14/07/2024 10:10 (GMT+2)
