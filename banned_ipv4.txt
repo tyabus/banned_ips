@@ -1222,5 +1222,15 @@
 -A INPUT -s 185.255.112.0/24 -j REJECT --reject-with icmp-host-unreachable 
 -A INPUT -s 193.38.250.0/24 -j REJECT --reject-with icmp-host-unreachable 
 -A INPUT -s 193.41.206.0/24 -j REJECT --reject-with icmp-host-unreachable 
+# AS138699 TIKTOK PTE. LTD.
+-A INPUT -s 71.18.247.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 71.18.252.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 71.18.253.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 71.18.255.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.136.220.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.136.220.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.136.221.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.136.222.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 118.26.132.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 14/07/2024 10:14 (GMT+2)
+# Last Update: 16/07/2024 19:51 (GMT+5)
