@@ -1232,5 +1232,29 @@
 -A INPUT -s 103.136.221.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 103.136.222.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 118.26.132.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS35042 Layer7 Networks GmbH
+-A INPUT -s 77.83.36.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS201133 Verdina Ltd.
+-A INPUT -s 78.142.29.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.124.78.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 82.118.242.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 85.217.222.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 93.123.10.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 93.123.73.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 94.156.175.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 95.169.196.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.7.219.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.148.144.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.230.21.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.230.22.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS209132 Alviva Holding Limited
+-A INPUT -s 88.214.26.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 92.118.36.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 147.45.112.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.232.67.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS6204 INTERKVM HOST SRL
+-A INPUT -s 30.100.51.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 77.75.192.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.246.249.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 16/07/2024 19:51 (GMT+5)
+# Last Update: 18/07/2024 20:20 (GMT+2)

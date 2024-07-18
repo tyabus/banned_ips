@@ -301,5 +301,9 @@
 # AS138699 TIKTOK PTE. LTD.
 -A INPUT -s 2404:9dc0:cd01::/48 -j DROP
 -A INPUT -s 2404:9dc0:cd03::/48 -j DROP
+# AS209132 Alviva Holding Limited
+-A INPUT -s 2a09:1d40::/48 -j DROP
+# AS6204 INTERKVM HOST SRL
+-A INPUT -s 2a12:3200:f000::/36 -j DROP
 
-# Last Update: 16/07/2024 19:51 (GMT+5)
+# Last Update: 18/07/2024 20:20 (GMT+2)
