@@ -307,6 +307,9 @@
 -A INPUT -s 2a12:3200:f000::/36 -j DROP
 # AS215450 Snowcore Cyf
 -A INPUT -s 2a14:7c0:100::/40 -j DROP
+# AS132825 MYTEK TRADING PTY LTD
+-A INPUT -s 2001:df0:fbc0::/48 -j DROP
+-A INPUT -s 2407:1100::/32 -j DROP
 
 
-# Last Update: 18/07/2024 20:20 (GMT+2)
+# Last Update: 01/08/2024 17:38 (GMT+2)

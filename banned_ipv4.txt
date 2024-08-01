@@ -1241,5 +1241,33 @@
 # AS215450 Snowcore Cyf
 -A INPUT -s 92.249.48.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 94.156.248.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS132825 MYTEK TRADING PTY LTD
+-A INPUT -s 43.231.4.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 43.249.252.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 43.251.112.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 43.251.115.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.116.178.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.204.21.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.204.22.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.42.104.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.49.60.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.125.84.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.234.52.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.234.55.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.239.100.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.250.4.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 118.107.192.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 118.107.244.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 118.107.248.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 118.107.250.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 118.107.252.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 119.42.32.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 119.42.34.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 154.6.164.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 154.93.24.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.5.70.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 181.215.252.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.135.72.0/21 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 18/07/2024 20:20 (GMT+2)
+
+# Last Update: 01/08/2024 17:38 (GMT+2)
