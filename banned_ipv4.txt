@@ -745,12 +745,13 @@
 # AS399486 Virtuo Holdings Inc (12651980 CANADA INC.)
 -A INPUT -s 23.26.76.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 38.22.104.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 38.69.8.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 38.69.12.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.88.91.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 66.225.254.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 79.110.49.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 80.76.49.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 83.147.52.0/22 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 85.209.133.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 85.209.176.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 104.234.204.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 141.11.117.0/24 -j REJECT --reject-with icmp-host-unreachable
