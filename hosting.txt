@@ -5921,5 +5921,15 @@
 -A INPUT -s 185.90.62.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.99.134.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.121.162.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS197309 RS-Media LLC
+-A INPUT -s 37.230.137.0/24 -j DROP
+-A INPUT -s 37.230.162.0/24 -j DROP
+-A INPUT -s 37.230.210.0/24 -j DROP
+-A INPUT -s 37.230.228.0/24 -j DROP
+-A INPUT -s 45.136.204.0/23 -j DROP
+-A INPUT -s 46.174.48.0/21 -j DROP
+-A INPUT -s 62.122.213.0/24 -j DROP
+-A INPUT -s 62.122.214.0/23 -j DROP
+-A INPUT -s 194.93.2.0/24 -j DROP
 
-# Last Update: 03/08/2024 11:23 (GMT+2)
+# Last Update: 17/08/2024 8:33 (GMT+2)
