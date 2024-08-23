@@ -310,6 +310,21 @@
 # AS132825 MYTEK TRADING PTY LTD
 -A INPUT -s 2001:df0:fbc0::/48 -j DROP
 -A INPUT -s 2407:1100::/32 -j DROP
+# AS3920 ESTOXY OU
+-A INPUT -s 2a0d:a740:2::/48 -j DROP
+-A INPUT -s 2a13:adc0::/48 -j DROP
+-A INPUT -s 2a13:adc0:1::/48 -j DROP
+-A INPUT -s 2a13:adc0:2::/48 -j DROP
+# AS60539 Huicast Telecom Limited
+-A INPUT -s 2a13:aac0::/40 -j DROP
+-A INPUT -s 2a13:aac1::/40 -j DROP
+-A INPUT -s 2a13:aac2::/40 -j DROP
+-A INPUT -s 2a13:aac3::/40 -j DROP
+# AS61302 HUIZE LTD
+-A INPUT -s 2406:840:e242::/48 -j DROP
+-A INPUT -s 2a0d:6c2::/48 -j DROP
+# AS211849 Kakharov Orinbassar Maratuly
+-A INPUT -s 2a0d:6c2:6::/47 -j DROP
+-A INPUT -s 2a0d:6c2:11::/48 -j DROP
 
-
-# Last Update: 01/08/2024 17:38 (GMT+2)
+# Last Update: 23/08/2024 16:13 (GMT+2)

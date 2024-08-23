@@ -577,7 +577,7 @@
 -A INPUT -s 94.198.0.0/21 -j REJECT --reject-with icmp-host-unreachable
 # AS204333 Witalij Koweschnikow
 -A INPUT -s 185.255.121.0/24 -j REJECT --reject-with icmp-host-unreachable
-# AS42624 Simple Carrier LLC
+# AS42624 Global-Data System IT Corporation ( Simple Carrier LLC )
 -A INPUT -s 185.208.156.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.196.8.0/22 -j REJECT --reject-with icmp-host-unreachable
 # AS207423 STEIL-SOUTH LTD
@@ -1270,5 +1270,48 @@
 -A INPUT -s 163.5.70.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 181.215.252.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.135.72.0/21 -j REJECT --reject-with icmp-host-unreachable
+# AS3920 ESTOXY OU
+-A INPUT -s 37.49.226.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 37.49.228.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 77.247.111.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 117.18.118.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 117.55.202.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.53.91.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.209.15.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 212.237.231.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS60539 Huicast Telecom Limited
+-A INPUT -s 5.160.111.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 5.160.131.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 45.141.158.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 77.104.92.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 87.121.124.0/23 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 87.121.162.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 91.228.189.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 147.78.100.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS206003 HISEVEN PTE. LTD.
+-A INPUT -s 45.200.0.0/22 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 156.236.18.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS61302 HUIZE LTD
+-A INPUT -s 5.178.3.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 5.180.154.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 45.141.184.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 46.23.96.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 46.23.98.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 87.121.124.0/23 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 91.236.79.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 103.119.13.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 103.119.18.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 109.205.212.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 147.78.100.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 193.32.188.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 194.147.78.0/24 -j REJECT --reject-with icmp-port-unreachable
+# AS211849 Kakharov Orinbassar Maratuly
+-A INPUT -s 80.66.75.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 80.66.77.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 87.251.79.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 147.45.124.0/23 -j REJECT --reject-with icmp-port-unreachable
+# AS39709 EXTREME LTD
+-A INPUT -s 81.88.208.0/20 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 188.244.0.0/20 -j REJECT --reject-with icmp-port-unreachable
 
-# Last Update: 17/08/2024 9:53 (GMT+2)
+# Last Update: 23/08/2024 16:13 (GMT+2)
