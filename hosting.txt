@@ -6957,5 +6957,21 @@
 -A INPUT -s 217.67.64.0/22 -j REJECT --reject-with icmp-port-unreachable
 -A INPUT -s 217.144.176.0/21 -j REJECT --reject-with icmp-port-unreachable
 -A INPUT -s 217.146.80.0/20 -j REJECT --reject-with icmp-port-unreachable
+# AS61173 Green Web Samaneh Novin PJSC
+-A INPUT -s 5.182.44.0/22 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 45.159.112.0/22 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 62.3.42.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 85.208.253.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 85.208.254.0/23 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.4.28.0/22 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.50.37.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.50.39.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.116.160.0/23 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.116.163.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.213.164.0/23 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.213.167.0/24 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 185.255.88.0/22 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 193.141.64.0/23 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 193.141.126.0/23 -j REJECT --reject-with icmp-port-unreachable
 
-# Last Update: 25/08/2024 17:20 (GMT+2)
+# Last Update: 27/08/2024 11:17 (GMT+2)

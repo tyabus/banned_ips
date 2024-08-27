@@ -1313,5 +1313,8 @@
 # AS39709 EXTREME LTD
 -A INPUT -s 81.88.208.0/20 -j REJECT --reject-with icmp-port-unreachable
 -A INPUT -s 188.244.0.0/20 -j REJECT --reject-with icmp-port-unreachable
+# AS211279 Alianta-TV S.R.L.
+-A INPUT -s 178.175.160.0/22 -j REJECT --reject-with icmp-port-unreachable
+-A INPUT -s 178.175.174.0/23 -j REJECT --reject-with icmp-port-unreachable
 
-# Last Update: 23/08/2024 16:13 (GMT+2)
+# Last Update: 27/08/2024 11:17 (GMT+2)
