@@ -1109,6 +1109,7 @@
 -A INPUT -s 185.169.220.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS215479 Perfecto Consultoria E Apoio Administrativo LTDA
 -A INPUT -s 95.214.27.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s178.215.238.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS54990 1337 Services LLC
 -A INPUT -s 185.193.124.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS34534 FBW NETWORKS SAS
