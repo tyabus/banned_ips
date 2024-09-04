@@ -1200,8 +1200,8 @@
 -A INPUT -s 193.233.254.0/24 -j REJECT --reject-with icmp-host-unreachable 
 -A INPUT -s 195.10.205.0/24 -j REJECT --reject-with icmp-host-unreachable 
 # AS52053 REDHEBERG Association declaree
--A INPUT -s 170.39.216.0/24 -j REJECT --reject-with icmp-host-unreachable 
--A INPUT -s 170.39.217.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 45.137.69.0/24 -j REJECT --reject-with icmp-host-unreachable 
+-A INPUT -s 170.39.216.0/23 -j REJECT --reject-with icmp-host-unreachable 
 -A INPUT -s 185.255.112.0/24 -j REJECT --reject-with icmp-host-unreachable 
 -A INPUT -s 193.38.250.0/24 -j REJECT --reject-with icmp-host-unreachable 
 -A INPUT -s 193.41.206.0/24 -j REJECT --reject-with icmp-host-unreachable 
