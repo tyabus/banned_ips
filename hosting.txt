@@ -41,7 +41,7 @@
 -A INPUT -s 37.8.160.0/19 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 37.160.0.0/12 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.240.0.0/13 -j REJECT --reject-with icmp-host-unreachable
-# "29447",# Angelnet Limited (AS46805)
+# AS46805 Angelnet Limited
 -A INPUT -s 23.92.112.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 23.92.114.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 104.160.0.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -60,12 +60,12 @@
 -A INPUT -s 196.245.7.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 196.247.3.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 196.247.230.0/24 -j REJECT --reject-with icmp-host-unreachable
-"TIF-AS Iliad Italia S.p.A, FR"
+# "TIF-AS Iliad Italia S.p.A, FR"
 -A INPUT -s 37.160.0.0/14 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.208.0.0/12 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 81.56.0.0/15 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 83.158.0.0/16 -j REJECT --reject-with icmp-host-unreachable
-# "12876","Online SAS, FR"
+# AS12876 SCALEWAY S.A.S.
 -A INPUT -s 51.15.0.0/16 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 51.158.0.0/15 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 62.4.0.0/19 -j REJECT --reject-with icmp-host-unreachable
@@ -2732,7 +2732,7 @@
 -A INPUT -s 195.62.33.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 212.56.58.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 212.114.52.0/24 -j REJECT --reject-with icmp-host-unreachable
-# "9009","M247, RO"
+# AS9009 M247
 -A INPUT -s 2.56.16.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 2.57.20.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 2.57.28.0/22 -j REJECT --reject-with icmp-host-unreachable
@@ -4739,7 +4739,7 @@
 -A INPUT -s 217.169.192.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.169.194.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.169.196.0/23 -j REJECT --reject-with icmp-host-unreachable
-# "43350","NFORCE, NL"
+# AS43350 NForce Entertainment B.V.
 -A INPUT -s 5.104.136.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 31.222.239.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 37.143.32.0/22 -j REJECT --reject-with icmp-host-unreachable
@@ -4831,7 +4831,7 @@
 -A INPUT -s 212.92.112.0/21 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 213.21.243.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.114.41.0/24 -j REJECT --reject-with icmp-host-unreachable
-# "44486","SYNLINQ synlinq.de, DE"
+# AS44486 Oliver Horscht is trading as "SYNLINQ"
 -A INPUT -s 5.180.252.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 5.253.244.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 37.44.215.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -4883,7 +4883,7 @@
 -A INPUT -s 185.245.61.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.105.200.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 212.87.214.0/23 -j REJECT --reject-with icmp-host-unreachable
-# "216071","VDSINA, AE"
+# AS216071 SERVERS TECH FZCO "VDSina"
 -A INPUT -s 5.35.32.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 5.35.34.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.10.40.0/22 -j REJECT --reject-with icmp-host-unreachable
@@ -4963,7 +4963,7 @@
 -A INPUT -s 191.96.22.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 191.96.127.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 191.101.103.0/24 -j REJECT --reject-with icmp-host-unreachable
-# "135377","UCLOUD-HK-AS-AP UCLOUD INFORMATION TECHNOLOGY HK LIMITED, HK"
+# AS135377 UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED
 -A INPUT -s 23.91.96.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 23.91.98.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 23.91.100.0/23 -j REJECT --reject-with icmp-host-unreachable
@@ -8480,7 +8480,6 @@
 -A INPUT -s 193.232.179.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.93.0.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.190.70.0/24 -j REJECT --reject-with icmp-host-unreachable
-
 # AS34500 FGUP CTSPI MGA 
 -A INPUT -s 80.73.16.0/20 -j REJECT --reject-with icmp-host-unreachable
 # AS15848 FGUP RSVO-SPB
