@@ -60,7 +60,7 @@
 -A INPUT -s 196.245.7.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 196.247.3.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 196.247.230.0/24 -j REJECT --reject-with icmp-host-unreachable
-# "TIF-AS Iliad Italia S.p.A, FR"
+# AS29447 SCALEWAY S.A.S.
 -A INPUT -s 37.160.0.0/14 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.208.0.0/12 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 81.56.0.0/15 -j REJECT --reject-with icmp-host-unreachable
@@ -4936,7 +4936,7 @@
 -A INPUT -s 212.118.36.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 212.118.40.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 212.118.52.0/22 -j REJECT --reject-with icmp-host-unreachable
-## AS22168 The Shadowserver Foundation, Inc.
+# AS22168 The Shadowserver Foundation, Inc.
 -A INPUT -s 45.143.160.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 50.114.88.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 108.165.44.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -8480,22 +8480,22 @@
 -A INPUT -s 193.232.179.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.93.0.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.190.70.0/24 -j REJECT --reject-with icmp-host-unreachable
-# AS34500 FGUP CTSPI MGA 
+# AS34500 FGUP CTSPI MGA Russia
 -A INPUT -s 80.73.16.0/20 -j REJECT --reject-with icmp-host-unreachable
-# AS15848 FGUP RSVO-SPB
+# AS15848 Federal State Unitary Enterprise of the Order of the Red Banner of Labour "Russian Broad-casting and Notification Network" (St. Petersburg)
 -A INPUT -s 178.237.248.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 178.237.254.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.115.96.0/22 -j REJECT --reject-with icmp-host-unreachable
-# AS15848 MCRBN-AS 
+# AS197150 Federal State Unitary Enterprise of the Order of the Red Banner of Labour "Russian Broad-casting and Notification Network" (Moscow)
 -A INPUT -s 178.237.240.0/21 -j REJECT --reject-with icmp-host-unreachable
-# AS208075 RSVO_Mirit_Sochi
+# AS208075 Federal State Unitary Enterprise of the Order of the Red Banner of Labour "Russian Broad-casting and Notification Network" (Sochi)
 -A INPUT -s 91.230.182.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS211382 ORG-FCRB1-RIPE "Sevas" 
 -A INPUT -s 91.230.183.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 178.237.252.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS51932 FGUP Goskorporatsiya po OrVD
 -A INPUT -s 91.221.140.0/23 -j REJECT --reject-with icmp-host-unreachable
-# AS57835 JSC ELEKTROSVYAZ -j REJECT --reject-with icmp-host-unreachable
+# AS57835 JSC ELEKTROSVYAZ
 -A INPUT -s 176.109.0.0/21 -j REJECT --reject-with icmp-host-unreachable
 # AS206684 FGUP Russian Scientific Research Institute of Optical and Physical Measurements
 -A INPUT -s 176.100.254.0/24 -j REJECT --reject-with icmp-host-unreachable
