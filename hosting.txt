@@ -11354,5 +11354,16 @@
 -A INPUT -s 216.246.2.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 216.246.24.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 216.246.42.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS49673 Truenetwork LLC
+-A INPUT -s 94.247.104.0/21 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.54.244.0/22 -j REJECT --reject-with icmp-host-unreachable
+# AS200373 3xK Tech GmbH
+-A INPUT -s 45.3.32.0/20 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.3.48.0/21 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.3.56.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 65.111.0.0/19 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 95.141.242.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 104.167.24.0/21 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 104.207.32.0/19 -j REJECT --reject-with icmp-host-unreachable
 
 # Last Update: 07/09/2024 09:56 (GMT+2)

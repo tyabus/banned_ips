@@ -1033,14 +1033,11 @@
 -A INPUT -s 45.142.104.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.142.107.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 80.75.212.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 80.76.51.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 80.91.223.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 91.149.229.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 91.149.230.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.212.121.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.228.168.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 92.118.207.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 141.195.113.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 144.172.73.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 146.19.191.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 176.97.210.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.91.127.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -1049,6 +1046,54 @@
 -A INPUT -s 193.111.248.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.111.250.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.141.60.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.182.25.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 217.144.154.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS213200 Ferdinand Zink trading as Tube-Hosting
+-A INPUT -s 91.124.91.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS216396 WALEED ALNAMI
+-A INPUT -s 194.5.65.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS214339 SRV.RENT UG (haftungsbeschraenkt)
+-A INPUT -s 77.90.56.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS213151 Christian Elsen
+-A INPUT -s 185.197.135.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS399820 Atomic Networks LLC
+-A INPUT -s 23.146.184.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.61.170.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 82.153.134.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 166.1.1.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 166.1.173.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 192.195.185.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 204.137.14.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS200482 nexserv GmbH
+-A INPUT -s 37.114.60.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 43.251.162.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.142.112.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.142.181.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 81.31.199.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 109.71.254.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.187.255.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 212.11.64.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS216081 Paulo Gobbato trading as Gobbato IT Loesungen
+-A INPUT -s 37.114.61.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS198351 SECUREWAN ANTI-DDOS LTD
+-A INPUT -s 5.180.232.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215400 Kaan Kalayci trading as FastLayer
+-A INPUT -s 185.155.223.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 213.225.236.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS197477 Moritz Mantel trading as Nerdscave
+-A INPUT -s 77.90.10.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 77.90.50.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 95.214.172.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215292 Gravhosting Ltd
+-A INPUT -s 87.121.104.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.224.3.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.25.217.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS207616 Altrosky Technology Ltd.
+-A INPUT -s 91.193.56.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.190.26.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.48.200.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215691 AP INTERACTIVE SOLUTIONS SL
+-A INPUT -s 171.22.18.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS216240 MortalSoft Ltd.
 -A INPUT -s 93.123.85.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS212762 Casper Krook trading as Ck IT Solutions
@@ -1080,6 +1125,7 @@
 # AS58052 Tomas William Smith trading as TomasSystems
 -A INPUT -s 194.15.38.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS199654 Oxide Group Limited
+-A INPUT -s 2.56.164.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 89.33.85.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.49.126.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 191.96.207.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -1088,8 +1134,10 @@
 # AS215039 Semih Gokcalik
 -A INPUT -s 77.90.5.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 77.90.14.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 77.90.53.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS215987 Taylan Gueler trading as Soliaweb
 -A INPUT -s 141.98.7.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 204.11.1.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS216221 Marco Rossi trading as XeniaHosting
 -A INPUT -s 2.58.84.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS215898 Julian Achter 
