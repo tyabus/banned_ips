@@ -1427,4 +1427,4 @@
 # AS401172 Inspici LLC
 -A INPUT -s 45.84.89.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 12/09/2024 17:46 (GMT+2)
+# Last Update: 12/09/2024

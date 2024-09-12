@@ -423,4 +423,4 @@
 # AS212935 Theori Inc
 -A INPUT -s 2602:f90a::/48 -j DROP
 
-# Last Update: 12/09/2024 17:46 (GMT+2)
+# Last Update: 12/09/2024
