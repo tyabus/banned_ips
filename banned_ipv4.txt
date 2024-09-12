@@ -1422,5 +1422,9 @@
 -A INPUT -s 94.126.232.0/21 -j REJECT --reject-with icmp-host-unreachable
 # AS41047 Bart Vrancken trading as MLaB
 -A INPUT -s 87.237.165.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS212935 Theori Inc
+-A INPUT -s 91.203.30.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS401172 Inspici LLC
+-A INPUT -s 45.84.89.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 08/09/2024 18:09 (GMT+2)
+# Last Update: 12/09/2024 17:46 (GMT+2)
