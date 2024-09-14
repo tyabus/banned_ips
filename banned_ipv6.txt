@@ -422,5 +422,15 @@
 -A INPUT -s 2a0e:a6c3::/32 -j DROP
 # AS212935 Theori Inc
 -A INPUT -s 2602:f90a::/48 -j DROP
+# AS210644 AEZA INTERNATIONAL LTD
+-A INPUT -s 2a0b:4140::/32 -j DROP
+-A INPUT -s 2a0e:b107:2780::/46 -j DROP
+-A INPUT -s 2a0e:d606::/48 -j DROP
+-A INPUT -s 2a0f:4f80::/29 -j DROP
+-A INPUT -s 2a0f:cdc6:2020::/44 -j DROP
+-A INPUT -s 2a11:fc80::/30 -j DROP
+-A INPUT -s 2a11:fc84::/30 -j DROP
+-A INPUT -s 2a12:5940::/32 -j DROP
+-A INPUT -s 2a12:5940:1::/48 -j DROP
 
-# Last Update: 12/09/2024
+# Last Update: 14/09/2024
