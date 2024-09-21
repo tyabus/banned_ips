@@ -1466,5 +1466,14 @@
 -A INPUT -s 91.203.30.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS401172 Inspici LLC
 -A INPUT -s 45.84.89.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS202306 HOSTGLOBAL.PLUS LTD
+-A INPUT -s 78.153.140.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS28738 LLC Company Interlan Communications
+-A INPUT -s 78.153.128.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 78.153.132.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 78.153.134.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 78.153.141.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 78.153.142.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 78.153.152.0/23 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 14/09/2024
+# Last Update: 21/09/2024
