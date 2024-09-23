@@ -4,6 +4,7 @@
 # * Providers with low reputation
 # * Bulletproof hosting
 # * Large networks with abusive traffic
+# !! WARNING: create custom ipset or chain to minimize CPU load !!
 # Private Layer INC (AS51852)
 -A INPUT -s 31.7.56.0/21 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 38.180.15.0/24 -j REJECT --reject-with icmp-host-unreachable
