@@ -1475,5 +1475,10 @@
 -A INPUT -s 78.153.141.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.153.142.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.153.152.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS401115 EKABI
+-A INPUT -s 87.120.112.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 87.120.116.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 87.120.125.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 87.120.126.0/23 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 21/09/2024
+# Last Update: 11/10/2024
