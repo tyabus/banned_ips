@@ -1482,5 +1482,8 @@
 -A INPUT -s 87.120.126.0/23 -j REJECT --reject-with icmp-host-unreachable
 # AS200406 Javid Berbid Mamasani Information Technology Company PJS
 -A INPUT -s 194.5.176.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS401110 Sovy Cloud Services
+-A INPUT -s 81.161.230.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 109.206.237.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 12/10/2024
+# Last Update: 13/10/2024
