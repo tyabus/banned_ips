@@ -1494,5 +1494,8 @@
 -A INPUT -s 89.46.1.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 141.11.34.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 146.19.48.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS44947 AMWAJ ALKHYR COMMERCIAL BROKERS CO.  ( UAB Host Baltic )
+-A INPUT -s 190.93.93.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 213.134.17.0/24 -j REJECT --reject-with icmp-host-unreachable
 
 # Last Update: 13/10/2024
