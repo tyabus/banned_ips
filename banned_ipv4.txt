@@ -1,12 +1,14 @@
 # static ingoing traffic blocklist
 # AS398324, AS398722, AS398705 CENSYS  https://support.censys.io/hc/en-us/articles/360043177092-Opt-Out-of-Scanning
+-A INPUT -s 66.132.148.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 66.132.153.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 66.132.159.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 162.142.125.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 167.94.138.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 167.94.145.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 167.94.146.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 167.248.133.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 199.45.154.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 199.45.155.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 199.45.154.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 206.168.32.0/22 -j REJECT --reject-with icmp-host-unreachable
 # AS237 CENSYS Unlisted (Old legacy netblock)
 -A INPUT -s 192.35.168.0/23 -j REJECT --reject-with icmp-host-unreachable
