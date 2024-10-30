@@ -691,7 +691,7 @@
 -A INPUT -s 195.43.92.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS20052 Arbor Networks
 -A INPUT -s 146.88.240.0/23 -j REJECT --reject-with icmp-host-unreachable
-# AS59425 HORIZON LLC
+# AS59425 Chang Way Technologies Co. Limited
 -A INPUT -s 62.204.41.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 80.64.30.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.42.12.0/24 -j REJECT --reject-with icmp-host-unreachable
