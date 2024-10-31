@@ -49,6 +49,11 @@
 -A INPUT -s 216.98.128.0/19 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 66.240.192.0/18 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 71.6.128.0/17 -j REJECT --reject-with icmp-host-unreachable
+# CrowdStrike Falcon (Amazon EC2 customer)
+-A INPUT -s 18.97.5.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 44.220.185.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 44.220.188.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 98.80.4.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS211680 NSEC - Sistemas Informaticos, S.A. (Shodan LLC)
 -A INPUT -s 45.156.128.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.180.140.0/22 -j REJECT --reject-with icmp-host-unreachable
