@@ -1503,5 +1503,15 @@
 # AS44947 AMWAJ ALKHYR COMMERCIAL BROKERS CO.  ( UAB Host Baltic )
 -A INPUT -s 190.93.93.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 213.134.17.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS51623 Gin Agency Ltd.
+-A INPUT -s 195.93.144.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS401109 Zhongguancun LLC
+-A INPUT -s 87.120.120.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS401120 cheapy.host LLC
+-A INPUT -s 45.88.88.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 93.123.39.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 94.156.104.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 94.156.166.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.48.251.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 13/10/2024
+# Last Update: 02/11/2024
