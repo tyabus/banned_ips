@@ -1618,5 +1618,7 @@
 -A INPUT -s 94.156.104.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 94.156.166.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.48.251.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS215930 CIPHER OPERATIONS DOO BEOGRAD - NOVI BEOGRAD ( UAB Host Baltic )
+-A INPUT -s 62.60.188.0/22 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 02/11/2024
+# Last Update: 05/11/2024
