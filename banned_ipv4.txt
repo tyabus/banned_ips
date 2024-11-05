@@ -195,6 +195,7 @@
 # AS205872 EXTRANET 2010
 -A INPUT -s 79.124.72.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 83.222.180.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.222.189.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS206370 Next Generation Technologies Ltd
 -A INPUT -s 185.165.223.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS60441 ELITKOM Ltd.
