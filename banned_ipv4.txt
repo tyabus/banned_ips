@@ -1678,19 +1678,10 @@
 -A INPUT -s 192.76.153.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 192.76.160.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 192.76.163.0/24 -j REJECT --reject-with icmp-host-unreachable
-# AS208046 ColocationX Ltd.
--A INPUT -s 5.253.84.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 5.253.86.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 45.129.13.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 45.129.230.0/23 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 45.134.225.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 50.118.225.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 78.142.18.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 79.124.8.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 94.154.172.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 109.205.211.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 185.99.135.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 185.196.220.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 193.142.146.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS202592 area-7 IT-Services GmbH
+-A INPUT -s 43.240.148.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.96.58.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS24700 WEB3 Leaders INC
+-A INPUT -s 46.174.188.0/22 -j REJECT --reject-with icmp-host-unreachable
 
 # Last Update: 05/11/2024
