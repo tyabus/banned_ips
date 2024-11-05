@@ -91,6 +91,7 @@
 -A INPUT -s 193.201.8.0/23 -j REJECT --reject-with icmp-host-unreachable
 # AS48090 PPTechnology Limited
 -A INPUT -s 45.148.10.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.178.110.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS211298 Constantine Cybersecurity Ltd.
 -A INPUT -s 87.236.176.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.163.125.0/24 -j REJECT --reject-with icmp-host-unreachable
