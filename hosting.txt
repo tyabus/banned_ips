@@ -13124,5 +13124,19 @@
 -A INPUT -s 217.23.147.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.23.148.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.23.150.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS1101 SURF B.V.
+-A INPUT -s 44.137.0.0/16 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 145.99.0.0/16 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 145.102.4.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 145.192.0.0/12 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 145.208.0.0/13 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 145.216.0.0/15 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 145.220.0.0/16 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.100.59.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 192.12.54.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 192.16.200.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 192.42.116.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 192.42.128.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 192.150.94.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 05/11/2024
+# Last Update: 11/11/2024
