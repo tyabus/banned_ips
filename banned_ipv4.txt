@@ -309,6 +309,8 @@
 -A INPUT -s 194.169.175.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS215476 Inside Network LTD ( UAB Host Baltic )
 -A INPUT -s 77.90.185.0/24 -j REJECT --reject-with icmp-host-unreachable
+# Atis Omran Sevin PSJ ( Netblock moved to AS60781, Was AS15828 tied to UAB Host Baltic )
+-A INPUT -s 80.244.11.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS216246 Aeza Group Ltd.
 -A INPUT -s 45.15.158.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.142.122.0/24 -j REJECT --reject-with icmp-host-unreachable
