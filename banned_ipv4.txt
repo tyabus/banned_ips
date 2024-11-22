@@ -1686,5 +1686,7 @@
 -A INPUT -s 185.96.58.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS24700 WEB3 Leaders INC
 -A INPUT -s 46.174.188.0/22 -j REJECT --reject-with icmp-host-unreachable
+# AS214295 SKYNET NETWORK LTD ( UAB Host Baltic )
+-A INPUT -s 87.120.93.0/24 -j REJECT --reject-with icmp-host-unreachable
 
 # Last Update: 05/11/2024
