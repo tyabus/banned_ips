@@ -13340,5 +13340,84 @@
 -A INPUT -s 45.137.70.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 93.90.74.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.62.248.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS51765 Oy Crea Nova Hosting Solution Ltd
+iptables -A INPUT -s 5.180.154.0/24 -j DROP
+iptables -A INPUT -s 37.72.141.0/24 -j DROP
+iptables -A INPUT -s 45.112.194.0/24 -j DROP
+iptables -A INPUT -s 45.159.21.0/24 -j DROP
+iptables -A INPUT -s 45.159.22.0/24 -j DROP
+iptables -A INPUT -s 46.253.131.0/24 -j DROP
+iptables -A INPUT -s 62.204.49.0/24 -j DROP
+iptables -A INPUT -s 77.83.24.0/22 -j DROP
+iptables -A INPUT -s 77.83.247.0/24 -j DROP
+iptables -A INPUT -s 77.90.176.0/24 -j DROP
+iptables -A INPUT -s 77.90.187.0/24 -j DROP
+iptables -A INPUT -s 77.243.88.0/22 -j DROP
+iptables -A INPUT -s 80.66.66.0/24 -j DROP
+iptables -A INPUT -s 82.115.220.0/24 -j DROP
+iptables -A INPUT -s 83.97.116.0/22 -j DROP
+iptables -A INPUT -s 84.32.76.0/22 -j DROP
+iptables -A INPUT -s 88.218.45.0/24 -j DROP
+iptables -A INPUT -s 88.218.47.0/24 -j DROP
+iptables -A INPUT -s 91.132.197.0/24 -j DROP
+iptables -A INPUT -s 91.132.199.0/24 -j DROP
+iptables -A INPUT -s 91.221.66.0/23 -j DROP
+iptables -A INPUT -s 91.233.116.0/23 -j DROP
+iptables -A INPUT -s 91.246.51.0/24 -j DROP
+iptables -A INPUT -s 91.247.163.0/24 -j DROP
+iptables -A INPUT -s 94.154.113.0/24 -j DROP
+iptables -A INPUT -s 103.99.33.0/24 -j DROP
+iptables -A INPUT -s 103.99.34.0/24 -j DROP
+iptables -A INPUT -s 103.101.88.0/22 -j DROP
+iptables -A INPUT -s 104.234.92.0/22 -j DROP
+iptables -A INPUT -s 109.107.171.0/24 -j DROP
+iptables -A INPUT -s 146.19.39.0/24 -j DROP
+iptables -A INPUT -s 146.19.44.0/24 -j DROP
+iptables -A INPUT -s 157.254.164.0/22 -j DROP
+iptables -A INPUT -s 176.126.104.0/24 -j DROP
+iptables -A INPUT -s 178.20.28.0/22 -j DROP
+iptables -A INPUT -s 178.20.213.0/24 -j DROP
+iptables -A INPUT -s 178.20.214.0/23 -j DROP
+iptables -A INPUT -s 180.178.156.0/22 -j DROP
+iptables -A INPUT -s 181.215.204.0/22 -j DROP
+iptables -A INPUT -s 185.68.152.0/22 -j DROP
+iptables -A INPUT -s 185.77.216.0/22 -j DROP
+iptables -A INPUT -s 185.94.32.0/22 -j DROP
+iptables -A INPUT -s 185.101.20.0/23 -j DROP
+iptables -A INPUT -s 185.103.110.0/24 -j DROP
+iptables -A INPUT -s 185.108.107.0/24 -j DROP
+iptables -A INPUT -s 185.112.82.0/24 -j DROP
+iptables -A INPUT -s 185.117.118.0/24 -j DROP
+iptables -A INPUT -s 185.152.92.0/24 -j DROP
+iptables -A INPUT -s 185.202.108.0/24 -j DROP
+iptables -A INPUT -s 185.204.1.0/24 -j DROP
+iptables -A INPUT -s 185.212.115.0/24 -j DROP
+iptables -A INPUT -s 185.212.149.0/24 -j DROP
+iptables -A INPUT -s 185.217.196.0/24 -j DROP
+iptables -A INPUT -s 185.221.163.0/24 -j DROP
+iptables -A INPUT -s 185.247.141.0/24 -j DROP
+iptables -A INPUT -s 193.31.126.0/24 -j DROP
+iptables -A INPUT -s 193.151.189.0/24 -j DROP
+iptables -A INPUT -s 193.151.190.0/23 -j DROP
+iptables -A INPUT -s 193.161.204.0/24 -j DROP
+iptables -A INPUT -s 193.161.246.0/23 -j DROP
+iptables -A INPUT -s 193.163.89.0/24 -j DROP
+iptables -A INPUT -s 193.163.92.0/24 -j DROP
+iptables -A INPUT -s 193.163.207.0/24 -j DROP
+iptables -A INPUT -s 193.233.23.0/24 -j DROP
+iptables -A INPUT -s 194.26.129.0/24 -j DROP
+iptables -A INPUT -s 194.34.132.0/22 -j DROP
+iptables -A INPUT -s 194.70.234.0/24 -j DROP
+iptables -A INPUT -s 194.99.24.0/24 -j DROP
+iptables -A INPUT -s 194.99.26.0/24 -j DROP
+iptables -A INPUT -s 194.104.128.0/24 -j DROP
+iptables -A INPUT -s 195.216.160.0/24 -j DROP
+iptables -A INPUT -s 195.216.186.0/24 -j DROP
+iptables -A INPUT -s 195.216.189.0/24 -j DROP
+iptables -A INPUT -s 212.18.113.0/24 -j DROP
+iptables -A INPUT -s 212.18.127.0/24 -j DROP
+iptables -A INPUT -s 213.209.132.0/24 -j DROP
+iptables -A INPUT -s 213.209.148.0/24 -j DROP
+iptables -A INPUT -s 217.196.99.0/24 -j DROP
 
-# Last Update: 11/11/2024
+# Last Update: 24/11/2024
