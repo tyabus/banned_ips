@@ -1688,5 +1688,8 @@
 -A INPUT -s 46.174.188.0/22 -j REJECT --reject-with icmp-host-unreachable
 # AS214295 SKYNET NETWORK LTD ( UAB Host Baltic )
 -A INPUT -s 87.120.93.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS142002 Scloud Pte Ltd
+iptables -A INPUT -s 103.164.81.0/24 -j REJECT --reject-with icmp-host-unreachable
+iptables -A INPUT -s 165.154.192.0/18 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 05/11/2024
+# Last Update: 24/11/2024
