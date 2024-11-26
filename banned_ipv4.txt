@@ -1266,13 +1266,21 @@
 -A INPUT -s 103.186.100.0/23 -j REJECT --reject-with icmp-host-unreachable
 # AS51396 Pfcloud UG
 -A INPUT -s 62.60.230.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 62.60.235.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.142.213.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 154.213.184.0/21 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 154.213.192.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 213.21.232.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 213.21.237.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 213.21.253.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 213.176.67.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS214940 KPROHOST LLC
 -A INPUT -s 94.141.120.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 188.190.10.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS214411 Noxlyn LLC
+-A INPUT -s 65.87.24.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.123.244.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS139660 OBHost LLC
+-A INPUT -s 103.135.45.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 213.21.253.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS215127 410 Teapot Limited
 -A INPUT -s 87.120.166.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS214532 ASD SOLUTIONS, SOCIEDAD LIMITADA
@@ -1290,6 +1298,8 @@
 -A INPUT -s 213.176.66.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS214497 Whitelabel Solutions, Ltd.
 -A INPUT -s 154.213.200.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS64457 Matteo Fruhwald
+-A INPUT -s 156.253.248.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS214515 Amir Mohammad Masoudi
 -A INPUT -s 185.49.107.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 213.21.245.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -1297,7 +1307,8 @@
 -A INPUT -s 23.94.88.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 23.176.184.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.140.36.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 91.227.62.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 156.253.219.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 156.253.224.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.224.3.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.68.89.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.178.226.0/24 -j REJECT --reject-with icmp-host-unreachable
