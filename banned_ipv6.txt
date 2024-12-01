@@ -419,7 +419,10 @@
 -A INPUT -s 2a11:5700::/32 -j DROP
 -A INPUT -s 2a11:5707::/32 -j DROP
 # AS41047 Bart Vrancken trading as MLaB
--A INPUT -s ::/0 -j DROP
+-A INPUT -s 2a0e:a6c0::/32 -j DROP
+-A INPUT -s 2a0e:a6c1::/32 -j DROP
+-A INPUT -s 2a0e:a6c2::/32 -j DROP
+-A INPUT -s 2a0e:a6c3::/32 -j DROP
 # AS212935 Theori Inc
 -A INPUT -s 2602:f90a::/48 -j DROP
 # AS202306 HOSTGLOBAL.PLUS LTD
