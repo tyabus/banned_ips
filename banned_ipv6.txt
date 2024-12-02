@@ -10,9 +10,9 @@
 # AS398705 Censys, Inc.
 -A INPUT -s 2602:80d:1002::/48 -j DROP
 -A INPUT -s 2602:80d:1005::/48 -j DROP
-# AS10439 CariNet, Inc. - (Shodan LLC)
+# AS10439 CariNet, Inc. (Shodan LLC)
 -A INPUT -s 2607:ff10::/32 -j DROP
-# AS211680 NSEC - Sistemas Informaticos, S.A. - (Shodan LLC)
+# AS211680 NSEC - Sistemas Informaticos, S.A. (Shodan LLC)
 -A INPUT -s 2a10:3c0:1::/48 -j DROP
 # AS211298 Driftnet Ltd
 -A INPUT -s 2a06:4880::/32 -j DROP
@@ -134,7 +134,7 @@
 -A INPUT -s 2001:67c:27e4::/48 -j DROP
 # AS150156 99IT
 -A INPUT -s 2001:df1:1940::/48 -j DROP
-# AS133398 Tele Asia Limited - (UAB Host Baltic)
+# AS133398 Tele Asia Limited (UAB Host Baltic)
 -A INPUT -s 2401:f9c0:2600::/40 -j DROP
 -A INPUT -s 2406:4300::/32 -j DROP
 -A INPUT -s 2a10:1fc0::/48 -j DROP
@@ -144,13 +144,13 @@
 -A INPUT -s 2a13:5681:4::/48 -j DROP
 -A INPUT -s 2a13:5681:6::/47 -j DROP
 -A INPUT -s 2a13:5681:8::/47 -j DROP
-# AS48721 Flyservers S.A. - (UAB Host Baltic)
+# AS48721 Flyservers S.A. (UAB Host Baltic)
 -A INPUT -s 2a10:9100:3::/48 -j DROP
-# AS209588 Flyservers S.A. - (UAB Host Baltic)
+# AS209588 Flyservers S.A. (UAB Host Baltic)
 -A INPUT -s 2a10:9100:7::/48 -j DROP
 -A INPUT -s 2a10:9100:9::/48 -j DROP
 -A INPUT -s 2a10:9107:f000::/36 -j DROP
-# AS267784 Flyservers S.A. - (UAB Host Baltic)
+# AS267784 Flyservers S.A. (UAB Host Baltic)
 -A INPUT -s 2803:5120:c000::/36 -j DROP
 # AS60729 Stiftung Erneuerbare Freiheit
 -A INPUT -s 2a0a:4587:2010::/46 -j DROP
@@ -191,7 +191,7 @@
 # AS201814 MEVSPACE sp. z o.o.
 -A INPUT -s 2a03:cfc0::/32 -j DROP
 -A INPUT -s 2a12:a800:2::/48 -j DROP
-# AS61280 FGUP GRCHC - (Russian goverment)
+# AS61280 FGUP GRCHC (Russian goverment)
 -A INPUT -s 2a0c:a9c7:156::/47 -j DROP
 -A INPUT -s 2a0c:a9c7:158::/48 -j DROP
 # AS61272 Informacines sistemos ir technologijos, UAB
@@ -199,7 +199,7 @@
 -A INPUT -s 2a04:2180::/32 -j DROP
 -A INPUT -s 2a04:2181:c010::/47 -j DROP
 -A INPUT -s 2a04:2181:c012::/48 -j DROP
-# AS399486 12651980 CANADA INC. - (12651980 CANADA INC.)
+# AS399486 12651980 CANADA INC. (Virtuo Holdings Inc)
 -A INPUT -s 2001:550:601::/48 -j DROP
 -A INPUT -s 2a0f:85c1:3d9::/48 -j DROP
 # AS400130 Hebergement Serv3r.net inc.
@@ -418,11 +418,6 @@
 # AS48070 DSM (GB) Limited
 -A INPUT -s 2a11:5700::/32 -j DROP
 -A INPUT -s 2a11:5707::/32 -j DROP
-# AS41047 Bart Vrancken trading as MLaB
--A INPUT -s 2a0e:a6c0::/32 -j DROP
--A INPUT -s 2a0e:a6c1::/32 -j DROP
--A INPUT -s 2a0e:a6c2::/32 -j DROP
--A INPUT -s 2a0e:a6c3::/32 -j DROP
 # AS212935 Theori Inc
 -A INPUT -s 2602:f90a::/48 -j DROP
 # AS202306 HOSTGLOBAL.PLUS LTD
@@ -499,5 +494,10 @@
 -A INPUT -s 2a12:3200:7000::/36 -j DROP
 # AS215120 Evolus IT Solutions GmbH
 -A INPUT -s 2a0c:9a40:8570::/48 -j DROP
+# AS41047 Bart Vrancken trading as MLaB
+-A INPUT -s 2a0e:a6c0::/30 -j DROP
+# AS53755 Input Output Flood LLC
+-A INPUT -s 2604:6280::/32 -j DROP
+-A INPUT -s 2a0d:da07::/32 -j DROP
 
-# Last Update: 01/12/2024
+# Last Update: 02/12/2024
