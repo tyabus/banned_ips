@@ -1,5 +1,5 @@
 #
-# Last Update: 02/12/2024
+# Last Update: 03/12/2024
 #
 /ipv6 firewall address-list
 #
@@ -289,6 +289,7 @@ add list=Blacklist comment="204914" address=2a0c:9a40:8350::/48
 # AS215026 Alessandro Accorsi trading as Len Service SRL
 add list=Blacklist comment="215026" address=2a0f:9400:6146::/48
 add list=Blacklist comment="215026" address=2a0f:9400:6149::/48
+add list=Blacklist comment="215026" address=2a0f:9400:6905::/48
 # AS203728 BAHU LTD
 add list=Blacklist comment="203728" address=2001:678:90c::/48
 # AS216063 24fire GmbH
@@ -380,6 +381,12 @@ add list=Blacklist comment="35042" address=2a09:8700::/32
 add list=Blacklist comment="209132" address=2a09:1d40::/48
 # AS6204 INTERKVM HOST SRL
 add list=Blacklist comment="6204" address=2a12:3200:f000::/36
+# AS25198 INTERKVM HOST SRL
+add list=Blacklist comment="25198" address=2a01:7120:6::/47
+add list=Blacklist comment="25198" address=2a12:3200::/35
+add list=Blacklist comment="25198" address=2a12:3200:2000::/36
+add list=Blacklist comment="25198" address=2a12:3200:4000::/35
+add list=Blacklist comment="25198" address=2a12:3200:7000::/36
 # AS215450 Snowcore Cyf
 add list=Blacklist comment="215450" address=2a14:7c0:100::/40
 # AS132825 MYTEK TRADING PTY LTD
@@ -489,12 +496,6 @@ add list=Blacklist comment="26042" address=2a09:da00::/32
 add list=Blacklist comment="26042" address=2a0f:1584:1::/48
 add list=Blacklist comment="26042" address=2a0f:9400:611f::/48
 add list=Blacklist comment="26042" address=2a14:7582::/32
-# AS25198 INTERKVM HOST SRL
-add list=Blacklist comment="25198" address=2a01:7120:6::/47
-add list=Blacklist comment="25198" address=2a12:3200::/35
-add list=Blacklist comment="25198" address=2a12:3200:2000::/36
-add list=Blacklist comment="25198" address=2a12:3200:4000::/35
-add list=Blacklist comment="25198" address=2a12:3200:7000::/36
 # AS215120 Evolus IT Solutions GmbH
 add list=Blacklist comment="215120" address=2a0c:9a40:8570::/48
 # AS41047 Bart Vrancken trading as MLaB
@@ -502,3 +503,23 @@ add list=Blacklist comment="41047" address=2a0e:a6c0::/30
 # AS53755 Input Output Flood LLC
 add list=Blacklist comment="53755" address=2604:6280::/32
 add list=Blacklist comment="53755" address=2a0d:da07::/32
+# AS64425 SKB Enterprise B.V.
+add list=Blacklist comment="64425" address=2a0d:2406:200::/39
+# AS62167 Tismi BV
+add list=Blacklist comment="62167" address=2a00:be40:2::/48
+add list=Blacklist comment="62167" address=2a01:7520::/32
+add list=Blacklist comment="62167" address=2a0b:5800::/32
+# AS214337 Webmedia - Nijmegen B.V.
+add list=Blacklist comment="214337" address=2a0d:2406:3c00::/48
+add list=Blacklist comment="214337" address=2a0f:85c1:88e::/48
+# AS20766 Association Gitoyen
+add list=Blacklist comment="20766" address=2001:910::/32
+add list=Blacklist comment="20766" address=2001:913:4000::/36
+add list=Blacklist comment="20766" address=2a04:9ac2::/32
+add list=Blacklist comment="20766" address=2a0f:6780::/29
+# AS2027 MilkyWan Association
+add list=Blacklist comment="2027" address=2a0b:cbc0::/32
+add list=Blacklist comment="2027" address=2a0e:e700::/31
+add list=Blacklist comment="2027" address=2a0f:ce00::/29
+# AS44679 INVITE Systems SRL
+add list=Blacklist comment="44679" address=2a02:2160:8000::/36

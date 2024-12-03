@@ -1,5 +1,5 @@
 #
-# Last Update: 02/12/2024
+# Last Update: 03/12/2024
 #
 /ip firewall address-list
 add list=Blacklist comment="AS237 CENSYS" address=192.35.168.0/23
@@ -1944,3 +1944,35 @@ add list=Blacklist comment="214337" address=82.129.26.0/24
 add list=Blacklist comment="49042" address=45.14.226.0/24
 add list=Blacklist comment="49042" address=45.148.120.0/24
 add list=Blacklist comment="49042" address=45.148.123.0/24
+# AS20766 Association Gitoyen
+add list=Blacklist comment="20766" address=45.94.17.0/24
+add list=Blacklist comment="20766" address=45.94.18.0/23
+add list=Blacklist comment="20766" address=80.67.160.0/19
+add list=Blacklist comment="20766" address=185.57.124.0/22
+add list=Blacklist comment="20766" address=193.23.30.0/24
+# AS2027 MilkyWan Association
+add list=Blacklist comment="2027" address=45.13.104.0/22
+add list=Blacklist comment="2027" address=62.204.43.0/24
+add list=Blacklist comment="2027" address=80.67.167.0/24
+add list=Blacklist comment="2027" address=193.58.42.0/23
+add list=Blacklist comment="2027" address=195.20.209.0/24
+# AS44679 INVITE Systems SRL
+add list=Blacklist comment="44679" address=81.180.240.0/21
+add list=Blacklist comment="44679" address=84.239.4.0/24
+add list=Blacklist comment="44679" address=84.239.8.0/23
+add list=Blacklist comment="44679" address=84.239.11.0/24
+add list=Blacklist comment="44679" address=84.239.13.0/24
+add list=Blacklist comment="44679" address=84.239.14.0/23
+add list=Blacklist comment="44679" address=84.239.32.0/24
+add list=Blacklist comment="44679" address=84.239.34.0/23
+add list=Blacklist comment="44679" address=84.239.36.0/24
+add list=Blacklist comment="44679" address=84.239.38.0/23
+add list=Blacklist comment="44679" address=84.239.40.0/24
+add list=Blacklist comment="44679" address=84.239.44.0/24
+add list=Blacklist comment="44679" address=84.239.49.0/24
+add list=Blacklist comment="44679" address=84.239.51.0/24
+add list=Blacklist comment="44679" address=84.239.55.0/24
+add list=Blacklist comment="44679" address=84.239.56.0/22
+add list=Blacklist comment="44679" address=185.193.52.0/23
+add list=Blacklist comment="44679" address=185.193.54.0/24
+add list=Blacklist comment="44679" address=193.201.232.0/22

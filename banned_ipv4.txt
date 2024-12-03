@@ -54,10 +54,10 @@
 -A INPUT -s 74.82.0.0/18 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 184.104.0.0/15 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 216.218.128.0/17 -j REJECT --reject-with icmp-host-unreachable
-# CyberOneData LLC
--A INPUT -s 104.234.115.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS12052 VF Services Inc (with unannounced prefixes)
 -A INPUT -s 167.64.0.0/16 -j REJECT --reject-with icmp-host-unreachable
+# CyberOneData LLC
+-A INPUT -s 104.234.115.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS398324 Censys, Inc.
 -A INPUT -s 66.132.148.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 66.132.153.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -1950,5 +1950,37 @@
 -A INPUT -s 45.14.226.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.148.120.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.148.123.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS20766 Association Gitoyen
+-A INPUT -s 45.94.17.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.94.18.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.67.160.0/19 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.57.124.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.23.30.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS2027 MilkyWan Association
+-A INPUT -s 45.13.104.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 62.204.43.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.67.167.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.58.42.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.20.209.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS44679 INVITE Systems SRL
+-A INPUT -s 81.180.240.0/21 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.4.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.8.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.11.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.13.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.14.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.32.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.34.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.36.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.38.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.40.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.44.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.49.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.51.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.55.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 84.239.56.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.193.52.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.193.54.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.201.232.0/22 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 02/12/2024
+# Last Update: 03/12/2024

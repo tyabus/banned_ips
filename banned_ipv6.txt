@@ -286,6 +286,7 @@
 # AS215026 Alessandro Accorsi trading as Len Service SRL
 -A INPUT -s 2a0f:9400:6146::/48 -j DROP
 -A INPUT -s 2a0f:9400:6149::/48 -j DROP
+-A INPUT -s 2a0f:9400:6905::/48 -j DROP
 # AS203728 BAHU LTD
 -A INPUT -s 2001:678:90c::/48 -j DROP
 # AS216063 24fire GmbH
@@ -377,6 +378,12 @@
 -A INPUT -s 2a09:1d40::/48 -j DROP
 # AS6204 INTERKVM HOST SRL
 -A INPUT -s 2a12:3200:f000::/36 -j DROP
+# AS25198 INTERKVM HOST SRL
+-A INPUT -s 2a01:7120:6::/47 -j DROP
+-A INPUT -s 2a12:3200::/35 -j DROP
+-A INPUT -s 2a12:3200:2000::/36 -j DROP
+-A INPUT -s 2a12:3200:4000::/35 -j DROP
+-A INPUT -s 2a12:3200:7000::/36 -j DROP
 # AS215450 Snowcore Cyf
 -A INPUT -s 2a14:7c0:100::/40 -j DROP
 # AS132825 MYTEK TRADING PTY LTD
@@ -486,12 +493,6 @@
 -A INPUT -s 2a0f:1584:1::/48 -j DROP
 -A INPUT -s 2a0f:9400:611f::/48 -j DROP
 -A INPUT -s 2a14:7582::/32 -j DROP
-# AS25198 INTERKVM HOST SRL
--A INPUT -s 2a01:7120:6::/47 -j DROP
--A INPUT -s 2a12:3200::/35 -j DROP
--A INPUT -s 2a12:3200:2000::/36 -j DROP
--A INPUT -s 2a12:3200:4000::/35 -j DROP
--A INPUT -s 2a12:3200:7000::/36 -j DROP
 # AS215120 Evolus IT Solutions GmbH
 -A INPUT -s 2a0c:9a40:8570::/48 -j DROP
 # AS41047 Bart Vrancken trading as MLaB
@@ -499,5 +500,25 @@
 # AS53755 Input Output Flood LLC
 -A INPUT -s 2604:6280::/32 -j DROP
 -A INPUT -s 2a0d:da07::/32 -j DROP
+# AS64425 SKB Enterprise B.V.
+-A INPUT -s 2a0d:2406:200::/39 -j DROP
+# AS62167 Tismi BV
+-A INPUT -s 2a00:be40:2::/48 -j DROP
+-A INPUT -s 2a01:7520::/32 -j DROP
+-A INPUT -s 2a0b:5800::/32 -j DROP
+# AS214337 Webmedia - Nijmegen B.V.
+-A INPUT -s 2a0d:2406:3c00::/48 -j DROP
+-A INPUT -s 2a0f:85c1:88e::/48 -j DROP
+# AS20766 Association Gitoyen
+-A INPUT -s 2001:910::/32 -j DROP
+-A INPUT -s 2001:913:4000::/36 -j DROP
+-A INPUT -s 2a04:9ac2::/32 -j DROP
+-A INPUT -s 2a0f:6780::/29 -j DROP
+# AS2027 MilkyWan Association
+-A INPUT -s 2a0b:cbc0::/32 -j DROP
+-A INPUT -s 2a0e:e700::/31 -j DROP
+-A INPUT -s 2a0f:ce00::/29 -j DROP
+# AS44679 INVITE Systems SRL
+-A INPUT -s 2a02:2160:8000::/36 -j DROP
 
-# Last Update: 02/12/2024
+# Last Update: 03/12/2024
