@@ -1,5 +1,5 @@
 #
-# Last Update: 03/12/2024
+# Last Update: 04/12/2024
 #
 /ip firewall address-list
 add list=Blacklist comment="AS237 CENSYS" address=192.35.168.0/23
@@ -1976,3 +1976,30 @@ add list=Blacklist comment="44679" address=84.239.56.0/22
 add list=Blacklist comment="44679" address=185.193.52.0/23
 add list=Blacklist comment="44679" address=185.193.54.0/24
 add list=Blacklist comment="44679" address=193.201.232.0/22
+# AS22168 The Shadowserver Foundation, Inc.
+add list=Blacklist comment="22168" address=45.143.160.0/24
+add list=Blacklist comment="22168" address=50.114.88.0/24
+add list=Blacklist comment="22168" address=108.165.44.0/24
+add list=Blacklist comment="22168" address=146.19.20.0/24
+add list=Blacklist comment="22168" address=154.9.2.0/23
+add list=Blacklist comment="22168" address=154.16.223.0/24
+add list=Blacklist comment="22168" address=154.16.230.0/24
+add list=Blacklist comment="22168" address=154.16.240.0/24
+add list=Blacklist comment="22168" address=154.16.250.0/24
+add list=Blacklist comment="22168" address=162.249.64.0/21
+add list=Blacklist comment="22168" address=166.0.195.0/24
+add list=Blacklist comment="22168" address=179.61.168.0/24
+add list=Blacklist comment="22168" address=181.41.192.0/24
+add list=Blacklist comment="22168" address=181.214.62.0/24
+add list=Blacklist comment="22168" address=181.214.90.0/24
+add list=Blacklist comment="22168" address=181.214.234.0/24
+add list=Blacklist comment="22168" address=181.214.245.0/24
+add list=Blacklist comment="22168" address=181.215.138.0/24
+add list=Blacklist comment="22168" address=181.215.145.0/24
+add list=Blacklist comment="22168" address=181.215.208.0/24
+add list=Blacklist comment="22168" address=185.91.204.0/24
+add list=Blacklist comment="22168" address=185.181.1.0/24
+add list=Blacklist comment="22168" address=191.96.20.0/24
+add list=Blacklist comment="22168" address=191.96.22.0/24
+add list=Blacklist comment="22168" address=191.96.127.0/24
+add list=Blacklist comment="22168" address=191.101.103.0/24

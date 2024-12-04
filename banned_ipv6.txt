@@ -1,5 +1,6 @@
 # IPv6 static ingoing traffic blocklist
-#
+# The Shadowserver Foundation, Inc. IPv6
+-A INPUT -s 2001:470:1:c84::/64 -j DROP
 # AS398324 Censys, Inc.
 -A INPUT -s 2602:80d:1000::/48 -j DROP
 -A INPUT -s 2602:80d:1006::/48 -j DROP
@@ -520,5 +521,7 @@
 -A INPUT -s 2a0f:ce00::/29 -j DROP
 # AS44679 INVITE Systems SRL
 -A INPUT -s 2a02:2160:8000::/36 -j DROP
+# AS22168 The Shadowserver Foundation, Inc.
+-A INPUT -s 2001:550:d0c::/48 -j DROP
 
-# Last Update: 03/12/2024
+# Last Update: 04/12/2024

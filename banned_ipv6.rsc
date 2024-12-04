@@ -1,8 +1,9 @@
 #
-# Last Update: 03/12/2024
+# Last Update: 04/12/2024
 #
 /ipv6 firewall address-list
-#
+# scan-16-0c.shadowserver.org
+add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
 # AS398324 Censys, Inc.
 add list=Blacklist comment="398324" address=2602:80d:1000::/48
 add list=Blacklist comment="398324" address=2602:80d:1006::/48
@@ -523,3 +524,5 @@ add list=Blacklist comment="2027" address=2a0e:e700::/31
 add list=Blacklist comment="2027" address=2a0f:ce00::/29
 # AS44679 INVITE Systems SRL
 add list=Blacklist comment="44679" address=2a02:2160:8000::/36
+# AS22168 The Shadowserver Foundation, Inc.
+add list=Blacklist comment="22168" address=2001:550:d0c::/48
