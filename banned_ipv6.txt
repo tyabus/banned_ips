@@ -523,5 +523,12 @@
 -A INPUT -s 2a02:2160:8000::/36 -j DROP
 # AS22168 The Shadowserver Foundation, Inc.
 -A INPUT -s 2001:550:d0c::/48 -j DROP
+# AS200019 ALEXHOST SRL
+-A INPUT -s 2001:678:6d4::/48 -j DROP
+-A INPUT -s 2a00:1728:3e::/47 -j DROP
+-A INPUT -s 2a0a:8d80:1::/48 -j DROP
+-A INPUT -s 2a0f:5f40::/47 -j DROP
+-A INPUT -s 2a0f:5f40:1000::/48 -j DROP
+-A INPUT -s 2a0f:5f45::/32 -j DROP
 
-# Last Update: 04/12/2024
+# Last Update: 05/12/2024
