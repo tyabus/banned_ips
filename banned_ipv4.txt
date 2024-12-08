@@ -2060,5 +2060,7 @@
 -A INPUT -s 194.110.247.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 213.232.235.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.156.64.0/23 -j REJECT --reject-with icmp-host-unreachable
+# AS9465 AGOTOZ PTE. LTD.
+-A INPUT -s 154.212.141.0/24 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 05/12/2024
+# Last Update: 08/12/2024

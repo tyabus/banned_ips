@@ -1,5 +1,5 @@
 #
-# Last Update: 05/12/2024
+# Last Update: 08/12/2024
 #
 /ip firewall address-list
 add list=Blacklist comment="AS237 CENSYS" address=192.35.168.0/23
@@ -2054,3 +2054,5 @@ add list=Blacklist comment="200019" address=194.102.104.0/23
 add list=Blacklist comment="200019" address=194.110.247.0/24
 add list=Blacklist comment="200019" address=213.232.235.0/24
 add list=Blacklist comment="200019" address=217.156.64.0/23
+# AS9465 AGOTOZ PTE. LTD.
+add list=Blacklist comment="9465" address=154.212.141.0/24
