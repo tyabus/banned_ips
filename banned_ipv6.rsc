@@ -1,5 +1,5 @@
 #
-# Last Update: 08/12/2024
+# Last Update: 12/12/2024
 #
 /ipv6 firewall address-list
 # scan-16-0c.shadowserver.org
@@ -526,10 +526,9 @@ add list=Blacklist comment="2027" address=2a0f:ce00::/29
 add list=Blacklist comment="44679" address=2a02:2160:8000::/36
 # AS22168 The Shadowserver Foundation, Inc.
 add list=Blacklist comment="22168" address=2001:550:d0c::/48
-# AS200019 ALEXHOST SRL
-add list=Blacklist comment="200019" address=2001:678:6d4::/48
-add list=Blacklist comment="200019" address=2a00:1728:3e::/47
-add list=Blacklist comment="200019" address=2a0a:8d80:1::/48
-add list=Blacklist comment="200019" address=2a0f:5f40::/47
-add list=Blacklist comment="200019" address=2a0f:5f40:1000::/48
-add list=Blacklist comment="200019" address=2a0f:5f45::/32
+# AS152320 Goalnow Network Technology Co Limited
+add list=Blacklist comment="152320" address=2001:df0:a640::/48
+add list=Blacklist comment="152320" address=2406:840:fec9::/48
+# AS43861 Circle B B.V.
+add list=Blacklist comment="43861" address=2001:678:348::/48
+add list=Blacklist comment="43861" address=2a13:acc0::/32

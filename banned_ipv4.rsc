@@ -1,5 +1,5 @@
 #
-# Last Update: 08/12/2024
+# Last Update: 12/12/2024
 #
 /ip firewall address-list
 add list=Blacklist comment="AS237 CENSYS" address=192.35.168.0/23
@@ -2003,56 +2003,18 @@ add list=Blacklist comment="22168" address=191.96.20.0/24
 add list=Blacklist comment="22168" address=191.96.22.0/24
 add list=Blacklist comment="22168" address=191.96.127.0/24
 add list=Blacklist comment="22168" address=191.101.103.0/24
-# AS200019 ALEXHOST SRL
-add list=Blacklist comment="200019" address=37.221.64.0/22
-add list=Blacklist comment="200019" address=45.10.216.0/22
-add list=Blacklist comment="200019" address=45.66.12.0/22
-add list=Blacklist comment="200019" address=45.86.86.0/24
-add list=Blacklist comment="200019" address=45.93.9.0/24
-add list=Blacklist comment="200019" address=45.130.168.0/22
-add list=Blacklist comment="200019" address=45.145.0.0/24
-add list=Blacklist comment="200019" address=45.148.244.0/24
-add list=Blacklist comment="200019" address=45.155.53.0/24
-add list=Blacklist comment="200019" address=45.155.54.0/24
-add list=Blacklist comment="200019" address=46.253.3.0/24
-add list=Blacklist comment="200019" address=46.253.4.0/23
-add list=Blacklist comment="200019" address=78.40.116.0/23
-add list=Blacklist comment="200019" address=82.163.18.0/24
-add list=Blacklist comment="200019" address=85.239.33.0/24
-add list=Blacklist comment="200019" address=85.239.34.0/24
-add list=Blacklist comment="200019" address=91.132.188.0/22
-add list=Blacklist comment="200019" address=91.199.133.0/24
-add list=Blacklist comment="200019" address=91.208.162.0/24
-add list=Blacklist comment="200019" address=91.208.184.0/24
-add list=Blacklist comment="200019" address=91.208.197.0/24
-add list=Blacklist comment="200019" address=91.208.206.0/24
-add list=Blacklist comment="200019" address=91.229.239.0/24
-add list=Blacklist comment="200019" address=93.157.106.0/24
-add list=Blacklist comment="200019" address=93.185.167.0/24
-add list=Blacklist comment="200019" address=94.103.188.0/24
-add list=Blacklist comment="200019" address=95.169.203.0/24
-add list=Blacklist comment="200019" address=140.233.167.0/24
-add list=Blacklist comment="200019" address=140.233.184.0/24
-add list=Blacklist comment="200019" address=141.11.178.0/24
-add list=Blacklist comment="200019" address=146.19.213.0/24
-add list=Blacklist comment="200019" address=159.253.120.0/24
-add list=Blacklist comment="200019" address=176.123.0.0/21
-add list=Blacklist comment="200019" address=176.123.8.0/22
-add list=Blacklist comment="200019" address=181.215.170.0/24
-add list=Blacklist comment="200019" address=185.113.8.0/24
-add list=Blacklist comment="200019" address=185.216.68.0/24
-add list=Blacklist comment="200019" address=185.223.79.0/24
-add list=Blacklist comment="200019" address=185.226.154.0/24
-add list=Blacklist comment="200019" address=188.214.144.0/24
-add list=Blacklist comment="200019" address=193.27.90.0/24
-add list=Blacklist comment="200019" address=193.108.103.0/24
-add list=Blacklist comment="200019" address=193.233.161.0/24
-add list=Blacklist comment="200019" address=193.233.202.0/23
-add list=Blacklist comment="200019" address=194.48.248.0/24
-add list=Blacklist comment="200019" address=194.60.89.0/24
-add list=Blacklist comment="200019" address=194.102.104.0/23
-add list=Blacklist comment="200019" address=194.110.247.0/24
-add list=Blacklist comment="200019" address=213.232.235.0/24
-add list=Blacklist comment="200019" address=217.156.64.0/23
 # AS9465 AGOTOZ PTE. LTD.
 add list=Blacklist comment="9465" address=154.212.141.0/24
+# AS212860 AIRNET llc
+add list=Blacklist comment="212860" address=176.96.241.0/24
+add list=Blacklist comment="212860" address=176.96.243.0/24
+add list=Blacklist comment="212860" address=176.221.24.0/23
+add list=Blacklist comment="212860" address=176.221.28.0/23
+# AS152320 Goalnow Network Technology Co Limited
+add list=Blacklist comment="152320" address=45.254.24.0/22
+add list=Blacklist comment="152320" address=103.85.72.0/22
+add list=Blacklist comment="152320" address=103.223.120.0/22
+add list=Blacklist comment="152320" address=203.175.14.0/23
+# AS43861 Circle B B.V.
+add list=Blacklist comment="43861" address=45.134.176.0/22
+add list=Blacklist comment="43861" address=91.199.227.0/24
