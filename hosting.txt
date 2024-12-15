@@ -16366,4 +16366,4 @@
 -A INPUT -s 120.92.224.0/20 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 120.131.0.0/20 -j REJECT --reject-with icmp-host-unreachable
 
-# Last Update: 12/12/2024
+# Last Update: 15/12/2024

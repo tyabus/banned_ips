@@ -1,5 +1,5 @@
 #
-# Last Update: 12/12/2024
+# Last Update: 15/12/2024
 #
 /ipv6 firewall address-list
 # scan-16-0c.shadowserver.org

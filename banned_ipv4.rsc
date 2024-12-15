@@ -1,5 +1,5 @@
 #
-# Last Update: 12/12/2024
+# Last Update: 15/12/2024
 #
 /ip firewall address-list
 add list=Blacklist comment="AS237 CENSYS" address=192.35.168.0/23
