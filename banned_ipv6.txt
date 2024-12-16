@@ -1,6 +1,8 @@
 # IPv6 static ingoing traffic blocklist
 # The Shadowserver Foundation, Inc. IPv6
 -A INPUT -s 2001:470:1:c84::/64 -j DROP
+-A INPUT -s 2001:470:1:332::/64 -j DROP
+-A INPUT -s 2001:470:2cc:1::/64 -j DROP
 # AS398324 Censys, Inc.
 -A INPUT -s 2602:80d:1000::/48 -j DROP
 -A INPUT -s 2602:80d:1006::/48 -j DROP
@@ -16,7 +18,7 @@
 # AS211680 NSEC - Sistemas Informaticos, S.A. (Shodan LLC)
 -A INPUT -s 2a10:3c0:1::/48 -j DROP
 # AS211298 Driftnet Ltd
--A INPUT -s 2a06:4880::/32 -j DROP
+-A INPUT -s 2a06:4880::/30 -j DROP
 # AS211607 Securitytrails, LLC
 -A INPUT -s 2001:678:e70::/48 -j DROP
 -A INPUT -s 2a10:b640:3000::/36 -j DROP
@@ -48,8 +50,20 @@
 -A INPUT -s 2a0f:8a40:1::/48 -j DROP
 -A INPUT -s 2a0f:8a40:11::/48 -j DROP
 -A INPUT -s 2a0f:8a40:91::/48 -j DROP
+-A INPUT -s 2a0f:8a40:1275::/48 -j DROP
+# AS216246 Aeza Group Ltd.
+-A INPUT -s 2a01:e5c0::/36 -j DROP
+-A INPUT -s 2a0e:d606::/48 -j DROP
+-A INPUT -s 2a12:5940:d000::/36 -j DROP
 # AS210644 AEZA INTERNATIONAL LTD
--A INPUT -s 2a0b:4140::/32 -j DROP
+-A INPUT -s 2a01:e5c0::/36 -j DROP
+-A INPUT -s 2a0b:4140:1000::/36 -j DROP
+-A INPUT -s 2a0b:4140:2000::/35 -j DROP
+-A INPUT -s 2a0b:4140:4000::/34 -j DROP
+-A INPUT -s 2a0b:4140:9000::/36 -j DROP
+-A INPUT -s 2a0b:4140:a000::/35 -j DROP
+-A INPUT -s 2a0b:4140:c000::/35 -j DROP
+-A INPUT -s 2a0b:4140:e000::/36 -j DROP
 -A INPUT -s 2a0e:b107:2780::/46 -j DROP
 -A INPUT -s 2a0e:d606::/48 -j DROP
 -A INPUT -s 2a0f:4f80::/29 -j DROP
@@ -62,7 +76,6 @@
 -A INPUT -s 2a12:5940:2000::/35 -j DROP
 -A INPUT -s 2a12:5940:4000::/34 -j DROP
 -A INPUT -s 2a12:5940:8000::/33 -j DROP
--A INPUT -s 2a12:ecc7::/32 -j DROP
 # AS132203 Tencent Building, Kejizhongyi Avenue
 -A INPUT -s 240d:c000:1000::/36 -j DROP
 -A INPUT -s 240d:c000:2000::/35 -j DROP
@@ -145,6 +158,7 @@
 -A INPUT -s 2a13:5681:4::/48 -j DROP
 -A INPUT -s 2a13:5681:6::/47 -j DROP
 -A INPUT -s 2a13:5681:8::/47 -j DROP
+-A INPUT -s 2a13:5681:a::/48 -j DROP
 # AS48721 Flyservers S.A. (UAB Host Baltic)
 -A INPUT -s 2a10:9100:3::/48 -j DROP
 # AS209588 Flyservers S.A. (UAB Host Baltic)
@@ -191,6 +205,7 @@
 -A INPUT -s 2602:fba3::/38 -j DROP
 # AS201814 MEVSPACE sp. z o.o.
 -A INPUT -s 2a03:cfc0::/32 -j DROP
+-A INPUT -s 2a09:d580::/29 -j DROP
 -A INPUT -s 2a12:a800:2::/48 -j DROP
 # AS61280 FGUP GRCHC (Russian goverment)
 -A INPUT -s 2a0c:a9c7:156::/47 -j DROP
@@ -203,8 +218,6 @@
 # AS399486 12651980 CANADA INC. (Virtuo Holdings Inc)
 -A INPUT -s 2001:550:601::/48 -j DROP
 -A INPUT -s 2a0f:85c1:3d9::/48 -j DROP
-# AS400130 Hebergement Serv3r.net inc.
--A INPUT -s 2602:fb53::/40 -j DROP
 # AS200136 LibraHost
 -A INPUT -s 2a0e:b107:12d::/48 -j DROP
 # AS198831 Association HOLYCLOUD
@@ -282,6 +295,7 @@
 # AS212762 Casper Krook trading as Ck IT Solutions
 -A INPUT -s 2a05:dfc1:5502::/47 -j DROP
 -A INPUT -s 2a05:dfc1:5505::/48 -j DROP
+-A INPUT -s 2a05:dfc1:5506::/47 -j DROP
 # AS204914 LABIXE LTD
 -A INPUT -s 2a0c:9a40:8350::/48 -j DROP
 # AS215026 Alessandro Accorsi trading as Len Service SRL
@@ -347,13 +361,16 @@
 -A INPUT -s 2a05:9080:6::/48 -j DROP
 -A INPUT -s 2a14:7c0:6000::/40 -j DROP
 # AS60223 Netiface Limited
+-A INPUT -s 2001:3280::/29 -j DROP
 -A INPUT -s 2602:f915::/40 -j DROP
 -A INPUT -s 2a14:7c0:3900::/40 -j DROP
+-A INPUT -s 2a14:9e00:9000::/40 -j DROP
 # AS214834 Rekade International LTD
 -A INPUT -s 2a14:7c0:4e00::/40 -j DROP
 -A INPUT -s 2a14:7c0:5400::/40 -j DROP
 -A INPUT -s 2a14:7c0:8000::/36 -j DROP
 -A INPUT -s 2a14:7c0:c000::/35 -j DROP
+-A INPUT -s 2a14:9e00:400::/38 -j DROP
 # AS50580 Mario Networks Limited
 -A INPUT -s 2a12:dd47:db00::/40 -j DROP
 -A INPUT -s 2a13:9302::/31 -j DROP
@@ -373,6 +390,7 @@
 -A INPUT -s 2404:9dc0:cd03::/48 -j DROP
 -A INPUT -s 2404:9dc0:cd05::/48 -j DROP
 # AS35042 Layer7 Networks GmbH
+-A INPUT -s 2a00:1910::/31 -j DROP
 -A INPUT -s 2a00:1912::/32 -j DROP
 -A INPUT -s 2a09:8700::/32 -j DROP
 # AS209132 Alviva Holding Limited
@@ -421,7 +439,7 @@
 -A INPUT -s 2a0d:5940::/29 -j DROP
 -A INPUT -s 2a10:cc40:231::/48 -j DROP
 -A INPUT -s 2a10:cc40:233::/48 -j DROP
--A INPUT -s 2a10:cc40:234::/47 -j DROP
+-A INPUT -s 2a10:cc40:234::/46 -j DROP
 -A INPUT -s 2a12:bec4:1520::/44 -j DROP
 # AS48070 DSM (GB) Limited
 -A INPUT -s 2a11:5700::/32 -j DROP
@@ -448,7 +466,6 @@
 -A INPUT -s 2a01:6340::/29 -j DROP
 -A INPUT -s 2a04:52c0::/32 -j DROP
 -A INPUT -s 2a06:e881:6200::/48 -j DROP
--A INPUT -s 2a0b:8bc0:2:86b:ffff:ffff:ffff:fff0/128 -j DROP
 -A INPUT -s 2a0b:b600:1000::/38 -j DROP
 -A INPUT -s 2a0c:9a40:808e::/48 -j DROP
 -A INPUT -s 2a0c:b642:1a01::/48 -j DROP
@@ -493,6 +510,7 @@
 -A INPUT -s 2a09:da00::/32 -j DROP
 -A INPUT -s 2a0f:1584:1::/48 -j DROP
 -A INPUT -s 2a0f:9400:611f::/48 -j DROP
+-A INPUT -s 2a13:a5c7:2700::/44 -j DROP
 -A INPUT -s 2a14:7582::/32 -j DROP
 # AS215120 Evolus IT Solutions GmbH
 -A INPUT -s 2a0c:9a40:8570::/48 -j DROP
@@ -530,4 +548,4 @@
 -A INPUT -s 2001:678:348::/48 -j DROP
 -A INPUT -s 2a13:acc0::/32 -j DROP
 
-# Last Update: 15/12/2024
+# Last Update: 16/12/2024
