@@ -5,7 +5,7 @@
 # scan-16-0c.shadowserver.org
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:0470:0001:0c84::/64
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:0470:0001:0332::/64
-add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:0470:0001:0332::/64
+add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:0470:02cc:0001::/64
 # AS398324 Censys, Inc.
 add list=Blacklist comment="398324" address=2602:80d:1000::/48
 add list=Blacklist comment="398324" address=2602:80d:1006::/48
