@@ -4,6 +4,8 @@
 -A INPUT -s 2001:470:1:332::/64 -j DROP
 -A INPUT -s 2001:470:2cc:1::/64 -j DROP
 -A INPUT -s 2001:470:1:fb5::/64 -j DROP
+# Address Management Inc.
+-A INPUT -s 2a07:ca00::/29 -j DROP
 # AS398324 Censys, Inc.
 -A INPUT -s 2602:80d:1000::/48 -j DROP
 -A INPUT -s 2602:80d:1006::/48 -j DROP
@@ -55,6 +57,9 @@
 # AS216246 Aeza Group Ltd.
 -A INPUT -s 2a01:e5c0::/35 -j DROP
 # AS210644 AEZA INTERNATIONAL LTD
+-A INPUT -s 2a01:e5c0:2000::/35 -j DROP
+-A INPUT -s 2a01:e5c0:4000::/35 -j DROP
+-A INPUT -s 2a01:e5c0:6000::/36 -j DROP
 -A INPUT -s 2a0b:4140:1000::/36 -j DROP
 -A INPUT -s 2a0b:4140:2000::/35 -j DROP
 -A INPUT -s 2a0b:4140:4000::/34 -j DROP
@@ -152,11 +157,9 @@
 -A INPUT -s 2a10:1fc0::/48 -j DROP
 # AS204333 Witalij Koweschnikow
 -A INPUT -s 2a13:5681:1::/48 -j DROP
--A INPUT -s 2a13:5681:3::/48 -j DROP
 -A INPUT -s 2a13:5681:4::/48 -j DROP
 -A INPUT -s 2a13:5681:6::/47 -j DROP
--A INPUT -s 2a13:5681:8::/47 -j DROP
--A INPUT -s 2a13:5681:a::/48 -j DROP
+-A INPUT -s 2a13:5681:8::/46 -j DROP
 # AS48721 Flyservers S.A. (UAB Host Baltic)
 -A INPUT -s 2a10:9100:3::/48 -j DROP
 # AS209588 Flyservers S.A. (UAB Host Baltic)
@@ -204,6 +207,7 @@
 # AS201814 MEVSPACE sp. z o.o.
 -A INPUT -s 2a03:cfc0::/32 -j DROP
 -A INPUT -s 2a09:d580::/29 -j DROP
+-A INPUT -s 2a0c:c183::/32 -j DROP
 -A INPUT -s 2a12:a800:2::/48 -j DROP
 # AS61280 FGUP GRCHC (Russian goverment)
 -A INPUT -s 2a0c:a9c7:156::/47 -j DROP
@@ -249,7 +253,7 @@
 -A INPUT -s 2a06:c5c0:600::/48 -j DROP
 -A INPUT -s 2a07:3b80:2::/48 -j DROP
 # AS25820 IT7 Networks Inc
--A INPUT -s 2607:8700:1000::/48 -j DROP
+-A INPUT -s 2607:8700:5500::/48 -j DROP
 # AS39421 Sapinet SAS
 -A INPUT -s 2a0c:8880::/29 -j DROP
 # AS49581 Ferdinand Zink trading as Tube-Hosting
@@ -292,11 +296,13 @@
 -A INPUT -s 2a14:7c0:4800::/40 -j DROP
 # AS212762 Casper Krook trading as Ck IT Solutions
 -A INPUT -s 2a05:dfc1:5502::/47 -j DROP
+-A INPUT -s 2a05:dfc1:5504::/48 -j DROP
 # AS204914 LABIXE LTD
 -A INPUT -s 2a0c:9a40:8350::/48 -j DROP
 # AS215026 Alessandro Accorsi trading as Len Service SRL
 -A INPUT -s 2a0f:9400:6146::/48 -j DROP
 -A INPUT -s 2a0f:9400:6149::/48 -j DROP
+-A INPUT -s 2a0f:9400:614f::/48 -j DROP
 -A INPUT -s 2a0f:9400:6905::/48 -j DROP
 # AS203728 BAHU LTD
 -A INPUT -s 2001:678:90c::/48 -j DROP
@@ -318,12 +324,17 @@
 -A INPUT -s 2a0f:9400:7389::/48 -j DROP
 -A INPUT -s 2a11:29c0:2e::/48 -j DROP
 -A INPUT -s 2a11:29c0:4a::/48 -j DROP
-# AS40124 Charged IT Solutions LLC
--A INPUT -s 2602:299:10::/44 -j DROP
 # AS54990 1337 Services LLC
 -A INPUT -s 2001:67c:235c::/48 -j DROP
 # AS34534 FBW NETWORKS SAS
 -A INPUT -s 2a09:ca00::/48 -j DROP
+# AS49434 FBW NETWORKS SAS
+-A INPUT -s 2a09:ca00::/29 -j DROP
+-A INPUT -s 2a0a:2f82::/32 -j DROP
+-A INPUT -s 2a0f:9240::/32 -j DROP
+-A INPUT -s 2a12:5e40::/32 -j DROP
+-A INPUT -s 2a12:8140::/30 -j DROP
+-A INPUT -s 2a13:bf80::/29 -j DROP
 # AS52284 Panamaserver.com
 -A INPUT -s 2803:200::/32 -j DROP
 # AS149148 Phu Hai Computer Co., Ltd
@@ -337,7 +348,6 @@
 -A INPUT -s 2a05:b0c6:a200::/39 -j DROP
 -A INPUT -s 2a05:b0c7:6000::/36 -j DROP
 -A INPUT -s 2a11:5780::/29 -j DROP
--A INPUT -s 2a12:2640::/29 -j DROP
 -A INPUT -s 2a12:5a00::/29 -j DROP
 -A INPUT -s 2a12:6740::/29 -j DROP
 -A INPUT -s 2a12:8100::/29 -j DROP
@@ -365,6 +375,7 @@
 -A INPUT -s 2a14:7c0:8000::/36 -j DROP
 -A INPUT -s 2a14:7c0:c000::/35 -j DROP
 -A INPUT -s 2a14:9e00:400::/38 -j DROP
+-A INPUT -s 2a14:9e00:c00::/38 -j DROP
 # AS50580 Mario Networks Limited
 -A INPUT -s 2a12:dd47:db00::/40 -j DROP
 -A INPUT -s 2a13:9302::/31 -j DROP
@@ -405,13 +416,11 @@
 -A INPUT -s 2a13:adc0::/47 -j DROP
 -A INPUT -s 2a13:adc0:2::/48 -j DROP
 # AS60539 Huicast Telecom Limited
+-A INPUT -s 2401:e3a0::/32 -j DROP
 -A INPUT -s 2407:d340:8000::/40 -j DROP
 -A INPUT -s 2a13:aac0::/29 -j DROP
 # AS61302 HUIZE LTD
 -A INPUT -s 2406:840:e242::/48 -j DROP
-# AS211849 Kakharov Orinbassar Maratuly
--A INPUT -s 2a0d:6c2:6::/47 -j DROP
--A INPUT -s 2a0d:6c2:11::/48 -j DROP
 # AS206728 Media Land LLC
 -A INPUT -s 2a0b:7ec0::/29 -j DROP
 -A INPUT -s 2a11:2081::/32 -j DROP
@@ -500,6 +509,7 @@
 -A INPUT -s 2606:c0:1::/48 -j DROP
 -A INPUT -s 2606:fc40:4004::/48 -j DROP
 -A INPUT -s 2a09:da00::/32 -j DROP
+-A INPUT -s 2a0c:e641::/32 -j DROP
 -A INPUT -s 2a0f:1584:1::/48 -j DROP
 -A INPUT -s 2a0f:9400:611f::/48 -j DROP
 -A INPUT -s 2a14:7582::/32 -j DROP
@@ -547,13 +557,14 @@
 -A INPUT -s 2a0d:6c2:24::/47 -j DROP
 # AS64457 Matteo Fruhwald
 -A INPUT -s 2a14:7c0:f100::/40 -j DROP
-# AS216141 Marco Fontana
--A INPUT -s 2a06:1281:a000::/36 -j DROP
--A INPUT -s 2a0a:6044:aa0f::/48 -j DROP
--A INPUT -s 2a11:f2c0:ffc7::/48 -j DROP
 # AS35133 Eranium B.V.
+-A INPUT -s 2a07:5500::/29 -j DROP
 -A INPUT -s 2a09:e240:22::/48 -j DROP
 -A INPUT -s 2a09:e240:1337::/48 -j DROP
 -A INPUT -s 2a09:e244::/33 -j DROP
+# AS214576 Berdiev Ruslan Mukhabatovich
+-A INPUT -s 2a0e:4005:1002::/48 -j DROP
+# AS211059 Tribeka Web Advisors S.A.
+-A INPUT -s 2a11:4c0:5::/48 -j DROP
 
-# Last Update: 22/12/2024
+# Last Update: 06/01/2025
