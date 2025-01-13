@@ -1,5 +1,5 @@
 #
-# Last Update: 06/01/2025
+# Last Update: 13/01/2025
 #
 /ipv6 firewall address-list
 # scan-16-0c.shadowserver.org
@@ -58,6 +58,7 @@ add list=Blacklist comment="209605" address=2a0f:8a40:91::/48
 add list=Blacklist comment="209605" address=2a0f:8a40:1275::/48
 # AS216246 Aeza Group Ltd.
 add list=Blacklist comment="216246" address=2a01:e5c0::/35
+add list=Blacklist comment="216246" address=2a0f:cdc6:2020::/44
 # AS210644 AEZA INTERNATIONAL LTD
 add list=Blacklist comment="210644" address=2a01:e5c0:2000::/35
 add list=Blacklist comment="210644" address=2a01:e5c0:4000::/35
@@ -72,7 +73,6 @@ add list=Blacklist comment="210644" address=2a0e:b107:2780::/46
 add list=Blacklist comment="210644" address=2a0e:d606::/48
 add list=Blacklist comment="210644" address=2a0f:4f80::/29
 add list=Blacklist comment="210644" address=2a0f:cdc6:2010::/44
-add list=Blacklist comment="210644" address=2a0f:cdc6:2020::/44
 add list=Blacklist comment="210644" address=2a0f:cdc6:5030::/44
 add list=Blacklist comment="210644" address=2a11:fc80::/29
 add list=Blacklist comment="210644" address=2a12:5940:1::/48
@@ -227,6 +227,7 @@ add list=Blacklist comment="400130" address=2602:fb53::/40
 # AS200136 LibraHost
 add list=Blacklist comment="200136" address=2a0e:b107:12d::/48
 # AS198831 Association HOLYCLOUD
+add list=Blacklist comment="198831" address=2a0c:b641:d70::/44
 add list=Blacklist comment="198831" address=2a10:4646:2d0::/44
 add list=Blacklist comment="198831" address=2a10:4646:3f0::/44
 # AS210558 1337 Services GmbH
@@ -294,6 +295,7 @@ add list=Blacklist comment="197477" address=2a06:de01:7c::/47
 add list=Blacklist comment="197477" address=2a06:de01:7e::/48
 add list=Blacklist comment="197477" address=2a13:e3c0::/31
 # AS215292 Gravhosting Ltd
+add list=Blacklist comment="215292" address=2602:fb54:155::/48
 add list=Blacklist comment="215292" address=2a14:7c0:1800::/38
 add list=Blacklist comment="215292" address=2a14:7c0:4800::/40
 # AS212762 Casper Krook trading as Ck IT Solutions
@@ -510,6 +512,7 @@ add list=Blacklist comment="26042" address=2602:fed2:7e05::/48
 add list=Blacklist comment="26042" address=2602:fed2:7e06::/48
 add list=Blacklist comment="26042" address=2606:c0:1::/48
 add list=Blacklist comment="26042" address=2606:fc40:4004::/48
+add list=Blacklist comment="26042" address=2606:fc40:4010::/44
 add list=Blacklist comment="26042" address=2a09:da00::/32
 add list=Blacklist comment="26042" address=2a0c:e641::/32
 add list=Blacklist comment="26042" address=2a0f:1584:1::/48

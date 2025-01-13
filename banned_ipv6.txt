@@ -56,6 +56,7 @@
 -A INPUT -s 2a0f:8a40:1275::/48 -j DROP
 # AS216246 Aeza Group Ltd.
 -A INPUT -s 2a01:e5c0::/35 -j DROP
+-A INPUT -s 2a0f:cdc6:2020::/44 -j DROP
 # AS210644 AEZA INTERNATIONAL LTD
 -A INPUT -s 2a01:e5c0:2000::/35 -j DROP
 -A INPUT -s 2a01:e5c0:4000::/35 -j DROP
@@ -70,7 +71,6 @@
 -A INPUT -s 2a0e:d606::/48 -j DROP
 -A INPUT -s 2a0f:4f80::/29 -j DROP
 -A INPUT -s 2a0f:cdc6:2010::/44 -j DROP
--A INPUT -s 2a0f:cdc6:2020::/44 -j DROP
 -A INPUT -s 2a0f:cdc6:5030::/44 -j DROP
 -A INPUT -s 2a11:fc80::/29 -j DROP
 -A INPUT -s 2a12:5940:1::/48 -j DROP
@@ -225,6 +225,7 @@
 # AS200136 LibraHost
 -A INPUT -s 2a0e:b107:12d::/48 -j DROP
 # AS198831 Association HOLYCLOUD
+-A INPUT -s 2a0c:b641:d70::/44 -j DROP
 -A INPUT -s 2a10:4646:2d0::/44 -j DROP
 -A INPUT -s 2a10:4646:3f0::/44 -j DROP
 # AS210558 1337 Services GmbH
@@ -292,6 +293,7 @@
 -A INPUT -s 2a06:de01:7e::/48 -j DROP
 -A INPUT -s 2a13:e3c0::/31 -j DROP
 # AS215292 Gravhosting Ltd
+-A INPUT -s 2602:fb54:155::/48 -j DROP
 -A INPUT -s 2a14:7c0:1800::/38 -j DROP
 -A INPUT -s 2a14:7c0:4800::/40 -j DROP
 # AS212762 Casper Krook trading as Ck IT Solutions
@@ -508,6 +510,7 @@
 -A INPUT -s 2602:fed2:7e06::/48 -j DROP
 -A INPUT -s 2606:c0:1::/48 -j DROP
 -A INPUT -s 2606:fc40:4004::/48 -j DROP
+-A INPUT -s 2606:fc40:4010::/44 -j DROP
 -A INPUT -s 2a09:da00::/32 -j DROP
 -A INPUT -s 2a0c:e641::/32 -j DROP
 -A INPUT -s 2a0f:1584:1::/48 -j DROP
@@ -567,4 +570,4 @@
 # AS211059 Tribeka Web Advisors S.A.
 -A INPUT -s 2a11:4c0:5::/48 -j DROP
 
-# Last Update: 06/01/2025
+# Last Update: 13/01/2025
