@@ -1,5 +1,5 @@
 #
-# Last Update: 13/01/2025
+# Last Update: 21/01/2025
 #
 /ipv6 firewall address-list
 # scan-16-0c.shadowserver.org
@@ -233,6 +233,7 @@ add list=Blacklist comment="198831" address=2a10:4646:3f0::/44
 # AS210558 1337 Services GmbH
 add list=Blacklist comment="210558" address=2a12:a800:1::/48
 add list=Blacklist comment="210558" address=2a12:a800:7::/48
+add list=Blacklist comment="210558" address=2a12:a800:8::/48
 # AS215599 Zkillu SAS
 add list=Blacklist comment="215599" address=2a10:4646:410::/44
 # AS47890 UNMANAGED LTD
@@ -319,6 +320,7 @@ add list=Blacklist comment="215365" address=2a14:7c0:1000::/38
 add list=Blacklist comment="58052" address=2a12:bec0:190::/48
 add list=Blacklist comment="58052" address=2a12:bec0:19f::/48
 # AS199654 Oxide Group Limited
+add list=Blacklist comment="199654" address=2a12:bec0:200::/48
 add list=Blacklist comment="199654" address=2a12:bec0:20a::/47
 add list=Blacklist comment="199654" address=2a12:bec0:20c::/48
 # AS215039 Semih Gokcalik
@@ -362,6 +364,9 @@ add list=Blacklist comment="51396" address=2a12:e240::/29
 add list=Blacklist comment="51396" address=2a14:7c0:f400::/38
 add list=Blacklist comment="51396" address=2a14:7c1::/32
 add list=Blacklist comment="51396" address=2a14:7c2::/31
+# AS214940 KPROHOST LLC
+add list=Blacklist comment="214940" address=2a13:da05::/32
+add list=Blacklist comment="214940" address=2a13:e405::/32
 # AS214209 Internet Magnate (Pty) Ltd
 add list=Blacklist comment="214209" address=2a0d:8140:1fff::/48
 add list=Blacklist comment="214209" address=2a0f:9400:7e11::/48
@@ -383,6 +388,8 @@ add list=Blacklist comment="214834" address=2a14:9e00:c00::/38
 # AS50580 Mario Networks Limited
 add list=Blacklist comment="50580" address=2a12:dd47:db00::/40
 add list=Blacklist comment="50580" address=2a13:9302::/31
+add list=Blacklist comment="50580" address=2a13:da00::/32
+add list=Blacklist comment="50580" address=2a13:e400::/32
 # AS198584 PIO-Hosting GmbH
 add list=Blacklist comment="198584" address=2a10:ca80::/48
 # AS216213 Lexistar Alliance Ltd.
@@ -401,6 +408,24 @@ add list=Blacklist comment="138699" address=2404:9dc0:cd05::/48
 add list=Blacklist comment="35042" address=2a00:1910::/31
 add list=Blacklist comment="35042" address=2a00:1912::/32
 add list=Blacklist comment="35042" address=2a09:8700::/32
+# AS43350 NForce Entertainment B.V.
+add list=Blacklist comment="43350" address=2001:678:a18::/48
+add list=Blacklist comment="43350" address=2a00:1768::/34
+add list=Blacklist comment="43350" address=2a00:1768:4000::/35
+add list=Blacklist comment="43350" address=2a00:1768:6000::/36
+add list=Blacklist comment="43350" address=2a02:2ca0:10::/48
+add list=Blacklist comment="43350" address=2a02:2ca0:64::/48
+add list=Blacklist comment="43350" address=2a02:2ca0:aaa::/48
+add list=Blacklist comment="43350" address=2a02:2ca0:1111::/48
+add list=Blacklist comment="43350" address=2a03:3740::/32
+add list=Blacklist comment="43350" address=2a04:b040::/47
+add list=Blacklist comment="43350" address=2a04:b040:2::/48
+add list=Blacklist comment="43350" address=2a05:840::/47
+add list=Blacklist comment="43350" address=2a06:e80::/36
+add list=Blacklist comment="43350" address=2a07:bd80::/29
+add list=Blacklist comment="43350" address=2a0b:8400:1::/48
+add list=Blacklist comment="43350" address=2a0d:ea80::/29
+add list=Blacklist comment="43350" address=2a0f:2b86:10::/48
 # AS209132 Alviva Holding Limited
 add list=Blacklist comment="209132" address=2a09:1d40::/48
 # AS6204 INTERKVM HOST SRL
@@ -571,3 +596,8 @@ add list=Blacklist comment="35133" address=2a09:e244::/33
 add list=Blacklist comment="214576" address=2a0e:4005:1002::/48
 # AS211059 Tribeka Web Advisors S.A.
 add list=Blacklist comment="211059" address=2a11:4c0:5::/48
+# AS47464 Address Management Inc.
+add list=Blacklist comment="47464" address=2a07:ca00::/30
+add list=Blacklist comment="47464" address=2a07:ca04::/31
+add list=Blacklist comment="47464" address=2a07:ca06::/32
+add list=Blacklist comment="47464" address=2a09:bc00::/29

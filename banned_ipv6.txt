@@ -231,6 +231,7 @@
 # AS210558 1337 Services GmbH
 -A INPUT -s 2a12:a800:1::/48 -j DROP
 -A INPUT -s 2a12:a800:7::/48 -j DROP
+-A INPUT -s 2a12:a800:8::/48 -j DROP
 # AS215599 Zkillu SAS
 -A INPUT -s 2a10:4646:410::/44 -j DROP
 # AS47890 UNMANAGED LTD
@@ -317,6 +318,7 @@
 -A INPUT -s 2a12:bec0:190::/48 -j DROP
 -A INPUT -s 2a12:bec0:19f::/48 -j DROP
 # AS199654 Oxide Group Limited
+-A INPUT -s 2a12:bec0:200::/48 -j DROP
 -A INPUT -s 2a12:bec0:20a::/47 -j DROP
 -A INPUT -s 2a12:bec0:20c::/48 -j DROP
 # AS215039 Semih Gokcalik
@@ -360,6 +362,9 @@
 -A INPUT -s 2a14:7c0:f400::/38 -j DROP
 -A INPUT -s 2a14:7c1::/32 -j DROP
 -A INPUT -s 2a14:7c2::/31 -j DROP
+# AS214940 KPROHOST LLC
+-A INPUT -s 2a13:da05::/32 -j DROP
+-A INPUT -s 2a13:e405::/32 -j DROP
 # AS214209 Internet Magnate (Pty) Ltd
 -A INPUT -s 2a0d:8140:1fff::/48 -j DROP
 -A INPUT -s 2a0f:9400:7e11::/48 -j DROP
@@ -381,6 +386,8 @@
 # AS50580 Mario Networks Limited
 -A INPUT -s 2a12:dd47:db00::/40 -j DROP
 -A INPUT -s 2a13:9302::/31 -j DROP
+-A INPUT -s 2a13:da00::/32 -j DROP
+-A INPUT -s 2a13:e400::/32 -j DROP
 # AS198584 PIO-Hosting GmbH
 -A INPUT -s 2a10:ca80::/48 -j DROP
 # AS216213 Lexistar Alliance Ltd.
@@ -399,6 +406,24 @@
 -A INPUT -s 2a00:1910::/31 -j DROP
 -A INPUT -s 2a00:1912::/32 -j DROP
 -A INPUT -s 2a09:8700::/32 -j DROP
+# AS43350 NForce Entertainment B.V.
+-A INPUT -s 2001:678:a18::/48 -j DROP
+-A INPUT -s 2a00:1768::/34 -j DROP
+-A INPUT -s 2a00:1768:4000::/35 -j DROP
+-A INPUT -s 2a00:1768:6000::/36 -j DROP
+-A INPUT -s 2a02:2ca0:10::/48 -j DROP
+-A INPUT -s 2a02:2ca0:64::/48 -j DROP
+-A INPUT -s 2a02:2ca0:aaa::/48 -j DROP
+-A INPUT -s 2a02:2ca0:1111::/48 -j DROP
+-A INPUT -s 2a03:3740::/32 -j DROP
+-A INPUT -s 2a04:b040::/47 -j DROP
+-A INPUT -s 2a04:b040:2::/48 -j DROP
+-A INPUT -s 2a05:840::/47 -j DROP
+-A INPUT -s 2a06:e80::/36 -j DROP
+-A INPUT -s 2a07:bd80::/29 -j DROP
+-A INPUT -s 2a0b:8400:1::/48 -j DROP
+-A INPUT -s 2a0d:ea80::/29 -j DROP
+-A INPUT -s 2a0f:2b86:10::/48 -j DROP
 # AS209132 Alviva Holding Limited
 -A INPUT -s 2a09:1d40::/48 -j DROP
 # AS6204 INTERKVM HOST SRL
@@ -569,5 +594,10 @@
 -A INPUT -s 2a0e:4005:1002::/48 -j DROP
 # AS211059 Tribeka Web Advisors S.A.
 -A INPUT -s 2a11:4c0:5::/48 -j DROP
+# AS47464 Address Management Inc.
+-A INPUT -s 2a07:ca00::/30 -j DROP
+-A INPUT -s 2a07:ca04::/31 -j DROP
+-A INPUT -s 2a07:ca06::/32 -j DROP
+-A INPUT -s 2a09:bc00::/29 -j DROP
 
-# Last Update: 13/01/2025
+# Last Update: 21/01/2025
