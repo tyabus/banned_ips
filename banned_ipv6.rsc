@@ -1,5 +1,5 @@
 #
-# Last Update: 21/01/2025
+# Last Update: 06/02/2025
 #
 /ipv6 firewall address-list
 # scan-16-0c.shadowserver.org
@@ -258,6 +258,43 @@ add list=Blacklist comment="210329" address=2a06:c5c0:600::/48
 add list=Blacklist comment="210329" address=2a07:3b80:2::/48
 # AS25820 IT7 Networks Inc
 add list=Blacklist comment="25820" address=2607:8700:5500::/48
+# AS3214 xTom GmbH
+add list=Blacklist comment="3214" address=2a03:d9c0:1000::/48
+add list=Blacklist comment="3214" address=2a03:d9c0:2000::/48
+add list=Blacklist comment="3214" address=2a03:d9c0:4000::/48
+add list=Blacklist comment="3214" address=2a03:d9c0:5000::/48
+add list=Blacklist comment="3214" address=2a03:d9c0:6000::/48
+add list=Blacklist comment="3214" address=2a03:d9c0:7000::/48
+add list=Blacklist comment="3214" address=2a03:d9c0:8000::/48
+add list=Blacklist comment="3214" address=2a03:d9c0:c0de::/48
+add list=Blacklist comment="3214" address=2a03:d9c1:100::/40
+add list=Blacklist comment="3214" address=2a03:d9c1:200::/39
+add list=Blacklist comment="3214" address=2a03:d9c1:400::/38
+add list=Blacklist comment="3214" address=2a03:d9c1:a100::/40
+add list=Blacklist comment="3214" address=2a03:d9c1:a200::/39
+add list=Blacklist comment="3214" address=2a03:d9c1:a400::/38
+add list=Blacklist comment="3214" address=2a03:d9c1:b100::/40
+add list=Blacklist comment="3214" address=2a03:d9c1:b200::/39
+add list=Blacklist comment="3214" address=2a03:d9c1:b400::/39
+add list=Blacklist comment="3214" address=2a03:d9c1:b600::/40
+add list=Blacklist comment="3214" address=2a03:d9c1:c100::/40
+add list=Blacklist comment="3214" address=2a03:d9c1:c200::/39
+add list=Blacklist comment="3214" address=2a03:d9c1:c400::/39
+add list=Blacklist comment="3214" address=2a03:d9c1:c600::/40
+add list=Blacklist comment="3214" address=2a03:d9c2:100::/47
+add list=Blacklist comment="3214" address=2a04:6f00::/32
+add list=Blacklist comment="3214" address=2a04:6f02::/31
+add list=Blacklist comment="3214" address=2a04:6f04::/30
+add list=Blacklist comment="3214" address=2a07:d880::/32
+add list=Blacklist comment="3214" address=2a07:fe00::/29
+add list=Blacklist comment="3214" address=2a09:0:1::/48
+add list=Blacklist comment="3214" address=2a09:0:2::/48
+add list=Blacklist comment="3214" address=2a09:0:6::/47
+add list=Blacklist comment="3214" address=2a09:0:8::/47
+add list=Blacklist comment="3214" address=2a09:0:11::/48
+add list=Blacklist comment="3214" address=2a09:0:9000::/40
+add list=Blacklist comment="3214" address=2a0b:89c0::/31
+add list=Blacklist comment="3214" address=2a0c:59c0::/29
 # AS39421 Sapinet SAS
 add list=Blacklist comment="39421" address=2a0c:8880::/29
 # AS49581 Ferdinand Zink trading as Tube-Hosting
