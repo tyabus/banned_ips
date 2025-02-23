@@ -61,8 +61,7 @@
 -A INPUT -s 2a0f:cdc6:2020::/44 -j DROP
 # AS210644 AEZA INTERNATIONAL LTD
 -A INPUT -s 2a01:e5c0:2000::/35 -j DROP
--A INPUT -s 2a01:e5c0:4000::/35 -j DROP
--A INPUT -s 2a01:e5c0:6000::/36 -j DROP
+-A INPUT -s 2a01:e5c0:4000::/34 -j DROP
 -A INPUT -s 2a0b:4140:1000::/36 -j DROP
 -A INPUT -s 2a0b:4140:2000::/35 -j DROP
 -A INPUT -s 2a0b:4140:4000::/34 -j DROP
@@ -187,8 +186,6 @@
 -A INPUT -s 2a0b:b200::/32 -j DROP
 # AS51115 HLL LLC
 -A INPUT -s 2a03:70c0::/32 -j DROP
-# AS208091 XHOST INTERNET SOLUTIONS LP
--A INPUT -s 2a0d:65c0::/29 -j DROP
 # AS210630 IncogNET LLC
 -A INPUT -s 2602:fc24::/44 -j DROP
 -A INPUT -s 2602:fc24:10::/45 -j DROP
@@ -284,7 +281,6 @@
 -A INPUT -s 2a04:6f00::/32 -j DROP
 -A INPUT -s 2a04:6f02::/31 -j DROP
 -A INPUT -s 2a04:6f04::/30 -j DROP
--A INPUT -s 2a07:d880::/32 -j DROP
 -A INPUT -s 2a07:fe00::/29 -j DROP
 -A INPUT -s 2a09:0:1::/48 -j DROP
 -A INPUT -s 2a09:0:2::/48 -j DROP
@@ -297,12 +293,12 @@
 # AS39421 Sapinet SAS
 -A INPUT -s 2a0c:8880::/29 -j DROP
 # AS49581 FZ-IP-MNT
+-A INPUT -s 2a05:dfc3:fc00::/40 -j DROP
+-A INPUT -s 2a06:1283:8a00::/40 -j DROP
 -A INPUT -s 2a12:8640::/29 -j DROP
 -A INPUT -s 2a12:b200::/29 -j DROP
 -A INPUT -s 2a12:bec4:1651::/48 -j DROP
--A INPUT -s 2a12:bec4:1751::/48 -j DROP
--A INPUT -s 2a12:bec4:1752::/47 -j DROP
--A INPUT -s 2a12:bec4:1754::/46 -j DROP
+-A INPUT -s 2a12:bec4:1750::/45 -j DROP
 -A INPUT -s 2a12:bec4:1758::/47 -j DROP
 -A INPUT -s 2a12:de40::/32 -j DROP
 -A INPUT -s 2a12:eb00::/29 -j DROP
@@ -417,7 +413,7 @@
 -A INPUT -s 2a14:9e00:200::/40 -j DROP
 # AS60223 Netiface Limited
 -A INPUT -s 2a14:7c0:3900::/40 -j DROP
--A INPUT -s 2a14:9e00:9000::/40 -j DROP
+-A INPUT -s 2a14:9e00:9000::/39 -j DROP
 # AS214834 Rekade International LTD
 -A INPUT -s 2a14:7c0:4e00::/40 -j DROP
 -A INPUT -s 2a14:7c0:5400::/40 -j DROP
@@ -473,6 +469,7 @@
 -A INPUT -s 2a12:3200:2000::/36 -j DROP
 -A INPUT -s 2a12:3200:4000::/35 -j DROP
 -A INPUT -s 2a12:3200:7000::/36 -j DROP
+-A INPUT -s 2a12:3200:8000::/36 -j DROP
 # AS215450 Snowcore Cyf
 -A INPUT -s 2a14:7c0:100::/40 -j DROP
 # AS132825 MYTEK TRADING PTY LTD
@@ -507,7 +504,7 @@
 -A INPUT -s 2a10:cc40:233::/48 -j DROP
 -A INPUT -s 2a10:cc40:234::/46 -j DROP
 -A INPUT -s 2a12:bec4:1520::/44 -j DROP
--A INPUT -s 2a12:bec4:175a::/47 -j DROP
+-A INPUT -s 2a12:bec4:1758::/45 -j DROP
 # AS48070 DSM (GB) Limited
 -A INPUT -s 2a11:5700::/32 -j DROP
 -A INPUT -s 2a11:5707::/32 -j DROP
@@ -527,6 +524,7 @@
 # AS51852 Private Layer INC
 -A INPUT -s 2a02:29b8::/32 -j DROP
 -A INPUT -s 2a09:4d45::/32 -j DROP
+-A INPUT -s 2a0f:dd40::/29 -j DROP
 # AS264617 GRUPO PANAGLOBAL 15 S.A
 -A INPUT -s 2803:9e40::/32 -j DROP
 -A INPUT -s 2a0a:20c0::/29 -j DROP
@@ -562,6 +560,8 @@
 -A INPUT -s 2a0a:e805:710::/44 -j DROP
 # AS53828 NETWORK INNOVATIONS, LLC
 -A INPUT -s 2605:a380::/32 -j DROP
+# AS199834 IP Solus Inc
+-A INPUT -s 2001:37c0::/29 -j DROP
 # AS56611 REBA Communications BV
 -A INPUT -s 2a02:6c8::/33 -j DROP
 # AS26042 FiberState, LLC
@@ -588,6 +588,7 @@
 -A INPUT -s 2a14:7582::/32 -j DROP
 -A INPUT -s 2a14:7584:5000::/36 -j DROP
 # AS215120 Evolus IT Solutions GmbH
+-A INPUT -s 2a06:5280::/29 -j DROP
 -A INPUT -s 2a0c:9a40:8570::/48 -j DROP
 # AS41047 Bart Vrancken trading as MLaB
 -A INPUT -s 2a0e:a6c0::/30 -j DROP
@@ -608,6 +609,7 @@
 -A INPUT -s 2001:913:4000::/36 -j DROP
 -A INPUT -s 2a04:9ac2::/32 -j DROP
 -A INPUT -s 2a0f:6780::/29 -j DROP
+-A INPUT -s 2a0f:e580:b::/48 -j DROP
 # AS2027 MilkyWan Association
 -A INPUT -s 2a0b:cbc0::/32 -j DROP
 -A INPUT -s 2a0e:e700::/31 -j DROP
@@ -629,6 +631,7 @@
 -A INPUT -s 2a0d:6c2:24::/47 -j DROP
 # AS64457 Matteo Fruhwald
 -A INPUT -s 2a14:7c0:f100::/40 -j DROP
+-A INPUT -s 2a14:7c0:f300::/40 -j DROP
 # AS35133 Eranium B.V.
 -A INPUT -s 2a07:5500::/29 -j DROP
 -A INPUT -s 2a09:e240:22::/48 -j DROP
@@ -645,5 +648,15 @@
 -A INPUT -s 2a09:bc00::/29 -j DROP
 # AS151853 GIZA NETWORK LIMITED
 -A INPUT -s 2401:4120::/48 -j DROP
+# AS199669 Okay-Telecom Ltd.
+-A INPUT -s 2a03:ec0::/47 -j DROP
+-A INPUT -s 2a11:2084::/32 -j DROP
+-A INPUT -s 2a11:8305::/32 -j DROP
+-A INPUT -s 2a11:aac4::/32 -j DROP
+-A INPUT -s 2a11:c107::/32 -j DROP
+# AS201211 LLC Tvoi Telecom
+-A INPUT -s 2a05:3e80::/29 -j DROP
+# AS60230 Neterra Ltd.
+-A INPUT -s 2a00:1728:a::/48 -j DROP
 
-# Last Update: 12/02/2025
+# Last Update: 23/02/2025
