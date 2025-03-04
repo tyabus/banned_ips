@@ -79,6 +79,69 @@
 -A INPUT -s 2a12:5940:2000::/35 -j DROP
 -A INPUT -s 2a12:5940:4000::/34 -j DROP
 -A INPUT -s 2a12:5940:8000::/33 -j DROP
+# AS215590 DpkgSoft International Limited
+-A INPUT -s 2a0f:cdc6:10::/44 -j DROP
+-A INPUT -s 2a0f:cdc6:20::/43 -j DROP
+# AS49418 NETSHIELD LTD
+-A INPUT -s 2a01:ecc0:280::/42 -j DROP
+-A INPUT -s 2a0d:aa40::/29 -j DROP
+-A INPUT -s 2a0f:cdc6:45::/48 -j DROP
+-A INPUT -s 2a0f:cdc6:777::/48 -j DROP
+-A INPUT -s 2a0f:cdc6:1001::/48 -j DROP
+-A INPUT -s 2a0f:cdc6:1005::/48 -j DROP
+# AS212477 RoyaleHosting BV
+-A INPUT -s 2001:3380::/29 -j DROP
+-A INPUT -s 2602:fa0a::/40 -j DROP
+-A INPUT -s 2a03:5840:fc::/48 -j DROP
+-A INPUT -s 2a05:541:157::/48 -j DROP
+-A INPUT -s 2a0b:3e00::/29 -j DROP
+-A INPUT -s 2a0b:64c0:1::/48 -j DROP
+-A INPUT -s 2a0b:64c0:2::/47 -j DROP
+-A INPUT -s 2a0b:64c0:4::/46 -j DROP
+-A INPUT -s 2a0b:64c0:8::/48 -j DROP
+-A INPUT -s 2a0b:64c0:a::/47 -j DROP
+-A INPUT -s 2a0b:64c0:e::/47 -j DROP
+-A INPUT -s 2a0b:64c0:10::/46 -j DROP
+-A INPUT -s 2a0b:64c0:17::/48 -j DROP
+-A INPUT -s 2a0b:64c0:18::/48 -j DROP
+-A INPUT -s 2a0b:64c0:1a::/48 -j DROP
+-A INPUT -s 2a0b:64c0:1c::/48 -j DROP
+-A INPUT -s 2a0b:64c0:f800::/46 -j DROP
+-A INPUT -s 2a0b:64c0:f804::/48 -j DROP
+-A INPUT -s 2a0b:64c0:f806::/48 -j DROP
+-A INPUT -s 2a0b:ac00::/29 -j DROP
+-A INPUT -s 2a0b:b480::/29 -j DROP
+-A INPUT -s 2a12:bec0:340::/44 -j DROP
+-A INPUT -s 2a13:9402::/32 -j DROP
+-A INPUT -s 2a13:b840::/29 -j DROP
+-A INPUT -s 2a13:c240::/29 -j DROP
+-A INPUT -s 2a13:ddc0::/29 -j DROP
+-A INPUT -s 2a14:35c0::/29 -j DROP
+-A INPUT -s 2a14:5840::/29 -j DROP
+# AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
+-A INPUT -s 2a00:b703:fff1::/48 -j DROP
+-A INPUT -s 2a00:b703:fff2::/48 -j DROP
+-A INPUT -s 2a05:541:102::/47 -j DROP
+-A INPUT -s 2a05:541:104::/47 -j DROP
+-A INPUT -s 2a05:541:107::/48 -j DROP
+-A INPUT -s 2a05:541:108::/47 -j DROP
+-A INPUT -s 2a05:541:110::/46 -j DROP
+-A INPUT -s 2a05:541:114::/48 -j DROP
+-A INPUT -s 2a05:541:116::/48 -j DROP
+-A INPUT -s 2a05:541:119::/48 -j DROP
+-A INPUT -s 2a05:541:121::/48 -j DROP
+-A INPUT -s 2a05:541:122::/47 -j DROP
+-A INPUT -s 2a05:541:124::/46 -j DROP
+-A INPUT -s 2a05:541:129::/48 -j DROP
+-A INPUT -s 2a05:541:131::/48 -j DROP
+-A INPUT -s 2a05:541:133::/48 -j DROP
+-A INPUT -s 2a05:541:134::/47 -j DROP
+-A INPUT -s 2a05:541:137::/48 -j DROP
+-A INPUT -s 2a05:541:138::/47 -j DROP
+-A INPUT -s 2a05:541:141::/48 -j DROP
+-A INPUT -s 2a05:541:150::/46 -j DROP
+-A INPUT -s 2a05:541:156::/47 -j DROP
+-A INPUT -s 2a05:541:158::/47 -j DROP
 # AS132203 Tencent Building, Kejizhongyi Avenue
 -A INPUT -s 240d:c000:1000::/36 -j DROP
 -A INPUT -s 240d:c000:2000::/35 -j DROP
@@ -345,7 +408,6 @@
 -A INPUT -s 2a05:dfc1:5504::/48 -j DROP
 # AS204914 LABIXE LTD
 -A INPUT -s 2a0c:9a40:8350::/48 -j DROP
--A INPUT -s 2a14:9e00:4::/48 -j DROP
 # AS215026 Alessandro Accorsi trading as Len Service SRL
 -A INPUT -s 2a0f:9400:6146::/48 -j DROP
 -A INPUT -s 2a0f:9400:6149::/48 -j DROP
@@ -605,6 +667,7 @@
 -A INPUT -s 2a14:7584:5000::/36 -j DROP
 # AS215120 Evolus IT Solutions GmbH
 -A INPUT -s 2a06:5280::/29 -j DROP
+-A INPUT -s 2a09:4500::/29 -j DROP
 -A INPUT -s 2a0c:9a40:8570::/48 -j DROP
 # AS41047 Bart Vrancken trading as MLaB
 -A INPUT -s 2a0e:a6c0::/30 -j DROP
@@ -789,5 +852,23 @@
 -A INPUT -s 2a13:c900:fdff::/48 -j DROP
 -A INPUT -s 2a14:1ec7:f00e::/48 -j DROP
 -A INPUT -s 2a14:9e06::/32 -j DROP
+# AS400992 ZhouyiSat Communications
+-A INPUT -s 2602:f909::/40 -j DROP
+-A INPUT -s 2a0d:6c2:6::/47 -j DROP
+-A INPUT -s 2a0d:6c2:11::/48 -j DROP
+-A INPUT -s 2a0d:6c2:12::/47 -j DROP
+-A INPUT -s 2a0d:6c2:26::/47 -j DROP
+# AS30823 COMBAHTON
+-A INPUT -s 2001:df1:7780::/48 -j DROP
+-A INPUT -s 2602:fa59::/40 -j DROP
+-A INPUT -s 2a00:f826:3::/48 -j DROP
+-A INPUT -s 2a01:367::/32 -j DROP
+-A INPUT -s 2a09:38c0::/29 -j DROP
+-A INPUT -s 2a0c:3580::/29 -j DROP
+-A INPUT -s 2a0c:6a40::/29 -j DROP
+-A INPUT -s 2a0d:4cc0::/29 -j DROP
+-A INPUT -s 2a0e:5100::/29 -j DROP
+-A INPUT -s 2a0e:b540::/29 -j DROP
+-A INPUT -s 2a10:9c00::/29 -j DROP
 
-# Last Update: 27/02/2025
+# Last Update: 04/03/2025
