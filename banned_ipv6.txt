@@ -54,7 +54,7 @@
 -A INPUT -s 2402:f500::/32 -j DROP
 # AS17884 PT. Uninet Media Sakti (ISP)
 -A INPUT -s 2402:7980::/32 -j DROP
-# AS43463 INFOCOM-MNT (UAB Host Baltic)
+# AS43463 INFOCOM UK LTD (UAB Host Baltic)
 -A INPUT -s 2a00:ea60:200::/40 -j DROP
 # AS216246 Aeza Group Ltd.
 -A INPUT -s 2a01:e5c0::/35 -j DROP
@@ -63,6 +63,9 @@
 # AS210644 AEZA INTERNATIONAL LTD
 -A INPUT -s 2a01:e5c0:2000::/35 -j DROP
 -A INPUT -s 2a01:e5c0:4000::/34 -j DROP
+-A INPUT -s 2a01:e5c0:8000::/48 -j DROP
+-A INPUT -s 2a01:e5c0:8003::/48 -j DROP
+-A INPUT -s 2a01:e5c0:8004::/48 -j DROP
 -A INPUT -s 2a0b:4140:1000::/36 -j DROP
 -A INPUT -s 2a0b:4140:2000::/35 -j DROP
 -A INPUT -s 2a0b:4140:4000::/34 -j DROP
@@ -79,6 +82,8 @@
 -A INPUT -s 2a12:5940:2000::/35 -j DROP
 -A INPUT -s 2a12:5940:4000::/34 -j DROP
 -A INPUT -s 2a12:5940:8000::/33 -j DROP
+# AS214231 Cloud Solutions LLC
+-A INPUT -s 2a01:e5c0:8000::/47 -j DROP
 # AS215590 DpkgSoft International Limited
 -A INPUT -s 2a0f:cdc6:10::/44 -j DROP
 -A INPUT -s 2a0f:cdc6:20::/43 -j DROP
@@ -90,10 +95,12 @@
 -A INPUT -s 2a0f:cdc6:1001::/48 -j DROP
 -A INPUT -s 2a0f:cdc6:1005::/48 -j DROP
 # AS212477 RoyaleHosting BV
+-A INPUT -s 2001:3080::/29 -j DROP
 -A INPUT -s 2001:3380::/29 -j DROP
 -A INPUT -s 2602:fa0a::/40 -j DROP
 -A INPUT -s 2a03:5840:fc::/48 -j DROP
 -A INPUT -s 2a05:541:157::/48 -j DROP
+-A INPUT -s 2a0a:7d00::/29 -j DROP
 -A INPUT -s 2a0b:3e00::/29 -j DROP
 -A INPUT -s 2a0b:64c0:1::/48 -j DROP
 -A INPUT -s 2a0b:64c0:2::/47 -j DROP
@@ -109,15 +116,64 @@
 -A INPUT -s 2a0b:64c0:f800::/46 -j DROP
 -A INPUT -s 2a0b:64c0:f804::/48 -j DROP
 -A INPUT -s 2a0b:64c0:f806::/47 -j DROP
--A INPUT -s 2a0b:ac00::/29 -j DROP
 -A INPUT -s 2a0b:b480::/29 -j DROP
+-A INPUT -s 2a0c:4880::/29 -j DROP
+-A INPUT -s 2a0c:d380::/29 -j DROP
+-A INPUT -s 2a0e:2440::/29 -j DROP
+-A INPUT -s 2a0e:a780::/29 -j DROP
+-A INPUT -s 2a0e:e980::/29 -j DROP
+-A INPUT -s 2a0f:a00::/29 -j DROP
+-A INPUT -s 2a0f:e00::/29 -j DROP
+-A INPUT -s 2a0f:1440::/29 -j DROP
+-A INPUT -s 2a0f:14c0::/29 -j DROP
+-A INPUT -s 2a0f:17c0::/29 -j DROP
+-A INPUT -s 2a0f:1840::/29 -j DROP
+-A INPUT -s 2a0f:1ac0::/29 -j DROP
+-A INPUT -s 2a0f:1f80::/29 -j DROP
+-A INPUT -s 2a0f:1fc0::/29 -j DROP
+-A INPUT -s 2a0f:2300::/29 -j DROP
+-A INPUT -s 2a0f:29c0::/29 -j DROP
+-A INPUT -s 2a0f:2a40::/29 -j DROP
+-A INPUT -s 2a0f:2dc0::/29 -j DROP
+-A INPUT -s 2a0f:2ec0::/29 -j DROP
+-A INPUT -s 2a0f:2f80::/29 -j DROP
+-A INPUT -s 2a0f:30c0::/29 -j DROP
+-A INPUT -s 2a0f:3140::/29 -j DROP
+-A INPUT -s 2a0f:3540::/29 -j DROP
+-A INPUT -s 2a0f:35c0::/29 -j DROP
+-A INPUT -s 2a0f:36c0::/29 -j DROP
+-A INPUT -s 2a0f:3f80::/29 -j DROP
+-A INPUT -s 2a0f:9b00::/29 -j DROP
+-A INPUT -s 2a0f:a200::/29 -j DROP
+-A INPUT -s 2a0f:c400::/29 -j DROP
+-A INPUT -s 2a0f:de40::/29 -j DROP
+-A INPUT -s 2a0f:dec0::/29 -j DROP
+-A INPUT -s 2a0f:e140::/29 -j DROP
+-A INPUT -s 2a0f:e3c0::/29 -j DROP
+-A INPUT -s 2a0f:e540::/29 -j DROP
+-A INPUT -s 2a0f:e5c0::/29 -j DROP
+-A INPUT -s 2a0f:e600::/29 -j DROP
+-A INPUT -s 2a0f:e640::/29 -j DROP
+-A INPUT -s 2a0f:e9c0::/29 -j DROP
 -A INPUT -s 2a12:bec0:340::/44 -j DROP
+-A INPUT -s 2a13:2bc0::/29 -j DROP
+-A INPUT -s 2a13:2e40::/29 -j DROP
+-A INPUT -s 2a13:3080::/29 -j DROP
+-A INPUT -s 2a13:4900::/29 -j DROP
 -A INPUT -s 2a13:9402::/32 -j DROP
 -A INPUT -s 2a13:b840::/29 -j DROP
 -A INPUT -s 2a13:c240::/29 -j DROP
+-A INPUT -s 2a13:d100::/29 -j DROP
+-A INPUT -s 2a13:d1c0::/29 -j DROP
+-A INPUT -s 2a13:dcc0::/29 -j DROP
+-A INPUT -s 2a13:dd40::/29 -j DROP
 -A INPUT -s 2a13:ddc0::/29 -j DROP
+-A INPUT -s 2a13:fa00::/29 -j DROP
+-A INPUT -s 2a13:fd00::/29 -j DROP
+-A INPUT -s 2a14:1100::/29 -j DROP
 -A INPUT -s 2a14:35c0::/29 -j DROP
 -A INPUT -s 2a14:5840::/29 -j DROP
+-A INPUT -s 2a14:68c0::/29 -j DROP
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
 -A INPUT -s 2a00:b703:fff1::/48 -j DROP
 -A INPUT -s 2a00:b703:fff2::/48 -j DROP
@@ -150,13 +206,11 @@
 -A INPUT -s 240d:c000:f000::/41 -j DROP
 -A INPUT -s 240d:c000:f0c0::/42 -j DROP
 -A INPUT -s 240d:c010::/47 -j DROP
--A INPUT -s 240d:c010:11::/48 -j DROP
 -A INPUT -s 240d:c010:14::/48 -j DROP
 -A INPUT -s 240d:c010:16::/48 -j DROP
 -A INPUT -s 240d:c010:18::/48 -j DROP
 -A INPUT -s 240d:c010:20::/44 -j DROP
 -A INPUT -s 240d:c010:30::/47 -j DROP
--A INPUT -s 240d:c010:54::/48 -j DROP
 -A INPUT -s 240d:c010:58::/48 -j DROP
 -A INPUT -s 240d:c010:5c::/48 -j DROP
 -A INPUT -s 240d:c010:68::/48 -j DROP
@@ -239,7 +293,7 @@
 -A INPUT -s 2a0d:2405::/32 -j DROP
 -A INPUT -s 2a0d:2406::/39 -j DROP
 -A INPUT -s 2a0d:2407::/32 -j DROP
--A INPUT -s 2a0d:2787::/32 -j DROP
+-A INPUT -s 2a0d:2784::/30 -j DROP
 -A INPUT -s 2a0e:16c0::/29 -j DROP
 -A INPUT -s 2a0e:1740::/29 -j DROP
 -A INPUT -s 2a0e:2000::/29 -j DROP
@@ -268,6 +322,8 @@
 -A INPUT -s 2a03:cfc0::/32 -j DROP
 -A INPUT -s 2a09:d580::/29 -j DROP
 -A INPUT -s 2a12:a800:2::/48 -j DROP
+# AS207208 MEVSPACE sp. z o.o.
+-A INPUT -s 2001:67c:2498::/48 -j DROP
 # AS61280 FGUP GRCHC (Russian goverment)
 -A INPUT -s 2a0c:a9c7:156::/47 -j DROP
 -A INPUT -s 2a0c:a9c7:158::/48 -j DROP
@@ -315,7 +371,11 @@
 -A INPUT -s 2a06:c5c0:600::/48 -j DROP
 -A INPUT -s 2a07:3b80:2::/48 -j DROP
 # AS25820 IT7 Networks Inc
+-A INPUT -s 2607:8700:2200::/48 -j DROP
+-A INPUT -s 2607:8700:3100::/48 -j DROP
+-A INPUT -s 2607:8700:3400::/48 -j DROP
 -A INPUT -s 2607:8700:5500::/48 -j DROP
+-A INPUT -s 2607:8700:9300::/48 -j DROP
 # AS3214 xTom GmbH
 -A INPUT -s 2a03:d9c0:1000::/48 -j DROP
 -A INPUT -s 2a03:d9c0:2000::/48 -j DROP
@@ -354,15 +414,18 @@
 -A INPUT -s 2a0c:59c0::/29 -j DROP
 # AS39421 Sapinet SAS
 -A INPUT -s 2a0c:8880::/29 -j DROP
-# AS49581 FZ-IP-MNT
+# AS49581 Ferdinand Zink trading as Tube-Hosting
 -A INPUT -s 2a05:dfc3:fc00::/40 -j DROP
 -A INPUT -s 2a06:1283:8a00::/40 -j DROP
 -A INPUT -s 2a12:8640::/29 -j DROP
 -A INPUT -s 2a12:b200::/29 -j DROP
 -A INPUT -s 2a12:bec4:1651::/48 -j DROP
+-A INPUT -s 2a12:bec4:1652::/48 -j DROP
 -A INPUT -s 2a12:bec4:1750::/45 -j DROP
 -A INPUT -s 2a12:bec4:1758::/47 -j DROP
+-A INPUT -s 2a12:d540::/29 -j DROP
 -A INPUT -s 2a12:de40::/32 -j DROP
+-A INPUT -s 2a12:eb00::/29 -j DROP
 # AS214339 SRV.RENT UG (haftungsbeschraenkt)
 -A INPUT -s 2a07:6d40:2::/48 -j DROP
 -A INPUT -s 2a12:de40:46::/48 -j DROP
@@ -373,7 +436,7 @@
 # AS399820 Atomic Networks LLC
 -A INPUT -s 2602:fc2f:100::/40 -j DROP
 -A INPUT -s 2602:fc2f:f00::/48 -j DROP
-# AS200482 AS200482-MNT
+# AS200482 nexserv GmbH
 -A INPUT -s 2a12:3e80::/40 -j DROP
 -A INPUT -s 2a12:3e80:200::/39 -j DROP
 -A INPUT -s 2a12:3e80:402::/48 -j DROP
@@ -387,7 +450,7 @@
 -A INPUT -s 2a12:bec4:17a0::/44 -j DROP
 # AS215400 Kaan Kalayci trading as FastLayer
 -A INPUT -s 2a12:de40:27::/48 -j DROP
-# AS197477 Moritz Mantel
+# AS197477 Moritz Mantel trading as Nerdscave
 -A INPUT -s 2a06:1283::/34 -j DROP
 -A INPUT -s 2a06:de01:70::/48 -j DROP
 -A INPUT -s 2a06:de01:7a::/47 -j DROP
@@ -400,7 +463,6 @@
 -A INPUT -s 2a14:7c0:4800::/40 -j DROP
 # AS212762 Casper Krook trading as Ck IT Solutions
 -A INPUT -s 2a05:dfc1:5502::/47 -j DROP
--A INPUT -s 2a05:dfc1:5504::/48 -j DROP
 # AS204914 LABIXE LTD
 -A INPUT -s 2a0c:9a40:8350::/48 -j DROP
 # AS215026 Alessandro Accorsi trading as Len Service SRL
@@ -425,6 +487,10 @@
 # AS215039 Semih Gokcalik
 -A INPUT -s 2a0a:6044:ac50::/44 -j DROP
 -A INPUT -s 2a0f:85c1:3c9::/48 -j DROP
+# AS215987 Taylan Gueler trading as Soliaweb
+-A INPUT -s 2a0f:9400:7389::/48 -j DROP
+-A INPUT -s 2a11:29c0:2e::/48 -j DROP
+-A INPUT -s 2a11:29c0:4a::/48 -j DROP
 # AS40124 Charged IT Solutions LLC
 -A INPUT -s 2602:299:10::/44 -j DROP
 -A INPUT -s 2602:299:30::/44 -j DROP
@@ -439,9 +505,9 @@
 -A INPUT -s 2a0e:d9c0::/29 -j DROP
 -A INPUT -s 2a0f:5e80::/29 -j DROP
 -A INPUT -s 2c0f:f930::/32 -j DROP
-# AS34534 lir-fr-fbw-networks-1-MNT
+# AS34534 FBW NETWORKS SAS
 -A INPUT -s 2a09:ca00::/48 -j DROP
-# AS49434 lir-fr-fbw-networks-1-MNT
+# AS49434 FBW NETWORKS SAS
 -A INPUT -s 2a09:ca00::/29 -j DROP
 -A INPUT -s 2a0a:2f82::/32 -j DROP
 -A INPUT -s 2a0f:9240::/32 -j DROP
@@ -483,6 +549,7 @@
 -A INPUT -s 2a14:9e00:200::/40 -j DROP
 # AS60223 Netiface Limited
 -A INPUT -s 2a14:7c0:3900::/40 -j DROP
+-A INPUT -s 2a14:9e00:300::/40 -j DROP
 -A INPUT -s 2a14:9e00:9000::/39 -j DROP
 # AS214834 Rekade International LTD
 -A INPUT -s 2a14:7c0:4e00::/40 -j DROP
@@ -494,14 +561,14 @@
 # AS50580 Mario Networks Limited
 -A INPUT -s 2a13:da00::/32 -j DROP
 -A INPUT -s 2a13:e400::/32 -j DROP
-# AS198584 mnt-de-xsserver-1
+# AS198584 PIO-Hosting GmbH
 -A INPUT -s 2a10:ca80::/48 -j DROP
 # AS216213 Lexistar Alliance Ltd.
 -A INPUT -s 2a13:e0c0::/29 -j DROP
 -A INPUT -s 2a14:1840::/29 -j DROP
 # AS215826 Partner Hosting LTD
 -A INPUT -s 2a0c:9a40:9404::/47 -j DROP
-# AS52053 fr-redheberg-mnt
+# AS52053 REDHEBERG Association declaree
 -A INPUT -s 2a14:1d00::/44 -j DROP
 # AS138699 TIKTOK PTE. LTD.
 -A INPUT -s 2404:9dc0:cd01::/48 -j DROP
@@ -545,7 +612,7 @@
 # AS132825 MYTEK TRADING PTY LTD
 -A INPUT -s 2001:df0:fbc0::/48 -j DROP
 -A INPUT -s 2407:1100::/32 -j DROP
-# AS3920 RIPE Network Coordination Centre
+# AS3920 RIPE Network Coordination Centre (Estoxy OU)
 -A INPUT -s 2a13:adc0::/46 -j DROP
 # AS60539 Huicast Telecom Limited
 -A INPUT -s 2401:e3a0:1::/48 -j DROP
@@ -562,14 +629,18 @@
 # AS50917 Diederik Focko de Zee
 -A INPUT -s 2001:678:7ec::/48 -j DROP
 -A INPUT -s 2a11:1400:2000::/48 -j DROP
-# AS58212 dataforest-MNT
+# AS58212 dataforest GmbH
 -A INPUT -s 2407:9d00:20::/48 -j DROP
 -A INPUT -s 2a03:403::/32 -j DROP
 -A INPUT -s 2a05:dfc1:5801::/48 -j DROP
 -A INPUT -s 2a0c:4ac0:1100::/40 -j DROP
 -A INPUT -s 2a0c:4ac0:1200::/40 -j DROP
 -A INPUT -s 2a0c:4ac1::/32 -j DROP
+-A INPUT -s 2a0d:1180::/29 -j DROP
 -A INPUT -s 2a0d:5940::/29 -j DROP
+-A INPUT -s 2a10:cc40:231::/48 -j DROP
+-A INPUT -s 2a10:cc40:233::/48 -j DROP
+-A INPUT -s 2a10:cc40:234::/46 -j DROP
 -A INPUT -s 2a12:bec4:1520::/44 -j DROP
 -A INPUT -s 2a12:bec4:1758::/45 -j DROP
 # AS212935 Theori Inc
@@ -615,7 +686,7 @@
 -A INPUT -s 2001:67c:270::/48 -j DROP
 -A INPUT -s 2001:67c:28a0::/48 -j DROP
 -A INPUT -s 2a07:5b47::/32 -j DROP
-# AS210743 COGENT-HM-MNT
+# AS210743 Babbar SAS
 -A INPUT -s 2001:978:1b04::/47 -j DROP
 # AS64476 Shadow SAS
 -A INPUT -s 2a0a:e805:210::/44 -j DROP
@@ -648,11 +719,10 @@
 -A INPUT -s 2a0c:e641::/32 -j DROP
 -A INPUT -s 2a0f:1584:1::/48 -j DROP
 -A INPUT -s 2a0f:9400:611f::/48 -j DROP
+-A INPUT -s 2a10:67c3::/32 -j DROP
 -A INPUT -s 2a14:7582::/32 -j DROP
 -A INPUT -s 2a14:7584:5000::/36 -j DROP
 # AS215120 Evolus IT Solutions GmbH
--A INPUT -s 2a06:5280::/29 -j DROP
--A INPUT -s 2a09:4500::/29 -j DROP
 -A INPUT -s 2a0c:9a40:8570::/48 -j DROP
 # AS41047 Bart Vrancken trading as MLaB
 -A INPUT -s 2a0e:a6c0::/30 -j DROP
@@ -737,7 +807,7 @@
 -A INPUT -s 2a0d:3c45::/32 -j DROP
 # AS198738 Smarttelecom LTD
 -A INPUT -s 2a07:bfc0::/29 -j DROP
-# AS205125 NETWORK-MANAGEMENT-MNT
+# AS205125 Network Management Ltd
 -A INPUT -s 2a03:e2c0::/32 -j DROP
 -A INPUT -s 2a0d:8340::/31 -j DROP
 # AS211720 Datashield, Inc.
@@ -754,8 +824,6 @@
 -A INPUT -s 2a09:2dc3::/32 -j DROP
 # AS35112 GBN group Ltd
 -A INPUT -s 2a0e:7200::/40 -j DROP
-# AS36902 Intelvision Ltd
--A INPUT -s 2c0f:efa0::/32 -j DROP
 # AS37740 IPTP Inc
 -A INPUT -s 2a03:9d40:4000::/40 -j DROP
 # AS213373 IP Connect Inc
@@ -804,9 +872,8 @@
 -A INPUT -s 2a09::/48 -j DROP
 -A INPUT -s 2a11::/48 -j DROP
 # AS26737 TREE TELECOM
--A INPUT -s 2602:f894:100::/40 -j DROP
--A INPUT -s 2602:f894:200::/39 -j DROP
--A INPUT -s 2602:f894:600::/39 -j DROP
+-A INPUT -s 2602:f894:200::/40 -j DROP
+-A INPUT -s 2602:f894:700::/40 -j DROP
 -A INPUT -s 2602:f894:800::/39 -j DROP
 # AS210387 Bubacarr Sowe
 -A INPUT -s 2a06:a001:a0f3::/48 -j DROP
@@ -827,14 +894,19 @@
 -A INPUT -s 2602:f91d::/40 -j DROP
 -A INPUT -s 2602:f9ba:e00::/40 -j DROP
 -A INPUT -s 2602:fbe8:e0::/44 -j DROP
+-A INPUT -s 2a01:e281:af00::/40 -j DROP
 -A INPUT -s 2a01:ffc7:200::/40 -j DROP
 -A INPUT -s 2a06:1287:a000::/36 -j DROP
+-A INPUT -s 2a06:9f40::/32 -j DROP
+-A INPUT -s 2a09:54c0::/32 -j DROP
 -A INPUT -s 2a0a:6044:c000::/40 -j DROP
+-A INPUT -s 2a0a:6047::/32 -j DROP
 -A INPUT -s 2a0a:79c7:fc00::/40 -j DROP
 -A INPUT -s 2a0f:b244:600::/40 -j DROP
 -A INPUT -s 2a0f:b246::/32 -j DROP
 -A INPUT -s 2a13:c900:fdff::/48 -j DROP
 -A INPUT -s 2a14:1ec7:f00e::/48 -j DROP
+-A INPUT -s 2a14:9e06::/32 -j DROP
 # AS400992 ZhouyiSat Communications
 -A INPUT -s 2602:f909::/40 -j DROP
 -A INPUT -s 2a0d:6c2:6::/47 -j DROP
@@ -857,5 +929,7 @@
 -A INPUT -s 2a04:4a00::/29 -j DROP
 # AS49447 Nice IT Services Group Inc.
 -A INPUT -s 2a0e:fa00::/48 -j DROP
+# AS35372 Mizban Dadeh Iranian Co. (Ltd)
+-A INPUT -s 2a0c:b100::/46 -j DROP
 
-# Last Update: 11/03/2025
+# Last Update: 24/03/2025
