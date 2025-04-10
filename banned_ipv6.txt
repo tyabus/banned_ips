@@ -23,6 +23,7 @@
 -A INPUT -s 2607:ff10::/32 -j DROP
 # AS211680 NSEC - Sistemas Informaticos, S.A. (Shodan LLC)
 -A INPUT -s 2a10:3c0:1::/48 -j DROP
+-A INPUT -s 2a10:3c0:2::/48 -j DROP
 # AS211298 Driftnet Ltd
 -A INPUT -s 2a06:4880::/30 -j DROP
 # AS211607 Securitytrails, LLC
@@ -93,13 +94,13 @@
 -A INPUT -s 2a14:7584:4100::/40 -j DROP
 # AS49418 NETSHIELD LTD
 -A INPUT -s 2a01:ecc0:280::/42 -j DROP
--A INPUT -s 2a0d:aa40::/29 -j DROP
 -A INPUT -s 2a0f:cdc6:45::/48 -j DROP
 -A INPUT -s 2a0f:cdc6:777::/48 -j DROP
 -A INPUT -s 2a0f:cdc6:1001::/48 -j DROP
 -A INPUT -s 2a0f:cdc6:1005::/48 -j DROP
 # AS212477 RoyaleHosting BV
 -A INPUT -s 2001:3080::/29 -j DROP
+-A INPUT -s 2602:f7f8:4::/48 -j DROP
 -A INPUT -s 2602:fa0a::/40 -j DROP
 -A INPUT -s 2a03:5840:fc::/48 -j DROP
 -A INPUT -s 2a05:541:157::/48 -j DROP
@@ -160,7 +161,6 @@
 -A INPUT -s 2a13:2bc0::/29 -j DROP
 -A INPUT -s 2a13:2e40::/29 -j DROP
 -A INPUT -s 2a13:3080::/29 -j DROP
--A INPUT -s 2a13:4900::/29 -j DROP
 -A INPUT -s 2a13:9402::/32 -j DROP
 -A INPUT -s 2a13:b840::/29 -j DROP
 -A INPUT -s 2a13:d100::/29 -j DROP
@@ -414,8 +414,6 @@
 # AS39421 Sapinet SAS
 -A INPUT -s 2a0c:8880::/29 -j DROP
 # AS49581 Ferdinand Zink trading as Tube-Hosting
--A INPUT -s 2a05:dfc3:fc00::/40 -j DROP
--A INPUT -s 2a06:1283:8a00::/40 -j DROP
 -A INPUT -s 2a12:8640::/29 -j DROP
 -A INPUT -s 2a12:b200::/29 -j DROP
 -A INPUT -s 2a12:bec4:1651::/48 -j DROP
@@ -461,6 +459,7 @@
 -A INPUT -s 2a14:7c0:4800::/40 -j DROP
 # AS212762 Casper Krook trading as Ck IT Solutions
 -A INPUT -s 2a05:dfc1:5502::/47 -j DROP
+-A INPUT -s 2a05:dfc1:5504::/48 -j DROP
 # AS204914 LABIXE LTD
 -A INPUT -s 2a0c:9a40:8350::/48 -j DROP
 # AS215026 Alessandro Accorsi trading as Len Service SRL
@@ -479,7 +478,6 @@
 -A INPUT -s 2a12:bec0:190::/48 -j DROP
 -A INPUT -s 2a12:bec0:19f::/48 -j DROP
 # AS199654 Oxide Group Limited
--A INPUT -s 2a12:bec0:200::/48 -j DROP
 -A INPUT -s 2a12:bec0:20a::/47 -j DROP
 -A INPUT -s 2a12:bec0:20c::/48 -j DROP
 # AS215039 Semih Gokcalik
@@ -541,6 +539,7 @@
 -A INPUT -s 2a0f:9400:7e11::/48 -j DROP
 # AS214515 Amir Mohammad Masoudi
 -A INPUT -s 2a05:9080:6::/48 -j DROP
+-A INPUT -s 2a05:9080:9::/48 -j DROP
 -A INPUT -s 2a14:7c0:6000::/40 -j DROP
 -A INPUT -s 2a14:9e00:200::/40 -j DROP
 # AS215462 Noel Nayasha Materke
@@ -548,6 +547,7 @@
 -A INPUT -s 2a13:e403::/32 -j DROP
 # AS60223 Netiface Limited
 -A INPUT -s 2a14:7c0:3900::/40 -j DROP
+-A INPUT -s 2a14:62c0::/29 -j DROP
 -A INPUT -s 2a14:9e00:300::/40 -j DROP
 -A INPUT -s 2a14:9e00:9000::/39 -j DROP
 # AS214834 Rekade International LTD
@@ -562,6 +562,10 @@
 # AS216213 Lexistar Alliance Ltd.
 -A INPUT -s 2a13:e0c0::/29 -j DROP
 -A INPUT -s 2a14:1840::/29 -j DROP
+-A INPUT -s 2a14:c880::/33 -j DROP
+# AS214927 PSB HOSTING LTD
+-A INPUT -s 2a0c:7886:105::/48 -j DROP
+-A INPUT -s 2a0f:e7c6:1000::/48 -j DROP
 # AS215826 Partner Hosting LTD
 -A INPUT -s 2a0c:9a40:9404::/47 -j DROP
 # AS52053 REDHEBERG Association declaree
@@ -606,7 +610,7 @@
 # AS132825 MYTEK TRADING PTY LTD
 -A INPUT -s 2001:df0:fbc0::/48 -j DROP
 -A INPUT -s 2407:1100::/32 -j DROP
-# AS3920 RIPE Network Coordination Centre (Estoxy OU)
+# AS3920 ESTOXY OU (Estoxy OU)
 -A INPUT -s 2a13:adc0::/46 -j DROP
 # AS60539 Huicast Telecom Limited
 -A INPUT -s 2401:e3a0:1::/48 -j DROP
@@ -696,11 +700,11 @@
 -A INPUT -s 2602:f919:100::/48 -j DROP
 -A INPUT -s 2602:f919:102::/48 -j DROP
 -A INPUT -s 2602:fa3d:a92::/48 -j DROP
+-A INPUT -s 2602:fa42:300::/40 -j DROP
 -A INPUT -s 2602:fd92:200::/40 -j DROP
 -A INPUT -s 2602:fe13:2e0::/44 -j DROP
 -A INPUT -s 2602:fe13:806::/48 -j DROP
 -A INPUT -s 2602:fed2:7114::/48 -j DROP
--A INPUT -s 2602:fed2:7128::/48 -j DROP
 -A INPUT -s 2602:fed2:7185::/48 -j DROP
 -A INPUT -s 2602:fed2:7e05::/48 -j DROP
 -A INPUT -s 2602:fed2:7e06::/48 -j DROP
@@ -712,6 +716,7 @@
 -A INPUT -s 2a0f:1584:1::/48 -j DROP
 -A INPUT -s 2a0f:9400:611f::/48 -j DROP
 -A INPUT -s 2a10:67c3::/32 -j DROP
+-A INPUT -s 2a14:7584:1000::/36 -j DROP
 -A INPUT -s 2a14:7584:5000::/36 -j DROP
 # AS215120 Evolus IT Solutions GmbH
 -A INPUT -s 2a0c:9a40:8570::/48 -j DROP
@@ -755,6 +760,8 @@
 # AS64457 Matteo Fruhwald
 -A INPUT -s 2a14:7c0:f100::/40 -j DROP
 -A INPUT -s 2a14:7c0:f300::/40 -j DROP
+# AS216141 Marco Fontana
+-A INPUT -s 2a11:f2c0:ffc7::/48 -j DROP
 # AS214576 Berdiev Ruslan Mukhabatovich
 -A INPUT -s 2a0e:4005:1002::/48 -j DROP
 # AS209823 Enki Multimedia EURL
@@ -853,7 +860,6 @@
 -A INPUT -s 2a0c:59c0:18::/48 -j DROP
 -A INPUT -s 2a11:3:500::/40 -j DROP
 # AS23959 Owl Limited
--A INPUT -s 2403:fbc0:5000::/48 -j DROP
 -A INPUT -s 2403:fbc0:6000::/48 -j DROP
 -A INPUT -s 2403:fbc0:7000::/48 -j DROP
 -A INPUT -s 2a11:8083:4::/48 -j DROP
@@ -872,8 +878,6 @@
 -A INPUT -s 2602:f894:200::/39 -j DROP
 -A INPUT -s 2602:f894:400::/38 -j DROP
 -A INPUT -s 2602:f894:800::/39 -j DROP
-# AS210387 Bubacarr Sowe
--A INPUT -s 2a06:a001:a0f3::/48 -j DROP
 # AS132088 Wind Cloud Network Technology Co Ltd
 -A INPUT -s 2402:e940:20::/43 -j DROP
 -A INPUT -s 2402:e940:40::/44 -j DROP
@@ -912,5 +916,7 @@
 -A INPUT -s 2a0e:fa00::/48 -j DROP
 # AS35372 Mizban Dadeh Iranian Co. (Ltd)
 -A INPUT -s 2a0c:b100::/46 -j DROP
+# AS213693 Imad Nabil Daher trading as ID Performance
+-A INPUT -s 2a0f:85c1:b36::/48 -j DROP
 
-# Last Update: 31/03/2025
+# Last Update: 10/04/2025
