@@ -1,5 +1,5 @@
 #
-# Last Update: 10/04/2025
+# Last Update: 15/04/2025
 #
 /ipv6 firewall address-list
 # scan-16-0c.shadowserver.org
@@ -173,7 +173,6 @@ add list=Blacklist comment="212477" address=2a13:ddc0::/29
 add list=Blacklist comment="212477" address=2a13:fa00::/29
 add list=Blacklist comment="212477" address=2a13:fd00::/29
 add list=Blacklist comment="212477" address=2a14:1100::/29
-add list=Blacklist comment="212477" address=2a14:62c0::/29
 add list=Blacklist comment="212477" address=2a14:68c0::/29
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
 add list=Blacklist comment="215540" address=2a00:b703:fff1::/48
@@ -549,7 +548,7 @@ add list=Blacklist comment="215462" address=2a13:da03::/32
 add list=Blacklist comment="215462" address=2a13:e403::/32
 # AS60223 Netiface Limited
 add list=Blacklist comment="60223" address=2a14:7c0:3900::/40
-#add list=Blacklist comment="60223" address=2a14:62c0::/29
+add list=Blacklist comment="60223" address=2a14:62c0::/29
 add list=Blacklist comment="60223" address=2a14:9e00:300::/40
 add list=Blacklist comment="60223" address=2a14:9e00:9000::/39
 # AS214834 Rekade International LTD
@@ -563,6 +562,7 @@ add list=Blacklist comment="214834" address=2a14:9e00:c00::/38
 add list=Blacklist comment="198584" address=2a10:ca80::/48
 # AS216213 Lexistar Alliance Ltd.
 add list=Blacklist comment="216213" address=2a13:e0c0::/29
+add list=Blacklist comment="216213" address=2a14:17c0::/29
 add list=Blacklist comment="216213" address=2a14:1840::/29
 add list=Blacklist comment="216213" address=2a14:c880::/33
 # AS214927 PSB HOSTING LTD
@@ -701,6 +701,7 @@ add list=Blacklist comment="56611" address=2a02:6c8::/33
 add list=Blacklist comment="26042" address=2602:294::/36
 add list=Blacklist comment="26042" address=2602:f919:100::/48
 add list=Blacklist comment="26042" address=2602:f919:102::/48
+add list=Blacklist comment="26042" address=2602:f992:90::/44
 add list=Blacklist comment="26042" address=2602:fa3d:a92::/48
 add list=Blacklist comment="26042" address=2602:fa42:300::/40
 add list=Blacklist comment="26042" address=2602:fd92:200::/40
@@ -717,11 +718,16 @@ add list=Blacklist comment="26042" address=2a09:da00::/32
 add list=Blacklist comment="26042" address=2a0c:e641::/32
 add list=Blacklist comment="26042" address=2a0f:1584:1::/48
 add list=Blacklist comment="26042" address=2a0f:9400:611f::/48
+add list=Blacklist comment="26042" address=2a0f:9400:6939::/48
+add list=Blacklist comment="26042" address=2a0f:9400:7385::/48
 add list=Blacklist comment="26042" address=2a10:67c3::/32
+add list=Blacklist comment="26042" address=2a12:bec4:1980::/44
+add list=Blacklist comment="26042" address=2a14:7580:fc00::/40
 add list=Blacklist comment="26042" address=2a14:7584:1000::/36
 add list=Blacklist comment="26042" address=2a14:7584:5000::/36
 # AS215120 Evolus IT Solutions GmbH
 add list=Blacklist comment="215120" address=2a0c:9a40:8570::/48
+add list=Blacklist comment="215120" address=2a12:bec4:19a0::/48
 # AS41047 Bart Vrancken trading as MLaB
 add list=Blacklist comment="41047" address=2a0e:a6c0::/30
 # AS53755 Input Output Flood LLC
@@ -774,6 +780,8 @@ add list=Blacklist comment="209823" address=2a12:5541:331::/48
 add list=Blacklist comment="209823" address=2a12:5542::/32
 # AS211059 Tribeka Web Advisors S.A.
 add list=Blacklist comment="211059" address=2a11:4c0:5::/48
+# AS210924 ssd networks limited
+add list=Blacklist comment="210924" address=2a14:c100::/29
 # AS47464 Address Management Inc.
 add list=Blacklist comment="47464" address=2a07:ca00::/30
 add list=Blacklist comment="47464" address=2a07:ca04::/31
@@ -900,7 +908,7 @@ add list=Blacklist comment="400992" address=2a0d:6c2:6::/47
 add list=Blacklist comment="400992" address=2a0d:6c2:11::/48
 add list=Blacklist comment="400992" address=2a0d:6c2:12::/47
 add list=Blacklist comment="400992" address=2a0d:6c2:26::/47
-# AS30823 COMBAHTON
+# AS30823 aurologic GmbH
 add list=Blacklist comment="30823" address=2001:df1:7780::/48
 add list=Blacklist comment="30823" address=2602:fa59::/40
 add list=Blacklist comment="30823" address=2a00:f826:3::/48
@@ -912,6 +920,9 @@ add list=Blacklist comment="30823" address=2a0d:4cc0::/29
 add list=Blacklist comment="30823" address=2a0e:5100::/29
 add list=Blacklist comment="30823" address=2a0e:b540::/29
 add list=Blacklist comment="30823" address=2a10:9c00::/29
+# AS211138 Private-Hosting di Cipriano oscar
+add list=Blacklist comment="211138" address=2a05:4140:500::/48
+add list=Blacklist comment="211138" address=2a11:e104:1::/48
 # AS47440 BUSINESS SYSTEM TELEHOUSE, OOO
 add list=Blacklist comment="47440" address=2a04:4a00::/29
 # AS49447 Nice IT Services Group Inc.
@@ -920,3 +931,6 @@ add list=Blacklist comment="49447" address=2a0e:fa00::/48
 add list=Blacklist comment="35372" address=2a0c:b100::/46
 # AS213693 Imad Nabil Daher trading as ID Performance
 add list=Blacklist comment="213693" address=2a0f:85c1:b36::/48
+# AS43641 SOLLUTIUM EU Sp z.o.o.
+add list=Blacklist comment="43641" address=2a09:2dc1::/32
+add list=Blacklist comment="43641" address=2a11:6100::/31

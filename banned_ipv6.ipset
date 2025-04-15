@@ -1,5 +1,5 @@
 #
-# Last Update: 10/04/2025
+# Last Update: 15/04/2025
 #
 create blacklistv6 hash:net family inet6 hashsize 8192
 # The Shadowserver Foundation, Inc. IPv6
@@ -174,7 +174,6 @@ add blacklistv6 2a13:ddc0::/29
 add blacklistv6 2a13:fa00::/29
 add blacklistv6 2a13:fd00::/29
 add blacklistv6 2a14:1100::/29
-add blacklistv6 2a14:62c0::/29
 add blacklistv6 2a14:68c0::/29
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
 add blacklistv6 2a00:b703:fff1::/48
@@ -550,7 +549,7 @@ add blacklistv6 2a13:da03::/32
 add blacklistv6 2a13:e403::/32
 # AS60223 Netiface Limited
 add blacklistv6 2a14:7c0:3900::/40
-#add blacklistv6 2a14:62c0::/29
+add blacklistv6 2a14:62c0::/29
 add blacklistv6 2a14:9e00:300::/40
 add blacklistv6 2a14:9e00:9000::/39
 # AS214834 Rekade International LTD
@@ -564,6 +563,7 @@ add blacklistv6 2a14:9e00:c00::/38
 add blacklistv6 2a10:ca80::/48
 # AS216213 Lexistar Alliance Ltd.
 add blacklistv6 2a13:e0c0::/29
+add blacklistv6 2a14:17c0::/29
 add blacklistv6 2a14:1840::/29
 add blacklistv6 2a14:c880::/33
 # AS214927 PSB HOSTING LTD
@@ -702,6 +702,7 @@ add blacklistv6 2a02:6c8::/33
 add blacklistv6 2602:294::/36
 add blacklistv6 2602:f919:100::/48
 add blacklistv6 2602:f919:102::/48
+add blacklistv6 2602:f992:90::/44
 add blacklistv6 2602:fa3d:a92::/48
 add blacklistv6 2602:fa42:300::/40
 add blacklistv6 2602:fd92:200::/40
@@ -718,11 +719,16 @@ add blacklistv6 2a09:da00::/32
 add blacklistv6 2a0c:e641::/32
 add blacklistv6 2a0f:1584:1::/48
 add blacklistv6 2a0f:9400:611f::/48
+add blacklistv6 2a0f:9400:6939::/48
+add blacklistv6 2a0f:9400:7385::/48
 add blacklistv6 2a10:67c3::/32
+add blacklistv6 2a12:bec4:1980::/44
+add blacklistv6 2a14:7580:fc00::/40
 add blacklistv6 2a14:7584:1000::/36
 add blacklistv6 2a14:7584:5000::/36
 # AS215120 Evolus IT Solutions GmbH
 add blacklistv6 2a0c:9a40:8570::/48
+add blacklistv6 2a12:bec4:19a0::/48
 # AS41047 Bart Vrancken trading as MLaB
 add blacklistv6 2a0e:a6c0::/30
 # AS53755 Input Output Flood LLC
@@ -775,6 +781,8 @@ add blacklistv6 2a12:5541:331::/48
 add blacklistv6 2a12:5542::/32
 # AS211059 Tribeka Web Advisors S.A.
 add blacklistv6 2a11:4c0:5::/48
+# AS210924 ssd networks limited
+add blacklistv6 2a14:c100::/29
 # AS47464 Address Management Inc.
 add blacklistv6 2a07:ca00::/30
 add blacklistv6 2a07:ca04::/31
@@ -901,7 +909,7 @@ add blacklistv6 2a0d:6c2:6::/47
 add blacklistv6 2a0d:6c2:11::/48
 add blacklistv6 2a0d:6c2:12::/47
 add blacklistv6 2a0d:6c2:26::/47
-# AS30823 COMBAHTON
+# AS30823 aurologic GmbH
 add blacklistv6 2001:df1:7780::/48
 add blacklistv6 2602:fa59::/40
 add blacklistv6 2a00:f826:3::/48
@@ -913,6 +921,9 @@ add blacklistv6 2a0d:4cc0::/29
 add blacklistv6 2a0e:5100::/29
 add blacklistv6 2a0e:b540::/29
 add blacklistv6 2a10:9c00::/29
+# AS211138 Private-Hosting di Cipriano oscar
+add blacklistv6 2a05:4140:500::/48
+add blacklistv6 2a11:e104:1::/48
 # AS47440 BUSINESS SYSTEM TELEHOUSE, OOO
 add blacklistv6 2a04:4a00::/29
 # AS49447 Nice IT Services Group Inc.
@@ -921,3 +932,6 @@ add blacklistv6 2a0e:fa00::/48
 add blacklistv6 2a0c:b100::/46
 # AS213693 Imad Nabil Daher trading as ID Performance
 add blacklistv6 2a0f:85c1:b36::/48
+# AS43641 SOLLUTIUM EU Sp z.o.o.
+add blacklistv6 2a09:2dc1::/32
+add blacklistv6 2a11:6100::/31

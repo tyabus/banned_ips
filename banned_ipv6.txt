@@ -171,7 +171,6 @@
 -A INPUT -s 2a13:fa00::/29 -j DROP
 -A INPUT -s 2a13:fd00::/29 -j DROP
 -A INPUT -s 2a14:1100::/29 -j DROP
--A INPUT -s 2a14:62c0::/29 -j DROP
 -A INPUT -s 2a14:68c0::/29 -j DROP
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
 -A INPUT -s 2a00:b703:fff1::/48 -j DROP
@@ -561,6 +560,7 @@
 -A INPUT -s 2a10:ca80::/48 -j DROP
 # AS216213 Lexistar Alliance Ltd.
 -A INPUT -s 2a13:e0c0::/29 -j DROP
+-A INPUT -s 2a14:17c0::/29 -j DROP
 -A INPUT -s 2a14:1840::/29 -j DROP
 -A INPUT -s 2a14:c880::/33 -j DROP
 # AS214927 PSB HOSTING LTD
@@ -699,6 +699,7 @@
 -A INPUT -s 2602:294::/36 -j DROP
 -A INPUT -s 2602:f919:100::/48 -j DROP
 -A INPUT -s 2602:f919:102::/48 -j DROP
+-A INPUT -s 2602:f992:90::/44 -j DROP
 -A INPUT -s 2602:fa3d:a92::/48 -j DROP
 -A INPUT -s 2602:fa42:300::/40 -j DROP
 -A INPUT -s 2602:fd92:200::/40 -j DROP
@@ -715,11 +716,16 @@
 -A INPUT -s 2a0c:e641::/32 -j DROP
 -A INPUT -s 2a0f:1584:1::/48 -j DROP
 -A INPUT -s 2a0f:9400:611f::/48 -j DROP
+-A INPUT -s 2a0f:9400:6939::/48 -j DROP
+-A INPUT -s 2a0f:9400:7385::/48 -j DROP
 -A INPUT -s 2a10:67c3::/32 -j DROP
+-A INPUT -s 2a12:bec4:1980::/44 -j DROP
+-A INPUT -s 2a14:7580:fc00::/40 -j DROP
 -A INPUT -s 2a14:7584:1000::/36 -j DROP
 -A INPUT -s 2a14:7584:5000::/36 -j DROP
 # AS215120 Evolus IT Solutions GmbH
 -A INPUT -s 2a0c:9a40:8570::/48 -j DROP
+-A INPUT -s 2a12:bec4:19a0::/48 -j DROP
 # AS41047 Bart Vrancken trading as MLaB
 -A INPUT -s 2a0e:a6c0::/30 -j DROP
 # AS53755 Input Output Flood LLC
@@ -772,6 +778,8 @@
 -A INPUT -s 2a12:5542::/32 -j DROP
 # AS211059 Tribeka Web Advisors S.A.
 -A INPUT -s 2a11:4c0:5::/48 -j DROP
+# AS210924 ssd networks limited
+-A INPUT -s 2a14:c100::/29 -j DROP
 # AS47464 Address Management Inc.
 -A INPUT -s 2a07:ca00::/30 -j DROP
 -A INPUT -s 2a07:ca04::/31 -j DROP
@@ -898,7 +906,7 @@
 -A INPUT -s 2a0d:6c2:11::/48 -j DROP
 -A INPUT -s 2a0d:6c2:12::/47 -j DROP
 -A INPUT -s 2a0d:6c2:26::/47 -j DROP
-# AS30823 COMBAHTON
+# AS30823 aurologic GmbH
 -A INPUT -s 2001:df1:7780::/48 -j DROP
 -A INPUT -s 2602:fa59::/40 -j DROP
 -A INPUT -s 2a00:f826:3::/48 -j DROP
@@ -910,6 +918,9 @@
 -A INPUT -s 2a0e:5100::/29 -j DROP
 -A INPUT -s 2a0e:b540::/29 -j DROP
 -A INPUT -s 2a10:9c00::/29 -j DROP
+# AS211138 Private-Hosting di Cipriano oscar
+-A INPUT -s 2a05:4140:500::/48 -j DROP
+-A INPUT -s 2a11:e104:1::/48 -j DROP
 # AS47440 BUSINESS SYSTEM TELEHOUSE, OOO (Chang Way Technologies Co. Limited)
 -A INPUT -s 2a04:4a00::/29 -j DROP
 # AS49447 Nice IT Services Group Inc.
@@ -918,5 +929,8 @@
 -A INPUT -s 2a0c:b100::/46 -j DROP
 # AS213693 Imad Nabil Daher trading as ID Performance
 -A INPUT -s 2a0f:85c1:b36::/48 -j DROP
+# AS43641 SOLLUTIUM EU Sp z.o.o.
+-A INPUT -s 2a09:2dc1::/32 -j DROP
+-A INPUT -s 2a11:6100::/31 -j DROP
 
-# Last Update: 10/04/2025
+# Last Update: 15/04/2025
