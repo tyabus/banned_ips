@@ -66,7 +66,6 @@
 # AS210644 AEZA INTERNATIONAL LTD
 -A INPUT -s 2a01:e5c0:2000::/35 -j DROP
 -A INPUT -s 2a01:e5c0:4000::/34 -j DROP
--A INPUT -s 2a01:e5c0:8000::/48 -j DROP
 -A INPUT -s 2a01:e5c0:8003::/48 -j DROP
 -A INPUT -s 2a01:e5c0:8004::/48 -j DROP
 -A INPUT -s 2a0b:4140:1000::/36 -j DROP
@@ -86,7 +85,7 @@
 -A INPUT -s 2a12:5940:4000::/34 -j DROP
 -A INPUT -s 2a12:5940:8000::/33 -j DROP
 # AS214231 Cloud Solutions LLC
--A INPUT -s 2a01:e5c0:8000::/47 -j DROP
+-A INPUT -s 2a01:e5c0:8001::/48 -j DROP
 # AS215590 DpkgSoft International Limited
 -A INPUT -s 2a0f:cdc6:10::/44 -j DROP
 -A INPUT -s 2a0f:cdc6:20::/43 -j DROP
@@ -163,6 +162,7 @@
 -A INPUT -s 2a13:3080::/29 -j DROP
 -A INPUT -s 2a13:9402::/32 -j DROP
 -A INPUT -s 2a13:b840::/29 -j DROP
+-A INPUT -s 2a13:c240::/29 -j DROP
 -A INPUT -s 2a13:d100::/29 -j DROP
 -A INPUT -s 2a13:d1c0::/29 -j DROP
 -A INPUT -s 2a13:dcc0::/29 -j DROP
@@ -172,6 +172,8 @@
 -A INPUT -s 2a13:fd00::/29 -j DROP
 -A INPUT -s 2a14:1100::/29 -j DROP
 -A INPUT -s 2a14:68c0::/29 -j DROP
+# AS210352 Yijia Xu
+-A INPUT -s 2a14:67c1:a090::/47 -j DROP
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
 -A INPUT -s 2a00:b703:fff1::/48 -j DROP
 -A INPUT -s 2a00:b703:fff2::/48 -j DROP
@@ -196,14 +198,16 @@
 -A INPUT -s 2a05:541:150::/46 -j DROP
 -A INPUT -s 2a05:541:156::/47 -j DROP
 -A INPUT -s 2a05:541:158::/47 -j DROP
-# AS132203 Tencent Building, Kejizhongyi Avenue
+# AS132203 Shenzhen Tencent Computer Systems Company Limited
 -A INPUT -s 240d:c000:1000::/36 -j DROP
 -A INPUT -s 240d:c000:2000::/35 -j DROP
 -A INPUT -s 240d:c000:6000::/36 -j DROP
 -A INPUT -s 240d:c000:7000::/44 -j DROP
--A INPUT -s 240d:c000:f000::/41 -j DROP
+-A INPUT -s 240d:c000:f000::/44 -j DROP
+-A INPUT -s 240d:c000:f020::/43 -j DROP
+-A INPUT -s 240d:c000:f040::/42 -j DROP
 -A INPUT -s 240d:c000:f0c0::/42 -j DROP
--A INPUT -s 240d:c010::/47 -j DROP
+-A INPUT -s 240d:c010:1::/48 -j DROP
 -A INPUT -s 240d:c010:14::/48 -j DROP
 -A INPUT -s 240d:c010:16::/48 -j DROP
 -A INPUT -s 240d:c010:18::/48 -j DROP
@@ -212,7 +216,6 @@
 -A INPUT -s 240d:c010:58::/48 -j DROP
 -A INPUT -s 240d:c010:5c::/48 -j DROP
 -A INPUT -s 240d:c010:68::/48 -j DROP
--A INPUT -s 240d:c010:6c::/48 -j DROP
 -A INPUT -s 240d:c010:6f::/48 -j DROP
 -A INPUT -s 240d:c010:72::/48 -j DROP
 -A INPUT -s 240d:c010:11e::/48 -j DROP
@@ -459,6 +462,7 @@
 # AS212762 Casper Krook trading as Ck IT Solutions
 -A INPUT -s 2a05:dfc1:5502::/47 -j DROP
 -A INPUT -s 2a05:dfc1:5504::/48 -j DROP
+-A INPUT -s 2a05:dfc1:5506::/48 -j DROP
 # AS204914 LABIXE LTD
 -A INPUT -s 2a0c:9a40:8350::/48 -j DROP
 # AS215026 Alessandro Accorsi trading as Len Service SRL
@@ -538,7 +542,6 @@
 -A INPUT -s 2a0f:9400:7e11::/48 -j DROP
 # AS214515 Amir Mohammad Masoudi
 -A INPUT -s 2a05:9080:6::/48 -j DROP
--A INPUT -s 2a05:9080:9::/48 -j DROP
 -A INPUT -s 2a14:7c0:6000::/40 -j DROP
 -A INPUT -s 2a14:9e00:200::/40 -j DROP
 # AS215462 Noel Nayasha Materke
@@ -616,8 +619,6 @@
 -A INPUT -s 2401:e3a0:1::/48 -j DROP
 -A INPUT -s 2407:d340:8000::/40 -j DROP
 -A INPUT -s 2a13:aac0::/29 -j DROP
-# AS61302 HUIZE LTD
--A INPUT -s 2406:840:e242::/48 -j DROP
 # AS206728 Media Land LLC
 -A INPUT -s 2a0b:7ec0::/29 -j DROP
 -A INPUT -s 2a11:2081::/32 -j DROP
@@ -643,7 +644,7 @@
 -A INPUT -s 2602:f90a::/48 -j DROP
 # AS202306 HOSTGLOBAL.PLUS LTD
 -A INPUT -s 2a04:5200:5977::/48 -j DROP
-# AS199414 Noah Kolossa
+# AS199414 NEOPROTECT NET
 -A INPUT -s 2a12:bec0:2f0::/47 -j DROP
 -A INPUT -s 2a12:bec0:2f2::/48 -j DROP
 # AS44947 AMWAJ ALKHYR COMMERCIAL BROKERS CO. (UAB Host Baltic)
@@ -713,6 +714,7 @@
 -A INPUT -s 2606:fc40:4004::/48 -j DROP
 -A INPUT -s 2606:fc40:4010::/44 -j DROP
 -A INPUT -s 2a09:da00::/32 -j DROP
+-A INPUT -s 2a0a:e2c0::/29 -j DROP
 -A INPUT -s 2a0c:e641::/32 -j DROP
 -A INPUT -s 2a0f:1584:1::/48 -j DROP
 -A INPUT -s 2a0f:9400:611f::/48 -j DROP
@@ -778,8 +780,6 @@
 -A INPUT -s 2a12:5542::/32 -j DROP
 # AS211059 Tribeka Web Advisors S.A.
 -A INPUT -s 2a11:4c0:5::/48 -j DROP
-# AS210924 ssd networks limited
--A INPUT -s 2a14:c100::/29 -j DROP
 # AS47464 Address Management Inc.
 -A INPUT -s 2a07:ca00::/30 -j DROP
 -A INPUT -s 2a07:ca04::/31 -j DROP
@@ -847,8 +847,7 @@
 -A INPUT -s 2001:1600::/32 -j DROP
 -A INPUT -s 2a01:4f40::/32 -j DROP
 # AS43357 Owl Limited
--A INPUT -s 2403:fbc0:a001::/48 -j DROP
--A INPUT -s 2403:fbc0:a002::/48 -j DROP
+-A INPUT -s 2403:fbc0:a000::/46 -j DROP
 -A INPUT -s 2a03:d9c0:3000::/47 -j DROP
 -A INPUT -s 2a07:d880::/32 -j DROP
 -A INPUT -s 2a07:d881:3::/48 -j DROP
@@ -874,8 +873,6 @@
 # AS213733 Charlie Gustafsson
 -A INPUT -s 2a0c:9a40:8ae0::/48 -j DROP
 -A INPUT -s 2a0f:85c1:b43::/48 -j DROP
--A INPUT -s 2a0f:85c1:b50::/44 -j DROP
--A INPUT -s 2a0f:b244:300::/40 -j DROP
 # AS213205 COOOLBE LTD
 -A INPUT -s 2a13:2380::/29 -j DROP
 # AS24013 SB Professional Services
@@ -933,4 +930,4 @@
 -A INPUT -s 2a09:2dc1::/32 -j DROP
 -A INPUT -s 2a11:6100::/31 -j DROP
 
-# Last Update: 15/04/2025
+# Last Update: 22/04/2025
