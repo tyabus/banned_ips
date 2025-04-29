@@ -22,7 +22,6 @@
 # AS10439 CariNet, Inc. (Shodan LLC)
 -A INPUT -s 2607:ff10::/32 -j DROP
 # AS211680 NSEC - Sistemas Informaticos, S.A. (Shodan LLC)
--A INPUT -s 2a10:3c0:1::/48 -j DROP
 -A INPUT -s 2a10:3c0:2::/48 -j DROP
 # AS211298 Driftnet Ltd
 -A INPUT -s 2a06:4880::/30 -j DROP
@@ -68,6 +67,8 @@
 -A INPUT -s 2a01:e5c0:4000::/34 -j DROP
 -A INPUT -s 2a01:e5c0:8003::/48 -j DROP
 -A INPUT -s 2a01:e5c0:8004::/48 -j DROP
+-A INPUT -s 2a01:e5c0:8008::/48 -j DROP
+-A INPUT -s 2a01:e5c0:9000::/36 -j DROP
 -A INPUT -s 2a0b:4140:1000::/36 -j DROP
 -A INPUT -s 2a0b:4140:2000::/35 -j DROP
 -A INPUT -s 2a0b:4140:4000::/34 -j DROP
@@ -121,6 +122,7 @@
 -A INPUT -s 2a0b:64c0:f804::/48 -j DROP
 -A INPUT -s 2a0b:64c0:f806::/47 -j DROP
 -A INPUT -s 2a0b:64c0:f808::/48 -j DROP
+-A INPUT -s 2a0b:64c0:ffe0::/48 -j DROP
 -A INPUT -s 2a0b:b480::/29 -j DROP
 -A INPUT -s 2a0c:4880::/29 -j DROP
 -A INPUT -s 2a0c:d380::/29 -j DROP
@@ -410,6 +412,7 @@
 -A INPUT -s 2a09:0:6::/47 -j DROP
 -A INPUT -s 2a09:0:8::/47 -j DROP
 -A INPUT -s 2a09:0:11::/48 -j DROP
+-A INPUT -s 2a09:0:16::/48 -j DROP
 -A INPUT -s 2a09:0:9000::/40 -j DROP
 -A INPUT -s 2a0b:89c0::/31 -j DROP
 -A INPUT -s 2a0c:59c0::/29 -j DROP
@@ -445,7 +448,6 @@
 -A INPUT -s 2a12:3e80:6f5::/48 -j DROP
 # AS198351 SECUREWAN ANTI-DDOS LTD
 -A INPUT -s 2a12:bec4:1020::/44 -j DROP
--A INPUT -s 2a12:bec4:17a0::/44 -j DROP
 # AS215400 Kaan Kalayci trading as FastLayer
 -A INPUT -s 2a12:de40:27::/48 -j DROP
 # AS197477 Moritz Mantel trading as Nerdscave
@@ -780,6 +782,8 @@
 -A INPUT -s 2a12:5542::/32 -j DROP
 # AS211059 Tribeka Web Advisors S.A.
 -A INPUT -s 2a11:4c0:5::/48 -j DROP
+# AS210924 ssd networks limited
+-A INPUT -s 2a14:c100::/29 -j DROP
 # AS47464 Address Management Inc.
 -A INPUT -s 2a07:ca00::/30 -j DROP
 -A INPUT -s 2a07:ca04::/31 -j DROP
@@ -838,6 +842,7 @@
 -A INPUT -s 2a10:5fc0::/31 -j DROP
 # AS328543 Sun Network Company Limited
 -A INPUT -s 2a0c:640::/29 -j DROP
+-A INPUT -s 2a0c:9380::/29 -j DROP
 -A INPUT -s 2a0c:f480::/29 -j DROP
 -A INPUT -s 2a0d:2480::/29 -j DROP
 -A INPUT -s 2a0e:4c80::/29 -j DROP
@@ -847,7 +852,6 @@
 -A INPUT -s 2001:1600::/32 -j DROP
 -A INPUT -s 2a01:4f40::/32 -j DROP
 # AS43357 Owl Limited
--A INPUT -s 2403:fbc0:a000::/46 -j DROP
 -A INPUT -s 2a03:d9c0:3000::/47 -j DROP
 -A INPUT -s 2a07:d880::/32 -j DROP
 -A INPUT -s 2a07:d881:3::/48 -j DROP
@@ -867,7 +871,6 @@
 -A INPUT -s 2a0c:59c0:18::/48 -j DROP
 -A INPUT -s 2a11:3:500::/40 -j DROP
 # AS23959 Owl Limited
--A INPUT -s 2403:fbc0:6000::/48 -j DROP
 -A INPUT -s 2403:fbc0:7000::/48 -j DROP
 -A INPUT -s 2a11:8083:4::/48 -j DROP
 # AS213733 Charlie Gustafsson
@@ -922,6 +925,8 @@
 -A INPUT -s 2a04:4a00::/29 -j DROP
 # AS49447 Nice IT Services Group Inc.
 -A INPUT -s 2a0e:fa00::/48 -j DROP
+# AS328383 xTom Limited
+-A INPUT -s 2c0f:ec00::/48 -j DROP
 # AS35372 Mizban Dadeh Iranian Co. (Ltd)
 -A INPUT -s 2a0c:b100::/46 -j DROP
 # AS213693 Imad Nabil Daher trading as ID Performance
@@ -930,4 +935,4 @@
 -A INPUT -s 2a09:2dc1::/32 -j DROP
 -A INPUT -s 2a11:6100::/31 -j DROP
 
-# Last Update: 22/04/2025
+# Last Update: 29/04/2025
