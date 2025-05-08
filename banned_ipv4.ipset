@@ -1,5 +1,5 @@
 #
-# Last Update: 04/05/2025
+# Last Update: 08/05/2025
 #
 create blacklistv4 hash:net family inet hashsize 4096
 # AS237 CENSYS Unlisted (Old legacy netblock)
@@ -100,6 +100,7 @@ add blacklistv4 216.98.128.0/19
 # AS211680 NSEC - Sistemas Informaticos, S.A.
 add blacklistv4 45.156.128.0/23
 add blacklistv4 45.156.130.0/24
+add blacklistv4 185.180.140.0/24
 add blacklistv4 185.180.143.0/24
 add blacklistv4 185.226.198.0/24
 # AS57523 Chang Way Technologies Co. Limited
@@ -165,7 +166,6 @@ add blacklistv4 185.225.112.0/24
 add blacklistv4 194.50.17.0/24
 # AS202425 IP Volume inc
 add blacklistv4 45.148.144.0/24
-add blacklistv4 62.68.73.0/24
 add blacklistv4 80.82.64.0/22
 add blacklistv4 80.82.68.0/23
 add blacklistv4 80.82.70.0/24
@@ -249,6 +249,7 @@ add blacklistv4 91.199.163.0/24
 # AS206264 Amarutu Technology Ltd
 add blacklistv4 2.57.214.0/23
 add blacklistv4 5.183.209.0/24
+add blacklistv4 5.231.254.0/24
 add blacklistv4 31.220.0.0/22
 add blacklistv4 31.220.40.0/23
 add blacklistv4 43.226.231.0/24
@@ -301,12 +302,6 @@ add blacklistv4 103.157.134.0/23
 add blacklistv4 103.159.2.0/24
 add blacklistv4 163.47.36.0/22
 add blacklistv4 203.96.188.0/22
-# AS215240 Silent Connection Ltd.
-add blacklistv4 176.65.134.0/24
-add blacklistv4 176.65.139.0/24
-add blacklistv4 176.65.140.0/23
-add blacklistv4 176.65.142.0/24
-add blacklistv4 176.65.144.0/24
 # AS17884 PT. Uninet Media Sakti (ISP)
 add blacklistv4 103.155.250.0/23
 add blacklistv4 103.158.56.0/23
@@ -561,6 +556,8 @@ add blacklistv4 217.144.185.0/24
 add blacklistv4 217.144.186.0/23
 add blacklistv4 217.144.188.0/22
 add blacklistv4 217.197.107.0/24
+# AS210281 RIPE NCC ASN block
+add blacklistv4 188.35.28.0/22
 # AS211409 FoxiBytes LTD
 add blacklistv4 89.42.88.0/24
 # AS214231 Cloud Solutions LLC
@@ -745,6 +742,7 @@ add blacklistv4 62.133.60.0/22
 add blacklistv4 77.73.133.0/24
 add blacklistv4 77.83.116.0/24
 add blacklistv4 77.83.246.0/24
+add blacklistv4 77.110.107.0/24
 add blacklistv4 78.153.131.0/24
 add blacklistv4 78.153.139.0/24
 add blacklistv4 78.153.144.0/24
@@ -1255,7 +1253,7 @@ add blacklistv4 23.247.253.0/24
 add blacklistv4 38.102.91.0/24
 add blacklistv4 38.128.250.0/24
 add blacklistv4 166.0.147.0/24
-# AS200136 LibraHost
+# AS200136 Association LibraHost
 add blacklistv4 163.5.141.0/24
 add blacklistv4 163.5.143.0/24
 # AS400897 PETROSKY CLOUD LLC
@@ -1649,7 +1647,7 @@ add blacklistv4 5.231.97.0/24
 add blacklistv4 77.90.10.0/23
 add blacklistv4 77.90.50.0/24
 add blacklistv4 95.214.172.0/24
-# AS215292 Gravhosting Ltd
+# AS215292 Gravhosting LLC
 add blacklistv4 81.161.239.0/24
 add blacklistv4 193.25.217.0/24
 add blacklistv4 194.31.222.0/24
@@ -1729,6 +1727,7 @@ add blacklistv4 37.202.205.0/24
 add blacklistv4 38.211.244.0/24
 add blacklistv4 45.154.157.0/24
 add blacklistv4 79.172.207.0/24
+add blacklistv4 155.117.24.0/21
 # AS40124 Charged IT Solutions LLC
 add blacklistv4 23.184.56.0/24
 add blacklistv4 130.51.94.0/24
@@ -1774,7 +1773,6 @@ add blacklistv4 193.178.0.0/24
 add blacklistv4 194.24.161.0/24
 add blacklistv4 194.31.251.0/24
 # AS211590 Bucklog SARL
-add blacklistv4 154.83.100.0/24
 add blacklistv4 154.83.103.0/24
 # AS52284 Panamaserver.com
 add blacklistv4 142.202.136.0/24
@@ -1807,6 +1805,8 @@ add blacklistv4 89.213.174.0/24
 add blacklistv4 93.113.25.0/24
 add blacklistv4 94.156.152.0/24
 add blacklistv4 140.233.190.0/24
+# AS214497 Whitelabel Solutions, Ltd.
+add blacklistv4 154.213.200.0/24
 # AS214515 Amir Mohammad Masoudi
 add blacklistv4 37.32.41.0/24
 add blacklistv4 213.21.245.0/24
@@ -1927,6 +1927,7 @@ add blacklistv4 45.146.131.0/24
 add blacklistv4 45.152.208.0/24
 add blacklistv4 45.153.22.0/24
 add blacklistv4 45.155.69.0/24
+add blacklistv4 45.158.185.0/24
 add blacklistv4 82.115.223.0/24
 add blacklistv4 85.209.128.0/24
 add blacklistv4 94.232.249.0/24
@@ -1936,6 +1937,8 @@ add blacklistv4 185.106.92.0/24
 add blacklistv4 185.122.171.0/24
 add blacklistv4 185.126.64.0/24
 add blacklistv4 185.126.66.0/24
+add blacklistv4 185.155.200.0/24
+add blacklistv4 185.242.244.0/23
 add blacklistv4 193.8.215.0/24
 add blacklistv4 193.23.245.0/24
 add blacklistv4 193.27.19.0/24
@@ -1985,6 +1988,7 @@ add blacklistv4 118.26.132.0/24
 # AS35042 Layer7 Networks GmbH
 add blacklistv4 88.214.25.0/24
 add blacklistv4 91.228.101.0/24
+add blacklistv4 109.202.246.0/24
 add blacklistv4 179.60.150.0/24
 add blacklistv4 185.55.240.0/22
 add blacklistv4 193.24.208.0/23
@@ -2083,7 +2087,6 @@ add blacklistv4 82.118.242.0/24
 add blacklistv4 85.217.222.0/23
 add blacklistv4 95.169.196.0/24
 add blacklistv4 185.7.219.0/24
-add blacklistv4 195.230.21.0/24
 # AS209132 Alviva Holding Limited
 add blacklistv4 88.214.26.0/24
 add blacklistv4 147.45.112.0/24
@@ -2093,7 +2096,6 @@ add blacklistv4 185.232.67.0/24
 add blacklistv4 77.75.192.0/24
 add blacklistv4 103.246.249.0/24
 # AS25198 INTERKVM HOST SRL
-add blacklistv4 5.226.184.0/24
 add blacklistv4 45.128.78.0/24
 add blacklistv4 46.229.243.0/24
 add blacklistv4 46.229.251.0/24
@@ -2124,7 +2126,7 @@ add blacklistv4 185.104.63.0/24
 add blacklistv4 188.211.233.0/24
 add blacklistv4 188.241.218.0/23
 add blacklistv4 195.74.93.0/24
-add blacklistv4 195.211.188.0/24
+add blacklistv4 195.211.190.0/24
 add blacklistv4 203.14.32.0/24
 add blacklistv4 203.25.108.0/24
 # AS58612 INTERKVM HOST SRL
@@ -2136,8 +2138,7 @@ add blacklistv4 91.213.135.0/24
 add blacklistv4 43.230.10.0/23
 add blacklistv4 43.231.4.0/24
 add blacklistv4 43.249.252.0/23
-add blacklistv4 43.251.112.0/23
-add blacklistv4 43.251.115.0/24
+add blacklistv4 43.251.112.0/22
 add blacklistv4 43.252.208.0/24
 add blacklistv4 45.116.178.0/24
 add blacklistv4 45.204.21.0/24
@@ -2155,7 +2156,7 @@ add blacklistv4 118.107.192.0/22
 add blacklistv4 118.107.244.0/22
 add blacklistv4 118.107.248.0/21
 add blacklistv4 119.42.32.0/24
-add blacklistv4 119.42.35.0/24
+add blacklistv4 119.42.34.0/23
 add blacklistv4 154.6.164.0/24
 add blacklistv4 154.93.24.0/23
 add blacklistv4 163.5.70.0/24
@@ -2169,6 +2170,7 @@ add blacklistv4 117.18.118.0/24
 add blacklistv4 117.55.202.0/23
 add blacklistv4 185.53.90.0/23
 add blacklistv4 185.209.15.0/24
+add blacklistv4 185.241.206.0/24
 add blacklistv4 212.237.231.0/24
 # AS60539 Huicast Telecom Limited
 add blacklistv4 5.160.111.0/24
@@ -2500,10 +2502,10 @@ add blacklistv4 64.22.88.0/24
 add blacklistv4 64.22.97.0/24
 add blacklistv4 82.29.22.0/24
 add blacklistv4 85.239.44.0/22
+add blacklistv4 91.221.190.0/23
 add blacklistv4 102.129.215.0/24
 add blacklistv4 102.129.216.0/24
 add blacklistv4 102.129.240.0/24
-add blacklistv4 102.215.224.0/24
 add blacklistv4 102.215.230.0/24
 add blacklistv4 103.120.128.0/24
 add blacklistv4 103.130.147.0/24
@@ -2515,6 +2517,7 @@ add blacklistv4 108.165.178.0/24
 add blacklistv4 146.71.85.0/24
 add blacklistv4 150.241.225.0/24
 add blacklistv4 150.241.235.0/24
+add blacklistv4 155.117.152.0/23
 add blacklistv4 163.5.221.0/24
 add blacklistv4 172.98.54.0/24
 add blacklistv4 185.230.67.0/24
@@ -2638,7 +2641,7 @@ add blacklistv4 95.182.118.0/23
 add blacklistv4 176.96.241.0/24
 add blacklistv4 176.96.243.0/24
 add blacklistv4 176.221.28.0/23
-# AS152320 Goalnow Network Technology Co Limited
+# AS152320 GOALNOW NETWORK TECHNOLOGY CO., LIMITED
 add blacklistv4 45.254.24.0/22
 add blacklistv4 103.85.72.0/22
 add blacklistv4 103.223.120.0/22
@@ -2769,7 +2772,6 @@ add blacklistv4 94.26.90.0/24
 add blacklistv4 94.154.35.0/24
 add blacklistv4 94.156.177.0/24
 add blacklistv4 94.156.227.0/24
-add blacklistv4 104.245.240.0/24
 add blacklistv4 107.150.0.0/24
 add blacklistv4 155.94.155.0/24
 add blacklistv4 167.160.161.0/24
@@ -2837,6 +2839,7 @@ add blacklistv4 45.84.2.0/24
 add blacklistv4 45.143.203.0/24
 add blacklistv4 45.151.62.0/24
 add blacklistv4 62.60.187.0/24
+add blacklistv4 77.110.112.0/24
 add blacklistv4 78.153.148.0/23
 add blacklistv4 87.251.66.0/24
 add blacklistv4 89.23.113.0/24
@@ -2961,7 +2964,7 @@ add blacklistv4 208.87.166.0/24
 # AS204615 IP Fiber Inc
 add blacklistv4 185.225.113.0/24
 add blacklistv4 185.225.114.0/23
-# AS211632 ISI1
+# AS211632 Internet Solutions & Innovations LTD.
 add blacklistv4 5.181.86.0/24
 add blacklistv4 185.190.24.0/24
 # AS42745 Safe Value Limited
@@ -3140,7 +3143,6 @@ add blacklistv4 45.143.201.0/24
 add blacklistv4 46.151.181.0/24
 add blacklistv4 46.151.182.0/24
 add blacklistv4 147.45.47.0/24
-add blacklistv4 175.110.91.0/24
 add blacklistv4 176.98.182.0/23
 add blacklistv4 185.40.4.0/24
 add blacklistv4 188.190.10.0/23
@@ -3174,6 +3176,7 @@ add blacklistv4 82.23.42.0/23
 add blacklistv4 82.23.49.0/24
 add blacklistv4 82.23.54.0/24
 add blacklistv4 91.230.121.0/24
+add blacklistv4 91.239.77.0/24
 add blacklistv4 176.97.116.0/22
 add blacklistv4 176.119.31.0/24
 # AS201860 MyTelco Ltd
@@ -3448,12 +3451,6 @@ add blacklistv4 185.31.132.0/24
 add blacklistv4 185.31.134.0/23
 # AS49447 Nice IT Services Group Inc.
 add blacklistv4 45.9.148.0/22
-# AS213355 HOST GLOBAL NETWORKS LTD
-add blacklistv4 45.129.196.0/24
-add blacklistv4 80.64.16.0/24
-add blacklistv4 88.214.48.0/24
-add blacklistv4 185.39.17.0/24
-add blacklistv4 193.176.23.0/24
 # AS328383 xTom Limited
 add blacklistv4 102.130.48.0/23
 add blacklistv4 102.130.50.0/24
@@ -3461,7 +3458,7 @@ add blacklistv4 102.130.50.0/24
 add blacklistv4 2.57.216.0/22
 add blacklistv4 91.237.51.0/24
 add blacklistv4 91.247.64.0/23
-# AS35372 Mizban Dadeh Iranian Co. (Ltd)
+# AS35372 GeniusMind S.A.
 add blacklistv4 37.152.173.0/24
 add blacklistv4 37.152.174.0/23
 add blacklistv4 45.11.184.0/24
@@ -3531,6 +3528,8 @@ add blacklistv4 91.239.76.0/24
 add blacklistv4 92.113.227.0/24
 add blacklistv4 93.115.172.0/24
 add blacklistv4 95.214.173.0/24
+add blacklistv4 104.165.1.0/24
+add blacklistv4 104.165.127.0/24
 add blacklistv4 146.19.93.0/24
 add blacklistv4 148.135.144.0/24
 add blacklistv4 148.135.146.0/24
@@ -3567,7 +3566,6 @@ add blacklistv4 185.31.208.0/22
 add blacklistv4 185.59.100.0/22
 add blacklistv4 185.75.134.0/24
 add blacklistv4 185.222.64.0/22
-add blacklistv4 185.236.9.0/24
 add blacklistv4 188.244.104.0/22
 add blacklistv4 217.11.168.0/24
 # AS215659 Aokigahara SRL
@@ -3580,60 +3578,6 @@ add blacklistv4 93.115.101.0/24
 add blacklistv4 45.82.76.0/22
 add blacklistv4 45.131.155.0/24
 add blacklistv4 88.218.193.0/24
-# AS395092 Shock Hosting LLC
-add blacklistv4 2.56.139.0/24
-add blacklistv4 2.57.151.0/24
-add blacklistv4 31.57.179.0/24
-add blacklistv4 31.58.67.0/24
-add blacklistv4 43.230.160.0/22
-add blacklistv4 45.95.16.0/22
-add blacklistv4 45.139.54.0/24
-add blacklistv4 45.140.174.0/24
-add blacklistv4 45.155.36.0/22
-add blacklistv4 45.158.44.0/24
-add blacklistv4 52.129.44.0/23
-add blacklistv4 64.28.236.0/23
-add blacklistv4 82.21.228.0/24
-add blacklistv4 82.21.239.0/24
-add blacklistv4 82.22.211.0/24
-add blacklistv4 82.22.235.0/24
-add blacklistv4 82.23.203.0/24
-add blacklistv4 82.23.206.0/24
-add blacklistv4 82.23.222.0/24
-add blacklistv4 82.23.226.0/24
-add blacklistv4 82.24.212.0/24
-add blacklistv4 82.24.238.0/24
-add blacklistv4 82.25.239.0/24
-add blacklistv4 82.26.208.0/24
-add blacklistv4 82.26.212.0/24
-add blacklistv4 82.26.218.0/24
-add blacklistv4 82.26.236.0/24
-add blacklistv4 82.26.238.0/24
-add blacklistv4 82.27.240.0/24
-add blacklistv4 82.29.234.0/24
-add blacklistv4 92.119.161.0/24
-add blacklistv4 92.119.163.0/24
-add blacklistv4 103.20.234.0/23
-add blacklistv4 103.27.132.0/22
-add blacklistv4 103.159.64.0/23
-add blacklistv4 104.36.228.0/22
-add blacklistv4 104.225.128.0/22
-add blacklistv4 107.161.50.0/23
-add blacklistv4 144.208.124.0/22
-add blacklistv4 146.71.80.0/22
-add blacklistv4 146.71.86.0/23
-add blacklistv4 172.96.136.0/22
-add blacklistv4 185.93.220.0/22
-add blacklistv4 199.87.210.0/23
-add blacklistv4 203.96.176.0/22
-add blacklistv4 208.123.116.0/22
-add blacklistv4 209.182.224.0/22
-add blacklistv4 210.16.64.0/22
-add blacklistv4 213.108.246.0/23
-add blacklistv4 213.139.204.0/22
-add blacklistv4 213.166.94.0/24
-add blacklistv4 216.120.200.0/22
-add blacklistv4 217.195.152.0/22
 # AS39351 31173 Services AB
 add blacklistv4 45.83.220.0/22
 add blacklistv4 45.129.56.0/24
@@ -3645,6 +3589,7 @@ add blacklistv4 46.229.255.0/24
 add blacklistv4 85.203.53.0/24
 add blacklistv4 141.98.252.0/24
 add blacklistv4 141.98.254.0/23
+add blacklistv4 154.43.129.0/24
 add blacklistv4 185.65.132.0/24
 add blacklistv4 185.65.134.0/23
 add blacklistv4 185.195.232.0/23
@@ -3656,3 +3601,23 @@ add blacklistv4 193.32.248.0/23
 add blacklistv4 193.138.216.0/22
 add blacklistv4 194.34.172.0/24
 add blacklistv4 203.159.82.0/24
+# AS213412 ONYPHE SAS
+add blacklistv4 91.196.152.0/24
+add blacklistv4 195.184.76.0/24
+# AS208684 BHA CONSEIL SARL
+add blacklistv4 91.230.168.0/24
+add blacklistv4 91.231.47.0/24
+add blacklistv4 91.231.89.0/24
+# AS59939 WIBO Baltic UAB
+add blacklistv4 91.240.20.0/23
+add blacklistv4 171.25.240.0/24
+add blacklistv4 185.43.220.0/22
+add blacklistv4 185.74.252.0/22
+add blacklistv4 185.207.188.0/22
+add blacklistv4 195.16.88.0/22
+# AS209309 Oniks LLC
+add blacklistv4 45.84.178.0/24
+add blacklistv4 45.138.159.0/24
+add blacklistv4 85.208.84.0/24
+add blacklistv4 88.218.64.0/24
+add blacklistv4 94.158.189.0/24

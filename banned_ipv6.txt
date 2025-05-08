@@ -29,6 +29,7 @@
 # AS10439 CariNet, Inc. (Shodan LLC)
 -A INPUT -s 2607:ff10::/32 -j DROP
 # AS211680 NSEC - Sistemas Informaticos, S.A. (Shodan LLC)
+-A INPUT -s 2a10:3c0:1::/48 -j DROP
 -A INPUT -s 2a10:3c0:2::/48 -j DROP
 # AS12989 StackPath LLC
 -A INPUT -s 2a01:e945::/48 -j DROP
@@ -134,32 +135,20 @@
 -A INPUT -s 2a0b:b480::/29 -j DROP
 -A INPUT -s 2a0c:4880::/29 -j DROP
 -A INPUT -s 2a0c:d380::/29 -j DROP
--A INPUT -s 2a0e:2440::/29 -j DROP
 -A INPUT -s 2a0e:a780::/29 -j DROP
 -A INPUT -s 2a0e:e980::/29 -j DROP
--A INPUT -s 2a0f:a00::/29 -j DROP
 -A INPUT -s 2a0f:e00::/29 -j DROP
--A INPUT -s 2a0f:1440::/29 -j DROP
 -A INPUT -s 2a0f:14c0::/29 -j DROP
+-A INPUT -s 2a0f:1540::/29 -j DROP
+-A INPUT -s 2a0f:1740::/29 -j DROP
 -A INPUT -s 2a0f:17c0::/29 -j DROP
 -A INPUT -s 2a0f:1840::/29 -j DROP
--A INPUT -s 2a0f:1ac0::/29 -j DROP
--A INPUT -s 2a0f:1f80::/29 -j DROP
--A INPUT -s 2a0f:1fc0::/29 -j DROP
 -A INPUT -s 2a0f:2300::/29 -j DROP
--A INPUT -s 2a0f:29c0::/29 -j DROP
--A INPUT -s 2a0f:2a40::/29 -j DROP
 -A INPUT -s 2a0f:2dc0::/29 -j DROP
 -A INPUT -s 2a0f:2ec0::/29 -j DROP
--A INPUT -s 2a0f:2f80::/29 -j DROP
--A INPUT -s 2a0f:30c0::/29 -j DROP
--A INPUT -s 2a0f:3140::/29 -j DROP
--A INPUT -s 2a0f:3540::/29 -j DROP
 -A INPUT -s 2a0f:35c0::/29 -j DROP
 -A INPUT -s 2a0f:36c0::/29 -j DROP
--A INPUT -s 2a0f:9b00::/29 -j DROP
 -A INPUT -s 2a0f:a200::/29 -j DROP
--A INPUT -s 2a0f:c400::/29 -j DROP
 -A INPUT -s 2a0f:de40::/29 -j DROP
 -A INPUT -s 2a0f:e140::/29 -j DROP
 -A INPUT -s 2a0f:e3c0::/29 -j DROP
@@ -182,6 +171,7 @@
 -A INPUT -s 2a14:68c0::/29 -j DROP
 # AS210352 Yijia Xu
 -A INPUT -s 2a14:67c1:a090::/47 -j DROP
+-A INPUT -s 2a14:67c1:a092::/48 -j DROP
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
 -A INPUT -s 2a00:b703:fff1::/48 -j DROP
 -A INPUT -s 2a00:b703:fff2::/48 -j DROP
@@ -348,7 +338,7 @@
 -A INPUT -s 2001:67c:ec::/48 -j DROP
 # AS400130 Hebergement Serv3r.net inc.
 -A INPUT -s 2602:fb53::/40 -j DROP
-# AS200136 LibraHost
+# AS200136 Association LibraHost
 -A INPUT -s 2a0e:b107:12d::/48 -j DROP
 # AS198831 Association HOLYCLOUD
 -A INPUT -s 2a0c:b641:d70::/44 -j DROP
@@ -466,7 +456,7 @@
 -A INPUT -s 2a06:de01:7c::/47 -j DROP
 -A INPUT -s 2a06:de01:7e::/48 -j DROP
 -A INPUT -s 2a13:e3c0::/31 -j DROP
-# AS215292 Gravhosting Ltd
+# AS215292 Gravhosting LLC
 -A INPUT -s 2602:fb54:155::/48 -j DROP
 -A INPUT -s 2a14:7c0:1800::/38 -j DROP
 -A INPUT -s 2a14:7c0:4800::/40 -j DROP
@@ -489,7 +479,7 @@
 # AS215365 Tom Gewiese
 -A INPUT -s 2a14:7c0:1000::/38 -j DROP
 # AS58052 Tomas William Smith trading as TomasSystems
--A INPUT -s 2a12:bec0:190::/48 -j DROP
+-A INPUT -s 2a12:bec0:190::/47 -j DROP
 -A INPUT -s 2a12:bec0:19f::/48 -j DROP
 # AS199654 Oxide Group Limited
 -A INPUT -s 2a12:bec0:20a::/47 -j DROP
@@ -608,7 +598,8 @@
 -A INPUT -s 2404:9dc0:cd03::/48 -j DROP
 -A INPUT -s 2404:9dc0:cd05::/48 -j DROP
 # AS35042 Layer7 Networks GmbH
--A INPUT -s 2a00:1910::/30 -j DROP
+-A INPUT -s 2a00:1910::/31 -j DROP
+-A INPUT -s 2a00:1912::/32 -j DROP
 -A INPUT -s 2a09:8700::/32 -j DROP
 # AS43350 NForce Entertainment B.V.
 -A INPUT -s 2001:678:a18::/48 -j DROP
@@ -785,7 +776,7 @@
 -A INPUT -s 2a02:2160:8000::/36 -j DROP
 # AS22168 The Shadowserver Foundation, Inc.
 -A INPUT -s 2001:550:d0c::/48 -j DROP
-# AS152320 Goalnow Network Technology Co Limited
+# AS152320 GOALNOW NETWORK TECHNOLOGY CO., LIMITED
 -A INPUT -s 2001:df0:a640::/48 -j DROP
 # AS43861 Circle B B.V.
 -A INPUT -s 2001:678:348::/48 -j DROP
@@ -844,7 +835,7 @@
 -A INPUT -s 2a0d:3c45::/32 -j DROP
 # AS205125 Network Management Ltd
 -A INPUT -s 2a03:e2c0::/32 -j DROP
--A INPUT -s 2a0d:8340::/31 -j DROP
+-A INPUT -s 2a0d:8340::/32 -j DROP
 # AS211720 Datashield, Inc.
 -A INPUT -s 2a06:e80:3000::/36 -j DROP
 # AS211922 IP Connect Inc
@@ -853,10 +844,10 @@
 -A INPUT -s 2001:df1:f400::/48 -j DROP
 # AS204615 IP Fiber Inc
 -A INPUT -s 2a13:2a00:2::/48 -j DROP
-# AS211632 ISI1
+# AS211632 Internet Solutions & Innovations LTD.
 -A INPUT -s 2a11:4c0::/47 -j DROP
 # AS43180 Trunk Networks LTD
--A INPUT -s 2a09:2dc3::/32 -j DROP
+-A INPUT -s 2a09:2dc2::/31 -j DROP
 # AS35112 GBN group Ltd
 -A INPUT -s 2a0e:7200::/40 -j DROP
 # AS36902 Intelvision Ltd
@@ -951,7 +942,7 @@
 -A INPUT -s 2a0e:fa00::/48 -j DROP
 # AS328383 xTom Limited
 -A INPUT -s 2c0f:ec00::/48 -j DROP
-# AS35372 Mizban Dadeh Iranian Co. (Ltd)
+# AS35372 GeniusMind S.A.
 -A INPUT -s 2a0c:b100::/46 -j DROP
 # AS213693 Imad Nabil Daher trading as ID Performance
 -A INPUT -s 2a0f:85c1:b36::/48 -j DROP
@@ -962,10 +953,10 @@
 -A INPUT -s 2a09:54c7:2000::/48 -j DROP
 -A INPUT -s 2a09:54c7:2050::/47 -j DROP
 -A INPUT -s 2a09:54c7:2075::/48 -j DROP
+-A INPUT -s 2a0a:6044:6401::/48 -j DROP
 -A INPUT -s 2a0a:6044:6409::/48 -j DROP
--A INPUT -s 2a0b:4e07:3000::/36 -j DROP
--A INPUT -s 2a0c:b641:d01::/48 -j DROP
--A INPUT -s 2a0c:b641:d02::/48 -j DROP
+-A INPUT -s 2a0a:6044:aa10::/48 -j DROP
+-A INPUT -s 2a10:ccc0:160::/48 -j DROP
 # AS200081 Netversor GmbH
 -A INPUT -s 2a01:ea00::/48 -j DROP
 -A INPUT -s 2a02:6aa0::/32 -j DROP
@@ -983,18 +974,6 @@
 -A INPUT -s 2a07:d885::/46 -j DROP
 -A INPUT -s 2a07:d885:4::/47 -j DROP
 -A INPUT -s 2a07:d885:6::/48 -j DROP
-# AS395092 Shock Hosting LLC
--A INPUT -s 2406:cb40::/47 -j DROP
--A INPUT -s 2406:cb41::/48 -j DROP
--A INPUT -s 2406:cb42::/48 -j DROP
--A INPUT -s 2607:a680::/45 -j DROP
--A INPUT -s 2607:a680:8::/47 -j DROP
--A INPUT -s 2607:a680:f000::/36 -j DROP
--A INPUT -s 2a09:9444::/32 -j DROP
--A INPUT -s 2a0d:9ec0::/48 -j DROP
--A INPUT -s 2a0d:9ec1::/48 -j DROP
--A INPUT -s 2a0d:9ec2::/48 -j DROP
--A INPUT -s 2a0d:d8c0::/47 -j DROP
 # AS39351 31173 Services AB
 -A INPUT -s 2a03:1b20:1::/48 -j DROP
 -A INPUT -s 2a03:1b20:2::/47 -j DROP
@@ -1008,5 +987,11 @@
 -A INPUT -s 2a07:e344::/32 -j DROP
 -A INPUT -s 2a0c:9a46:a01::/48 -j DROP
 -A INPUT -s 2a10:ccc2:20::/44 -j DROP
+# AS208684 BHA CONSEIL SARL
+-A INPUT -s 2a0b:2640::/29 -j DROP
+# AS59939 WIBO Baltic UAB
+-A INPUT -s 2a04:9640::/31 -j DROP
+-A INPUT -s 2a04:9642::/32 -j DROP
+-A INPUT -s 2a0b:22c0::/29 -j DROP
 
-# Last Update: 04/05/2025
+# Last Update: 08/05/2025
