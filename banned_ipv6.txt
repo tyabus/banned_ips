@@ -113,7 +113,6 @@
 -A INPUT -s 2602:f7f8:4::/48 -j DROP
 -A INPUT -s 2602:fa0a::/40 -j DROP
 -A INPUT -s 2a03:5840:fc::/48 -j DROP
--A INPUT -s 2a05:541:157::/48 -j DROP
 -A INPUT -s 2a0a:7d00::/29 -j DROP
 -A INPUT -s 2a0b:3e00::/29 -j DROP
 -A INPUT -s 2a0b:64c0:1::/48 -j DROP
@@ -121,12 +120,14 @@
 -A INPUT -s 2a0b:64c0:4::/46 -j DROP
 -A INPUT -s 2a0b:64c0:8::/48 -j DROP
 -A INPUT -s 2a0b:64c0:a::/47 -j DROP
--A INPUT -s 2a0b:64c0:e::/47 -j DROP
+-A INPUT -s 2a0b:64c0:e::/48 -j DROP
 -A INPUT -s 2a0b:64c0:10::/46 -j DROP
 -A INPUT -s 2a0b:64c0:17::/48 -j DROP
 -A INPUT -s 2a0b:64c0:18::/48 -j DROP
 -A INPUT -s 2a0b:64c0:1a::/48 -j DROP
 -A INPUT -s 2a0b:64c0:1c::/47 -j DROP
+-A INPUT -s 2a0b:64c0:f000::/47 -j DROP
+-A INPUT -s 2a0b:64c0:f002::/48 -j DROP
 -A INPUT -s 2a0b:64c0:f800::/46 -j DROP
 -A INPUT -s 2a0b:64c0:f804::/48 -j DROP
 -A INPUT -s 2a0b:64c0:f806::/47 -j DROP
@@ -154,11 +155,9 @@
 -A INPUT -s 2a0f:e3c0::/29 -j DROP
 -A INPUT -s 2a0f:e5c0::/29 -j DROP
 -A INPUT -s 2a0f:e600::/29 -j DROP
--A INPUT -s 2a0f:e9c0::/29 -j DROP
 -A INPUT -s 2a12:bec0:340::/44 -j DROP
 -A INPUT -s 2a13:2bc0::/29 -j DROP
 -A INPUT -s 2a13:2e40::/29 -j DROP
--A INPUT -s 2a13:3080::/29 -j DROP
 -A INPUT -s 2a13:9402::/32 -j DROP
 -A INPUT -s 2a13:b840::/29 -j DROP
 -A INPUT -s 2a13:d100::/29 -j DROP
@@ -205,7 +204,6 @@
 -A INPUT -s 240d:c000:f020::/43 -j DROP
 -A INPUT -s 240d:c000:f040::/42 -j DROP
 -A INPUT -s 240d:c000:f0c0::/42 -j DROP
--A INPUT -s 240d:c010:1::/48 -j DROP
 -A INPUT -s 240d:c010:14::/48 -j DROP
 -A INPUT -s 240d:c010:16::/48 -j DROP
 -A INPUT -s 240d:c010:18::/48 -j DROP
@@ -242,7 +240,6 @@
 -A INPUT -s 2a12:8fc6:ceca::/48 -j DROP
 -A INPUT -s 2a12:8fc6:daa0::/48 -j DROP
 -A INPUT -s 2a12:8fc6:dae0::/48 -j DROP
--A INPUT -s 2a12:8fc6:db00::/48 -j DROP
 -A INPUT -s 2a12:8fc6:dbaa::/48 -j DROP
 -A INPUT -s 2a12:8fc6:eaca::/48 -j DROP
 -A INPUT -s 2a12:8fc6:ee01::/48 -j DROP
@@ -260,7 +257,6 @@
 -A INPUT -s 2a0b:f4c0:1b4::/48 -j DROP
 -A INPUT -s 2a0b:f4c0:400::/48 -j DROP
 # AS14987 Rethem Hosting LLC
--A INPUT -s 2001:550:101::/48 -j DROP
 -A INPUT -s 2607:8500::/32 -j DROP
 # AS198644 NET42, svetovanje in razvoj internetnih resitev, d.o.o.
 -A INPUT -s 2001:67c:27e4::/48 -j DROP
@@ -323,7 +319,7 @@
 -A INPUT -s 2a12:a800:2::/48 -j DROP
 # AS207208 MEVSPACE sp. z o.o.
 -A INPUT -s 2001:67c:2498::/48 -j DROP
-# AS61280 FGUP GRCHC (Russian goverment)
+# AS61280 FGUP "GRCHC" (Russian goverment)
 -A INPUT -s 2a0c:a9c7:156::/47 -j DROP
 -A INPUT -s 2a0c:a9c7:158::/48 -j DROP
 # AS61272 Informacines sistemos ir technologijos, UAB
@@ -449,7 +445,7 @@
 -A INPUT -s 2a12:bec4:17a0::/44 -j DROP
 # AS215400 Kaan Kalayci trading as FastLayer
 -A INPUT -s 2a12:de40:27::/48 -j DROP
-# AS197477 Moritz Mantel trading as Nerdscave
+# AS197477 Moritz Mantel
 -A INPUT -s 2a06:1283::/34 -j DROP
 -A INPUT -s 2a06:de01:70::/48 -j DROP
 -A INPUT -s 2a06:de01:7a::/47 -j DROP
@@ -518,7 +514,6 @@
 # AS140817 ODS ONLINE DATA SOLUTION JOINT STOCK COMPANY
 -A INPUT -s 2400:6f60::/48 -j DROP
 -A INPUT -s 2401:2be0::/48 -j DROP
--A INPUT -s 2407:9940::/48 -j DROP
 # AS151873 TOTHOST SOLUTIONS AND TECHNOLOGIES COMPANY LIMITED
 -A INPUT -s 2401:5b60::/48 -j DROP
 # AS51396 Pfcloud UG
@@ -598,8 +593,7 @@
 -A INPUT -s 2404:9dc0:cd03::/48 -j DROP
 -A INPUT -s 2404:9dc0:cd05::/48 -j DROP
 # AS35042 Layer7 Networks GmbH
--A INPUT -s 2a00:1910::/31 -j DROP
--A INPUT -s 2a00:1912::/32 -j DROP
+-A INPUT -s 2a00:1910::/30 -j DROP
 -A INPUT -s 2a09:8700::/32 -j DROP
 # AS43350 NForce Entertainment B.V.
 -A INPUT -s 2001:678:a18::/48 -j DROP
@@ -619,7 +613,7 @@
 -A INPUT -s 2a0b:8400:1::/48 -j DROP
 -A INPUT -s 2a0d:ea80::/29 -j DROP
 -A INPUT -s 2a0f:2b86:10::/48 -j DROP
-# AS6204 INTERKVM HOST SRL
+# AS6204 RIPE Network Coordination Centre
 -A INPUT -s 2a12:3200:f000::/36 -j DROP
 # AS25198 INTERKVM HOST SRL
 -A INPUT -s 2a01:7120:6::/47 -j DROP
@@ -698,11 +692,6 @@
 -A INPUT -s 2a0f:5707:ab2c::/48 -j DROP
 -A INPUT -s 2a0f:6bc0::/29 -j DROP
 # AS202592 area-7 IT-Services GmbH
--A INPUT -s 2001:678:ef0::/48 -j DROP
--A INPUT -s 2001:678:ef4::/48 -j DROP
--A INPUT -s 2001:678:ef8::/48 -j DROP
--A INPUT -s 2001:67c:270::/48 -j DROP
--A INPUT -s 2001:67c:28a0::/48 -j DROP
 -A INPUT -s 2a07:5b47::/32 -j DROP
 # AS210743 Babbar SAS
 -A INPUT -s 2001:978:1b04::/47 -j DROP
@@ -776,7 +765,7 @@
 -A INPUT -s 2a02:2160:8000::/36 -j DROP
 # AS22168 The Shadowserver Foundation, Inc.
 -A INPUT -s 2001:550:d0c::/48 -j DROP
-# AS152320 GOALNOW NETWORK TECHNOLOGY CO., LIMITED
+# AS152320 Goalnow Network Technology Co Limited
 -A INPUT -s 2001:df0:a640::/48 -j DROP
 # AS43861 Circle B B.V.
 -A INPUT -s 2001:678:348::/48 -j DROP
@@ -833,6 +822,7 @@
 -A INPUT -s 2a00:b700::/48 -j DROP
 -A INPUT -s 2a00:b704::/32 -j DROP
 -A INPUT -s 2a0d:3c45::/32 -j DROP
+-A INPUT -s 2a0e:7f46::/32 -j DROP
 # AS205125 Network Management Ltd
 -A INPUT -s 2a03:e2c0::/32 -j DROP
 -A INPUT -s 2a0d:8340::/32 -j DROP
@@ -922,9 +912,7 @@
 -A INPUT -s 2a0d:6c2:12::/47 -j DROP
 -A INPUT -s 2a0d:6c2:26::/47 -j DROP
 # AS30823 aurologic GmbH
--A INPUT -s 2001:df1:7780::/48 -j DROP
 -A INPUT -s 2602:fa59::/40 -j DROP
--A INPUT -s 2a00:f826:3::/48 -j DROP
 -A INPUT -s 2a01:367::/32 -j DROP
 -A INPUT -s 2a09:38c0::/29 -j DROP
 -A INPUT -s 2a0c:3580::/29 -j DROP
@@ -932,7 +920,6 @@
 -A INPUT -s 2a0d:4cc0::/29 -j DROP
 -A INPUT -s 2a0e:5100::/29 -j DROP
 -A INPUT -s 2a0e:b540::/29 -j DROP
--A INPUT -s 2a10:9c00::/29 -j DROP
 # AS211138 Private-Hosting di Cipriano oscar
 -A INPUT -s 2a05:4140:500::/48 -j DROP
 -A INPUT -s 2a11:e104:1::/48 -j DROP
@@ -974,6 +961,7 @@
 -A INPUT -s 2a07:d885::/46 -j DROP
 -A INPUT -s 2a07:d885:4::/47 -j DROP
 -A INPUT -s 2a07:d885:6::/48 -j DROP
+-A INPUT -s 2a07:d885:ff::/48 -j DROP
 # AS39351 31173 Services AB
 -A INPUT -s 2a03:1b20:1::/48 -j DROP
 -A INPUT -s 2a03:1b20:2::/47 -j DROP
@@ -987,11 +975,9 @@
 -A INPUT -s 2a07:e344::/32 -j DROP
 -A INPUT -s 2a0c:9a46:a01::/48 -j DROP
 -A INPUT -s 2a10:ccc2:20::/44 -j DROP
-# AS208684 BHA CONSEIL SARL
--A INPUT -s 2a0b:2640::/29 -j DROP
 # AS59939 WIBO Baltic UAB
 -A INPUT -s 2a04:9640::/31 -j DROP
 -A INPUT -s 2a04:9642::/32 -j DROP
 -A INPUT -s 2a0b:22c0::/29 -j DROP
 
-# Last Update: 08/05/2025
+# Last Update: 15/05/2025
