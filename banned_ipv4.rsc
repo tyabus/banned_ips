@@ -1,5 +1,5 @@
 #
-# Last Update: 19/05/2025
+# Last Update: 22/05/2025
 #
 /ip firewall address-list
 add list=Blacklist comment="AS237 CENSYS" address=192.35.168.0/23
@@ -67,6 +67,14 @@ add list=Blacklist comment="XHOST" address=217.151.228.0/24
 add list=Blacklist comment="BlackHOST" address=2.59.22.0/24
 add list=Blacklist comment="BlackHOST" address=45.12.60.0/24
 add list=Blacklist comment="BlackHOST" address=86.54.28.0/22
+# https://bgp.tools/rir-owner/fr.julesd ( Skoali )
+add list=Blacklist comment="Skoali" address=45.112.192.0/22
+#add list=Blacklist comment="Skoali" address=103.102.228.0/24
+add list=Blacklist comment="Skoali" address=103.102.229.0/24
+add list=Blacklist comment="Skoali" address=103.102.230.0/24
+add list=Blacklist comment="Skoali" address=103.102.231.0/24
+add list=Blacklist comment="Skoali" address=185.37.103.0/24
+add list=Blacklist comment="Skoali" address=203.55.81.0/24
 # AS398324 Censys, Inc.
 add list=Blacklist comment="398324" address=66.132.148.0/24
 add list=Blacklist comment="398324" address=66.132.153.0/24
@@ -129,6 +137,7 @@ add list=Blacklist comment="49870" address=45.81.21.0/24
 add list=Blacklist comment="49870" address=45.81.22.0/23
 add list=Blacklist comment="49870" address=45.95.144.0/22
 add list=Blacklist comment="49870" address=45.140.222.0/23
+add list=Blacklist comment="49870" address=45.155.91.0/24
 add list=Blacklist comment="49870" address=77.83.240.0/24
 add list=Blacklist comment="49870" address=89.116.202.0/24
 add list=Blacklist comment="49870" address=89.190.156.0/24
@@ -139,7 +148,7 @@ add list=Blacklist comment="49870" address=185.224.128.0/24
 add list=Blacklist comment="49870" address=194.50.16.0/24
 add list=Blacklist comment="49870" address=212.107.12.0/24
 # AS47154 HUSAM A. H. HIJAZI
-add list=Blacklist comment="47154" address=45.155.91.0/24
+#add list=Blacklist comment="47154" address=45.155.91.0/24
 # AS57717 FiberXpress BV
 add list=Blacklist comment="57717" address=91.202.208.0/24
 add list=Blacklist comment="57717" address=185.173.235.0/24
@@ -232,6 +241,7 @@ add list=Blacklist comment="209272" address=91.199.163.0/24
 # AS206264 Amarutu Technology Ltd
 add list=Blacklist comment="206264" address=2.57.214.0/23
 add list=Blacklist comment="206264" address=5.183.209.0/24
+add list=Blacklist comment="206264" address=5.187.35.0/24
 add list=Blacklist comment="206264" address=5.231.254.0/24
 add list=Blacklist comment="206264" address=31.220.0.0/22
 add list=Blacklist comment="206264" address=31.220.40.0/23
@@ -261,6 +271,7 @@ add list=Blacklist comment="206264" address=172.94.21.0/24
 add list=Blacklist comment="206264" address=172.94.126.0/24
 add list=Blacklist comment="206264" address=172.111.168.0/24
 add list=Blacklist comment="206264" address=172.111.192.0/24
+add list=Blacklist comment="206264" address=172.111.220.0/24
 add list=Blacklist comment="206264" address=172.111.234.0/24
 add list=Blacklist comment="206264" address=172.111.252.0/24
 add list=Blacklist comment="206264" address=183.81.168.0/23
@@ -318,7 +329,7 @@ add list=Blacklist comment="43463" address=185.255.192.0/22
 add list=Blacklist comment="43463" address=193.46.83.0/24
 # AS215476 Inside Network LTD
 add list=Blacklist comment="215476" address=77.90.185.0/24
-# AS216246 Aeza Group Ltd.
+# AS216246 Aeza Group LLC
 add list=Blacklist comment="216246" address=45.134.12.0/24
 add list=Blacklist comment="216246" address=45.142.122.0/24
 add list=Blacklist comment="216246" address=77.221.151.0/24
@@ -336,8 +347,9 @@ add list=Blacklist comment="216246" address=178.20.208.0/24
 add list=Blacklist comment="216246" address=178.253.55.0/24
 add list=Blacklist comment="216246" address=185.17.0.0/24
 add list=Blacklist comment="216246" address=185.112.83.0/24
-add list=Blacklist comment="216246" address=185.174.136.0/24
+#add list=Blacklist comment="216246" address=185.174.136.0/24
 add list=Blacklist comment="216246" address=185.229.66.0/24
+add list=Blacklist comment="216246" address=194.26.229.0/24
 add list=Blacklist comment="216246" address=194.67.201.0/24
 add list=Blacklist comment="216246" address=194.113.106.0/24
 add list=Blacklist comment="216246" address=217.144.184.0/24
@@ -345,13 +357,12 @@ add list=Blacklist comment="216246" address=217.144.184.0/24
 add list=Blacklist comment="210644" address=5.182.86.0/23
 add list=Blacklist comment="210644" address=5.252.118.0/24
 add list=Blacklist comment="210644" address=45.138.74.0/24
+#add list=Blacklist comment="210644" address=45.142.122.0/24
 add list=Blacklist comment="210644" address=45.144.54.0/23
 add list=Blacklist comment="210644" address=45.150.32.0/23
 add list=Blacklist comment="210644" address=46.226.160.0/21
 add list=Blacklist comment="210644" address=62.60.148.0/22
-add list=Blacklist comment="210644" address=62.60.152.0/23
-add list=Blacklist comment="210644" address=62.60.155.0/24
-add list=Blacklist comment="210644" address=62.60.156.0/22
+add list=Blacklist comment="210644" address=62.60.152.0/21
 add list=Blacklist comment="210644" address=62.60.186.0/24
 add list=Blacklist comment="210644" address=62.60.216.0/23
 add list=Blacklist comment="210644" address=62.60.228.0/22
@@ -376,7 +387,7 @@ add list=Blacklist comment="210644" address=77.110.116.0/24
 add list=Blacklist comment="210644" address=77.110.118.0/23
 add list=Blacklist comment="210644" address=77.110.120.0/21
 add list=Blacklist comment="210644" address=77.221.136.0/21
-add list=Blacklist comment="210644" address=77.221.148.0/24
+add list=Blacklist comment="210644" address=77.221.148.0/23
 add list=Blacklist comment="210644" address=77.221.152.0/21
 add list=Blacklist comment="210644" address=77.232.142.0/23
 add list=Blacklist comment="210644" address=77.239.96.0/21
@@ -392,6 +403,7 @@ add list=Blacklist comment="210644" address=79.137.204.0/22
 add list=Blacklist comment="210644" address=79.137.248.0/24
 add list=Blacklist comment="210644" address=80.85.241.0/24
 add list=Blacklist comment="210644" address=81.19.137.0/24
+#add list=Blacklist comment="210644" address=82.117.87.0/24
 add list=Blacklist comment="210644" address=83.147.192.0/24
 add list=Blacklist comment="210644" address=83.147.216.0/24
 add list=Blacklist comment="210644" address=83.147.252.0/23
@@ -403,6 +415,7 @@ add list=Blacklist comment="210644" address=85.192.37.0/24
 add list=Blacklist comment="210644" address=85.192.38.0/24
 add list=Blacklist comment="210644" address=85.192.40.0/23
 add list=Blacklist comment="210644" address=85.192.42.0/24
+#add list=Blacklist comment="210644" address=85.192.56.0/24
 add list=Blacklist comment="210644" address=85.192.60.0/23
 add list=Blacklist comment="210644" address=85.192.63.0/24
 add list=Blacklist comment="210644" address=85.239.144.0/24
@@ -426,8 +439,7 @@ add list=Blacklist comment="210644" address=91.108.240.0/23
 add list=Blacklist comment="210644" address=91.184.240.0/22
 add list=Blacklist comment="210644" address=91.186.212.0/23
 add list=Blacklist comment="210644" address=91.186.216.0/22
-add list=Blacklist comment="210644" address=92.246.136.0/23
-add list=Blacklist comment="210644" address=92.246.139.0/24
+add list=Blacklist comment="210644" address=92.246.136.0/22
 add list=Blacklist comment="210644" address=94.142.138.0/24
 add list=Blacklist comment="210644" address=94.228.162.0/23
 add list=Blacklist comment="210644" address=94.228.164.0/23
@@ -443,6 +455,7 @@ add list=Blacklist comment="210644" address=95.181.174.0/23
 add list=Blacklist comment="210644" address=103.249.132.0/22
 add list=Blacklist comment="210644" address=104.238.29.0/24
 add list=Blacklist comment="210644" address=109.107.181.0/24
+#add list=Blacklist comment="210644" address=109.107.189.0/24
 add list=Blacklist comment="210644" address=109.107.190.0/24
 add list=Blacklist comment="210644" address=109.120.132.0/22
 add list=Blacklist comment="210644" address=109.120.138.0/23
@@ -482,59 +495,64 @@ add list=Blacklist comment="210644" address=138.124.124.0/24
 add list=Blacklist comment="210644" address=138.124.127.0/24
 add list=Blacklist comment="210644" address=147.45.40.0/22
 add list=Blacklist comment="210644" address=147.45.68.0/22
-add list=Blacklist comment="210644" address=147.45.72.0/22
-add list=Blacklist comment="210644" address=147.45.76.0/23
+add list=Blacklist comment="210644" address=147.45.72.0/21
 add list=Blacklist comment="210644" address=150.241.64.0/19
 add list=Blacklist comment="210644" address=150.241.96.0/21
 add list=Blacklist comment="210644" address=176.124.198.0/23
 add list=Blacklist comment="210644" address=176.124.202.0/23
-add list=Blacklist comment="210644" address=176.124.204.0/24
-add list=Blacklist comment="210644" address=176.124.206.0/23
+add list=Blacklist comment="210644" address=176.124.204.0/22
 add list=Blacklist comment="210644" address=176.124.220.0/23
 add list=Blacklist comment="210644" address=178.20.209.0/24
 add list=Blacklist comment="210644" address=178.236.244.0/24
+add list=Blacklist comment="210644" address=178.236.246.0/23
+#add list=Blacklist comment="210644" address=178.253.55.0/24
 add list=Blacklist comment="210644" address=185.95.156.0/24
+add list=Blacklist comment="210644" address=185.95.159.0/24
 add list=Blacklist comment="210644" address=185.106.93.0/24
 add list=Blacklist comment="210644" address=185.106.94.0/24
+#add list=Blacklist comment="210644" address=185.112.83.0/24
 add list=Blacklist comment="210644" address=185.125.100.0/22
 add list=Blacklist comment="210644" address=185.125.230.0/24
 add list=Blacklist comment="210644" address=185.128.104.0/24
-add list=Blacklist comment="210644" address=185.174.137.0/24
+add list=Blacklist comment="210644" address=185.174.136.0/23
 add list=Blacklist comment="210644" address=185.197.74.0/24
 add list=Blacklist comment="210644" address=185.217.197.0/24
 add list=Blacklist comment="210644" address=185.221.196.0/24
 add list=Blacklist comment="210644" address=185.225.200.0/23
 add list=Blacklist comment="210644" address=185.229.65.0/24
+#add list=Blacklist comment="210644" address=185.229.66.0/24
 add list=Blacklist comment="210644" address=185.230.143.0/24
 add list=Blacklist comment="210644" address=192.109.139.0/24
 add list=Blacklist comment="210644" address=192.109.200.0/24
-add list=Blacklist comment="210644" address=193.29.224.0/24
+add list=Blacklist comment="210644" address=193.29.224.0/23
 add list=Blacklist comment="210644" address=193.33.153.0/24
 add list=Blacklist comment="210644" address=193.188.20.0/23
+add list=Blacklist comment="210644" address=193.188.22.0/24
 add list=Blacklist comment="210644" address=193.232.178.0/24
 add list=Blacklist comment="210644" address=193.233.114.0/23
 add list=Blacklist comment="210644" address=193.233.133.0/24
 add list=Blacklist comment="210644" address=193.233.232.0/23
-add list=Blacklist comment="210644" address=194.26.229.0/24
+#add list=Blacklist comment="210644" address=194.26.229.0/24
 add list=Blacklist comment="210644" address=194.33.34.0/23
+#add list=Blacklist comment="210644" address=194.67.201.0/24
 add list=Blacklist comment="210644" address=194.226.169.0/24
 add list=Blacklist comment="210644" address=212.113.100.0/22
 add list=Blacklist comment="210644" address=212.113.106.0/24
 add list=Blacklist comment="210644" address=212.113.116.0/24
 add list=Blacklist comment="210644" address=212.113.119.0/24
-add list=Blacklist comment="210644" address=213.108.20.0/23
-add list=Blacklist comment="210644" address=213.108.23.0/24
+add list=Blacklist comment="210644" address=213.108.20.0/22
 add list=Blacklist comment="210644" address=213.176.64.0/22
 add list=Blacklist comment="210644" address=213.176.74.0/23
 add list=Blacklist comment="210644" address=213.176.92.0/22
 add list=Blacklist comment="210644" address=213.176.112.0/22
 add list=Blacklist comment="210644" address=217.144.185.0/24
 add list=Blacklist comment="210644" address=217.144.186.0/23
-add list=Blacklist comment="210644" address=217.144.188.0/23
-add list=Blacklist comment="210644" address=217.144.190.0/24
+add list=Blacklist comment="210644" address=217.144.188.0/22
 add list=Blacklist comment="210644" address=217.197.107.0/24
-# AS210281 RIPE NCC ASN block
+# AS210281 EcoConnect LLC
+add list=Blacklist comment="210281" address=94.137.89.0/24
 add list=Blacklist comment="210281" address=188.35.28.0/22
+add list=Blacklist comment="210281" address=195.178.98.0/24
 # AS211409 FoxiBytes LTD
 add list=Blacklist comment="211409" address=89.42.88.0/24
 # AS215590 DpkgSoft International Limited
@@ -837,6 +855,7 @@ add list=Blacklist comment="132203" address=43.154.0.0/15
 add list=Blacklist comment="132203" address=43.156.0.0/15
 add list=Blacklist comment="132203" address=43.158.0.0/17
 add list=Blacklist comment="132203" address=43.159.0.0/18
+add list=Blacklist comment="132203" address=43.159.90.0/24
 add list=Blacklist comment="132203" address=43.159.128.0/17
 add list=Blacklist comment="132203" address=43.160.0.0/17
 add list=Blacklist comment="132203" address=43.160.128.0/19
@@ -852,7 +871,11 @@ add list=Blacklist comment="132203" address=43.166.0.0/17
 add list=Blacklist comment="132203" address=43.166.128.0/18
 add list=Blacklist comment="132203" address=43.166.224.0/19
 add list=Blacklist comment="132203" address=43.167.0.0/16
+add list=Blacklist comment="132203" address=43.172.15.0/24
 add list=Blacklist comment="132203" address=43.173.0.0/16
+add list=Blacklist comment="132203" address=43.175.107.0/24
+add list=Blacklist comment="132203" address=43.175.108.0/24
+add list=Blacklist comment="132203" address=43.175.127.0/24
 add list=Blacklist comment="132203" address=45.40.216.0/21
 add list=Blacklist comment="132203" address=45.146.112.0/23
 add list=Blacklist comment="132203" address=49.51.32.0/20
@@ -877,11 +900,9 @@ add list=Blacklist comment="132203" address=101.32.238.0/23
 add list=Blacklist comment="132203" address=101.32.240.0/20
 add list=Blacklist comment="132203" address=101.33.4.0/23
 add list=Blacklist comment="132203" address=101.33.17.0/24
+add list=Blacklist comment="132203" address=101.33.18.0/23
 add list=Blacklist comment="132203" address=101.33.30.0/23
-add list=Blacklist comment="132203" address=101.33.32.0/21
-add list=Blacklist comment="132203" address=101.33.41.0/24
-add list=Blacklist comment="132203" address=101.33.42.0/23
-add list=Blacklist comment="132203" address=101.33.44.0/22
+add list=Blacklist comment="132203" address=101.33.32.0/20
 add list=Blacklist comment="132203" address=101.33.48.0/21
 add list=Blacklist comment="132203" address=101.33.56.0/22
 add list=Blacklist comment="132203" address=101.33.64.0/18
@@ -973,6 +994,8 @@ add list=Blacklist comment="34465" address=154.51.12.0/24
 add list=Blacklist comment="34465" address=185.188.28.0/24
 # AS136180 Beijing Tiantexin Tech. Co., Ltd.
 add list=Blacklist comment="136180" address=103.203.56.0/22
+# AS150860 JETCLOUD TECHNOLOGY CO., LTD
+add list=Blacklist comment="150860" address=103.237.86.0/23
 # AS205100 F3 Netze e.V.
 add list=Blacklist comment="205100" address=185.220.100.0/24
 # AS14987 Rethem Hosting LLC
@@ -994,14 +1017,15 @@ add list=Blacklist comment="50448" address=109.95.208.0/21
 add list=Blacklist comment="150156" address=103.112.62.0/23
 # AS133398 Tele Asia Limited
 add list=Blacklist comment="133398" address=45.123.88.0/22
-add list=Blacklist comment="133398" address=45.123.188.0/23
-add list=Blacklist comment="133398" address=45.123.191.0/24
+add list=Blacklist comment="133398" address=45.123.188.0/22
 add list=Blacklist comment="133398" address=45.125.64.0/22
 add list=Blacklist comment="133398" address=79.141.168.0/23
 add list=Blacklist comment="133398" address=103.16.228.0/22
 add list=Blacklist comment="133398" address=103.253.40.0/22
 add list=Blacklist comment="133398" address=104.234.58.0/24
 add list=Blacklist comment="133398" address=104.234.198.0/23
+add list=Blacklist comment="133398" address=191.101.180.0/24
+add list=Blacklist comment="133398" address=193.31.41.0/24
 # AS48148 SVIAZATOMINFORM, Ltd. Company
 add list=Blacklist comment="48148" address=94.198.0.0/21
 # AS204333 Witalij Koweschnikow
@@ -1047,7 +1071,7 @@ add list=Blacklist comment="60729" address=185.220.101.0/24
 add list=Blacklist comment="60729" address=185.220.102.0/24
 # AS62068 SpectraIP B.V.
 add list=Blacklist comment="62068" address=5.182.208.0/23
-add list=Blacklist comment="62068" address=43.240.150.0/24
+#add list=Blacklist comment="62068" address=43.240.150.0/24
 add list=Blacklist comment="62068" address=45.14.224.0/22
 add list=Blacklist comment="62068" address=45.87.41.0/24
 add list=Blacklist comment="62068" address=45.87.42.0/23
@@ -1067,13 +1091,14 @@ add list=Blacklist comment="62068" address=185.244.38.0/24
 # AS64439 IT Outsourcing LLC
 add list=Blacklist comment="64439" address=45.156.21.0/24
 add list=Blacklist comment="64439" address=45.156.26.0/24
+add list=Blacklist comment="64439" address=46.8.33.0/24
 add list=Blacklist comment="64439" address=94.232.40.0/23
 add list=Blacklist comment="64439" address=109.205.56.0/24
 add list=Blacklist comment="64439" address=185.159.129.0/24
 add list=Blacklist comment="64439" address=185.159.130.0/24
 add list=Blacklist comment="64439" address=185.228.232.0/23
 add list=Blacklist comment="64439" address=185.228.234.0/24
-# AS215208 Dolphin 1337 Limited
+# AS215208 RIPE NCC ASN block
 add list=Blacklist comment="215208" address=176.65.143.0/24
 # AS51115 HLL LLC
 add list=Blacklist comment="51115" address=78.155.198.0/24
@@ -1154,7 +1179,7 @@ add list=Blacklist comment="201814" address=212.23.222.0/24
 #add list=Blacklist comment="207208" address=5.181.191.0/24
 #add list=Blacklist comment="207208" address=149.50.120.0/24
 #add list=Blacklist comment="207208" address=149.50.123.0/24
-# AS213794 Subinet Sp. z o.o.
+# AS213794 MEVSPACE sp. z o.o.
 #add list=Blacklist comment="213794" address=5.181.189.0/24
 #add list=Blacklist comment="213794" address=193.34.215.0/24
 # AS61280 FGUP GRCHC
@@ -1222,7 +1247,7 @@ add list=Blacklist comment="400130" address=23.247.253.0/24
 add list=Blacklist comment="400130" address=38.102.91.0/24
 add list=Blacklist comment="400130" address=38.128.250.0/24
 add list=Blacklist comment="400130" address=166.0.147.0/24
-# AS200136 Association LibraHost
+# AS200136 LibraHost
 add list=Blacklist comment="200136" address=163.5.141.0/24
 add list=Blacklist comment="200136" address=163.5.143.0/24
 # AS400897 PETROSKY CLOUD LLC
@@ -1290,6 +1315,7 @@ add list=Blacklist comment="42397" address=193.29.15.0/24
 add list=Blacklist comment="35478" address=45.13.39.0/24
 add list=Blacklist comment="35478" address=45.134.51.0/24
 add list=Blacklist comment="35478" address=45.142.153.0/24
+add list=Blacklist comment="35478" address=45.142.195.0/24
 add list=Blacklist comment="35478" address=92.118.38.0/24
 add list=Blacklist comment="35478" address=103.31.208.0/24
 add list=Blacklist comment="35478" address=103.171.136.0/23
@@ -1314,6 +1340,7 @@ add list=Blacklist comment="39798" address=194.180.158.0/24
 add list=Blacklist comment="39798" address=194.180.174.0/24
 add list=Blacklist comment="39798" address=194.180.191.0/24
 # AS41436 Kamatera Inc
+add list=Blacklist comment="41436" address=2.59.118.0/24
 add list=Blacklist comment="41436" address=5.180.180.0/22
 add list=Blacklist comment="41436" address=45.91.168.0/23
 add list=Blacklist comment="41436" address=63.250.56.0/23
@@ -1332,7 +1359,10 @@ add list=Blacklist comment="41436" address=193.168.173.0/24
 add list=Blacklist comment="41436" address=194.37.81.0/24
 add list=Blacklist comment="41436" address=194.146.38.0/23
 add list=Blacklist comment="41436" address=195.238.121.0/24
+# AS215009 BELERAFON, razvoj in programiranje, d.o.o.
+add list=Blacklist comment="215009" address=193.34.49.0/24
 # AS204548 Kamatera Inc
+#add list=Blacklist comment="204548" address=2.59.118.0/24
 add list=Blacklist comment="204548" address=45.83.41.0/24
 add list=Blacklist comment="204548" address=45.147.248.0/24
 add list=Blacklist comment="204548" address=63.250.59.0/24
@@ -1356,7 +1386,7 @@ add list=Blacklist comment="204548" address=194.37.80.0/24
 add list=Blacklist comment="204548" address=195.238.122.0/24
 add list=Blacklist comment="204548" address=212.115.110.0/24
 # AS210329 Kamatera Inc
-add list=Blacklist comment="210329" address=2.59.118.0/24
+#add list=Blacklist comment="210329" address=2.59.118.0/24
 add list=Blacklist comment="210329" address=45.91.170.0/24
 add list=Blacklist comment="210329" address=45.147.249.0/24
 add list=Blacklist comment="210329" address=63.250.58.0/24
@@ -1435,6 +1465,7 @@ add list=Blacklist comment="25820" address=104.129.180.0/22
 add list=Blacklist comment="25820" address=104.129.184.0/22
 add list=Blacklist comment="25820" address=104.153.96.0/21
 add list=Blacklist comment="25820" address=104.160.32.0/20
+add list=Blacklist comment="25820" address=104.193.8.0/22
 add list=Blacklist comment="25820" address=104.194.64.0/19
 add list=Blacklist comment="25820" address=104.224.128.0/18
 add list=Blacklist comment="25820" address=104.225.144.0/20
@@ -1442,6 +1473,7 @@ add list=Blacklist comment="25820" address=104.225.232.0/21
 add list=Blacklist comment="25820" address=104.243.16.0/20
 add list=Blacklist comment="25820" address=104.244.88.0/21
 add list=Blacklist comment="25820" address=104.245.40.0/21
+add list=Blacklist comment="25820" address=104.245.96.0/21
 add list=Blacklist comment="25820" address=104.245.188.0/22
 add list=Blacklist comment="25820" address=107.182.16.0/20
 add list=Blacklist comment="25820" address=107.182.176.0/20
@@ -1454,6 +1486,7 @@ add list=Blacklist comment="25820" address=162.211.220.0/22
 add list=Blacklist comment="25820" address=162.211.224.0/21
 add list=Blacklist comment="25820" address=162.219.120.0/21
 add list=Blacklist comment="25820" address=162.244.240.0/22
+add list=Blacklist comment="25820" address=162.248.72.0/21
 add list=Blacklist comment="25820" address=172.93.32.0/20
 add list=Blacklist comment="25820" address=172.96.16.0/22
 add list=Blacklist comment="25820" address=172.96.192.0/18
@@ -1503,13 +1536,13 @@ add list=Blacklist comment="3214" address=89.106.207.0/24
 add list=Blacklist comment="3214" address=92.60.41.0/24
 add list=Blacklist comment="3214" address=92.60.42.0/24
 add list=Blacklist comment="3214" address=92.118.190.0/24
-add list=Blacklist comment="3214" address=104.193.8.0/22
-add list=Blacklist comment="3214" address=104.245.96.0/21
+#add list=Blacklist comment="3214" address=104.193.8.0/22
+#add list=Blacklist comment="3214" address=104.245.96.0/21
 add list=Blacklist comment="3214" address=104.255.64.0/21
 add list=Blacklist comment="3214" address=109.94.168.0/22
 add list=Blacklist comment="3214" address=147.78.176.0/22
 add list=Blacklist comment="3214" address=147.78.240.0/23
-add list=Blacklist comment="3214" address=162.248.72.0/21
+#add list=Blacklist comment="3214" address=162.248.72.0/21
 add list=Blacklist comment="3214" address=172.93.185.0/24
 add list=Blacklist comment="3214" address=185.37.252.0/23
 add list=Blacklist comment="3214" address=185.37.254.0/24
@@ -1554,6 +1587,7 @@ add list=Blacklist comment="49581" address=45.137.201.0/24
 add list=Blacklist comment="49581" address=45.137.203.0/24
 add list=Blacklist comment="49581" address=45.142.107.0/24
 add list=Blacklist comment="49581" address=45.157.17.0/24
+add list=Blacklist comment="49581" address=45.197.25.0/24
 add list=Blacklist comment="49581" address=80.75.212.0/24
 add list=Blacklist comment="49581" address=80.91.223.0/24
 add list=Blacklist comment="49581" address=89.106.69.0/24
@@ -1713,11 +1747,14 @@ add list=Blacklist comment="34534" address=213.5.130.0/24
 add list=Blacklist comment="49434" address=37.44.236.0/23
 add list=Blacklist comment="49434" address=45.138.220.0/22
 add list=Blacklist comment="49434" address=79.110.237.0/24
+add list=Blacklist comment="49434" address=83.147.223.0/24
 add list=Blacklist comment="49434" address=91.238.180.0/23
 add list=Blacklist comment="49434" address=91.239.208.0/24
+add list=Blacklist comment="49434" address=92.119.184.0/23
 add list=Blacklist comment="49434" address=156.229.228.0/22
 add list=Blacklist comment="49434" address=170.39.219.0/24
 #add list=Blacklist comment="49434" address=185.55.240.0/24
+add list=Blacklist comment="49434" address=185.78.232.0/23
 add list=Blacklist comment="49434" address=185.142.52.0/24
 add list=Blacklist comment="49434" address=185.142.54.0/23
 add list=Blacklist comment="49434" address=185.177.45.0/24
@@ -1743,11 +1780,14 @@ add list=Blacklist comment="51396" address=45.135.193.0/24
 add list=Blacklist comment="51396" address=45.135.194.0/24
 add list=Blacklist comment="51396" address=45.153.34.0/24
 add list=Blacklist comment="51396" address=89.251.10.0/24
+add list=Blacklist comment="51396" address=154.213.188.0/24
 add list=Blacklist comment="51396" address=176.65.148.0/22
 add list=Blacklist comment="51396" address=204.76.203.0/24
 add list=Blacklist comment="51396" address=213.21.232.0/24
 # AS214940 KPROHOST LLC
 add list=Blacklist comment="214940" address=45.144.212.0/24
+add list=Blacklist comment="214940" address=88.210.63.0/24
+add list=Blacklist comment="214940" address=176.46.158.0/24
 add list=Blacklist comment="214940" address=198.55.98.0/24
 # AS214532 ASD SOLUTIONS, SOCIEDAD LIMITADA
 add list=Blacklist comment="214532" address=213.21.239.0/24
@@ -1758,6 +1798,8 @@ add list=Blacklist comment="214209" address=89.213.174.0/24
 add list=Blacklist comment="214209" address=93.113.25.0/24
 add list=Blacklist comment="214209" address=94.156.152.0/24
 add list=Blacklist comment="214209" address=140.233.190.0/24
+# AS214497 Whitelabel Solutions, Ltd.
+add list=Blacklist comment="214497" address=154.213.200.0/24
 # AS214515 Amir Mohammad Masoudi
 add list=Blacklist comment="214515" address=37.32.41.0/24
 add list=Blacklist comment="214515" address=213.21.245.0/24
@@ -1816,7 +1858,6 @@ add list=Blacklist comment="198154" address=217.60.247.0/24
 add list=Blacklist comment="198154" address=217.60.249.0/24
 add list=Blacklist comment="198154" address=217.60.252.0/24
 # AS214967 Optibounce, LLC
-add list=Blacklist comment="214967" address=45.197.25.0/24
 add list=Blacklist comment="214967" address=193.200.78.0/24
 # AS214834 Rekade International LTD
 add list=Blacklist comment="214834" address=89.144.15.0/24
@@ -1835,6 +1876,7 @@ add list=Blacklist comment="198584" address=103.161.34.0/23
 add list=Blacklist comment="198584" address=147.79.0.0/24
 add list=Blacklist comment="198584" address=149.18.96.0/24
 add list=Blacklist comment="198584" address=149.57.1.0/24
+add list=Blacklist comment="198584" address=156.233.210.0/24
 add list=Blacklist comment="198584" address=156.253.238.0/24
 add list=Blacklist comment="198584" address=176.65.128.0/24
 add list=Blacklist comment="198584" address=176.65.131.0/24
@@ -1848,6 +1890,7 @@ add list=Blacklist comment="198584" address=195.62.32.0/24
 # AS213058 Private Internet Hosting LTD
 add list=Blacklist comment="213058" address=91.234.99.0/24
 add list=Blacklist comment="213058" address=178.159.36.0/24
+add list=Blacklist comment="213058" address=193.150.70.0/24
 # AS49372 w1n ltd
 add list=Blacklist comment="49372" address=91.234.196.0/24
 add list=Blacklist comment="49372" address=185.165.154.0/24
@@ -1892,6 +1935,8 @@ add list=Blacklist comment="214927" address=193.124.185.0/24
 add list=Blacklist comment="214927" address=194.33.29.0/24
 add list=Blacklist comment="214927" address=194.33.61.0/24
 add list=Blacklist comment="214927" address=195.158.192.0/24
+# AS215789 Karina Rashkovska
+add list=Blacklist comment="215789" address=147.45.44.0/24
 # AS215826 Partner Hosting LTD
 add list=Blacklist comment="215826" address=5.252.153.0/24
 add list=Blacklist comment="215826" address=5.252.155.0/24
@@ -1946,6 +1991,7 @@ add list=Blacklist comment="43350" address=37.143.32.0/22
 add list=Blacklist comment="43350" address=45.67.120.0/22
 add list=Blacklist comment="43350" address=45.147.254.0/23
 add list=Blacklist comment="43350" address=45.148.152.0/22
+add list=Blacklist comment="43350" address=45.200.88.0/24
 add list=Blacklist comment="43350" address=45.227.255.0/24
 add list=Blacklist comment="43350" address=46.161.27.0/24
 add list=Blacklist comment="43350" address=46.166.128.0/20
@@ -2024,7 +2070,11 @@ add list=Blacklist comment="43350" address=212.92.112.0/21
 add list=Blacklist comment="43350" address=213.21.243.0/24
 add list=Blacklist comment="43350" address=217.114.41.0/24
 # AS201133 Verdina Ltd.
-add list=Blacklist comment="201133" address=85.217.223.0/24
+add list=Blacklist comment="201133" address=78.142.29.0/24
+add list=Blacklist comment="201133" address=79.124.78.0/24
+add list=Blacklist comment="201133" address=85.217.222.0/23
+add list=Blacklist comment="201133" address=95.169.196.0/24
+add list=Blacklist comment="201133" address=185.7.219.0/24
 # AS209132 Alviva Holding Limited
 add list=Blacklist comment="209132" address=88.214.26.0/24
 add list=Blacklist comment="209132" address=147.45.112.0/24
@@ -2081,6 +2131,9 @@ add list=Blacklist comment="132825" address=43.251.112.0/22
 add list=Blacklist comment="132825" address=43.252.208.0/24
 add list=Blacklist comment="132825" address=45.116.178.0/24
 add list=Blacklist comment="132825" address=45.204.21.0/24
+add list=Blacklist comment="132825" address=45.204.23.0/24
+add list=Blacklist comment="132825" address=103.20.220.0/24
+add list=Blacklist comment="132825" address=103.42.104.0/22
 add list=Blacklist comment="132825" address=103.49.60.0/24
 add list=Blacklist comment="132825" address=103.125.84.0/22
 add list=Blacklist comment="132825" address=103.228.65.0/24
@@ -2111,9 +2164,14 @@ add list=Blacklist comment="3920" address=212.237.231.0/24
 # AS60539 Huicast Telecom Limited
 add list=Blacklist comment="60539" address=5.160.111.0/24
 add list=Blacklist comment="60539" address=161.248.28.0/23
+add list=Blacklist comment="60539" address=185.143.238.0/24
 # AS205207 Respina Networks & Beyond PJSC
 add list=Blacklist comment="205207" address=77.104.92.0/24
+# AS61302 RIPE NCC ASN block
+add list=Blacklist comment="61302" address=87.121.124.0/23
+add list=Blacklist comment="61302" address=147.78.100.0/24
 # AS211849 Kakharov Orinbassar Maratuly
+add list=Blacklist comment="211849" address=31.44.185.0/24
 add list=Blacklist comment="211849" address=80.66.75.0/24
 add list=Blacklist comment="211849" address=80.66.77.0/24
 # AS39709 EXTREME LTD
@@ -2161,6 +2219,8 @@ add list=Blacklist comment="58212" address=5.231.82.0/24
 add list=Blacklist comment="58212" address=5.231.96.0/24
 add list=Blacklist comment="58212" address=5.231.203.0/24
 add list=Blacklist comment="58212" address=5.231.234.0/24
+add list=Blacklist comment="58212" address=31.57.104.0/21
+add list=Blacklist comment="58212" address=37.202.220.0/23
 add list=Blacklist comment="58212" address=38.226.218.0/23
 add list=Blacklist comment="58212" address=45.140.56.0/24
 add list=Blacklist comment="58212" address=45.145.40.0/22
@@ -2187,7 +2247,9 @@ add list=Blacklist comment="58212" address=94.249.158.0/24
 add list=Blacklist comment="58212" address=103.148.163.0/24
 add list=Blacklist comment="58212" address=103.197.54.0/24
 add list=Blacklist comment="58212" address=104.167.24.0/24
+add list=Blacklist comment="58212" address=156.226.174.0/23
 add list=Blacklist comment="58212" address=176.96.136.0/22
+add list=Blacklist comment="58212" address=178.18.147.0/24
 add list=Blacklist comment="58212" address=185.7.82.0/23
 add list=Blacklist comment="58212" address=185.94.29.0/24
 add list=Blacklist comment="58212" address=185.219.84.0/24
@@ -2202,6 +2264,8 @@ add list=Blacklist comment="58212" address=194.9.6.0/24
 add list=Blacklist comment="58212" address=194.48.217.0/24
 add list=Blacklist comment="58212" address=194.58.47.0/24
 add list=Blacklist comment="58212" address=194.107.126.0/24
+add list=Blacklist comment="58212" address=195.62.48.0/23
+add list=Blacklist comment="58212" address=202.155.152.0/22
 # AS212935 Theori Inc
 add list=Blacklist comment="212935" address=91.203.30.0/24
 add list=Blacklist comment="212935" address=191.96.204.0/24
@@ -2249,6 +2313,7 @@ add list=Blacklist comment="199414" address=89.46.1.0/24
 add list=Blacklist comment="199414" address=118.91.185.0/24
 add list=Blacklist comment="199414" address=141.11.34.0/24
 add list=Blacklist comment="199414" address=146.19.48.0/24
+add list=Blacklist comment="199414" address=206.245.166.0/24
 # AS44947 AMWAJ ALKHYR COMMERCIAL BROKERS CO.
 add list=Blacklist comment="44947" address=91.239.189.0/24
 add list=Blacklist comment="44947" address=185.154.190.0/24
@@ -2329,6 +2394,7 @@ add list=Blacklist comment="60404" address=185.31.172.0/22
 add list=Blacklist comment="60404" address=192.76.150.0/24
 add list=Blacklist comment="60404" address=192.76.163.0/24
 # AS202592 area-7 IT-Services GmbH
+add list=Blacklist comment="202592" address=43.240.148.0/22
 add list=Blacklist comment="202592" address=185.96.58.0/24
 # AS24700 WEB3 Leaders INC
 add list=Blacklist comment="24700" address=46.174.188.0/22
@@ -2366,8 +2432,11 @@ add list=Blacklist comment="53828" address=142.44.64.0/18
 add list=Blacklist comment="53828" address=144.91.176.0/20
 add list=Blacklist comment="53828" address=144.91.192.0/18
 add list=Blacklist comment="53828" address=172.98.96.0/19
+add list=Blacklist comment="53828" address=185.234.216.0/24
+add list=Blacklist comment="53828" address=198.32.132.0/24
 add list=Blacklist comment="53828" address=199.15.184.0/22
 add list=Blacklist comment="53828" address=204.238.52.0/24
+add list=Blacklist comment="53828" address=206.53.202.0/24
 add list=Blacklist comment="53828" address=207.5.64.0/19
 add list=Blacklist comment="53828" address=207.200.192.0/19
 add list=Blacklist comment="53828" address=208.87.104.0/24
@@ -2394,7 +2463,7 @@ add list=Blacklist comment="56611" address=185.173.234.0/24
 add list=Blacklist comment="56611" address=193.160.96.0/24
 # AS211177 Met Pit & Co B.V.
 add list=Blacklist comment="211177" address=185.228.80.0/24
-# AS140057 369 IntoNet Limited
+# AS140057 APNIC ASN block
 add list=Blacklist comment="140057" address=103.163.133.0/24
 add list=Blacklist comment="140057" address=149.57.11.0/24
 add list=Blacklist comment="140057" address=149.57.16.0/24
@@ -2405,6 +2474,7 @@ add list=Blacklist comment="26042" address=23.145.120.0/24
 add list=Blacklist comment="26042" address=23.158.72.0/24
 add list=Blacklist comment="26042" address=23.160.56.0/24
 add list=Blacklist comment="26042" address=23.166.40.0/24
+add list=Blacklist comment="26042" address=31.13.211.0/24
 add list=Blacklist comment="26042" address=38.46.217.0/24
 add list=Blacklist comment="26042" address=38.46.218.0/23
 add list=Blacklist comment="26042" address=38.46.220.0/22
@@ -2420,24 +2490,34 @@ add list=Blacklist comment="26042" address=45.148.140.0/24
 add list=Blacklist comment="26042" address=62.72.162.0/24
 add list=Blacklist comment="26042" address=64.22.97.0/24
 add list=Blacklist comment="26042" address=67.220.64.0/24
+add list=Blacklist comment="26042" address=82.29.22.0/24
 add list=Blacklist comment="26042" address=85.239.44.0/22
 add list=Blacklist comment="26042" address=91.210.108.0/23
 add list=Blacklist comment="26042" address=91.221.190.0/23
+add list=Blacklist comment="26042" address=102.129.215.0/24
 add list=Blacklist comment="26042" address=102.129.216.0/24
 add list=Blacklist comment="26042" address=102.129.240.0/24
 add list=Blacklist comment="26042" address=102.215.230.0/24
 add list=Blacklist comment="26042" address=103.120.128.0/24
+add list=Blacklist comment="26042" address=103.130.147.0/24
 add list=Blacklist comment="26042" address=103.216.172.0/24
 add list=Blacklist comment="26042" address=104.234.118.0/24
 add list=Blacklist comment="26042" address=104.234.142.0/24
+add list=Blacklist comment="26042" address=104.234.228.0/24
+add list=Blacklist comment="26042" address=108.165.178.0/24
 add list=Blacklist comment="26042" address=146.71.85.0/24
+add list=Blacklist comment="26042" address=150.241.225.0/24
+add list=Blacklist comment="26042" address=150.241.235.0/24
 add list=Blacklist comment="26042" address=172.98.54.0/24
 add list=Blacklist comment="26042" address=185.230.67.0/24
+#add list=Blacklist comment="26042" address=191.96.204.0/24
 add list=Blacklist comment="26042" address=193.233.198.0/23
 add list=Blacklist comment="26042" address=193.246.160.0/24
 add list=Blacklist comment="26042" address=194.76.168.0/24
 add list=Blacklist comment="26042" address=194.110.246.0/24
 add list=Blacklist comment="26042" address=206.53.53.0/24
+add list=Blacklist comment="26042" address=213.139.68.0/24
+add list=Blacklist comment="26042" address=213.139.79.0/24
 add list=Blacklist comment="26042" address=216.250.247.0/24
 # AS215120 Evolus IT Solutions GmbH
 add list=Blacklist comment="215120" address=91.227.33.0/24
@@ -2449,6 +2529,7 @@ add list=Blacklist comment="41047" address=87.237.165.0/24
 # AS53755 Input Output Flood LLC
 add list=Blacklist comment="53755" address=23.226.64.0/20
 add list=Blacklist comment="53755" address=45.93.83.0/24
+add list=Blacklist comment="53755" address=104.161.8.0/21
 add list=Blacklist comment="53755" address=104.161.16.0/20
 add list=Blacklist comment="53755" address=104.161.32.0/19
 add list=Blacklist comment="53755" address=104.161.64.0/18
@@ -2549,6 +2630,7 @@ add list=Blacklist comment="212860" address=95.182.117.0/24
 add list=Blacklist comment="212860" address=95.182.118.0/23
 add list=Blacklist comment="212860" address=176.96.241.0/24
 add list=Blacklist comment="212860" address=176.96.243.0/24
+add list=Blacklist comment="212860" address=176.221.28.0/23
 # AS152320 Goalnow Network Technology Co Limited
 add list=Blacklist comment="152320" address=45.254.24.0/22
 add list=Blacklist comment="152320" address=103.85.72.0/22
@@ -2670,6 +2752,9 @@ add list=Blacklist comment="214413" address=156.243.114.0/24
 add list=Blacklist comment="214413" address=156.252.30.0/23
 add list=Blacklist comment="214413" address=156.255.59.0/24
 add list=Blacklist comment="214413" address=156.255.60.0/24
+# AS214472 Offshore LC
+add list=Blacklist comment="214472" address=154.213.201.0/24
+#add list=Blacklist comment="214472" address=213.21.232.0/24
 # AS214943 Railnet LLC
 add list=Blacklist comment="214943" address=37.49.148.0/24
 add list=Blacklist comment="214943" address=45.141.233.0/24
@@ -2841,7 +2926,7 @@ add list=Blacklist comment="133772" address=205.201.6.0/23
 add list=Blacklist comment="133772" address=205.201.8.0/23
 add list=Blacklist comment="133772" address=208.87.166.0/24
 # AS203429 Zeal Capital Market (Seychelles) Limited
-add list=Blacklist comment="203429" address=196.61.189.0/24
+#add list=Blacklist comment="203429" address=196.61.189.0/24
 # AS204615 IP Fiber Inc
 add list=Blacklist comment="204615" address=185.225.113.0/24
 add list=Blacklist comment="204615" address=185.225.114.0/23
@@ -2963,6 +3048,7 @@ add list=Blacklist comment="57858" address=185.3.132.0/22
 #add list=Blacklist comment="57858" address=196.196.82.0/23
 #add list=Blacklist comment="57858" address=196.196.84.0/22
 #add list=Blacklist comment="57858" address=196.196.89.0/24
+#add list=Blacklist comment="57858" address=196.196.91.0/24
 #add list=Blacklist comment="57858" address=196.196.93.0/24
 #add list=Blacklist comment="57858" address=196.196.95.0/24
 #add list=Blacklist comment="57858" address=196.196.96.0/23
@@ -3018,7 +3104,7 @@ add list=Blacklist comment="63119" address=192.40.92.0/23
 #add list=Blacklist comment="63119" address=196.196.185.0/24
 #add list=Blacklist comment="63119" address=196.247.16.0/22
 # AS200195 Verasel, Inc.
-add list=Blacklist comment="200195" address=45.123.190.0/24
+#add list=Blacklist comment="200195" address=45.123.190.0/24
 add list=Blacklist comment="200195" address=45.143.201.0/24
 add list=Blacklist comment="200195" address=46.151.181.0/24
 add list=Blacklist comment="200195" address=46.151.182.0/24
@@ -3057,6 +3143,20 @@ add list=Blacklist comment="43180" address=82.23.49.0/24
 add list=Blacklist comment="43180" address=82.23.54.0/24
 add list=Blacklist comment="43180" address=91.239.77.0/24
 add list=Blacklist comment="43180" address=176.97.116.0/22
+# AS213438 ColocaTel Inc.
+add list=Blacklist comment="213438" address=5.253.84.0/24
+add list=Blacklist comment="213438" address=5.253.86.0/24
+add list=Blacklist comment="213438" address=31.56.110.0/24
+add list=Blacklist comment="213438" address=45.129.13.0/24
+add list=Blacklist comment="213438" address=45.129.230.0/23
+add list=Blacklist comment="213438" address=45.134.225.0/24
+add list=Blacklist comment="213438" address=45.142.192.0/24
+add list=Blacklist comment="213438" address=45.148.11.0/24
+add list=Blacklist comment="213438" address=50.118.225.0/24
+add list=Blacklist comment="213438" address=78.142.18.0/24
+add list=Blacklist comment="213438" address=79.124.8.0/24
+add list=Blacklist comment="213438" address=185.196.220.0/24
+add list=Blacklist comment="213438" address=193.142.146.0/23
 # AS201860 MyTelco Ltd
 add list=Blacklist comment="201860" address=185.60.237.0/24
 add list=Blacklist comment="201860" address=185.60.238.0/23
@@ -3097,6 +3197,9 @@ add list=Blacklist comment="36902" address=41.220.96.0/20
 add list=Blacklist comment="36902" address=154.70.160.0/19
 add list=Blacklist comment="36902" address=196.46.148.0/22
 add list=Blacklist comment="36902" address=197.234.0.0/20
+# AS37740 IPTP Inc
+add list=Blacklist comment="37740" address=169.239.20.0/22
+add list=Blacklist comment="37740" address=196.61.128.0/18
 # AS213373 IP Connect Inc
 add list=Blacklist comment="213373" address=2.56.10.0/24
 add list=Blacklist comment="213373" address=5.178.0.0/24
@@ -3118,8 +3221,9 @@ add list=Blacklist comment="328543" address=102.134.36.0/22
 add list=Blacklist comment="328543" address=102.134.48.0/20
 add list=Blacklist comment="328543" address=102.220.88.0/22
 add list=Blacklist comment="328543" address=102.223.72.0/22
+add list=Blacklist comment="328543" address=123.136.80.0/20
 add list=Blacklist comment="328543" address=124.21.64.0/18
-add list=Blacklist comment="328543" address=156.0.95.0/24
+add list=Blacklist comment="328543" address=156.0.92.0/22
 add list=Blacklist comment="328543" address=185.80.200.0/22
 add list=Blacklist comment="328543" address=195.78.48.0/23
 # AS29222 Infomaniak Network SA
@@ -3289,6 +3393,7 @@ add list=Blacklist comment="30823" address=185.223.28.0/22
 add list=Blacklist comment="30823" address=185.239.236.0/22
 add list=Blacklist comment="30823" address=185.249.197.0/24
 add list=Blacklist comment="30823" address=185.249.198.0/23
+add list=Blacklist comment="30823" address=188.191.106.0/24
 add list=Blacklist comment="30823" address=191.101.206.0/24
 add list=Blacklist comment="30823" address=193.23.126.0/23
 add list=Blacklist comment="30823" address=193.23.160.0/23
@@ -3306,6 +3411,7 @@ add list=Blacklist comment="30823" address=216.126.230.0/24
 # AS211138 Private-Hosting di Cipriano oscar
 add list=Blacklist comment="211138" address=41.216.188.0/23
 # AS43043 aurologic GmbH
+add list=Blacklist comment="43043" address=45.66.151.0/24
 add list=Blacklist comment="43043" address=194.105.80.0/24
 # AS214196 Vladylsav Naumets
 add list=Blacklist comment="214196" address=91.92.46.0/24
@@ -3353,9 +3459,40 @@ add list=Blacklist comment="213693" address=45.65.112.0/24
 add list=Blacklist comment="213693" address=109.176.202.0/24
 # AS215925 VPSVAULT.HOST LTD
 add list=Blacklist comment="215925" address=87.121.84.0/24
+# AS213613 BOTSHIELD LTD
+add list=Blacklist comment="213613" address=5.180.33.0/24
+add list=Blacklist comment="213613" address=31.56.48.0/24
+add list=Blacklist comment="213613" address=45.39.70.0/24
+add list=Blacklist comment="213613" address=109.236.61.0/24
+# AS201409 HOSTSHIELD LTD
+add list=Blacklist comment="201409" address=78.41.139.0/24
+add list=Blacklist comment="201409" address=93.123.118.0/24
+add list=Blacklist comment="201409" address=151.243.15.0/24
+add list=Blacklist comment="201409" address=193.142.59.0/24
+add list=Blacklist comment="201409" address=194.87.14.0/24
+# AS203363 Kuroit Limited
+add list=Blacklist comment="203363" address=2.58.203.0/24
+add list=Blacklist comment="203363" address=45.67.84.0/23
+add list=Blacklist comment="203363" address=45.80.193.0/24
+add list=Blacklist comment="203363" address=46.37.124.0/24
+add list=Blacklist comment="203363" address=109.205.214.0/24
+add list=Blacklist comment="203363" address=152.89.171.0/24
+add list=Blacklist comment="203363" address=178.239.171.0/24
+add list=Blacklist comment="203363" address=193.176.28.0/24
 # AS213790 Limited Network LTD
 add list=Blacklist comment="213790" address=45.146.130.0/24
 add list=Blacklist comment="213790" address=185.93.89.0/24
+# AS214329 Meshal Algharbi
+add list=Blacklist comment="214329" address=92.113.91.0/24
+# AS215762 Bullet Group LTD
+add list=Blacklist comment="215762" address=46.23.108.0/24
+add list=Blacklist comment="215762" address=92.60.79.0/24
+# AS209101 Huanzhong (Beijing) Data Network Technology Co., Ltd.
+add list=Blacklist comment="209101" address=45.151.91.0/24
+add list=Blacklist comment="209101" address=94.154.172.0/24
+# AS214557 HOSTMENOW LTD
+add list=Blacklist comment="214557" address=92.60.77.0/24
+add list=Blacklist comment="214557" address=151.243.11.0/24
 # AS43641 SOLLUTIUM EU Sp z.o.o.
 add list=Blacklist comment="43641" address=2.57.20.0/23
 add list=Blacklist comment="43641" address=31.42.176.0/23
@@ -3420,15 +3557,18 @@ add list=Blacklist comment="43641" address=181.215.31.0/24
 add list=Blacklist comment="43641" address=181.215.55.0/24
 add list=Blacklist comment="43641" address=181.215.58.0/24
 add list=Blacklist comment="43641" address=181.215.62.0/24
+add list=Blacklist comment="43641" address=185.36.124.0/24
 add list=Blacklist comment="43641" address=185.37.216.0/23
 add list=Blacklist comment="43641" address=185.58.23.0/24
 add list=Blacklist comment="43641" address=185.202.175.0/24
 add list=Blacklist comment="43641" address=185.254.199.0/24
 add list=Blacklist comment="43641" address=188.93.138.0/24
+add list=Blacklist comment="43641" address=192.124.173.0/24
 add list=Blacklist comment="43641" address=194.9.119.0/24
 add list=Blacklist comment="43641" address=194.42.196.0/22
 add list=Blacklist comment="43641" address=194.42.206.0/23
 add list=Blacklist comment="43641" address=195.26.86.0/23
+add list=Blacklist comment="43641" address=195.58.57.0/24
 add list=Blacklist comment="43641" address=195.66.212.0/23
 add list=Blacklist comment="43641" address=195.160.220.0/22
 add list=Blacklist comment="43641" address=202.71.14.0/24
@@ -3447,7 +3587,7 @@ add list=Blacklist comment="200081" address=185.59.100.0/22
 add list=Blacklist comment="200081" address=185.75.134.0/24
 add list=Blacklist comment="200081" address=185.222.64.0/22
 add list=Blacklist comment="200081" address=188.244.104.0/22
-add list=Blacklist comment="200081" address=217.11.168.0/24
+add list=Blacklist comment="200081" address=217.11.168.0/23
 # AS215659 Aokigahara SRL
 add list=Blacklist comment="215659" address=45.38.20.0/24
 add list=Blacklist comment="215659" address=65.87.7.0/24
@@ -3485,6 +3625,8 @@ add list=Blacklist comment="39351" address=203.159.82.0/24
 add list=Blacklist comment="213412" address=91.196.152.0/24
 add list=Blacklist comment="213412" address=91.230.168.0/24
 add list=Blacklist comment="213412" address=195.184.76.0/24
+# AS208684 BHA CONSEIL SARL
+add list=Blacklist comment="208684" address=91.231.47.0/24
 # AS59939 WIBO Baltic UAB
 add list=Blacklist comment="59939" address=91.240.20.0/23
 add list=Blacklist comment="59939" address=171.25.240.0/24
@@ -3498,7 +3640,7 @@ add list=Blacklist comment="209309" address=45.138.159.0/24
 add list=Blacklist comment="209309" address=85.208.84.0/24
 add list=Blacklist comment="209309" address=88.218.64.0/24
 add list=Blacklist comment="209309" address=94.158.189.0/24
-# AS207957 SERV.HOST GROUP LTD
+# AS207957 Sevasteev Artem Nikolaevich
 add list=Blacklist comment="207957" address=45.149.235.0/24
 add list=Blacklist comment="207957" address=80.66.81.0/24
 add list=Blacklist comment="207957" address=80.66.85.0/24
@@ -3546,6 +3688,8 @@ add list=Blacklist comment="204104" address=217.60.238.0/23
 add list=Blacklist comment="204104" address=217.60.243.0/24
 add list=Blacklist comment="204104" address=217.60.246.0/24
 # AS202468 Noyan Abr Arvan Co. ( Private Joint Stock)
+add list=Blacklist comment="202468" address=5.34.192.0/21
+add list=Blacklist comment="202468" address=5.34.204.0/22
 add list=Blacklist comment="202468" address=5.253.24.0/22
 add list=Blacklist comment="202468" address=37.32.0.0/23
 add list=Blacklist comment="202468" address=37.32.4.0/22
@@ -3571,3 +3715,76 @@ add list=Blacklist comment="202468" address=185.239.104.0/22
 add list=Blacklist comment="202468" address=188.121.96.0/19
 add list=Blacklist comment="202468" address=188.213.196.0/22
 add list=Blacklist comment="202468" address=193.176.240.0/22
+# AS215439 PLAY2GO INTERNATIONAL LIMITED
+add list=Blacklist comment="215439" address=5.231.226.0/24
+add list=Blacklist comment="215439" address=31.13.208.0/24
+#add list=Blacklist comment="215439" address=38.226.218.0/23
+add list=Blacklist comment="215439" address=45.66.228.0/24
+add list=Blacklist comment="215439" address=45.133.251.0/24
+add list=Blacklist comment="215439" address=83.143.112.0/24
+add list=Blacklist comment="215439" address=84.21.173.0/24
+add list=Blacklist comment="215439" address=87.120.84.0/24
+add list=Blacklist comment="215439" address=87.120.165.0/24
+add list=Blacklist comment="215439" address=87.120.166.0/24
+add list=Blacklist comment="215439" address=87.120.186.0/23
+add list=Blacklist comment="215439" address=87.121.89.0/24
+add list=Blacklist comment="215439" address=87.121.105.0/24
+add list=Blacklist comment="215439" address=89.34.219.0/24
+add list=Blacklist comment="215439" address=89.39.121.0/24
+add list=Blacklist comment="215439" address=93.115.104.0/24
+add list=Blacklist comment="215439" address=93.123.84.0/24
+add list=Blacklist comment="215439" address=94.103.169.0/24
+add list=Blacklist comment="215439" address=94.156.102.0/24
+add list=Blacklist comment="215439" address=94.156.106.0/24
+add list=Blacklist comment="215439" address=94.156.112.0/24
+add list=Blacklist comment="215439" address=94.156.114.0/23
+add list=Blacklist comment="215439" address=94.156.170.0/24
+add list=Blacklist comment="215439" address=94.156.179.0/24
+add list=Blacklist comment="215439" address=94.156.237.0/24
+add list=Blacklist comment="215439" address=141.98.7.0/24
+add list=Blacklist comment="215439" address=154.43.57.0/24
+add list=Blacklist comment="215439" address=171.22.31.0/24
+add list=Blacklist comment="215439" address=178.215.236.0/24
+add list=Blacklist comment="215439" address=178.215.238.0/24
+add list=Blacklist comment="215439" address=185.216.71.0/24
+add list=Blacklist comment="215439" address=185.246.223.0/24
+add list=Blacklist comment="215439" address=193.25.216.0/24
+add list=Blacklist comment="215439" address=193.35.17.0/24
+add list=Blacklist comment="215439" address=193.58.121.0/24
+add list=Blacklist comment="215439" address=193.58.122.0/24
+add list=Blacklist comment="215439" address=193.222.99.0/24
+add list=Blacklist comment="215439" address=194.31.223.0/24
+add list=Blacklist comment="215439" address=212.80.7.0/24
+# AS215096 PE Ruslan Ulyanov
+add list=Blacklist comment="215096" address=193.233.237.0/24
+add list=Blacklist comment="215096" address=212.22.80.0/24
+add list=Blacklist comment="215096" address=212.22.86.0/24
+# AS43317 SIA VEESP
+add list=Blacklist comment="43317" address=77.73.64.0/21
+add list=Blacklist comment="43317" address=91.209.70.0/24
+add list=Blacklist comment="43317" address=94.242.0.0/23
+add list=Blacklist comment="43317" address=94.242.48.0/20
+# AS42532 SIA VEESP
+add list=Blacklist comment="42532" address=5.34.208.0/21
+add list=Blacklist comment="42532" address=37.128.204.0/22
+add list=Blacklist comment="42532" address=45.43.76.0/22
+add list=Blacklist comment="42532" address=46.32.184.0/22
+add list=Blacklist comment="42532" address=62.182.192.0/21
+#add list=Blacklist comment="42532" address=77.73.64.0/23
+#add list=Blacklist comment="42532" address=77.73.71.0/24
+add list=Blacklist comment="42532" address=82.115.4.0/22
+add list=Blacklist comment="42532" address=91.197.0.0/22
+add list=Blacklist comment="42532" address=94.158.218.0/23
+#add list=Blacklist comment="42532" address=94.242.48.0/23
+#add list=Blacklist comment="42532" address=94.242.58.0/23
+#add list=Blacklist comment="42532" address=94.242.63.0/24
+add list=Blacklist comment="42532" address=178.173.248.0/21
+add list=Blacklist comment="42532" address=185.22.172.0/22
+add list=Blacklist comment="42532" address=185.145.245.0/24
+add list=Blacklist comment="42532" address=185.155.119.0/24
+add list=Blacklist comment="42532" address=185.242.104.0/22
+add list=Blacklist comment="42532" address=188.253.16.0/21
+add list=Blacklist comment="42532" address=188.253.24.0/22
+add list=Blacklist comment="42532" address=195.135.252.0/22
+add list=Blacklist comment="42532" address=212.6.44.0/24
+add list=Blacklist comment="42532" address=216.173.68.0/22
