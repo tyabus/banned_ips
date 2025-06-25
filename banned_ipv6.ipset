@@ -38,7 +38,7 @@ add blacklistv6 2a10:3c0:1::/48
 add blacklistv6 2a10:3c0:2::/48
 add blacklistv6 2a10:3c0:100::/48
 # AS12989 Black HOST Ltd
-add blacklistv6 2a01:e940::/48
+#add blacklistv6 2a01:e940::/48
 add blacklistv6 2a01:e945::/48
 add blacklistv6 2a01:e947::/48
 # AS211298 Driftnet Ltd
