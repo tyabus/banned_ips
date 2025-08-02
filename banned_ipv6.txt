@@ -1,22 +1,21 @@
+#
+# Last Update: 02/08/2025
+#
+#
 # IPv6 static ingoing traffic blocklist
-# The Shadowserver Foundation, Inc. IPv6
+# The Shadowserver Foundation, Inc.
 -A INPUT -s 2001:470:1:c84::/64 -j DROP
 -A INPUT -s 2001:470:1:332::/64 -j DROP
 -A INPUT -s 2001:470:2cc:1::/64 -j DROP
 -A INPUT -s 2001:470:1:fb5::/64 -j DROP
-# Address Management Inc.
+# https://bgp.tools/rir-owner/sc.ad ( Address Management Inc. )
 -A INPUT -s 2a07:ca00::/29 -j DROP
 # https://bgp.tools/rir-owner/ru.avm ( XHOST LP )
 -A INPUT -s 2a0d:6c0::/29 -j DROP
 -A INPUT -s 2a0d:65c0::/29 -j DROP
 # https://bgp.tools/rir-owner/ca.blackhost ( BlackHOST )
--A INPUT -s 2a01:e940::/48 -j DROP
--A INPUT -s 2a01:e941::/48 -j DROP
--A INPUT -s 2a01:e942::/48 -j DROP
--A INPUT -s 2a01:e943::/48 -j DROP
--A INPUT -s 2a01:e944::/48 -j DROP
--A INPUT -s 2a01:e946::/48 -j DROP
-# https://bgp.tools/rir-owner/fr.julesd ( Skoali )
+-A INPUT -s 2a01:e940::/29 -j DROP
+# https://bgp.tools/rir-owner/fr.julesd
 -A INPUT -s 2a13:c7c0::/29 -j DROP
 # AS398324 Censys, Inc.
 -A INPUT -s 2602:80d:1000::/48 -j DROP
@@ -599,6 +598,7 @@
 -A INPUT -s 2a12:3200:7000::/36 -j DROP
 -A INPUT -s 2a12:3200:8000::/36 -j DROP
 -A INPUT -s 2a12:3200:9000::/48 -j DROP
+-A INPUT -s 2a13:18c6:100::/48 -j DROP
 # AS215450 Snowcore Cyf
 -A INPUT -s 2a14:7c0:100::/40 -j DROP
 # AS132825 MYTEK TRADING PTY LTD
@@ -746,7 +746,7 @@
 # AS22168 The Shadowserver Foundation, Inc.
 -A INPUT -s 2001:550:d0c::/48 -j DROP
 # AS152320 GOALNOW NETWORK TECHNOLOGY CO., LIMITED
--A INPUT -s 2001:df0:a640::/48 -j DROP
+-A INPUT -s 2001:df0:a640::/47 -j DROP
 # AS43861 Circle B B.V.
 -A INPUT -s 2001:678:348::/48 -j DROP
 -A INPUT -s 2a13:acc0::/32 -j DROP
@@ -896,21 +896,17 @@
 -A INPUT -s 2a11::/48 -j DROP
 # AS26737 TREE TELECOM
 -A INPUT -s 2602:f894:105::/48 -j DROP
--A INPUT -s 2602:f894:106::/48 -j DROP
--A INPUT -s 2602:f894:109::/48 -j DROP
+-A INPUT -s 2602:f894:108::/48 -j DROP
 -A INPUT -s 2602:f894:10b::/48 -j DROP
--A INPUT -s 2602:f894:10c::/48 -j DROP
--A INPUT -s 2602:f894:10e::/47 -j DROP
--A INPUT -s 2602:f894:203::/48 -j DROP
--A INPUT -s 2602:f894:205::/48 -j DROP
--A INPUT -s 2602:f894:206::/47 -j DROP
+-A INPUT -s 2602:f894:10c::/46 -j DROP
+-A INPUT -s 2602:f894:204::/46 -j DROP
 -A INPUT -s 2602:f894:209::/48 -j DROP
--A INPUT -s 2602:f894:20b::/48 -j DROP
--A INPUT -s 2602:f894:20c::/48 -j DROP
--A INPUT -s 2602:f894:20e::/47 -j DROP
+-A INPUT -s 2602:f894:20a::/47 -j DROP
+-A INPUT -s 2602:f894:20f::/48 -j DROP
 -A INPUT -s 2602:f894:300::/48 -j DROP
 -A INPUT -s 2602:f894:303::/48 -j DROP
--A INPUT -s 2602:f894:304::/48 -j DROP
+-A INPUT -s 2602:f894:304::/47 -j DROP
+-A INPUT -s 2602:f894:307::/48 -j DROP
 -A INPUT -s 2602:f894:308::/47 -j DROP
 -A INPUT -s 2602:f894:30a::/48 -j DROP
 -A INPUT -s 2602:f894:30e::/48 -j DROP
@@ -1083,5 +1079,3 @@
 -A INPUT -s 2602:f95b:69::/48 -j DROP
 # AS48715 Sefroyek Pardaz Engineering PJSC
 -A INPUT -s 2a0a:5e80::/48 -j DROP
-
-# Last Update: 31/07/2025

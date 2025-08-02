@@ -1,25 +1,16 @@
 #
-# Last Update: 31/07/2025
+# Last Update: 02/08/2025
 #
 /ipv6 firewall address-list
-# scan-16-0c.shadowserver.org
-add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:0470:0001:0c84::/64
-add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:0470:0001:0332::/64
-add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:0470:02cc:0001::/64
-add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:0470:0001:0fb5::/64
-add list=Blacklist comment="Address Management Inc." address=2a07:ca00::/29
-# https://bgp.tools/rir-owner/ru.avm ( XHOST LP )
-add list=Blacklist comment="XHOST" address=2a0d:6c0::/29
-add list=Blacklist comment="XHOST" address=2a0d:65c0::/29
-# https://bgp.tools/rir-owner/ca.blackhost ( BlackHOST )
-add list=Blacklist comment="BlackHOST" address=2a01:e940::/48
-add list=Blacklist comment="BlackHOST" address=2a01:e941::/48
-add list=Blacklist comment="BlackHOST" address=2a01:e942::/48
-add list=Blacklist comment="BlackHOST" address=2a01:e943::/48
-add list=Blacklist comment="BlackHOST" address=2a01:e944::/48
-add list=Blacklist comment="BlackHOST" address=2a01:e946::/48
-# https://bgp.tools/rir-owner/fr.julesd ( Skoali )
-add list=Blacklist comment="BlackHOST" address=2a13:c7c0::/29
+add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
+add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:332::/64
+add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:2cc:1::/64
+add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:fb5::/64
+add list=Blacklist comment="https://bgp.tools/rir-owner/sc.ad ( Address Management Inc. )" address=2a07:ca00::/29
+add list=Blacklist comment="https://bgp.tools/rir-owner/ru.avm ( XHOST LP )" address=2a0d:6c0::/29
+add list=Blacklist comment="https://bgp.tools/rir-owner/ru.avm ( XHOST LP )" address=2a0d:65c0::/29
+add list=Blacklist comment="https://bgp.tools/rir-owner/ca.blackhost ( BlackHOST )" address=2a01:e940::/29
+add list=Blacklist comment="https://bgp.tools/rir-owner/fr.julesd" address=2a13:c7c0::/29
 # AS398324 Censys, Inc.
 add list=Blacklist comment="398324" address=2602:80d:1000::/48
 add list=Blacklist comment="398324" address=2602:80d:1006::/48
@@ -37,7 +28,7 @@ add list=Blacklist comment="211680" address=2a10:3c0:1::/48
 add list=Blacklist comment="211680" address=2a10:3c0:2::/48
 add list=Blacklist comment="211680" address=2a10:3c0:100::/48
 # AS12989 Black HOST Ltd
-#add list=Blacklist comment="12989" address=2a01:e940::/48
+add list=Blacklist comment="12989" address=2a01:e940::/48
 add list=Blacklist comment="12989" address=2a01:e945::/48
 add list=Blacklist comment="12989" address=2a01:e947::/48
 # AS211298 Driftnet Ltd
@@ -601,6 +592,7 @@ add list=Blacklist comment="25198" address=2a12:3200:4000::/35
 add list=Blacklist comment="25198" address=2a12:3200:7000::/36
 add list=Blacklist comment="25198" address=2a12:3200:8000::/36
 add list=Blacklist comment="25198" address=2a12:3200:9000::/48
+add list=Blacklist comment="25198" address=2a13:18c6:100::/48
 # AS215450 Snowcore Cyf
 add list=Blacklist comment="215450" address=2a14:7c0:100::/40
 # AS132825 MYTEK TRADING PTY LTD
@@ -748,7 +740,7 @@ add list=Blacklist comment="44679" address=2a02:2160:8000::/36
 # AS22168 The Shadowserver Foundation, Inc.
 add list=Blacklist comment="22168" address=2001:550:d0c::/48
 # AS152320 GOALNOW NETWORK TECHNOLOGY CO., LIMITED
-add list=Blacklist comment="152320" address=2001:df0:a640::/48
+add list=Blacklist comment="152320" address=2001:df0:a640::/47
 # AS43861 Circle B B.V.
 add list=Blacklist comment="43861" address=2001:678:348::/48
 add list=Blacklist comment="43861" address=2a13:acc0::/32
@@ -898,21 +890,17 @@ add list=Blacklist comment="24013" address=2a09::/48
 add list=Blacklist comment="24013" address=2a11::/48
 # AS26737 TREE TELECOM
 add list=Blacklist comment="26737" address=2602:f894:105::/48
-add list=Blacklist comment="26737" address=2602:f894:106::/48
-add list=Blacklist comment="26737" address=2602:f894:109::/48
+add list=Blacklist comment="26737" address=2602:f894:108::/48
 add list=Blacklist comment="26737" address=2602:f894:10b::/48
-add list=Blacklist comment="26737" address=2602:f894:10c::/48
-add list=Blacklist comment="26737" address=2602:f894:10e::/47
-add list=Blacklist comment="26737" address=2602:f894:203::/48
-add list=Blacklist comment="26737" address=2602:f894:205::/48
-add list=Blacklist comment="26737" address=2602:f894:206::/47
+add list=Blacklist comment="26737" address=2602:f894:10c::/46
+add list=Blacklist comment="26737" address=2602:f894:204::/46
 add list=Blacklist comment="26737" address=2602:f894:209::/48
-add list=Blacklist comment="26737" address=2602:f894:20b::/48
-add list=Blacklist comment="26737" address=2602:f894:20c::/48
-add list=Blacklist comment="26737" address=2602:f894:20e::/47
+add list=Blacklist comment="26737" address=2602:f894:20a::/47
+add list=Blacklist comment="26737" address=2602:f894:20f::/48
 add list=Blacklist comment="26737" address=2602:f894:300::/48
 add list=Blacklist comment="26737" address=2602:f894:303::/48
-add list=Blacklist comment="26737" address=2602:f894:304::/48
+add list=Blacklist comment="26737" address=2602:f894:304::/47
+add list=Blacklist comment="26737" address=2602:f894:307::/48
 add list=Blacklist comment="26737" address=2602:f894:308::/47
 add list=Blacklist comment="26737" address=2602:f894:30a::/48
 add list=Blacklist comment="26737" address=2602:f894:30e::/48

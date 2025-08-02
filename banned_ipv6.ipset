@@ -1,25 +1,20 @@
 #
-# Last Update: 31/07/2025
+# Last Update: 02/08/2025
 #
 create blacklistv6 hash:net family inet6 hashsize 8192 -exist
-# The Shadowserver Foundation, Inc. IPv6
+# The Shadowserver Foundation, Inc.
 add blacklistv6 2001:470:1:c84::/64
 add blacklistv6 2001:470:1:332::/64
 add blacklistv6 2001:470:2cc:1::/64
 add blacklistv6 2001:470:1:fb5::/64
-# Address Management Inc.
+# https://bgp.tools/rir-owner/sc.ad ( Address Management Inc. )
 add blacklistv6 2a07:ca00::/29
 # https://bgp.tools/rir-owner/ru.avm ( XHOST LP )
 add blacklistv6 2a0d:6c0::/29
 add blacklistv6 2a0d:65c0::/29
 # https://bgp.tools/rir-owner/ca.blackhost ( BlackHOST )
-add blacklistv6 2a01:e940::/48
-add blacklistv6 2a01:e941::/48
-add blacklistv6 2a01:e942::/48
-add blacklistv6 2a01:e943::/48
-add blacklistv6 2a01:e944::/48
-add blacklistv6 2a01:e946::/48
-# https://bgp.tools/rir-owner/fr.julesd ( Skoali )
+add blacklistv6 2a01:e940::/29
+# https://bgp.tools/rir-owner/fr.julesd
 add blacklistv6 2a13:c7c0::/29
 # AS398324 Censys, Inc.
 add blacklistv6 2602:80d:1000::/48
@@ -38,7 +33,7 @@ add blacklistv6 2a10:3c0:1::/48
 add blacklistv6 2a10:3c0:2::/48
 add blacklistv6 2a10:3c0:100::/48
 # AS12989 Black HOST Ltd
-#add blacklistv6 2a01:e940::/48
+add blacklistv6 2a01:e940::/48
 add blacklistv6 2a01:e945::/48
 add blacklistv6 2a01:e947::/48
 # AS211298 Driftnet Ltd
@@ -602,6 +597,7 @@ add blacklistv6 2a12:3200:4000::/35
 add blacklistv6 2a12:3200:7000::/36
 add blacklistv6 2a12:3200:8000::/36
 add blacklistv6 2a12:3200:9000::/48
+add blacklistv6 2a13:18c6:100::/48
 # AS215450 Snowcore Cyf
 add blacklistv6 2a14:7c0:100::/40
 # AS132825 MYTEK TRADING PTY LTD
@@ -749,7 +745,7 @@ add blacklistv6 2a02:2160:8000::/36
 # AS22168 The Shadowserver Foundation, Inc.
 add blacklistv6 2001:550:d0c::/48
 # AS152320 GOALNOW NETWORK TECHNOLOGY CO., LIMITED
-add blacklistv6 2001:df0:a640::/48
+add blacklistv6 2001:df0:a640::/47
 # AS43861 Circle B B.V.
 add blacklistv6 2001:678:348::/48
 add blacklistv6 2a13:acc0::/32
@@ -899,21 +895,17 @@ add blacklistv6 2a09::/48
 add blacklistv6 2a11::/48
 # AS26737 TREE TELECOM
 add blacklistv6 2602:f894:105::/48
-add blacklistv6 2602:f894:106::/48
-add blacklistv6 2602:f894:109::/48
+add blacklistv6 2602:f894:108::/48
 add blacklistv6 2602:f894:10b::/48
-add blacklistv6 2602:f894:10c::/48
-add blacklistv6 2602:f894:10e::/47
-add blacklistv6 2602:f894:203::/48
-add blacklistv6 2602:f894:205::/48
-add blacklistv6 2602:f894:206::/47
+add blacklistv6 2602:f894:10c::/46
+add blacklistv6 2602:f894:204::/46
 add blacklistv6 2602:f894:209::/48
-add blacklistv6 2602:f894:20b::/48
-add blacklistv6 2602:f894:20c::/48
-add blacklistv6 2602:f894:20e::/47
+add blacklistv6 2602:f894:20a::/47
+add blacklistv6 2602:f894:20f::/48
 add blacklistv6 2602:f894:300::/48
 add blacklistv6 2602:f894:303::/48
-add blacklistv6 2602:f894:304::/48
+add blacklistv6 2602:f894:304::/47
+add blacklistv6 2602:f894:307::/48
 add blacklistv6 2602:f894:308::/47
 add blacklistv6 2602:f894:30a::/48
 add blacklistv6 2602:f894:30e::/48
