@@ -3,82 +3,82 @@
 #
 create blacklistv4 hash:net family inet hashsize 4096 -exist
 # AS237 CENSYS Unlisted (Old legacy netblock)
-add blacklistv6 192.35.168.0/23
+add blacklistv4 192.35.168.0/23
 # Expanse, a Palo Alto Networks Company
-add blacklistv6 34.77.162.0/24
-add blacklistv6 34.86.35.0/24
-add blacklistv6 35.203.210.0/23
-add blacklistv6 34.96.130.0/24
-add blacklistv6 35.216.183.0/24
-add blacklistv6 66.159.192.0/19
-add blacklistv6 74.221.130.0/24
-add blacklistv6 114.141.120.0/21
-add blacklistv6 128.77.0.0/18
-add blacklistv6 128.77.64.0/19
-add blacklistv6 128.77.124.0/22
-add blacklistv6 130.41.0.0/17
-add blacklistv6 134.238.0.0/16
-add blacklistv6 137.83.224.0/20
-add blacklistv6 137.83.240.0/21
-add blacklistv6 140.209.252.0/23
-add blacklistv6 147.185.132.0/22
-add blacklistv6 162.216.148.0/22
-add blacklistv6 165.1.128.0/19
-add blacklistv6 165.1.176.0/20
-add blacklistv6 165.1.192.0/18
-add blacklistv6 165.85.0.0/16
-add blacklistv6 198.135.184.0/24
-add blacklistv6 198.235.24.0/24
-add blacklistv6 204.87.186.0/24
-add blacklistv6 205.210.31.0/24
-add blacklistv6 208.127.0.0/17
+add blacklistv4 34.77.162.0/24
+add blacklistv4 34.86.35.0/24
+add blacklistv4 35.203.210.0/23
+add blacklistv4 34.96.130.0/24
+add blacklistv4 35.216.183.0/24
+add blacklistv4 66.159.192.0/19
+add blacklistv4 74.221.130.0/24
+add blacklistv4 114.141.120.0/21
+add blacklistv4 128.77.0.0/18
+add blacklistv4 128.77.64.0/19
+add blacklistv4 128.77.124.0/22
+add blacklistv4 130.41.0.0/17
+add blacklistv4 134.238.0.0/16
+add blacklistv4 137.83.224.0/20
+add blacklistv4 137.83.240.0/21
+add blacklistv4 140.209.252.0/23
+add blacklistv4 147.185.132.0/22
+add blacklistv4 162.216.148.0/22
+add blacklistv4 165.1.128.0/19
+add blacklistv4 165.1.176.0/20
+add blacklistv4 165.1.192.0/18
+add blacklistv4 165.85.0.0/16
+add blacklistv4 198.135.184.0/24
+add blacklistv4 198.235.24.0/24
+add blacklistv4 204.87.186.0/24
+add blacklistv4 205.210.31.0/24
+add blacklistv4 208.127.0.0/17
 # Shodan LLC (On AS174)
-add blacklistv6 207.90.244.0/24
+add blacklistv4 207.90.244.0/24
 # CrowdStrike Falcon (Amazon EC2)
-add blacklistv6 18.97.5.0/24
-add blacklistv6 44.220.185.0/24
-add blacklistv6 44.220.188.0/24
-add blacklistv6 98.80.4.0/24
+add blacklistv4 18.97.5.0/24
+add blacklistv4 44.220.185.0/24
+add blacklistv4 44.220.188.0/24
+add blacklistv4 98.80.4.0/24
 # Chang Way Technologies Co. Limited (On AS50340/AS49505)
-add blacklistv6 193.3.19.0/24
-add blacklistv6 193.201.8.0/23
+add blacklistv4 193.3.19.0/24
+add blacklistv4 193.201.8.0/23
 # https://bgp.tools/rir-owner/sc.blackhost ( BlackHOST LTD. )
-add blacklistv6 185.30.233.0/24
-add blacklistv6 185.30.234.0/23
-add blacklistv6 185.142.236.0/22
-add blacklistv6 185.165.188.0/22
-add blacklistv6 195.144.21.0/24
+add blacklistv4 185.30.233.0/24
+add blacklistv4 185.30.234.0/23
+add blacklistv4 185.142.236.0/22
+add blacklistv4 185.165.188.0/22
+add blacklistv4 195.144.21.0/24
 # The Shadowserver Foundation, Inc. (On AS6939)
-add blacklistv6 64.62.128.0/17
-add blacklistv6 65.49.0.0/17
-add blacklistv6 74.82.0.0/18
-add blacklistv6 184.104.0.0/15
-add blacklistv6 216.218.128.0/17
+add blacklistv4 64.62.128.0/17
+add blacklistv4 65.49.0.0/17
+add blacklistv4 74.82.0.0/18
+add blacklistv4 184.104.0.0/15
+add blacklistv4 216.218.128.0/17
 # CyberOneData LLC
-add blacklistv6 104.234.115.0/24
+add blacklistv4 104.234.115.0/24
 # https://bgp.tools/rir-owner/sc.ad ( Address Management Inc. )
-add blacklistv6 185.147.124.0/22
+add blacklistv4 185.147.124.0/22
 # https://bgp.tools/rir-owner/ru.avm ( XHOST LP )
-add blacklistv6 80.66.64.0/20
-add blacklistv6 80.66.80.0/21
-add blacklistv6 80.66.88.0/23
-add blacklistv6 87.251.64.0/20
-add blacklistv6 87.251.84.0/22
-add blacklistv6 87.251.88.0/23
-add blacklistv6 193.37.68.0/22
-add blacklistv6 194.113.232.0/22
-add blacklistv6 217.151.228.0/24
+add blacklistv4 80.66.64.0/20
+add blacklistv4 80.66.80.0/21
+add blacklistv4 80.66.88.0/23
+add blacklistv4 87.251.64.0/20
+add blacklistv4 87.251.84.0/22
+add blacklistv4 87.251.88.0/23
+add blacklistv4 193.37.68.0/22
+add blacklistv4 194.113.232.0/22
+add blacklistv4 217.151.228.0/24
 # https://bgp.tools/rir-owner/ca.blackhost ( BlackHOST )
-add blacklistv6 2.59.22.0/24
-add blacklistv6 45.12.60.0/24
-add blacklistv6 86.54.28.0/22
-add blacklistv6 212.104.140.0/23
-add blacklistv6 213.254.179.0/24
+add blacklistv4 2.59.22.0/24
+add blacklistv4 45.12.60.0/24
+add blacklistv4 86.54.28.0/22
+add blacklistv4 212.104.140.0/23
+add blacklistv4 213.254.179.0/24
 # https://bgp.tools/rir-owner/fr.julesd
-add blacklistv6 45.112.192.0/22
-add blacklistv6 103.102.228.0/22
-add blacklistv6 185.37.103.0/24
-add blacklistv6 203.55.81.0/24
+add blacklistv4 45.112.192.0/22
+add blacklistv4 103.102.228.0/22
+add blacklistv4 185.37.103.0/24
+add blacklistv4 203.55.81.0/24
 # AS398324 Censys, Inc.
 add blacklistv4 66.132.148.0/24
 add blacklistv4 66.132.153.0/24
