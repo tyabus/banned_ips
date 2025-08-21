@@ -1,5 +1,5 @@
 #
-# Last Update: 19/08/2025
+# Last Update: 21/08/2025
 #
 /ipv6 firewall address-list
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
@@ -874,26 +874,20 @@ add list=Blacklist comment="213205" address=2a13:2380::/29
 add list=Blacklist comment="24013" address=2a09::/48
 add list=Blacklist comment="24013" address=2a11::/48
 # AS26737 TREE TELECOM
-add list=Blacklist comment="26737" address=2602:f894:100::/47
+add list=Blacklist comment="26737" address=2602:f894:100::/48
 add list=Blacklist comment="26737" address=2602:f894:102::/48
 add list=Blacklist comment="26737" address=2602:f894:104::/47
-add list=Blacklist comment="26737" address=2602:f894:106::/48
 add list=Blacklist comment="26737" address=2602:f894:109::/48
-add list=Blacklist comment="26737" address=2602:f894:10a::/48
-add list=Blacklist comment="26737" address=2602:f894:10c::/47
 add list=Blacklist comment="26737" address=2602:f894:200::/47
-add list=Blacklist comment="26737" address=2602:f894:202::/48
 add list=Blacklist comment="26737" address=2602:f894:205::/48
-add list=Blacklist comment="26737" address=2602:f894:206::/48
 add list=Blacklist comment="26737" address=2602:f894:20a::/48
-add list=Blacklist comment="26737" address=2602:f894:20c::/47
+add list=Blacklist comment="26737" address=2602:f894:20c::/48
 add list=Blacklist comment="26737" address=2602:f894:20f::/48
-add list=Blacklist comment="26737" address=2602:f894:300::/47
 add list=Blacklist comment="26737" address=2602:f894:302::/48
-add list=Blacklist comment="26737" address=2602:f894:304::/47
 add list=Blacklist comment="26737" address=2602:f894:307::/48
 add list=Blacklist comment="26737" address=2602:f894:309::/48
-add list=Blacklist comment="26737" address=2602:f894:30c::/46
+add list=Blacklist comment="26737" address=2602:f894:30c::/48
+add list=Blacklist comment="26737" address=2602:f894:30f::/48
 # AS132088 Wind Cloud Network Technology Co Ltd
 add list=Blacklist comment="132088" address=2402:e940:20::/43
 add list=Blacklist comment="132088" address=2402:e940:40::/44
@@ -1007,8 +1001,8 @@ add list=Blacklist comment="39351" address=2a03:1b20:901::/48
 add list=Blacklist comment="39351" address=2a03:1b20:bef1::/48
 add list=Blacklist comment="39351" address=2a03:1b20:bef2::/48
 add list=Blacklist comment="39351" address=2a03:1b21:100::/48
-add list=Blacklist comment="39351" address=2a06:de00:12::/48
 add list=Blacklist comment="39351" address=2a06:de00:15::/48
+add list=Blacklist comment="39351" address=2a06:de00:19::/48
 add list=Blacklist comment="39351" address=2a07:e344::/32
 add list=Blacklist comment="39351" address=2a0b:4e07:60e0::/44
 add list=Blacklist comment="39351" address=2a0c:9a46:a00::/40
