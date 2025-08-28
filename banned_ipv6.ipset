@@ -1,5 +1,5 @@
 #
-# Last Update: 21/08/2025
+# Last Update: 28/08/2025
 #
 create blacklistv6 hash:net family inet6 hashsize 8192 -exist
 # The Shadowserver Foundation, Inc.
@@ -169,7 +169,7 @@ add blacklistv6 240d:c010:5c::/48
 add blacklistv6 240d:c010:68::/48
 add blacklistv6 240d:c010:6f::/48
 add blacklistv6 240d:c040::/43
-# AS34465 NCRYPTD NET LTD
+# AS34465 RIPE NCC ASN block
 add blacklistv6 2a12:8fc6:ae44::/48
 # AS136180 Beijing Tiantexin Tech. Co., Ltd.
 add blacklistv6 2400:87c0::/32
@@ -344,6 +344,8 @@ add blacklistv6 2a12:8640::/29
 add blacklistv6 2a12:89c0::/29
 add blacklistv6 2a12:b200::/29
 add blacklistv6 2a12:de40::/32
+# AS213200 Ferdinand Zink trading as Tube-Hosting
+#add blacklistv6 2a12:89c0::/29
 # AS214339 SRV.RENT UG (haftungsbeschraenkt)
 add blacklistv6 2a07:6d40:2::/48
 #add blacklistv6 2a12:de40:46::/48
@@ -378,7 +380,7 @@ add blacklistv6 2a13:e3c0::/31
 add blacklistv6 2602:fb54:155::/48
 add blacklistv6 2a14:7c0:1800::/38
 add blacklistv6 2a14:7c0:4800::/40
-# AS215691 ================== IPv4/IPv6 Peering ==================
+# AS215691 AP INTERACTIVE SOLUTIONS SL
 #add blacklistv6 2a12:de40:38::/48
 add blacklistv6 2a14:8880::/29
 # AS210676 Appline Group LLC
@@ -537,6 +539,7 @@ add blacklistv6 2a03:3740::/32
 add blacklistv6 2a04:b040::/47
 add blacklistv6 2a04:b040:2::/48
 add blacklistv6 2a05:840::/47
+add blacklistv6 2a05:e9c0:8200::/40
 add blacklistv6 2a06:e80::/36
 add blacklistv6 2a07:bd80::/29
 add blacklistv6 2a0b:8400:1::/48
@@ -564,7 +567,7 @@ add blacklistv6 2a13:adc0::/46
 add blacklistv6 2401:e3a0:1::/48
 add blacklistv6 2407:d340:8000::/40
 add blacklistv6 2a13:aac0::/29
-# AS206728 media-land-llc
+# AS206728 Media Land LLC
 add blacklistv6 2a0b:7ec0::/29
 add blacklistv6 2a11:2081::/32
 add blacklistv6 2a11:6502::/32
@@ -693,6 +696,7 @@ add blacklistv6 2a0f:9400:6939::/48
 add blacklistv6 2a0f:9400:7385::/48
 add blacklistv6 2a12:bec4:1980::/44
 add blacklistv6 2a14:7580:fc00::/40
+add blacklistv6 2a14:7582::/32
 add blacklistv6 2a14:7584:1000::/36
 add blacklistv6 2a14:7584:5000::/36
 # AS215120 Evolus IT Solutions GmbH
@@ -880,19 +884,23 @@ add blacklistv6 2a09::/48
 add blacklistv6 2a11::/48
 # AS26737 TREE TELECOM
 add blacklistv6 2602:f894:100::/48
-add blacklistv6 2602:f894:102::/48
+add blacklistv6 2602:f894:102::/47
 add blacklistv6 2602:f894:104::/47
 add blacklistv6 2602:f894:109::/48
-add blacklistv6 2602:f894:200::/47
+add blacklistv6 2602:f894:10a::/47
+add blacklistv6 2602:f894:10d::/48
+add blacklistv6 2602:f894:10e::/47
+add blacklistv6 2602:f894:200::/46
 add blacklistv6 2602:f894:205::/48
-add blacklistv6 2602:f894:20a::/48
+add blacklistv6 2602:f894:20a::/47
 add blacklistv6 2602:f894:20c::/48
-add blacklistv6 2602:f894:20f::/48
+add blacklistv6 2602:f894:20e::/47
+add blacklistv6 2602:f894:300::/48
 add blacklistv6 2602:f894:302::/48
-add blacklistv6 2602:f894:307::/48
+add blacklistv6 2602:f894:305::/48
+add blacklistv6 2602:f894:306::/47
 add blacklistv6 2602:f894:309::/48
-add blacklistv6 2602:f894:30c::/48
-add blacklistv6 2602:f894:30f::/48
+add blacklistv6 2602:f894:30c::/46
 # AS132088 Wind Cloud Network Technology Co Ltd
 add blacklistv6 2402:e940:20::/43
 add blacklistv6 2402:e940:40::/44
@@ -940,6 +948,7 @@ add blacklistv6 2a0b:b140::/29
 add blacklistv6 2a11:29c0:4d::/48
 # AS215730 H2NEXUS LTD
 add blacklistv6 2a0b:4142::/31
+add blacklistv6 2a0e:d600::/32
 add blacklistv6 2a0e:d604:1::/48
 # AS203391 Cloud DNS Ltd
 add blacklistv6 2a06:fb00:1::/48
@@ -978,8 +987,6 @@ add blacklistv6 2a0f:ca81:b00b::/48
 # AS43641 SOLLUTIUM EU Sp z.o.o.
 add blacklistv6 2a09:2dc1::/32
 add blacklistv6 2a11:6100::/31
-# AS214223 Luis Jakob Bartel
-add blacklistv6 2a05:dfc3:fa06::/48
 # AS200081 Netversor GmbH
 add blacklistv6 2a01:ea00::/48
 add blacklistv6 2a02:6aa0::/32
@@ -990,6 +997,9 @@ add blacklistv6 2a04:5340:4::/47
 add blacklistv6 2a0f:85c1:356::/48
 # AS210718 FIVE CYBER HOST SECURITY S.R.L.
 add blacklistv6 2a0f:9400:7e01::/48
+add blacklistv6 2a0f:9400:7e02::/48
+add blacklistv6 2a0f:9400:7e06::/47
+add blacklistv6 2a0f:9400:7e08::/48
 add blacklistv6 2a0f:9400:7e50::/48
 # AS212512 Detai Prosperous Technologies Limited
 add blacklistv6 2403:fbc0:a001::/48
