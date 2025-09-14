@@ -1,5 +1,5 @@
 #
-# Last Update: 06/09/2025
+# Last Update: 14/09/2025
 #
 /ipv6 firewall address-list
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
@@ -166,8 +166,6 @@ add list=Blacklist comment="132203" address=240d:c010:5c::/48
 add list=Blacklist comment="132203" address=240d:c010:68::/48
 add list=Blacklist comment="132203" address=240d:c010:6f::/48
 add list=Blacklist comment="132203" address=240d:c040::/43
-# AS34465 RIPE NCC ASN block
-add list=Blacklist comment="34465" address=2a12:8fc6:ae44::/48
 # AS136180 Beijing Tiantexin Tech. Co., Ltd.
 add list=Blacklist comment="136180" address=2400:87c0::/32
 # AS150860 JETCLOUD TECHNOLOGY CO., LTD
@@ -344,9 +342,10 @@ add list=Blacklist comment="49581" address=2a12:89c0::/29
 add list=Blacklist comment="49581" address=2a12:b200::/29
 add list=Blacklist comment="49581" address=2a12:de40::/32
 # AS213200 Ferdinand Zink trading as Tube-Hosting
+add list=Blacklist comment="213200" address=2a07:4b40::/29
 #add list=Blacklist comment="213200" address=2a12:89c0::/29
 # AS214339 SRV.RENT UG (haftungsbeschraenkt)
-#add list=Blacklist comment="214339" address=2a07:6d40:2::/48
+add list=Blacklist comment="214339" address=2a07:6d40:2::/48
 #add list=Blacklist comment="214339" address=2a12:de40:46::/48
 # AS213151 Christian Elsen
 add list=Blacklist comment="213151" address=2001:678:1e8::/48
@@ -359,6 +358,7 @@ add list=Blacklist comment="399820" address=2602:fc2f:f00::/48
 add list=Blacklist comment="200482" address=2a12:3e80::/40
 add list=Blacklist comment="200482" address=2a12:3e80:200::/39
 add list=Blacklist comment="200482" address=2a12:3e80:402::/47
+add list=Blacklist comment="200482" address=2a12:3e80:404::/48
 add list=Blacklist comment="200482" address=2a12:3e80:500::/40
 # AS216081 Paulo Gobbato trading as Gobbato IT Loesungen
 add list=Blacklist comment="216081" address=2a12:3e80:6a0::/44
@@ -418,6 +418,8 @@ add list=Blacklist comment="199654" address=2a12:bec0:20c::/48
 # AS215039 Semih Gokcalik
 add list=Blacklist comment="215039" address=2a0a:6044:ac50::/44
 add list=Blacklist comment="215039" address=2a0f:85c1:3c9::/48
+# AS40124 Charged IT Solutions LLC
+add list=Blacklist comment="40124" address=2602:299:10::/44
 # AS54990 1337 Services LLC
 add list=Blacklist comment="54990" address=2001:67c:235c::/48
 # AS39287 ab stract ltd
@@ -469,6 +471,8 @@ add list=Blacklist comment="214940" address=2a13:e405::/32
 #add list=Blacklist comment="215127" address=2a14:c380:240::/44
 # AS214209 Internet Magnate (Pty) Ltd
 add list=Blacklist comment="214209" address=2a0f:9400:7e11::/48
+# AS214497 Whitelabel Solutions, Ltd.
+add list=Blacklist comment="214497" address=2a14:7c0:1740::/48
 # AS214515 Amir Mohammad Masoudi
 add list=Blacklist comment="214515" address=2a05:9080:6::/48
 add list=Blacklist comment="214515" address=2a14:7c0:6000::/40
@@ -565,6 +569,7 @@ add list=Blacklist comment="132825" address=2407:1100::/32
 add list=Blacklist comment="3920" address=2a13:adc0::/46
 # AS60539 Huicast Telecom Limited
 add list=Blacklist comment="60539" address=2401:e3a0:1::/48
+add list=Blacklist comment="60539" address=2407:d340:8000::/40
 add list=Blacklist comment="60539" address=2a13:aac0::/29
 # AS206728 Media Land LLC
 add list=Blacklist comment="206728" address=2a0b:7ec0::/29
@@ -582,12 +587,14 @@ add list=Blacklist comment="58212" address=2a03:403:4000::/34
 add list=Blacklist comment="58212" address=2a03:403:8000::/34
 add list=Blacklist comment="58212" address=2a05:dfc7::/32
 add list=Blacklist comment="58212" address=2a06:a007::/32
+add list=Blacklist comment="58212" address=2a09:54c1::/32
 add list=Blacklist comment="58212" address=2a0a:7747::/32
 add list=Blacklist comment="58212" address=2a0c:4ac0:1100::/40
 add list=Blacklist comment="58212" address=2a0c:4ac0:1200::/40
 add list=Blacklist comment="58212" address=2a0c:4ac1::/32
 add list=Blacklist comment="58212" address=2a0d:1180::/29
 add list=Blacklist comment="58212" address=2a0d:5940::/29
+add list=Blacklist comment="58212" address=2a0e:a780::/32
 add list=Blacklist comment="58212" address=2a0f:5b02::/32
 add list=Blacklist comment="58212" address=2a14:6a40::/32
 # AS212935 Theori Inc
@@ -600,7 +607,7 @@ add list=Blacklist comment="199414" address=2a12:bec0:2f0::/47
 add list=Blacklist comment="214809" address=2a0a:6044:b300::/42
 # AS214365 Hypefox Ltd
 add list=Blacklist comment="214365" address=2a14:1ec7:fa00::/47
-# AS215437 Pawel Kraczkowski
+# AS215437 SummerHosting sp. z o. o.
 add list=Blacklist comment="215437" address=2a12:bec4:1b60::/47
 add list=Blacklist comment="215437" address=2a14:1ec7:1100::/40
 # AS216249 PHOTON SPARK SRL
@@ -614,7 +621,7 @@ add list=Blacklist comment="36829" address=2602:fc64:a000::/47
 add list=Blacklist comment="36829" address=2602:fc64:ca00::/48
 add list=Blacklist comment="36829" address=2602:fc64:ca10::/48
 add list=Blacklist comment="36829" address=2602:fc64:ce00::/48
-# AS57974 Plasma DC Solutions LLC
+# AS57974 Teracast Networks LLC
 add list=Blacklist comment="57974" address=2602:2d4:d00::/40
 add list=Blacklist comment="57974" address=2602:2d4:e00::/39
 # AS44947 AMWAJ ALKHYR COMMERCIAL BROKERS CO.
@@ -704,12 +711,12 @@ add list=Blacklist comment="215120" address=2a07:cec4::/30
 add list=Blacklist comment="215120" address=2a0c:9a40:8570::/48
 add list=Blacklist comment="215120" address=2a12:bec4:19a0::/46
 add list=Blacklist comment="215120" address=2a12:bec4:19a4::/47
-# AS41047 Bart Vrancken trading as MLaB
+# AS41047 Bart Vrancken
 add list=Blacklist comment="41047" address=2a0e:a6c0::/30
 # AS53755 Input Output Flood LLC
 add list=Blacklist comment="53755" address=2604:6280::/32
 add list=Blacklist comment="53755" address=2a0d:da07::/32
-# AS64425 SKB Enterprise B.V.
+# AS64425 RIPE NCC ASN block
 add list=Blacklist comment="64425" address=2a0d:2406:200::/39
 # AS62167 Tismi BV
 add list=Blacklist comment="62167" address=2a00:be40:2::/48
@@ -886,8 +893,9 @@ add list=Blacklist comment="24013" address=2a11::/48
 # AS26737 TREE TELECOM
 add list=Blacklist comment="26737" address=2602:f894:100::/48
 add list=Blacklist comment="26737" address=2602:f894:102::/47
-add list=Blacklist comment="26737" address=2602:f894:104::/46
-add list=Blacklist comment="26737" address=2602:f894:108::/47
+add list=Blacklist comment="26737" address=2602:f894:104::/47
+add list=Blacklist comment="26737" address=2602:f894:106::/48
+add list=Blacklist comment="26737" address=2602:f894:109::/48
 add list=Blacklist comment="26737" address=2602:f894:10a::/48
 add list=Blacklist comment="26737" address=2602:f894:10c::/46
 add list=Blacklist comment="26737" address=2602:f894:200::/47
@@ -898,7 +906,8 @@ add list=Blacklist comment="26737" address=2602:f894:208::/47
 add list=Blacklist comment="26737" address=2602:f894:20a::/48
 add list=Blacklist comment="26737" address=2602:f894:20c::/48
 add list=Blacklist comment="26737" address=2602:f894:20e::/47
-add list=Blacklist comment="26737" address=2602:f894:300::/46
+add list=Blacklist comment="26737" address=2602:f894:301::/48
+add list=Blacklist comment="26737" address=2602:f894:302::/47
 add list=Blacklist comment="26737" address=2602:f894:305::/48
 add list=Blacklist comment="26737" address=2602:f894:306::/47
 add list=Blacklist comment="26737" address=2602:f894:309::/48
@@ -1100,16 +1109,3 @@ add list=Blacklist comment="211507" address=2a14:c380::/29
 #add list=Blacklist comment="213725" address=2a14:c380:280::/44
 # AS205534 RIPE NCC ASN block
 #add list=Blacklist comment="205534" address=2a14:c380:370::/44
-# AS44592 SkyLink Data Center BV
-add list=Blacklist comment="44592" address=2001:df3:3980::/48
-add list=Blacklist comment="44592" address=2605:31c0::/32
-add list=Blacklist comment="44592" address=2a02:d40::/32
-add list=Blacklist comment="44592" address=2a06:de00:100::/44
-add list=Blacklist comment="44592" address=2a07:6d40::/29
-add list=Blacklist comment="44592" address=2a09:be40::/48
-add list=Blacklist comment="44592" address=2a0a:64c0::/32
-add list=Blacklist comment="44592" address=2a0d:2146:2404::/48
-add list=Blacklist comment="44592" address=2a0d:c2c0::/29
-add list=Blacklist comment="44592" address=2a0e:9640::/29
-add list=Blacklist comment="44592" address=2a0e:97c0:3e0::/48
-add list=Blacklist comment="44592" address=2c0f:f00::/32
