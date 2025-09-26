@@ -1,5 +1,5 @@
 #
-# Last Update: 19/09/2025
+# Last Update: 26/09/2025
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -509,14 +509,14 @@
 -A INPUT -s 2607:8700:2200::/48 -j DROP
 -A INPUT -s 2607:8700:3100::/48 -j DROP
 -A INPUT -s 2607:8700:3400::/48 -j DROP
--A INPUT -s 2607:8700:5500::/48 -j DROP
+-A INPUT -s 2607:8700:5500::/47 -j DROP
 -A INPUT -s 2607:8700:9300::/48 -j DROP
 -A INPUT -s 2607:8700:360::/48 -j DROP
 -A INPUT -s 2607:8700:1200::/48 -j DROP
 -A INPUT -s 2607:8700:2200::/48 -j DROP
 -A INPUT -s 2607:8700:3100::/48 -j DROP
 -A INPUT -s 2607:8700:3400::/48 -j DROP
--A INPUT -s 2607:8700:5500::/48 -j DROP
+-A INPUT -s 2607:8700:5500::/47 -j DROP
 -A INPUT -s 2607:8700:9300::/48 -j DROP
 # AS3214 xTom GmbH
 -A INPUT -s 2a03:d9c0:1000::/48 -j DROP
@@ -608,12 +608,8 @@
 -A INPUT -s 2a12:de40::/32 -j DROP
 -A INPUT -s 2a13:9500:d5::/48 -j DROP
 # AS213200 Ferdinand Zink trading as Tube-Hosting
--A INPUT -s 2a07:4b40::/29 -j DROP
 -A INPUT -s 2a12:89c0::/29 -j DROP
--A INPUT -s 2a13:c3c0::/29 -j DROP
--A INPUT -s 2a07:4b40::/29 -j DROP
 -A INPUT -s 2a12:89c0::/29 -j DROP
--A INPUT -s 2a13:c3c0::/29 -j DROP
 # AS214339 SRV.RENT UG (haftungsbeschraenkt)
 -A INPUT -s 2a07:6d40:2::/48 -j DROP
 -A INPUT -s 2a12:de40:46::/48 -j DROP
@@ -736,11 +732,14 @@
 -A INPUT -s 2a12:bec0:20c::/48 -j DROP
 -A INPUT -s 2a12:bec0:20a::/47 -j DROP
 -A INPUT -s 2a12:bec0:20c::/48 -j DROP
-# AS215039 Semih Gokcalik
+# AS215039 Nodesty LLC
 -A INPUT -s 2a0a:6044:ac50::/44 -j DROP
 -A INPUT -s 2a0f:85c1:3c9::/48 -j DROP
 -A INPUT -s 2a0a:6044:ac50::/44 -j DROP
 -A INPUT -s 2a0f:85c1:3c9::/48 -j DROP
+# AS400328 Intelligence Hosting LLC
+-A INPUT -s 2a14:c380:12::/48 -j DROP
+-A INPUT -s 2a14:c380:12::/48 -j DROP
 # AS40124 Charged IT Solutions LLC
 -A INPUT -s 2602:299:10::/44 -j DROP
 -A INPUT -s 2602:299:10::/44 -j DROP
@@ -836,9 +835,11 @@
 -A INPUT -s 2a0f:9400:7e11::/48 -j DROP
 # AS214497 Whitelabel Solutions, Ltd.
 -A INPUT -s 2a0f:31c4:100::/48 -j DROP
+-A INPUT -s 2a10:ccc7:b110::/44 -j DROP
 -A INPUT -s 2a14:7c0:1740::/48 -j DROP
 -A INPUT -s 2a14:c380:c00::/44 -j DROP
 -A INPUT -s 2a0f:31c4:100::/48 -j DROP
+-A INPUT -s 2a10:ccc7:b110::/44 -j DROP
 -A INPUT -s 2a14:7c0:1740::/48 -j DROP
 -A INPUT -s 2a14:c380:c00::/44 -j DROP
 # AS214515 Amir Mohammad Masoudi
@@ -863,12 +864,31 @@
 -A INPUT -s 2a14:5140:100::/40 -j DROP
 -A INPUT -s 2a14:5140:300::/40 -j DROP
 -A INPUT -s 2a14:5140:400::/39 -j DROP
+# AS60150 area-7 IT-Services GmbH
+-A INPUT -s 2001:678:6bc::/48 -j DROP
+-A INPUT -s 2001:678:ef0::/48 -j DROP
+-A INPUT -s 2001:678:ef4::/48 -j DROP
+-A INPUT -s 2001:678:ef8::/48 -j DROP
+-A INPUT -s 2001:67c:270::/48 -j DROP
+-A INPUT -s 2001:67c:28a0::/48 -j DROP
+-A INPUT -s 2a05:ff00::/29 -j DROP
+-A INPUT -s 2001:678:6bc::/48 -j DROP
+-A INPUT -s 2001:678:ef0::/48 -j DROP
+-A INPUT -s 2001:678:ef4::/48 -j DROP
+-A INPUT -s 2001:678:ef8::/48 -j DROP
+-A INPUT -s 2001:67c:270::/48 -j DROP
+-A INPUT -s 2001:67c:28a0::/48 -j DROP
+-A INPUT -s 2a05:ff00::/29 -j DROP
 # AS60223 Netiface Limited
 -A INPUT -s 2a12:6f40::/29 -j DROP
 -A INPUT -s 2a14:7c0:3900::/40 -j DROP
+-A INPUT -s 2a14:9e00:400::/40 -j DROP
+-A INPUT -s 2a14:9e00:b00::/40 -j DROP
 -A INPUT -s 2a14:9e00:9000::/40 -j DROP
 -A INPUT -s 2a12:6f40::/29 -j DROP
 -A INPUT -s 2a14:7c0:3900::/40 -j DROP
+-A INPUT -s 2a14:9e00:400::/40 -j DROP
+-A INPUT -s 2a14:9e00:b00::/40 -j DROP
 -A INPUT -s 2a14:9e00:9000::/40 -j DROP
 # AS198154 Pars Abr Toseeh Ertebatat Company
 -A INPUT -s 2a05:9080::/48 -j DROP
@@ -880,8 +900,10 @@
 # AS214967 Optibounce, LLC
 -A INPUT -s 2a11:f084::/32 -j DROP
 -A INPUT -s 2a13:e401::/32 -j DROP
+-A INPUT -s 2a14:c380:11::/48 -j DROP
 -A INPUT -s 2a11:f084::/32 -j DROP
 -A INPUT -s 2a13:e401::/32 -j DROP
+-A INPUT -s 2a14:c380:11::/48 -j DROP
 # AS35133 Eranium B.V.
 -A INPUT -s 2a07:5500::/29 -j DROP
 -A INPUT -s 2a09:e240:22::/48 -j DROP
@@ -975,7 +997,9 @@
 -A INPUT -s 2a0d:ea80::/29 -j DROP
 -A INPUT -s 2a0f:2b86:10::/48 -j DROP
 # AS6204 INTERKVM HOST SRL
+-A INPUT -s 2001:7f8:8f::/48 -j DROP
 -A INPUT -s 2a12:3200:f000::/36 -j DROP
+-A INPUT -s 2001:7f8:8f::/48 -j DROP
 -A INPUT -s 2a12:3200:f000::/36 -j DROP
 # AS25198 INTERKVM HOST SRL
 -A INPUT -s 2a01:7120:6::/47 -j DROP
@@ -1042,7 +1066,6 @@
 -A INPUT -s 2a0c:4ac1::/32 -j DROP
 -A INPUT -s 2a0d:1180::/29 -j DROP
 -A INPUT -s 2a0d:5940::/29 -j DROP
--A INPUT -s 2a0e:a780::/32 -j DROP
 -A INPUT -s 2a0f:5b02::/32 -j DROP
 -A INPUT -s 2a14:6a40::/32 -j DROP
 -A INPUT -s 2407:9d00:20::/48 -j DROP
@@ -1057,7 +1080,6 @@
 -A INPUT -s 2a0c:4ac1::/32 -j DROP
 -A INPUT -s 2a0d:1180::/29 -j DROP
 -A INPUT -s 2a0d:5940::/29 -j DROP
--A INPUT -s 2a0e:a780::/32 -j DROP
 -A INPUT -s 2a0f:5b02::/32 -j DROP
 -A INPUT -s 2a14:6a40::/32 -j DROP
 # AS212935 Theori Inc
@@ -1491,6 +1513,7 @@
 -A INPUT -s 2a0f:ca83:1337::/48 -j DROP
 -A INPUT -s 2a0f:ca84::/40 -j DROP
 -A INPUT -s 2a0f:ca86::/40 -j DROP
+-A INPUT -s 2a13:29c0::/29 -j DROP
 -A INPUT -s 2a06:a000:160::/44 -j DROP
 -A INPUT -s 2a06:a001:a010::/44 -j DROP
 -A INPUT -s 2a0f:ca80::/47 -j DROP
@@ -1503,6 +1526,7 @@
 -A INPUT -s 2a0f:ca83:1337::/48 -j DROP
 -A INPUT -s 2a0f:ca84::/40 -j DROP
 -A INPUT -s 2a0f:ca86::/40 -j DROP
+-A INPUT -s 2a13:29c0::/29 -j DROP
 # AS35112 GBN group Ltd
 -A INPUT -s 2a0e:7200::/40 -j DROP
 -A INPUT -s 2a0e:7200::/40 -j DROP
@@ -1580,12 +1604,9 @@
 -A INPUT -s 2a11::/48 -j DROP
 # AS26737 TREE TELECOM
 -A INPUT -s 2602:f894:100::/48 -j DROP
--A INPUT -s 2602:f894:102::/47 -j DROP
+-A INPUT -s 2602:f894:102::/48 -j DROP
 -A INPUT -s 2602:f894:104::/47 -j DROP
 -A INPUT -s 2602:f894:109::/48 -j DROP
--A INPUT -s 2602:f894:10a::/48 -j DROP
--A INPUT -s 2602:f894:10d::/48 -j DROP
--A INPUT -s 2602:f894:10e::/47 -j DROP
 -A INPUT -s 2602:f894:200::/47 -j DROP
 -A INPUT -s 2602:f894:205::/48 -j DROP
 -A INPUT -s 2602:f894:20a::/48 -j DROP
@@ -1597,12 +1618,9 @@
 -A INPUT -s 2602:f894:30c::/48 -j DROP
 -A INPUT -s 2602:f894:30f::/48 -j DROP
 -A INPUT -s 2602:f894:100::/48 -j DROP
--A INPUT -s 2602:f894:102::/47 -j DROP
+-A INPUT -s 2602:f894:102::/48 -j DROP
 -A INPUT -s 2602:f894:104::/47 -j DROP
 -A INPUT -s 2602:f894:109::/48 -j DROP
--A INPUT -s 2602:f894:10a::/48 -j DROP
--A INPUT -s 2602:f894:10d::/48 -j DROP
--A INPUT -s 2602:f894:10e::/47 -j DROP
 -A INPUT -s 2602:f894:200::/47 -j DROP
 -A INPUT -s 2602:f894:205::/48 -j DROP
 -A INPUT -s 2602:f894:20a::/48 -j DROP
@@ -1669,6 +1687,9 @@
 -A INPUT -s 2a13:7dc0:1000::/36 -j DROP
 -A INPUT -s 2a13:7dc0:2000::/35 -j DROP
 -A INPUT -s 2a13:7dc0:4000::/36 -j DROP
+# AS204457 Atlantis Telekomunikasyon Bilisim Hizmetleri San. Tic. Ltd
+-A INPUT -s 2a0a:a580::/29 -j DROP
+-A INPUT -s 2a0a:a580::/29 -j DROP
 # AS205787 Public Cloud Ltd.
 -A INPUT -s 2a0b:1640:1::/48 -j DROP
 -A INPUT -s 2a0b:1640:1::/48 -j DROP
@@ -1967,3 +1988,42 @@
 # AS205534 Jetcon Service ApS
 -A INPUT -s 2a14:c380:370::/44 -j DROP
 -A INPUT -s 2a14:c380:370::/44 -j DROP
+# AS23470 ReliableSite.Net LLC
+-A INPUT -s 2407:9d00:10::/48 -j DROP
+-A INPUT -s 2602:f7f8:6::/48 -j DROP
+-A INPUT -s 2602:fa4f:300::/40 -j DROP
+-A INPUT -s 2602:fafd:902::/48 -j DROP
+-A INPUT -s 2602:fafd:fe0::/48 -j DROP
+-A INPUT -s 2602:fb54:140::/47 -j DROP
+-A INPUT -s 2602:fb54:142::/48 -j DROP
+-A INPUT -s 2602:fd09:100::/42 -j DROP
+-A INPUT -s 2605:9880::/39 -j DROP
+-A INPUT -s 2605:9880:200::/40 -j DROP
+-A INPUT -s 2605:9880:300::/42 -j DROP
+-A INPUT -s 2605:9880:340::/48 -j DROP
+-A INPUT -s 2605:9880:344::/47 -j DROP
+-A INPUT -s 2605:9880:400::/42 -j DROP
+-A INPUT -s 2a0c:8fc3::/40 -j DROP
+-A INPUT -s 2a0c:8fc3:6400::/40 -j DROP
+-A INPUT -s 2a0c:8fc3:8000::/40 -j DROP
+-A INPUT -s 2a12:a800:9::/48 -j DROP
+-A INPUT -s 2a14:67c1:a160::/48 -j DROP
+-A INPUT -s 2407:9d00:10::/48 -j DROP
+-A INPUT -s 2602:f7f8:6::/48 -j DROP
+-A INPUT -s 2602:fa4f:300::/40 -j DROP
+-A INPUT -s 2602:fafd:902::/48 -j DROP
+-A INPUT -s 2602:fafd:fe0::/48 -j DROP
+-A INPUT -s 2602:fb54:140::/47 -j DROP
+-A INPUT -s 2602:fb54:142::/48 -j DROP
+-A INPUT -s 2602:fd09:100::/42 -j DROP
+-A INPUT -s 2605:9880::/39 -j DROP
+-A INPUT -s 2605:9880:200::/40 -j DROP
+-A INPUT -s 2605:9880:300::/42 -j DROP
+-A INPUT -s 2605:9880:340::/48 -j DROP
+-A INPUT -s 2605:9880:344::/47 -j DROP
+-A INPUT -s 2605:9880:400::/42 -j DROP
+-A INPUT -s 2a0c:8fc3::/40 -j DROP
+-A INPUT -s 2a0c:8fc3:6400::/40 -j DROP
+-A INPUT -s 2a0c:8fc3:8000::/40 -j DROP
+-A INPUT -s 2a12:a800:9::/48 -j DROP
+-A INPUT -s 2a14:67c1:a160::/48 -j DROP
