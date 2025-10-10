@@ -1,5 +1,5 @@
 #
-# Last Update: 03/10/2025
+# Last Update: 10/10/2025
 #
 create blacklistv6 hash:net family inet6 hashsize 8192 -exist
 # The Shadowserver Foundation, Inc.
@@ -118,6 +118,8 @@ add blacklistv6 2a0f:cdc6:200::/44
 add blacklistv6 2a06:1301:4350::/48
 add blacklistv6 2a0a:4d00:9::/48
 # AS212477 RoyaleHosting BV
+add blacklistv6 2602:f78a:1::/48
+add blacklistv6 2602:f78a:10::/44
 add blacklistv6 2602:f7f8:4::/48
 add blacklistv6 2602:fa0a::/40
 add blacklistv6 2a03:5840:fc::/48
@@ -173,6 +175,8 @@ add blacklistv6 240d:c010:5c::/48
 add blacklistv6 240d:c010:68::/48
 add blacklistv6 240d:c010:6f::/48
 add blacklistv6 240d:c040::/43
+# AS34465 RIPE NCC ASN block
+add blacklistv6 2a12:8fc6:ae44::/48
 # AS136180 Beijing Tiantexin Tech. Co., Ltd.
 add blacklistv6 2400:87c0::/32
 # AS150860 JETCLOUD TECHNOLOGY CO., LTD
@@ -640,7 +644,8 @@ add blacklistv6 2602:fc64:ca00::/48
 add blacklistv6 2602:fc64:ca10::/48
 add blacklistv6 2602:fc64:ce00::/48
 # AS57974 Teracast Networks LLC
-add blacklistv6 2602:2d4:c00::/38
+add blacklistv6 2602:2d4:d00::/40
+add blacklistv6 2602:2d4:e00::/39
 add blacklistv6 2a0f:6284:4218::/48
 # AS44947 AMWAJ ALKHYR COMMERCIAL BROKERS CO.
 add blacklistv6 2a09:cbc0::/29
@@ -836,6 +841,9 @@ add blacklistv6 2a0d:3c45::/32
 add blacklistv6 2a0e:7f46::/32
 # AS205125 Network Management Ltd
 add blacklistv6 2a03:e2c0::/32
+add blacklistv6 2a0b:7780::/29
+add blacklistv6 2a0c:4185::/32
+add blacklistv6 2a0d:3880::/29
 add blacklistv6 2a0d:8340::/32
 add blacklistv6 2a0d:8343::/32
 # AS211720 Datashield, Inc.
@@ -847,7 +855,7 @@ add blacklistv6 2a10:5fc7::/47
 add blacklistv6 2001:df1:f400::/48
 # AS204615 IP Fiber Inc
 add blacklistv6 2a13:2a00:2::/48
-# AS211632 Internet Solutions & Innovations LTD.
+# AS211632 ISI1
 add blacklistv6 2a11:4c0::/47
 # AS43180 Trunk Networks LTD
 add blacklistv6 2a09:2dc2::/31
@@ -996,17 +1004,15 @@ add blacklistv6 2a0f:ca81:b00b::/48
 add blacklistv6 2a09:2dc1::/32
 add blacklistv6 2a11:6100::/31
 # AS214223 Luis Jakob Bartel
-add blacklistv6 2a0b:4e07:2c01::/48
+add blacklistv6 2a0a:6044:6401::/48
+add blacklistv6 2a0a:6044:aa10::/48
 add blacklistv6 2a0b:4e07:2c03::/48
 add blacklistv6 2a0b:4e07:2c04::/48
-add blacklistv6 2a0b:4e07:2d01::/48
 add blacklistv6 2a0b:4e07:2d03::/48
 add blacklistv6 2a0b:4e07:2d04::/48
-add blacklistv6 2a0b:4e07:2e01::/48
 add blacklistv6 2a0b:4e07:2e03::/48
 add blacklistv6 2a0b:4e07:2e04::/48
-add blacklistv6 2a14:7581:3701::/48
-add blacklistv6 2a14:7581:3703::/48
+add blacklistv6 2a0c:9a40:80d0::/48
 add blacklistv6 2a14:7581:3704::/48
 # AS200081 Netversor GmbH
 add blacklistv6 2a02:6aa0::/32
@@ -1063,7 +1069,7 @@ add blacklistv6 2001:df4:4f80::/48
 add blacklistv6 2a10:ed40::/46
 add blacklistv6 2a10:ed40:4::/47
 add blacklistv6 2a10:ed40:6::/48
-# AS202468 Noyan Abr Arvan Co. ( Private Joint Stock)
+# AS202468 AbrArvan
 add blacklistv6 2a07:3900::/29
 # AS215439 PLAY2GO INTERNATIONAL LIMITED
 add blacklistv6 2a12:bec4:10b0::/44
@@ -1105,6 +1111,7 @@ add blacklistv6 2a10:6140::/29
 # AS215311 Regxa Company for Information Technology Ltd
 add blacklistv6 2a14:4200::/29
 # AS202520 SkyPass Solutions Sp. z.o.o.
+add blacklistv6 2001:678:8e8::/48
 add blacklistv6 2001:67c:b58::/48
 # AS216078 Liam Kremer
 add blacklistv6 2a14:7c0:e0::/43
@@ -1138,3 +1145,10 @@ add blacklistv6 2a14:67c1:a160::/48
 # AS262954 VirtuaServer Informatica Ltda
 add blacklistv6 2804:e6c:3000::/36
 add blacklistv6 2804:e6c:4000::/36
+# AS213887 WAIcore Ltd
+add blacklistv6 2a0b:4141::/36
+add blacklistv6 2a0b:4141:9000::/36
+add blacklistv6 2a0b:4141:e000::/36
+add blacklistv6 2a0d:d940:1c00::/40
+add blacklistv6 2a0d:d940:1e00::/40
+add blacklistv6 2a14:7583:a800::/37

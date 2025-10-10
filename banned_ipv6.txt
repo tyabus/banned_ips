@@ -1,5 +1,5 @@
 #
-# Last Update: 03/10/2025
+# Last Update: 10/10/2025
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -119,6 +119,8 @@
 -A INPUT -s 2a06:1301:4350::/48 -j DROP
 -A INPUT -s 2a0a:4d00:9::/48 -j DROP
 # AS212477 RoyaleHosting BV
+-A INPUT -s 2602:f78a:1::/48 -j DROP
+-A INPUT -s 2602:f78a:10::/44 -j DROP
 -A INPUT -s 2602:f7f8:4::/48 -j DROP
 -A INPUT -s 2602:fa0a::/40 -j DROP
 -A INPUT -s 2a03:5840:fc::/48 -j DROP
@@ -174,6 +176,8 @@
 -A INPUT -s 240d:c010:68::/48 -j DROP
 -A INPUT -s 240d:c010:6f::/48 -j DROP
 -A INPUT -s 240d:c040::/43 -j DROP
+# AS34465 RIPE NCC ASN block
+-A INPUT -s 2a12:8fc6:ae44::/48 -j DROP
 # AS136180 Beijing Tiantexin Tech. Co., Ltd.
 -A INPUT -s 2400:87c0::/32 -j DROP
 # AS150860 JETCLOUD TECHNOLOGY CO., LTD
@@ -641,7 +645,8 @@
 -A INPUT -s 2602:fc64:ca10::/48 -j DROP
 -A INPUT -s 2602:fc64:ce00::/48 -j DROP
 # AS57974 Teracast Networks LLC
--A INPUT -s 2602:2d4:c00::/38 -j DROP
+-A INPUT -s 2602:2d4:d00::/40 -j DROP
+-A INPUT -s 2602:2d4:e00::/39 -j DROP
 -A INPUT -s 2a0f:6284:4218::/48 -j DROP
 # AS44947 AMWAJ ALKHYR COMMERCIAL BROKERS CO. (UAB Host Baltic)
 -A INPUT -s 2a09:cbc0::/29 -j DROP
@@ -837,6 +842,9 @@
 -A INPUT -s 2a0e:7f46::/32 -j DROP
 # AS205125 Network Management Ltd
 -A INPUT -s 2a03:e2c0::/32 -j DROP
+-A INPUT -s 2a0b:7780::/29 -j DROP
+-A INPUT -s 2a0c:4185::/32 -j DROP
+-A INPUT -s 2a0d:3880::/29 -j DROP
 -A INPUT -s 2a0d:8340::/32 -j DROP
 -A INPUT -s 2a0d:8343::/32 -j DROP
 # AS211720 Datashield, Inc.
@@ -848,7 +856,7 @@
 -A INPUT -s 2001:df1:f400::/48 -j DROP
 # AS204615 IP Fiber Inc
 -A INPUT -s 2a13:2a00:2::/48 -j DROP
-# AS211632 Internet Solutions & Innovations LTD.
+# AS211632 ISI1
 -A INPUT -s 2a11:4c0::/47 -j DROP
 # AS43180 Trunk Networks LTD
 -A INPUT -s 2a09:2dc2::/31 -j DROP
@@ -997,17 +1005,15 @@
 -A INPUT -s 2a09:2dc1::/32 -j DROP
 -A INPUT -s 2a11:6100::/31 -j DROP
 # AS214223 Luis Jakob Bartel
--A INPUT -s 2a0b:4e07:2c01::/48 -j DROP
+-A INPUT -s 2a0a:6044:6401::/48 -j DROP
+-A INPUT -s 2a0a:6044:aa10::/48 -j DROP
 -A INPUT -s 2a0b:4e07:2c03::/48 -j DROP
 -A INPUT -s 2a0b:4e07:2c04::/48 -j DROP
--A INPUT -s 2a0b:4e07:2d01::/48 -j DROP
 -A INPUT -s 2a0b:4e07:2d03::/48 -j DROP
 -A INPUT -s 2a0b:4e07:2d04::/48 -j DROP
--A INPUT -s 2a0b:4e07:2e01::/48 -j DROP
 -A INPUT -s 2a0b:4e07:2e03::/48 -j DROP
 -A INPUT -s 2a0b:4e07:2e04::/48 -j DROP
--A INPUT -s 2a14:7581:3701::/48 -j DROP
--A INPUT -s 2a14:7581:3703::/48 -j DROP
+-A INPUT -s 2a0c:9a40:80d0::/48 -j DROP
 -A INPUT -s 2a14:7581:3704::/48 -j DROP
 # AS200081 Netversor GmbH
 -A INPUT -s 2a02:6aa0::/32 -j DROP
@@ -1064,7 +1070,7 @@
 -A INPUT -s 2a10:ed40::/46 -j DROP
 -A INPUT -s 2a10:ed40:4::/47 -j DROP
 -A INPUT -s 2a10:ed40:6::/48 -j DROP
-# AS202468 Noyan Abr Arvan Co. ( Private Joint Stock)
+# AS202468 AbrArvan
 -A INPUT -s 2a07:3900::/29 -j DROP
 # AS215439 PLAY2GO INTERNATIONAL LIMITED
 -A INPUT -s 2a12:bec4:10b0::/44 -j DROP
@@ -1106,6 +1112,7 @@
 # AS215311 Regxa Company for Information Technology Ltd
 -A INPUT -s 2a14:4200::/29 -j DROP
 # AS202520 SkyPass Solutions Sp. z.o.o.
+-A INPUT -s 2001:678:8e8::/48 -j DROP
 -A INPUT -s 2001:67c:b58::/48 -j DROP
 # AS216078 Liam Kremer
 -A INPUT -s 2a14:7c0:e0::/43 -j DROP
@@ -1139,3 +1146,10 @@
 # AS262954 VirtuaServer Informatica Ltda
 -A INPUT -s 2804:e6c:3000::/36 -j DROP
 -A INPUT -s 2804:e6c:4000::/36 -j DROP
+# AS213887 WAIcore Ltd
+-A INPUT -s 2a0b:4141::/36 -j DROP
+-A INPUT -s 2a0b:4141:9000::/36 -j DROP
+-A INPUT -s 2a0b:4141:e000::/36 -j DROP
+-A INPUT -s 2a0d:d940:1c00::/40 -j DROP
+-A INPUT -s 2a0d:d940:1e00::/40 -j DROP
+-A INPUT -s 2a14:7583:a800::/37 -j DROP
