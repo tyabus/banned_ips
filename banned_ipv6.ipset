@@ -1,5 +1,5 @@
 #
-# Last Update: 10/10/2025
+# Last Update: 17/10/2025
 #
 create blacklistv6 hash:net family inet6 hashsize 8192 -exist
 # The Shadowserver Foundation, Inc.
@@ -43,7 +43,7 @@ add blacklistv6 2001:678:e70::/48
 add blacklistv6 2a10:b641::/36
 # AS49305 Alsycon B.V.
 add blacklistv6 2a0e:3ec0::/29
-# AS49870 Alsycon-BV
+# AS49870 Alsycon B.V.
 add blacklistv6 2a0e:3980::/29
 # AS208911 Alsycon B.V.
 add blacklistv6 2a11:8280::/29
@@ -216,8 +216,8 @@ add blacklistv6 2a0a:4587:2010::/46
 add blacklistv6 2a0b:f4c1:2::/48
 add blacklistv6 2a0b:f4c2::/40
 # AS62068 SpectraIP B.V.
-add blacklistv6 2a0d:2400::/30
-add blacklistv6 2a0d:2404::/31
+add blacklistv6 2a0d:2400::/32
+add blacklistv6 2a0d:2404::/32
 add blacklistv6 2a0d:2406::/39
 add blacklistv6 2a0d:2407::/32
 add blacklistv6 2a0d:2780::/29
@@ -231,8 +231,6 @@ add blacklistv6 2a03:70c0::/32
 # AS210630 IncogNET LLC
 add blacklistv6 2602:fc24:10::/47
 add blacklistv6 2602:fc24:12::/48
-add blacklistv6 2602:fc24:18::/47
-add blacklistv6 2602:fc24:20::/48
 add blacklistv6 2602:fc24:100::/40
 # AS212461 Nemtcov Nikolai Alexandrovich
 add blacklistv6 2a0b:6900:1ad::/48
@@ -267,7 +265,6 @@ add blacklistv6 2602:fb53::/40
 # AS200136 Association LibraHost
 add blacklistv6 2a0e:b107:12d::/48
 # AS198831 GENIUSWEER SAS
-add blacklistv6 2a0c:b641:d70::/44
 add blacklistv6 2a10:4646:2d0::/44
 add blacklistv6 2a10:4646:3f0::/44
 add blacklistv6 2a13:9500:c4::/48
@@ -351,8 +348,6 @@ add blacklistv6 2a12:8640::/29
 add blacklistv6 2a12:b200::/29
 add blacklistv6 2a12:de40::/32
 add blacklistv6 2a13:9500:d5::/48
-# AS213200 Ferdinand Zink trading as Tube-Hosting
-add blacklistv6 2a12:89c0::/29
 # AS214339 SRV.RENT UG (haftungsbeschraenkt)
 add blacklistv6 2a07:6d40:2::/48
 #add blacklistv6 2a12:de40:46::/48
@@ -372,9 +367,6 @@ add blacklistv6 2a12:3e80:500::/40
 # AS216081 Paulo Gobbato trading as Gobbato IT Loesungen
 add blacklistv6 2a12:3e80:6a0::/44
 add blacklistv6 2a12:3e80:6e0::/44
-# AS198351 SECUREWAN ANTI-DDOS LTD
-add blacklistv6 2a12:bec4:1020::/44
-add blacklistv6 2a12:bec4:17a0::/44
 # AS215400 Kaan Kalayci trading as FastLayer
 #add blacklistv6 2a12:de40:27::/48
 # AS197477 Moritz Mantel trading as Nerdscave
@@ -574,7 +566,6 @@ add blacklistv6 2a0b:8400:1::/48
 add blacklistv6 2a0d:ea80::/29
 add blacklistv6 2a0f:2b86:10::/48
 # AS6204 INTERKVM HOST SRL
-add blacklistv6 2001:7f8:8f::/48
 add blacklistv6 2a12:3200:f000::/36
 # AS25198 INTERKVM HOST SRL
 add blacklistv6 2a01:7120:6::/47
@@ -592,7 +583,6 @@ add blacklistv6 2407:1100::/32
 # AS3920 ESTOXY OU
 add blacklistv6 2a13:adc0::/46
 # AS60539 Huicast Telecom Limited
-add blacklistv6 2401:e3a0:1::/48
 add blacklistv6 2407:d340:8000::/40
 add blacklistv6 2a13:aac0::/29
 # AS206728 Media Land LLC
@@ -611,7 +601,6 @@ add blacklistv6 2a03:403:4000::/34
 add blacklistv6 2a03:403:8000::/34
 add blacklistv6 2a05:dfc7::/32
 add blacklistv6 2a06:a007::/32
-add blacklistv6 2a09:54c1::/32
 add blacklistv6 2a0a:7747::/32
 add blacklistv6 2a0c:4ac0:1100::/40
 add blacklistv6 2a0c:4ac0:1200::/40
@@ -915,7 +904,7 @@ add blacklistv6 2a13:2380::/29
 # AS24013 SB Professional Services
 add blacklistv6 2a09::/48
 add blacklistv6 2a11::/48
-# AS210387 Bubacarr Sowe
+# AS210387 Guardy Limited
 add blacklistv6 2a14:9401:4000::/36
 # AS132088 Wind Cloud Network Technology Co Ltd
 add blacklistv6 2402:e940:20::/43
@@ -948,6 +937,7 @@ add blacklistv6 2a05:4140:500::/48
 add blacklistv6 2a13:7dc0:1000::/36
 add blacklistv6 2a13:7dc0:2000::/36
 add blacklistv6 2a13:7dc0:4000::/36
+add blacklistv6 2a13:7dc7:fffe::/47
 # AS204457 Atlantis Telekomunikasyon Bilisim Hizmetleri San. Tic. Ltd
 add blacklistv6 2a0a:a580::/29
 # AS205787 Public Cloud Ltd.
@@ -1006,11 +996,8 @@ add blacklistv6 2a11:6100::/31
 # AS214223 Luis Jakob Bartel
 add blacklistv6 2a0a:6044:6401::/48
 add blacklistv6 2a0a:6044:aa10::/48
-add blacklistv6 2a0b:4e07:2c03::/48
 add blacklistv6 2a0b:4e07:2c04::/48
-add blacklistv6 2a0b:4e07:2d03::/48
 add blacklistv6 2a0b:4e07:2d04::/48
-add blacklistv6 2a0b:4e07:2e03::/48
 add blacklistv6 2a0b:4e07:2e04::/48
 add blacklistv6 2a0c:9a40:80d0::/48
 add blacklistv6 2a14:7581:3704::/48
@@ -1041,8 +1028,6 @@ add blacklistv6 2a03:1b21:100::/40
 add blacklistv6 2a06:de00:15::/48
 add blacklistv6 2a06:de00:19::/48
 add blacklistv6 2a07:e344::/32
-add blacklistv6 2a0b:4e07:60e0::/44
-add blacklistv6 2a0c:9a46:a00::/40
 add blacklistv6 2a10:ccc2:20::/44
 # AS59939 WIBO Baltic UAB
 add blacklistv6 2a04:9640::/31

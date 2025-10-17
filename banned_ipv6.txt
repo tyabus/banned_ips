@@ -1,5 +1,5 @@
 #
-# Last Update: 10/10/2025
+# Last Update: 17/10/2025
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -44,7 +44,7 @@
 -A INPUT -s 2a10:b641::/36 -j DROP
 # AS49305 Alsycon B.V.
 -A INPUT -s 2a0e:3ec0::/29 -j DROP
-# AS49870 Alsycon-BV
+# AS49870 Alsycon B.V.
 -A INPUT -s 2a0e:3980::/29 -j DROP
 # AS208911 Alsycon B.V.
 -A INPUT -s 2a11:8280::/29 -j DROP
@@ -217,8 +217,8 @@
 -A INPUT -s 2a0b:f4c1:2::/48 -j DROP
 -A INPUT -s 2a0b:f4c2::/40 -j DROP
 # AS62068 SpectraIP B.V.
--A INPUT -s 2a0d:2400::/30 -j DROP
--A INPUT -s 2a0d:2404::/31 -j DROP
+-A INPUT -s 2a0d:2400::/32 -j DROP
+-A INPUT -s 2a0d:2404::/32 -j DROP
 -A INPUT -s 2a0d:2406::/39 -j DROP
 -A INPUT -s 2a0d:2407::/32 -j DROP
 -A INPUT -s 2a0d:2780::/29 -j DROP
@@ -232,8 +232,6 @@
 # AS210630 IncogNET LLC
 -A INPUT -s 2602:fc24:10::/47 -j DROP
 -A INPUT -s 2602:fc24:12::/48 -j DROP
--A INPUT -s 2602:fc24:18::/47 -j DROP
--A INPUT -s 2602:fc24:20::/48 -j DROP
 -A INPUT -s 2602:fc24:100::/40 -j DROP
 # AS212461 Nemtcov Nikolai Alexandrovich
 -A INPUT -s 2a0b:6900:1ad::/48 -j DROP
@@ -268,7 +266,6 @@
 # AS200136 Association LibraHost
 -A INPUT -s 2a0e:b107:12d::/48 -j DROP
 # AS198831 GENIUSWEER SAS
--A INPUT -s 2a0c:b641:d70::/44 -j DROP
 -A INPUT -s 2a10:4646:2d0::/44 -j DROP
 -A INPUT -s 2a10:4646:3f0::/44 -j DROP
 -A INPUT -s 2a13:9500:c4::/48 -j DROP
@@ -352,8 +349,6 @@
 -A INPUT -s 2a12:b200::/29 -j DROP
 -A INPUT -s 2a12:de40::/32 -j DROP
 -A INPUT -s 2a13:9500:d5::/48 -j DROP
-# AS213200 Ferdinand Zink trading as Tube-Hosting
--A INPUT -s 2a12:89c0::/29 -j DROP
 # AS214339 SRV.RENT UG (haftungsbeschraenkt)
 -A INPUT -s 2a07:6d40:2::/48 -j DROP
 #-A INPUT -s 2a12:de40:46::/48 -j DROP
@@ -373,9 +368,6 @@
 # AS216081 Paulo Gobbato trading as Gobbato IT Loesungen
 -A INPUT -s 2a12:3e80:6a0::/44 -j DROP
 -A INPUT -s 2a12:3e80:6e0::/44 -j DROP
-# AS198351 SECUREWAN ANTI-DDOS LTD
--A INPUT -s 2a12:bec4:1020::/44 -j DROP
--A INPUT -s 2a12:bec4:17a0::/44 -j DROP
 # AS215400 Kaan Kalayci trading as FastLayer
 #-A INPUT -s 2a12:de40:27::/48 -j DROP
 # AS197477 Moritz Mantel trading as Nerdscave
@@ -575,7 +567,6 @@
 -A INPUT -s 2a0d:ea80::/29 -j DROP
 -A INPUT -s 2a0f:2b86:10::/48 -j DROP
 # AS6204 INTERKVM HOST SRL
--A INPUT -s 2001:7f8:8f::/48 -j DROP
 -A INPUT -s 2a12:3200:f000::/36 -j DROP
 # AS25198 INTERKVM HOST SRL
 -A INPUT -s 2a01:7120:6::/47 -j DROP
@@ -593,7 +584,6 @@
 # AS3920 ESTOXY OU (Estoxy OU)
 -A INPUT -s 2a13:adc0::/46 -j DROP
 # AS60539 Huicast Telecom Limited
--A INPUT -s 2401:e3a0:1::/48 -j DROP
 -A INPUT -s 2407:d340:8000::/40 -j DROP
 -A INPUT -s 2a13:aac0::/29 -j DROP
 # AS206728 Media Land LLC
@@ -612,7 +602,6 @@
 -A INPUT -s 2a03:403:8000::/34 -j DROP
 -A INPUT -s 2a05:dfc7::/32 -j DROP
 -A INPUT -s 2a06:a007::/32 -j DROP
--A INPUT -s 2a09:54c1::/32 -j DROP
 -A INPUT -s 2a0a:7747::/32 -j DROP
 -A INPUT -s 2a0c:4ac0:1100::/40 -j DROP
 -A INPUT -s 2a0c:4ac0:1200::/40 -j DROP
@@ -916,7 +905,7 @@
 # AS24013 SB Professional Services
 -A INPUT -s 2a09::/48 -j DROP
 -A INPUT -s 2a11::/48 -j DROP
-# AS210387 Bubacarr Sowe
+# AS210387 Guardy Limited
 -A INPUT -s 2a14:9401:4000::/36 -j DROP
 # AS132088 Wind Cloud Network Technology Co Ltd
 -A INPUT -s 2402:e940:20::/43 -j DROP
@@ -949,6 +938,7 @@
 -A INPUT -s 2a13:7dc0:1000::/36 -j DROP
 -A INPUT -s 2a13:7dc0:2000::/36 -j DROP
 -A INPUT -s 2a13:7dc0:4000::/36 -j DROP
+-A INPUT -s 2a13:7dc7:fffe::/47 -j DROP
 # AS204457 Atlantis Telekomunikasyon Bilisim Hizmetleri San. Tic. Ltd
 -A INPUT -s 2a0a:a580::/29 -j DROP
 # AS205787 Public Cloud Ltd.
@@ -1007,11 +997,8 @@
 # AS214223 Luis Jakob Bartel
 -A INPUT -s 2a0a:6044:6401::/48 -j DROP
 -A INPUT -s 2a0a:6044:aa10::/48 -j DROP
--A INPUT -s 2a0b:4e07:2c03::/48 -j DROP
 -A INPUT -s 2a0b:4e07:2c04::/48 -j DROP
--A INPUT -s 2a0b:4e07:2d03::/48 -j DROP
 -A INPUT -s 2a0b:4e07:2d04::/48 -j DROP
--A INPUT -s 2a0b:4e07:2e03::/48 -j DROP
 -A INPUT -s 2a0b:4e07:2e04::/48 -j DROP
 -A INPUT -s 2a0c:9a40:80d0::/48 -j DROP
 -A INPUT -s 2a14:7581:3704::/48 -j DROP
@@ -1042,8 +1029,6 @@
 -A INPUT -s 2a06:de00:15::/48 -j DROP
 -A INPUT -s 2a06:de00:19::/48 -j DROP
 -A INPUT -s 2a07:e344::/32 -j DROP
--A INPUT -s 2a0b:4e07:60e0::/44 -j DROP
--A INPUT -s 2a0c:9a46:a00::/40 -j DROP
 -A INPUT -s 2a10:ccc2:20::/44 -j DROP
 # AS59939 WIBO Baltic UAB
 -A INPUT -s 2a04:9640::/31 -j DROP
