@@ -1,5 +1,5 @@
 #
-# Last Update: 25/10/2025
+# Last Update: 05/11/2025
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -101,6 +101,7 @@
 -A INPUT -s 2a03:5840:130::/48 -j DROP
 # AS215590 DpkgSoft International Limited
 -A INPUT -s 2a01:ecc0:1::/48 -j DROP
+-A INPUT -s 2a01:ecc0:8c0::/42 -j DROP
 -A INPUT -s 2a0f:cdc6:10::/44 -j DROP
 -A INPUT -s 2a0f:cdc6:20::/43 -j DROP
 # AS216309 InvisionTech Group S.r.l.
@@ -135,7 +136,7 @@
 # AS204603 LOWPINGS DIGITAL SERVICES S.R.L
 -A INPUT -s 2a14:7580:ffff::/48 -j DROP
 # AS210352 Yijia Xu
--A INPUT -s 2a0f:1cc5:f00::/47 -j DROP
+-A INPUT -s 2a0f:1cc5:f00::/46 -j DROP
 -A INPUT -s 2a0f:1cc5:f05::/48 -j DROP
 -A INPUT -s 2a14:67c1:a091::/48 -j DROP
 -A INPUT -s 2a14:67c1:a093::/48 -j DROP
@@ -223,8 +224,8 @@
 -A INPUT -s 2a0b:f4c1:2::/48 -j DROP
 -A INPUT -s 2a0b:f4c2::/40 -j DROP
 # AS62068 SpectraIP B.V.
--A INPUT -s 2a0d:2400::/32 -j DROP
--A INPUT -s 2a0d:2404::/32 -j DROP
+-A INPUT -s 2a0d:2400::/30 -j DROP
+-A INPUT -s 2a0d:2404::/31 -j DROP
 -A INPUT -s 2a0d:2406::/39 -j DROP
 -A INPUT -s 2a0d:2407::/32 -j DROP
 -A INPUT -s 2a0d:2780::/29 -j DROP
@@ -269,7 +270,6 @@
 # AS200136 Association LibraHost
 -A INPUT -s 2a0e:b107:12d::/48 -j DROP
 # AS198831 GENIUSWEER SAS
--A INPUT -s 2a0c:b641:d70::/44 -j DROP
 -A INPUT -s 2a10:4646:2d0::/44 -j DROP
 -A INPUT -s 2a10:4646:3f0::/44 -j DROP
 -A INPUT -s 2a13:9500:c4::/48 -j DROP
@@ -449,13 +449,13 @@
 -A INPUT -s 2803:200::/32 -j DROP
 # AS149148 Phu Hai Computer Co., Ltd
 -A INPUT -s 2400:c0e0::/48 -j DROP
--A INPUT -s 2401:44e0::/48 -j DROP
 # AS140817 ODS ONLINE DATA SOLUTION JOINT STOCK COMPANY
 -A INPUT -s 2400:6f60::/48 -j DROP
 -A INPUT -s 2401:2be0::/48 -j DROP
 # AS151873 TOTHOST SOLUTIONS AND TECHNOLOGIES COMPANY LIMITED
 -A INPUT -s 2401:5b60::/48 -j DROP
 # AS51396 Pfcloud UG
+-A INPUT -s 2a05:9080:13::/48 -j DROP
 -A INPUT -s 2a05:b0c6:a200::/39 -j DROP
 -A INPUT -s 2a05:b0c7:6000::/36 -j DROP
 -A INPUT -s 2a0a:e2c0::/29 -j DROP
@@ -472,7 +472,6 @@
 -A INPUT -s 2a14:7c7::/32 -j DROP
 # AS214940 KPROHOST LLC
 -A INPUT -s 2a11:f082::/32 -j DROP
--A INPUT -s 2a13:e405::/32 -j DROP
 # AS215127 410 Teapot Limited
 #-A INPUT -s 2a14:c380:240::/44 -j DROP
 # AS214209 Internet Magnate (Pty) Ltd
@@ -486,7 +485,6 @@
 -A INPUT -s 2a14:9e00:200::/40 -j DROP
 # AS215462 Noel Nayasha Materke
 -A INPUT -s 2a11:f083::/32 -j DROP
--A INPUT -s 2a13:e403::/32 -j DROP
 # AS215085 Maik Polman trading as PixelHosting
 -A INPUT -s 2a06:9f41::/32 -j DROP
 # AS214865 Falco Nordmann
@@ -513,7 +511,6 @@
 -A INPUT -s 2a14:23c0::/48 -j DROP
 # AS214967 Optibounce, LLC
 -A INPUT -s 2a11:f084::/32 -j DROP
--A INPUT -s 2a13:e401::/32 -j DROP
 #-A INPUT -s 2a14:c380:11::/48 -j DROP
 # AS35133 Eranium B.V.
 -A INPUT -s 2a07:5500::/29 -j DROP
@@ -637,7 +634,6 @@
 # AS57974 Teracast Networks LLC
 -A INPUT -s 2602:2d4:d00::/40 -j DROP
 -A INPUT -s 2602:2d4:e00::/39 -j DROP
--A INPUT -s 2a0f:6284:4218::/48 -j DROP
 # AS44947 AMWAJ ALKHYR COMMERCIAL BROKERS CO. (UAB Host Baltic)
 -A INPUT -s 2a09:cbc0::/29 -j DROP
 -A INPUT -s 2a13:1640::/29 -j DROP
@@ -692,14 +688,13 @@
 -A INPUT -s 2602:f919:102::/48 -j DROP
 -A INPUT -s 2602:f988:210::/47 -j DROP
 -A INPUT -s 2602:f988:212::/48 -j DROP
--A INPUT -s 2602:f992:90::/44 -j DROP
 -A INPUT -s 2602:f992:c0::/44 -j DROP
--A INPUT -s 2602:f992:f7::/48 -j DROP
 -A INPUT -s 2602:fa3d:a92::/48 -j DROP
 -A INPUT -s 2602:fa42:300::/40 -j DROP
 -A INPUT -s 2602:fd92:200::/40 -j DROP
 -A INPUT -s 2602:fe13:2e0::/44 -j DROP
 -A INPUT -s 2602:fe13:806::/48 -j DROP
+-A INPUT -s 2602:fed2:708e::/48 -j DROP
 -A INPUT -s 2602:fed2:7114::/48 -j DROP
 -A INPUT -s 2602:fed2:7318::/48 -j DROP
 -A INPUT -s 2602:fed2:7e05::/48 -j DROP
@@ -717,7 +712,6 @@
 -A INPUT -s 2a0f:9400:7385::/48 -j DROP
 -A INPUT -s 2a12:bec4:1980::/44 -j DROP
 -A INPUT -s 2a14:7580:fc00::/40 -j DROP
--A INPUT -s 2a14:7584:1000::/36 -j DROP
 -A INPUT -s 2a14:7584:5000::/36 -j DROP
 # AS215120 Evolus IT Solutions GmbH
 -A INPUT -s 2a07:cec0:4300::/48 -j DROP
@@ -767,7 +761,6 @@
 # AS216141 Marco Fontana
 -A INPUT -s 2a11:f2c0:ffc7::/48 -j DROP
 # AS214472 Offshore LC
--A INPUT -s 2a14:7c7::/32 -j DROP
 -A INPUT -s 2a14:42c0::/29 -j DROP
 # AS214576 Berdiev Ruslan Mukhabatovich
 -A INPUT -s 2a0e:4005:1002::/48 -j DROP
@@ -904,6 +897,12 @@
 # AS24013 SB Professional Services
 -A INPUT -s 2a09::/48 -j DROP
 -A INPUT -s 2a11::/48 -j DROP
+# AS26737 TREE TELECOM
+-A INPUT -s 2602:f894:301::/48 -j DROP
+-A INPUT -s 2602:f894:306::/47 -j DROP
+-A INPUT -s 2602:f894:308::/48 -j DROP
+-A INPUT -s 2602:f894:30d::/48 -j DROP
+-A INPUT -s 2602:f894:30f::/48 -j DROP
 # AS210387 Guardy Limited
 -A INPUT -s 2a14:9401:4000::/36 -j DROP
 # AS132088 Wind Cloud Network Technology Co Ltd
@@ -1010,6 +1009,8 @@
 -A INPUT -s 2a0f:85c1:356::/48 -j DROP
 # AS210718 FIVE CYBER HOST SECURITY S.R.L.
 -A INPUT -s 2a0f:9400:7e01::/48 -j DROP
+-A INPUT -s 2a0f:9400:7e02::/48 -j DROP
+-A INPUT -s 2a0f:9400:7e04::/48 -j DROP
 # AS212512 Detai Prosperous Technologies Limited
 -A INPUT -s 2403:fbc0:a001::/48 -j DROP
 -A INPUT -s 2403:fbc0:a002::/48 -j DROP
@@ -1102,6 +1103,7 @@
 -A INPUT -s 2a14:7c0:e0::/43 -j DROP
 -A INPUT -s 2a14:9e00:800::/39 -j DROP
 # AS211507 Julian Achter
+-A INPUT -s 2a13:bd40::/29 -j DROP
 -A INPUT -s 2a14:c380::/29 -j DROP
 # AS213725 03AI LTD
 #-A INPUT -s 2a14:c380:280::/44 -j DROP
@@ -1125,6 +1127,7 @@
 -A INPUT -s 2a0c:8fc3:8000::/40 -j DROP
 -A INPUT -s 2a12:a800:9::/48 -j DROP
 -A INPUT -s 2a14:67c1:a160::/48 -j DROP
+-A INPUT -s 2a14:7583:f800::/48 -j DROP
 # AS262954 VirtuaServer Informatica Ltda
 -A INPUT -s 2804:e6c:3000::/36 -j DROP
 -A INPUT -s 2804:e6c:4000::/36 -j DROP
