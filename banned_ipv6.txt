@@ -1,5 +1,5 @@
 #
-# Last Update: 21/11/2025
+# Last Update: 28/11/2025
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -139,6 +139,7 @@
 # AS210352 Yijia Xu
 -A INPUT -s 2a0f:1cc5:f00::/46 -j DROP
 -A INPUT -s 2a0f:1cc5:f04::/47 -j DROP
+-A INPUT -s 2a0f:1cc5:f06::/48 -j DROP
 -A INPUT -s 2a14:67c1:a091::/48 -j DROP
 -A INPUT -s 2a14:67c1:a093::/48 -j DROP
 -A INPUT -s 2a14:67c1:a094::/46 -j DROP
@@ -365,8 +366,7 @@
 -A INPUT -s 2602:fc2f:100::/40 -j DROP
 -A INPUT -s 2602:fc2f:f00::/48 -j DROP
 # AS200482 nexserv GmbH
--A INPUT -s 2a12:3e80::/40 -j DROP
--A INPUT -s 2a12:3e80:200::/39 -j DROP
+-A INPUT -s 2a12:3e80::/38 -j DROP
 -A INPUT -s 2a12:3e80:402::/47 -j DROP
 -A INPUT -s 2a12:3e80:404::/48 -j DROP
 -A INPUT -s 2a12:3e80:500::/40 -j DROP
@@ -529,6 +529,7 @@
 -A INPUT -s 2a05:9080:3::/48 -j DROP
 # AS207350 Arshia Asadi
 -A INPUT -s 2a05:9080:1::/48 -j DROP
+-A INPUT -s 2a05:9080:15::/48 -j DROP
 # AS42237 w1n ltd
 -A INPUT -s 2a0b:c040::/31 -j DROP
 -A INPUT -s 2a0d:8980::/29 -j DROP
@@ -585,6 +586,7 @@
 # AS3920 ESTOXY OU (Estoxy OU)
 -A INPUT -s 2a13:adc0::/46 -j DROP
 # AS60539 Huicast Telecom Limited
+-A INPUT -s 2401:e3a0:1::/48 -j DROP
 -A INPUT -s 2407:d340:8000::/40 -j DROP
 -A INPUT -s 2a13:aac0::/29 -j DROP
 # AS206728 Media Land LLC
@@ -604,6 +606,7 @@
 -A INPUT -s 2a05:dfc7::/32 -j DROP
 -A INPUT -s 2a06:a000::/32 -j DROP
 -A INPUT -s 2a06:a007::/32 -j DROP
+-A INPUT -s 2a0a:6046::/32 -j DROP
 -A INPUT -s 2a0a:7747::/32 -j DROP
 -A INPUT -s 2a0c:4ac0:1100::/40 -j DROP
 -A INPUT -s 2a0c:4ac0:1200::/40 -j DROP
@@ -731,8 +734,6 @@
 -A INPUT -s 2a00:be40:2::/48 -j DROP
 -A INPUT -s 2a01:7520::/32 -j DROP
 -A INPUT -s 2a0b:5800::/32 -j DROP
-# AS214337 Webmedia - Nijmegen B.V.
--A INPUT -s 2a0f:85c1:88e::/48 -j DROP
 # AS20766 Gitoyen-NCC
 -A INPUT -s 2001:910::/32 -j DROP
 -A INPUT -s 2001:913:4000::/36 -j DROP
@@ -754,10 +755,13 @@
 -A INPUT -s 2a13:acc0::/32 -j DROP
 # AS209559 Evann DREUMONT
 -A INPUT -s 2a0e:f43:2::/48 -j DROP
-# AS50053 Individual Entrepreneur Anton Levin
+# AS50053 Anton Levin
 -A INPUT -s 2a0d:6c2:14::/48 -j DROP
 -A INPUT -s 2a0d:6c2:16::/47 -j DROP
 -A INPUT -s 2a0d:6c2:24::/47 -j DROP
+-A INPUT -s 2a11:2cc0:2::/47 -j DROP
+-A INPUT -s 2a11:2cc0:8::/47 -j DROP
+-A INPUT -s 2a11:2cc0:10::/47 -j DROP
 # AS64457 Matteo Fruhwald trading as PipeHost e.U.
 -A INPUT -s 2a14:7c0:f100::/40 -j DROP
 -A INPUT -s 2a14:7c0:f300::/40 -j DROP
@@ -903,17 +907,18 @@
 -A INPUT -s 2a11::/48 -j DROP
 # AS26737 TREE TELECOM
 -A INPUT -s 2602:f894:100::/47 -j DROP
--A INPUT -s 2602:f894:106::/48 -j DROP
--A INPUT -s 2602:f894:109::/48 -j DROP
--A INPUT -s 2602:f894:10c::/47 -j DROP
--A INPUT -s 2602:f894:203::/48 -j DROP
+-A INPUT -s 2602:f894:103::/48 -j DROP
+-A INPUT -s 2602:f894:107::/48 -j DROP
+-A INPUT -s 2602:f894:108::/48 -j DROP
+-A INPUT -s 2602:f894:10e::/48 -j DROP
+-A INPUT -s 2602:f894:202::/48 -j DROP
 -A INPUT -s 2602:f894:204::/47 -j DROP
--A INPUT -s 2602:f894:209::/48 -j DROP
--A INPUT -s 2602:f894:20c::/48 -j DROP
--A INPUT -s 2602:f894:300::/48 -j DROP
--A INPUT -s 2602:f894:302::/47 -j DROP
--A INPUT -s 2602:f894:305::/48 -j DROP
--A INPUT -s 2602:f894:30f::/48 -j DROP
+-A INPUT -s 2602:f894:207::/48 -j DROP
+-A INPUT -s 2602:f894:20a::/47 -j DROP
+-A INPUT -s 2602:f894:20c::/46 -j DROP
+-A INPUT -s 2602:f894:306::/48 -j DROP
+-A INPUT -s 2602:f894:308::/48 -j DROP
+-A INPUT -s 2602:f894:30c::/47 -j DROP
 # AS210387 Guardy Limited
 -A INPUT -s 2a14:9401:4000::/36 -j DROP
 # AS132088 Wind Cloud Network Technology Co Ltd
@@ -1069,6 +1074,7 @@
 -A INPUT -s 2a10:ed40::/46 -j DROP
 -A INPUT -s 2a10:ed40:4::/47 -j DROP
 -A INPUT -s 2a10:ed40:6::/48 -j DROP
+-A INPUT -s 2a10:ed40:9::/48 -j DROP
 # AS202468 AbrArvan
 -A INPUT -s 2a07:3900::/29 -j DROP
 # AS215439 PLAY2GO INTERNATIONAL LIMITED
@@ -1137,7 +1143,7 @@
 -A INPUT -s 2602:fb54:140::/47 -j DROP
 -A INPUT -s 2602:fb54:142::/48 -j DROP
 -A INPUT -s 2602:fd09:100::/42 -j DROP
--A INPUT -s 2604:19a0:1::/48 -j DROP
+-A INPUT -s 2604:19a0:3::/48 -j DROP
 -A INPUT -s 2605:9880::/39 -j DROP
 -A INPUT -s 2605:9880:200::/40 -j DROP
 -A INPUT -s 2605:9880:300::/42 -j DROP
