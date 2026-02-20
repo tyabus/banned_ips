@@ -1,5 +1,5 @@
 #
-# Last Update: 13/02/2026
+# Last Update: 20/02/2026
 #
 /ipv6 firewall address-list
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
@@ -104,7 +104,6 @@ add list=Blacklist comment="215590" address=2a01:ecc0:8c0::/42
 add list=Blacklist comment="215590" address=2a0f:cdc6:10::/44
 add list=Blacklist comment="215590" address=2a0f:cdc6:20::/43
 # AS216309 InvisionTech Group S.r.l.
-add list=Blacklist comment="216309" address=2806:3d3:1000::/36
 add list=Blacklist comment="216309" address=2a0d:b287:dd00::/40
 add list=Blacklist comment="216309" address=2a14:7584:4100::/40
 add list=Blacklist comment="216309" address=2a14:7584:44ce::/48
@@ -129,7 +128,6 @@ add list=Blacklist comment="212477" address=2a03:5840:fc::/48
 add list=Blacklist comment="212477" address=2a0b:64c0::/32
 add list=Blacklist comment="212477" address=2a0b:b680::/29
 add list=Blacklist comment="212477" address=2a0e:97c0:180::/44
-add list=Blacklist comment="212477" address=2a0f:85c1:c68::/48
 add list=Blacklist comment="212477" address=2a12:bec0:340::/44
 add list=Blacklist comment="212477" address=2a13:9402::/32
 add list=Blacklist comment="212477" address=2a14:5200::/29
@@ -137,7 +135,6 @@ add list=Blacklist comment="212477" address=2a14:5200::/29
 add list=Blacklist comment="204603" address=2a14:7580:ffff::/48
 # AS210352 Yijia Xu
 add list=Blacklist comment="210352" address=2a0f:1cc5:f00::/45
-add list=Blacklist comment="210352" address=2a0f:1cc5:f08::/48
 add list=Blacklist comment="210352" address=2a0f:1cc5:fff::/48
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
 add list=Blacklist comment="215540" address=2a00:b703:fff1::/48
@@ -180,8 +177,6 @@ add list=Blacklist comment="132203" address=240d:c010:5c::/48
 add list=Blacklist comment="132203" address=240d:c010:68::/48
 add list=Blacklist comment="132203" address=240d:c010:6f::/48
 add list=Blacklist comment="132203" address=240d:c040::/43
-# AS136180 Beijing Tiantexin Tech. Co., Ltd.
-add list=Blacklist comment="136180" address=2400:87c0::/32
 # AS205100 F3 Netze e.V.
 add list=Blacklist comment="205100" address=2a0b:f4c0::/40
 add list=Blacklist comment="205100" address=2a0b:f4c0:100::/48
@@ -341,6 +336,7 @@ add list=Blacklist comment="3214" address=2a09:0:2::/48
 add list=Blacklist comment="3214" address=2a09:0:6::/47
 add list=Blacklist comment="3214" address=2a09:0:8::/47
 add list=Blacklist comment="3214" address=2a09:0:11::/48
+add list=Blacklist comment="3214" address=2a09:0:13::/48
 add list=Blacklist comment="3214" address=2a09:0:16::/48
 add list=Blacklist comment="3214" address=2a09:0:9000::/40
 add list=Blacklist comment="3214" address=2a0b:89c0::/31
@@ -383,7 +379,6 @@ add list=Blacklist comment="197477" address=2a13:e3c0::/31
 add list=Blacklist comment="215292" address=2a14:7c0:1800::/38
 add list=Blacklist comment="215292" address=2a14:7c0:4800::/40
 # AS215691 AP INTERACTIVE SOLUTIONS SL
-#add list=Blacklist comment="215691" address=2a12:de40:38::/48
 add list=Blacklist comment="215691" address=2a14:8880::/29
 # AS212762 Casper Krook trading as Ck IT Solutions
 add list=Blacklist comment="212762" address=2a05:dfc1:5503::/48
@@ -501,7 +496,12 @@ add list=Blacklist comment="203446" address=2a0e:97c0:470::/48
 add list=Blacklist comment="203446" address=2a0e:97c0:472::/47
 # AS207567 Intezio Worldwide Limited
 add list=Blacklist comment="207567" address=2a0d:d904::/32
+add list=Blacklist comment="207567" address=2a0d:d940:3d::/48
 add list=Blacklist comment="207567" address=2a0d:d940:90a0::/48
+# AS214279 DASABO OU
+add list=Blacklist comment="214279" address=2a05:cfc0:3::/48
+add list=Blacklist comment="214279" address=2a05:cfc0:4::/48
+add list=Blacklist comment="214279" address=2a0c:b641:ce0::/44
 # AS215730 H2NEXUS LTD
 add list=Blacklist comment="215730" address=2a0b:4142::/31
 add list=Blacklist comment="215730" address=2a0e:d600::/32
@@ -578,23 +578,9 @@ add list=Blacklist comment="132825" address=2407:1100::/32
 # AS3920 PUSHPKT OU
 add list=Blacklist comment="3920" address=2a13:adc0::/46
 # AS60539 Huicast Telecom Limited
-add list=Blacklist comment="60539" address=2a13:aac0::/31
-add list=Blacklist comment="60539" address=2a13:aac2::/36
-add list=Blacklist comment="60539" address=2a13:aac2:1000::/39
-add list=Blacklist comment="60539" address=2a13:aac2:1200::/40
-add list=Blacklist comment="60539" address=2a13:aac2:1500::/40
-add list=Blacklist comment="60539" address=2a13:aac2:1600::/39
-add list=Blacklist comment="60539" address=2a13:aac2:1800::/37
-add list=Blacklist comment="60539" address=2a13:aac2:2000::/35
-add list=Blacklist comment="60539" address=2a13:aac2:4000::/34
-add list=Blacklist comment="60539" address=2a13:aac2:8000::/33
-add list=Blacklist comment="60539" address=2a13:aac3::/32
-add list=Blacklist comment="60539" address=2a13:aac4::/36
-add list=Blacklist comment="60539" address=2a13:aac4:2000::/35
-add list=Blacklist comment="60539" address=2a13:aac4:4000::/34
-add list=Blacklist comment="60539" address=2a13:aac4:8000::/33
-add list=Blacklist comment="60539" address=2a13:aac5::/32
-add list=Blacklist comment="60539" address=2a13:aac6::/31
+add list=Blacklist comment="60539" address=2401:e3a0:1::/48
+add list=Blacklist comment="60539" address=2407:d340:8000::/40
+add list=Blacklist comment="60539" address=2a13:aac0::/29
 # AS206728 Media Land LLC
 add list=Blacklist comment="206728" address=2a0b:7ec0::/29
 # AS214668 AxusHost B.V.
@@ -633,7 +619,6 @@ add list=Blacklist comment="216249" address=2a01:e901::/44
 add list=Blacklist comment="150766" address=2401:5da0:1::/48
 add list=Blacklist comment="150766" address=2401:5da0:2::/48
 add list=Blacklist comment="150766" address=2401:5da0:53::/48
-add list=Blacklist comment="150766" address=2401:5da0:4321::/48
 # AS36829 Winstri Corporation
 add list=Blacklist comment="36829" address=2602:fc64:a00::/48
 add list=Blacklist comment="36829" address=2602:fc64:a000::/47
@@ -643,7 +628,6 @@ add list=Blacklist comment="36829" address=2602:fc64:ce00::/48
 # AS57974 Teracast Networks LLC
 add list=Blacklist comment="57974" address=2602:2d4:d00::/40
 add list=Blacklist comment="57974" address=2602:2d4:e00::/39
-add list=Blacklist comment="57974" address=2a0f:6284:4100::/48
 # AS44947 AMWAJ ALKHYR COMMERCIAL BROKERS CO.
 add list=Blacklist comment="44947" address=2001:3b80::/29
 add list=Blacklist comment="44947" address=2a09:cbc0::/29
@@ -661,7 +645,6 @@ add list=Blacklist comment="264617" address=2a0a:20c0::/29
 add list=Blacklist comment="210937" address=2a09:1::/48
 add list=Blacklist comment="210937" address=2a11:1d40::/48
 add list=Blacklist comment="210937" address=2a11:1d42::/48
-add list=Blacklist comment="210937" address=2a11:1d43::/48
 # AS60404 The Infrastructure Group B.V.
 add list=Blacklist comment="60404" address=2a01:6340::/29
 add list=Blacklist comment="60404" address=2a04:52c0::/32
@@ -688,6 +671,7 @@ add list=Blacklist comment="199834" address=2001:37c0::/29
 # AS56611 REBA Communications BV
 add list=Blacklist comment="56611" address=2a02:6c8::/33
 # AS26042 FiberState, LLC
+add list=Blacklist comment="26042" address=2400:ac20:5051::/48
 add list=Blacklist comment="26042" address=2602:294::/47
 add list=Blacklist comment="26042" address=2602:294:2::/48
 add list=Blacklist comment="26042" address=2602:f65c:10::/46
@@ -903,18 +887,12 @@ add list=Blacklist comment="26737" address=2602:f894:106::/47
 add list=Blacklist comment="26737" address=2602:f894:108::/48
 add list=Blacklist comment="26737" address=2602:f894:10b::/48
 add list=Blacklist comment="26737" address=2602:f894:10c::/48
-add list=Blacklist comment="26737" address=2602:f894:201::/48
-add list=Blacklist comment="26737" address=2602:f894:203::/48
 add list=Blacklist comment="26737" address=2602:f894:205::/48
 add list=Blacklist comment="26737" address=2602:f894:207::/48
 add list=Blacklist comment="26737" address=2602:f894:208::/47
-add list=Blacklist comment="26737" address=2602:f894:20a::/48
-add list=Blacklist comment="26737" address=2602:f894:20c::/47
-add list=Blacklist comment="26737" address=2602:f894:20f::/48
-add list=Blacklist comment="26737" address=2602:f894:300::/47
-add list=Blacklist comment="26737" address=2602:f894:302::/48
+add list=Blacklist comment="26737" address=2602:f894:300::/48
 add list=Blacklist comment="26737" address=2602:f894:30a::/47
-add list=Blacklist comment="26737" address=2602:f894:30c::/47
+add list=Blacklist comment="26737" address=2602:f894:30d::/48
 add list=Blacklist comment="26737" address=2602:f894:30f::/48
 # AS210387 Guardy Limited
 add list=Blacklist comment="210387" address=2a14:9401:4000::/36
@@ -1007,50 +985,22 @@ add list=Blacklist comment="43641" address=2a13:e104::/32
 # AS214223 Luis Jakob Bartel
 add list=Blacklist comment="214223" address=2a05:dfc3:fa05::/48
 add list=Blacklist comment="214223" address=2a0a:6044:6405::/48
-add list=Blacklist comment="214223" address=2a14:7581:3701::/48
-add list=Blacklist comment="214223" address=2a14:7581:3704::/46
-add list=Blacklist comment="214223" address=2a14:7581:3708::/47
+add list=Blacklist comment="214223" address=2a14:7581:3705::/48
+add list=Blacklist comment="214223" address=2a14:7581:3709::/48
 add list=Blacklist comment="214223" address=2a14:7586:7010::/44
 add list=Blacklist comment="214223" address=2a14:7586:7020::/43
-add list=Blacklist comment="214223" address=2a14:7586:7040::/42
+add list=Blacklist comment="214223" address=2a14:7586:7050::/44
+add list=Blacklist comment="214223" address=2a14:7586:7060::/43
 add list=Blacklist comment="214223" address=2a14:7586:7080::/43
-add list=Blacklist comment="214223" address=2a14:7586:7120::/43
-add list=Blacklist comment="214223" address=2a14:7586:7a01::/48
-add list=Blacklist comment="214223" address=2a14:7586:7a02::/48
-add list=Blacklist comment="214223" address=2a14:7586:7a04::/48
-add list=Blacklist comment="214223" address=2a14:7586:7a06::/47
-add list=Blacklist comment="214223" address=2a14:7586:7a08::/47
-add list=Blacklist comment="214223" address=2a14:7586:7b02::/48
-add list=Blacklist comment="214223" address=2a14:7586:7b04::/48
-add list=Blacklist comment="214223" address=2a14:7586:7b06::/48
-add list=Blacklist comment="214223" address=2a14:7586:7b08::/47
-add list=Blacklist comment="214223" address=2a14:7586:7c02::/48
-add list=Blacklist comment="214223" address=2a14:7586:7c04::/48
-add list=Blacklist comment="214223" address=2a14:7586:7c06::/48
-add list=Blacklist comment="214223" address=2a14:7586:7c08::/47
-add list=Blacklist comment="214223" address=2a14:7586:7d02::/48
-add list=Blacklist comment="214223" address=2a14:7586:7d05::/48
 add list=Blacklist comment="214223" address=2a14:7586:9001::/48
 add list=Blacklist comment="214223" address=2a14:7586:9002::/47
 add list=Blacklist comment="214223" address=2a14:7586:9005::/48
 add list=Blacklist comment="214223" address=2a14:7586:9006::/48
 add list=Blacklist comment="214223" address=2a14:7586:9008::/47
-add list=Blacklist comment="214223" address=2a14:7586:9012::/47
 add list=Blacklist comment="214223" address=2a14:7586:91a1::/48
 add list=Blacklist comment="214223" address=2a14:7586:91a2::/47
 add list=Blacklist comment="214223" address=2a14:7586:91a4::/48
-add list=Blacklist comment="214223" address=2a14:7586:9311::/48
-add list=Blacklist comment="214223" address=2a14:7586:9312::/47
-add list=Blacklist comment="214223" address=2a14:7586:9314::/48
-add list=Blacklist comment="214223" address=2a14:7586:9321::/48
-add list=Blacklist comment="214223" address=2a14:7586:9322::/47
-add list=Blacklist comment="214223" address=2a14:7586:9324::/48
-add list=Blacklist comment="214223" address=2a14:7586:9331::/48
-add list=Blacklist comment="214223" address=2a14:7586:9332::/47
-add list=Blacklist comment="214223" address=2a14:7586:9334::/48
-add list=Blacklist comment="214223" address=2a14:7586:9341::/48
-add list=Blacklist comment="214223" address=2a14:7586:9342::/47
-add list=Blacklist comment="214223" address=2a14:7586:9344::/48
+add list=Blacklist comment="214223" address=2a14:7586:9300::/40
 # AS200081 Netversor GmbH
 add list=Blacklist comment="200081" address=2a02:6aa0::/32
 add list=Blacklist comment="200081" address=2a04:5340::/47
@@ -1060,8 +1010,7 @@ add list=Blacklist comment="200081" address=2a04:5340:4::/47
 add list=Blacklist comment="215659" address=2a0f:85c1:356::/48
 # AS210718 FIVE CYBER HOST SECURITY S.R.L.
 add list=Blacklist comment="210718" address=2a0f:9400:7e01::/48
-add list=Blacklist comment="210718" address=2a0f:9400:7e02::/48
-add list=Blacklist comment="210718" address=2a0f:9400:7e04::/48
+add list=Blacklist comment="210718" address=2a0f:9400:7e50::/48
 # AS212512 Detai Prosperous Technologies Limited
 add list=Blacklist comment="212512" address=2403:fbc0:a001::/48
 add list=Blacklist comment="212512" address=2403:fbc0:a002::/48
@@ -1103,8 +1052,8 @@ add list=Blacklist comment="215569" address=2a07:2486:4010::/44
 # AS140941 Full Time Hosting
 add list=Blacklist comment="140941" address=2001:df4:4f80::/48
 # AS204104 Giti Secure Cloud LLC
-add list=Blacklist comment="204104" address=2a10:ed40::/46
-add list=Blacklist comment="204104" address=2a10:ed40:4::/47
+add list=Blacklist comment="204104" address=2a10:ed40:2::/48
+add list=Blacklist comment="204104" address=2a10:ed40:4::/48
 add list=Blacklist comment="204104" address=2a10:ed40:6::/48
 add list=Blacklist comment="204104" address=2a10:ed40:9::/48
 # AS202468 AbrArvan
@@ -1113,8 +1062,6 @@ add list=Blacklist comment="202468" address=2a07:3900::/29
 add list=Blacklist comment="215439" address=2a12:bec4:10b0::/44
 add list=Blacklist comment="215439" address=2a12:bec4:1180::/44
 add list=Blacklist comment="215439" address=2a12:bec4:1b80::/44
-# AS215096 Ruslan Ulyanov
-add list=Blacklist comment="215096" address=2a0d:d940:9000::/48
 # AS43317 SIA VEESP
 add list=Blacklist comment="43317" address=2a00:1838::/32
 add list=Blacklist comment="43317" address=2a0a:4784::/32
@@ -1122,11 +1069,6 @@ add list=Blacklist comment="43317" address=2a0a:4784::/32
 #add list=Blacklist comment="42532" address=2a00:1838:9100::/48
 add list=Blacklist comment="42532" address=2a0c:16c0::/30
 add list=Blacklist comment="42532" address=2a11:8100::/32
-# AS393746 Amazing Creations and More LLC
-add list=Blacklist comment="393746" address=2602:f95b::/48
-add list=Blacklist comment="393746" address=2602:f95b:2::/47
-add list=Blacklist comment="393746" address=2602:f95b:20::/48
-add list=Blacklist comment="393746" address=2602:f95b:69::/48
 # AS48715 Sefroyek Pardaz Engineering PJSC
 add list=Blacklist comment="48715" address=2a0a:5e80::/48
 # AS23507 AV SERVICES LLC
@@ -1140,6 +1082,7 @@ add list=Blacklist comment="214481" address=2a0f:85c1:840::/48
 add list=Blacklist comment="214481" address=2a12:bec4:12a2::/48
 add list=Blacklist comment="214481" address=2a14:1ec7:1000::/40
 add list=Blacklist comment="214481" address=2a14:1ec7:1200::/40
+add list=Blacklist comment="214481" address=2a14:67c3:2af::/48
 # AS59441 NOAVARAN SHABAKEH SABZ MEHREGAN (Ltd.)
 add list=Blacklist comment="59441" address=2a05:9a00::/29
 add list=Blacklist comment="59441" address=2a07:7ec0::/29
@@ -1193,6 +1136,7 @@ add list=Blacklist comment="213887" address=2a0d:d940:d0::/44
 add list=Blacklist comment="213887" address=2a0d:d940:1c00::/40
 add list=Blacklist comment="213887" address=2a0d:d940:1e00::/40
 add list=Blacklist comment="213887" address=2a14:7583:a800::/37
+add list=Blacklist comment="213887" address=2a14:a087:3::/48
 # AS207728 EUROHOSTER Ltd.
 add list=Blacklist comment="207728" address=2a12:9cc0::/47
 # AS52073 I2SNETWORK SAS
@@ -1215,8 +1159,6 @@ add list=Blacklist comment="212441" address=2a10:9200::/47
 add list=Blacklist comment="262415" address=2804:418::/41
 add list=Blacklist comment="262415" address=2804:418:400::/41
 add list=Blacklist comment="262415" address=2804:418:3000::/41
-# AS209630 LLC VASH KREDIT BANK
-add list=Blacklist comment="209630" address=2604:be0:ffe0::/48
 # AS273113 ONERED JWG532 SRL
 add list=Blacklist comment="273113" address=2803:6850:1::/48
 add list=Blacklist comment="273113" address=2803:6850:5::/48
@@ -1224,7 +1166,6 @@ add list=Blacklist comment="273113" address=2803:6850:5::/48
 add list=Blacklist comment="214762" address=2a05:dfc1:1410::/44
 add list=Blacklist comment="214762" address=2a06:1283:8904::/48
 add list=Blacklist comment="214762" address=2a06:1283:890c::/48
-add list=Blacklist comment="214762" address=2a06:9801:50::/48
 add list=Blacklist comment="214762" address=2a07:54c1:c000::/44
 add list=Blacklist comment="214762" address=2a0f:85c1:80b::/48
 add list=Blacklist comment="214762" address=2a0f:b240:5c00::/40
@@ -1239,3 +1180,24 @@ add list=Blacklist comment="213520" address=2a12:bec4:1bb0::/44
 add list=Blacklist comment="213520" address=2a12:bec4:1d60::/43
 add list=Blacklist comment="213520" address=2a12:bec4:1de0::/44
 add list=Blacklist comment="213520" address=2a12:bec4:1e50::/44
+# AS213465 Rainbow Facilities Inc.
+#add list=Blacklist comment="213465" address=2602:299:12::/48
+# AS400529 Infraly, LLC
+add list=Blacklist comment="400529" address=2600:3500:c20::/48
+add list=Blacklist comment="400529" address=2602:fabf::/40
+# AS14490 Nexavo Ltd.
+add list=Blacklist comment="14490" address=2602:fa70:30::/44
+add list=Blacklist comment="14490" address=2602:fa70:b0::/44
+add list=Blacklist comment="14490" address=2602:fa70:c0::/44
+add list=Blacklist comment="14490" address=2602:fa70:390::/48
+# AS35100 Patrik Lagerman
+add list=Blacklist comment="35100" address=2a01:7900::/31
+# AS200373 3xK Tech GmbH
+add list=Blacklist comment="200373" address=2a07:db82::/32
+add list=Blacklist comment="200373" address=2a07:db84::/31
+add list=Blacklist comment="200373" address=2a07:db86::/32
+add list=Blacklist comment="200373" address=2a0a:da40::/29
+add list=Blacklist comment="200373" address=2a13:3f80::/32
+add list=Blacklist comment="200373" address=2a13:3f83::/32
+add list=Blacklist comment="200373" address=2a13:3f86::/31
+add list=Blacklist comment="200373" address=2a14:6380::/29
