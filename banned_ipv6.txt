@@ -1,5 +1,5 @@
 #
-# Last Update: 20/02/2026
+# Last Update: 27/02/2026
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -141,6 +141,7 @@
 -A INPUT -s 2a14:7580:ffff::/48 -j DROP
 # AS210352 Yijia Xu
 -A INPUT -s 2a0f:1cc5:f00::/45 -j DROP
+-A INPUT -s 2a0f:1cc5:f08::/47 -j DROP
 -A INPUT -s 2a0f:1cc5:fff::/48 -j DROP
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
 -A INPUT -s 2a00:b703:fff1::/48 -j DROP
@@ -269,6 +270,7 @@
 # AS200136 Association LibraHost
 -A INPUT -s 2a0e:b107:12d::/48 -j DROP
 # AS198831 GENIUSWEER SAS
+-A INPUT -s 2a0c:7886:100::/48 -j DROP
 -A INPUT -s 2a0c:b641:d70::/44 -j DROP
 -A INPUT -s 2a0e:f600:2c::/48 -j DROP
 -A INPUT -s 2a10:4646:2d0::/44 -j DROP
@@ -344,6 +346,7 @@
 -A INPUT -s 2a09:0:11::/48 -j DROP
 -A INPUT -s 2a09:0:13::/48 -j DROP
 -A INPUT -s 2a09:0:16::/48 -j DROP
+-A INPUT -s 2a09:0:8000::/48 -j DROP
 -A INPUT -s 2a09:0:9000::/40 -j DROP
 -A INPUT -s 2a0b:89c0::/31 -j DROP
 -A INPUT -s 2a0c:59c0::/29 -j DROP
@@ -351,7 +354,6 @@
 -A INPUT -s 2a0c:8880::/29 -j DROP
 # AS49581 Ferdinand Zink trading as Tube-Hosting
 -A INPUT -s 2a02:2fc0:11::/48 -j DROP
--A INPUT -s 2a05:b0c6:a200::/39 -j DROP
 -A INPUT -s 2a12:b200::/29 -j DROP
 -A INPUT -s 2a12:de40::/32 -j DROP
 -A INPUT -s 2a13:9500:d5::/48 -j DROP
@@ -420,10 +422,10 @@
 -A INPUT -s 2a0a:6044:ac50::/44 -j DROP
 -A INPUT -s 2a0f:85c1:3c9::/48 -j DROP
 # AS400328 Intelligence Hosting LLC
+-A INPUT -s 2a0a:2d02::/32 -j DROP
+-A INPUT -s 2a0f:1e06::/32 -j DROP
 -A INPUT -s 2a0f:df41::/32 -j DROP
 #-A INPUT -s 2a14:c380:12::/48 -j DROP
-# AS40124 QuickMeg Inc
--A INPUT -s 2602:299:10::/44 -j DROP
 # AS54990 1337 Services LLC
 -A INPUT -s 2001:67c:235c::/48 -j DROP
 # AS39287 ab stract ltd
@@ -448,8 +450,8 @@
 # AS151873 TOTHOST SOLUTIONS AND TECHNOLOGIES COMPANY LIMITED
 -A INPUT -s 2401:5b60::/48 -j DROP
 # AS51396 Pfcloud UG
--A INPUT -s 2a05:9080:13::/48 -j DROP
 -A INPUT -s 2a05:b0c6:5800::/37 -j DROP
+-A INPUT -s 2a05:b0c6:a200::/39 -j DROP
 -A INPUT -s 2a05:b0c7:6000::/36 -j DROP
 -A INPUT -s 2a0a:e2c0::/29 -j DROP
 -A INPUT -s 2a11:5780::/29 -j DROP
@@ -465,6 +467,7 @@
 -A INPUT -s 2a14:7c0:f400::/38 -j DROP
 -A INPUT -s 2a14:7c1::/32 -j DROP
 -A INPUT -s 2a14:7c2::/31 -j DROP
+-A INPUT -s 2a14:7c4::/30 -j DROP
 # AS214940 KPROHOST LLC
 -A INPUT -s 2a05:f681::/32 -j DROP
 # AS215127 410 Teapot Limited
@@ -651,6 +654,7 @@
 -A INPUT -s 2a09:1::/48 -j DROP
 -A INPUT -s 2a11:1d40::/48 -j DROP
 -A INPUT -s 2a11:1d42::/48 -j DROP
+-A INPUT -s 2a11:1d43::/48 -j DROP
 # AS60404 The Infrastructure Group B.V.
 -A INPUT -s 2a01:6340::/29 -j DROP
 -A INPUT -s 2a04:52c0::/32 -j DROP
@@ -709,6 +713,7 @@
 -A INPUT -s 2a14:7584:5000::/36 -j DROP
 -A INPUT -s 2a14:7586:1000::/36 -j DROP
 # AS215120 Evolus IT Solutions GmbH
+-A INPUT -s 2a07:cec0:4500::/48 -j DROP
 -A INPUT -s 2a07:cec4::/30 -j DROP
 -A INPUT -s 2a0c:9a40:8570::/48 -j DROP
 -A INPUT -s 2a12:bec4:19a0::/46 -j DROP
@@ -996,12 +1001,10 @@
 -A INPUT -s 2a14:7586:7010::/44 -j DROP
 -A INPUT -s 2a14:7586:7020::/43 -j DROP
 -A INPUT -s 2a14:7586:7050::/44 -j DROP
--A INPUT -s 2a14:7586:7060::/43 -j DROP
 -A INPUT -s 2a14:7586:7080::/43 -j DROP
 -A INPUT -s 2a14:7586:9001::/48 -j DROP
 -A INPUT -s 2a14:7586:9002::/47 -j DROP
 -A INPUT -s 2a14:7586:9005::/48 -j DROP
--A INPUT -s 2a14:7586:9006::/48 -j DROP
 -A INPUT -s 2a14:7586:9008::/47 -j DROP
 -A INPUT -s 2a14:7586:91a1::/48 -j DROP
 -A INPUT -s 2a14:7586:91a2::/47 -j DROP
@@ -1075,6 +1078,11 @@
 #-A INPUT -s 2a00:1838:9100::/48 -j DROP
 -A INPUT -s 2a0c:16c0::/30 -j DROP
 -A INPUT -s 2a11:8100::/32 -j DROP
+# AS393746 Amazing Creations and More LLC
+-A INPUT -s 2602:f95b::/48 -j DROP
+-A INPUT -s 2602:f95b:2::/47 -j DROP
+-A INPUT -s 2602:f95b:20::/48 -j DROP
+-A INPUT -s 2602:f95b:69::/48 -j DROP
 # AS48715 Sefroyek Pardaz Engineering PJSC
 -A INPUT -s 2a0a:5e80::/48 -j DROP
 # AS23507 AV SERVICES LLC
@@ -1154,7 +1162,7 @@
 # AS216117 Association CLIENTXCMS
 -A INPUT -s 2a10:4646:122::/48 -j DROP
 # AS19879 Propel Labs, LLC
--A INPUT -s 2602:f9a6:a::/48 -j DROP
+-A INPUT -s 2602:f9a6::/36 -j DROP
 # AS216222 Julien Bellier
 -A INPUT -s 2a13:cc87:fc01::/48 -j DROP
 # AS61756 NETPONTAL PROVEDOR DE INTERNET LTDA - ME
@@ -1186,8 +1194,6 @@
 -A INPUT -s 2a12:bec4:1d60::/43 -j DROP
 -A INPUT -s 2a12:bec4:1de0::/44 -j DROP
 -A INPUT -s 2a12:bec4:1e50::/44 -j DROP
-# AS213465 Rainbow Facilities Inc.
-#-A INPUT -s 2602:299:12::/48 -j DROP
 # AS400529 Infraly, LLC
 -A INPUT -s 2600:3500:c20::/48 -j DROP
 -A INPUT -s 2602:fabf::/40 -j DROP
@@ -1208,5 +1214,5 @@
 -A INPUT -s 2a13:3f86::/31 -j DROP
 -A INPUT -s 2a14:6380::/29 -j DROP
 #
-# Count of \64: 4522760273920.0
+# Count of \64: 4548795891712.0
 #
