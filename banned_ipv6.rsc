@@ -1,5 +1,5 @@
 #
-# Last Update: 17/03/2026
+# Last Update: 20/03/2026
 #
 /ipv6 firewall address-list
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
@@ -14,7 +14,8 @@ add list=Blacklist comment="https://bgp.tools/rir-owner/fr.julesd" address=2a13:
 # AS398324 Censys, Inc.
 add list=Blacklist comment="398324" address=2602:80d:1000::/48
 add list=Blacklist comment="398324" address=2602:80d:1006::/47
-add list=Blacklist comment="398324" address=2602:80d:1008::/48
+add list=Blacklist comment="398324" address=2602:80d:1008::/47
+add list=Blacklist comment="398324" address=2602:80d:100a::/48
 add list=Blacklist comment="398324" address=2620:96:e000::/48
 # AS398722 Censys, Inc.
 add list=Blacklist comment="398722" address=2602:80d:1003::/48
@@ -169,6 +170,7 @@ add list=Blacklist comment="132203" address=240d:c000:f000::/44
 add list=Blacklist comment="132203" address=240d:c000:f020::/43
 add list=Blacklist comment="132203" address=240d:c000:f040::/42
 add list=Blacklist comment="132203" address=240d:c000:f0c0::/42
+add list=Blacklist comment="132203" address=240d:c000:f1c0::/44
 add list=Blacklist comment="132203" address=240d:c000:f1f0::/44
 add list=Blacklist comment="132203" address=240d:c010:16::/48
 add list=Blacklist comment="132203" address=240d:c010:20::/44
@@ -230,8 +232,6 @@ add list=Blacklist comment="62068" address=2a11:b240::/29
 add list=Blacklist comment="62068" address=2a12:a8c0::/29
 # AS51115 HLL LLC
 add list=Blacklist comment="51115" address=2a03:70c0::/32
-# AS212461 Nemtcov Nikolai Alexandrovich
-add list=Blacklist comment="212461" address=2a0b:6900:1ad::/48
 # AS268105 N.F.F.NETWORK SERVICOS DE TELECOMUNICACOES LTDA
 add list=Blacklist comment="268105" address=2804:5814::/32
 # AS4224 The Calyx Institute
@@ -558,12 +558,9 @@ add list=Blacklist comment="43350" address=2a02:2ca0:64::/48
 add list=Blacklist comment="43350" address=2a02:2ca0:aaa::/48
 add list=Blacklist comment="43350" address=2a02:2ca0:1111::/48
 add list=Blacklist comment="43350" address=2a03:3740::/32
-add list=Blacklist comment="43350" address=2a04:b040::/47
-add list=Blacklist comment="43350" address=2a04:b040:2::/48
 add list=Blacklist comment="43350" address=2a05:840::/47
 add list=Blacklist comment="43350" address=2a05:e9c0:8200::/40
 add list=Blacklist comment="43350" address=2a07:bd80::/29
-add list=Blacklist comment="43350" address=2a0b:8400:1::/48
 add list=Blacklist comment="43350" address=2a0d:ea80::/29
 add list=Blacklist comment="43350" address=2a0f:2b86:10::/48
 add list=Blacklist comment="43350" address=2a13:9500:126::/48
@@ -714,6 +711,7 @@ add list=Blacklist comment="26042" address=2a14:7584:5000::/36
 add list=Blacklist comment="26042" address=2a14:7586:1000::/36
 # AS215120 Evolus IT Solutions GmbH
 add list=Blacklist comment="215120" address=2a07:cec0:4500::/48
+add list=Blacklist comment="215120" address=2a07:cec0:4600::/48
 add list=Blacklist comment="215120" address=2a07:cec4::/30
 add list=Blacklist comment="215120" address=2a0c:9a40:8570::/48
 add list=Blacklist comment="215120" address=2a12:bec4:19a0::/46
@@ -854,6 +852,8 @@ add list=Blacklist comment="213438" address=2a0f:ca83:1337::/48
 add list=Blacklist comment="213438" address=2a0f:ca84::/40
 add list=Blacklist comment="213438" address=2a0f:ca86::/40
 add list=Blacklist comment="213438" address=2a13:29c0::/29
+# AS37740 IPTP Inc
+add list=Blacklist comment="37740" address=2a03:9d40:4000::/40
 # AS213373 IPConnect
 add list=Blacklist comment="213373" address=2a10:5fc0::/31
 # AS328543 Sun Network Company Limited
@@ -1002,10 +1002,12 @@ add list=Blacklist comment="214223" address=2a14:7581:3709::/48
 add list=Blacklist comment="214223" address=2a14:7586:7010::/44
 add list=Blacklist comment="214223" address=2a14:7586:7020::/43
 add list=Blacklist comment="214223" address=2a14:7586:7050::/44
+add list=Blacklist comment="214223" address=2a14:7586:7060::/43
 add list=Blacklist comment="214223" address=2a14:7586:7080::/43
 add list=Blacklist comment="214223" address=2a14:7586:9001::/48
 add list=Blacklist comment="214223" address=2a14:7586:9002::/47
 add list=Blacklist comment="214223" address=2a14:7586:9005::/48
+add list=Blacklist comment="214223" address=2a14:7586:9006::/48
 add list=Blacklist comment="214223" address=2a14:7586:9009::/48
 add list=Blacklist comment="214223" address=2a14:7586:91a1::/48
 add list=Blacklist comment="214223" address=2a14:7586:91a2::/47
