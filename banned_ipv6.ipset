@@ -1,5 +1,5 @@
 #
-# Last Update: 24/04/2026
+# Last Update: 07/05/2026
 #
 create blacklistv6 hash:net family inet6 hashsize 8192 -exist
 # The Shadowserver Foundation, Inc.
@@ -138,7 +138,10 @@ add blacklistv6 2a13:9402::/32
 # AS204603 LOWPINGS DIGITAL SERVICES S.R.L
 add blacklistv6 2a14:7580:ffff::/48
 # AS210352 Yijia Xu
-add blacklistv6 2a0f:1cc5:f00::/45
+add blacklistv6 2602:f92a:a47d::/48
+add blacklistv6 2a0f:1cc5:f00::/46
+add blacklistv6 2a0f:1cc5:f04::/47
+add blacklistv6 2a0f:1cc5:f06::/48
 add blacklistv6 2a0f:1cc5:f08::/47
 add blacklistv6 2a0f:1cc5:fff::/48
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
@@ -237,6 +240,8 @@ add blacklistv6 2a12:a8c0::/29
 add blacklistv6 2a03:70c0::/32
 # AS268105 N.F.F.NETWORK SERVICOS DE TELECOMUNICACOES LTDA
 add blacklistv6 2804:5814::/32
+# AS48763 LLC SMART CENTER
+add blacklistv6 2a12:bdc0::/29
 # AS4224 The Calyx Institute
 add blacklistv6 2602:fef9:100::/48
 # AS13627 Ambyre LLC
@@ -257,12 +262,12 @@ add blacklistv6 2a04:2181:c010::/47
 add blacklistv6 2a04:2181:c012::/48
 # AS399486 12651980 CANADA INC.
 add blacklistv6 2001:550:601::/48
+add blacklistv6 2a0f:63c0::/29
 add blacklistv6 2a0f:85c1:3d9::/48
 add blacklistv6 2a0f:b240:c::/48
 add blacklistv6 2a0f:b240:22::/48
 add blacklistv6 2a0f:b240:26::/48
 add blacklistv6 2a13:c3c4::/30
-add blacklistv6 2a13:df40::/29
 # AS44097 CLEMENT CAVADORE
 add blacklistv6 2001:67c:ec::/48
 # AS400130 Hebergement Serv3r.net inc.
@@ -271,10 +276,8 @@ add blacklistv6 2602:fb53::/40
 add blacklistv6 2a0e:b107:12d::/48
 # AS198831 GENIUSWEER SAS
 add blacklistv6 2a0a:2d06:101::/48
-add blacklistv6 2a0c:7886:100::/48
 add blacklistv6 2a0c:b641:d70::/44
 add blacklistv6 2a0e:f600:2c::/48
-add blacklistv6 2a0f:1584:77::/48
 add blacklistv6 2a10:4646:2d0::/44
 add blacklistv6 2a10:4646:3f0::/44
 add blacklistv6 2a13:9500:c4::/48
@@ -373,8 +376,9 @@ add blacklistv6 2a06:e881:7300::/40
 add blacklistv6 2602:fc2f:f00::/48
 # AS200482 nexserv GmbH
 add blacklistv6 2a12:3e80::/38
-add blacklistv6 2a12:3e80:402::/48
+add blacklistv6 2a12:3e80:402::/47
 add blacklistv6 2a12:3e80:404::/48
+add blacklistv6 2a12:3e80:500::/40
 # AS216081 Paulo Gobbato trading as Gobbato IT Loesungen
 add blacklistv6 2a12:3e80:69f::/48
 add blacklistv6 2a12:3e80:6a0::/44
@@ -460,7 +464,6 @@ add blacklistv6 2a05:b0c6:a200::/39
 add blacklistv6 2a05:b0c7:6000::/36
 add blacklistv6 2a0a:7740::/48
 add blacklistv6 2a0a:e2c0::/29
-add blacklistv6 2a0e:c784::/32
 add blacklistv6 2a11:5780::/29
 add blacklistv6 2a12:1cc7::/32
 add blacklistv6 2a12:5a00::/29
@@ -495,6 +498,7 @@ add blacklistv6 2a14:9e00:200::/40
 add blacklistv6 2a05:f682::/32
 # AS215085 Maik Polman trading as PixelHosting
 add blacklistv6 2a06:9f41::/32
+add blacklistv6 2a06:9f46::/32
 # AS214865 Falco Nordmann
 add blacklistv6 2a14:5140:100::/40
 add blacklistv6 2a14:5140:300::/40
@@ -517,6 +521,7 @@ add blacklistv6 2a0d:d904:2::/47
 add blacklistv6 2a0d:d904:4::/48
 add blacklistv6 2a0d:d904:7::/48
 add blacklistv6 2a0d:d904:1488::/48
+add blacklistv6 2a0d:d904:b000::/36
 add blacklistv6 2a0d:d904:c000::/40
 add blacklistv6 2a0d:d940:3d::/48
 add blacklistv6 2a0d:d940:90a0::/48
@@ -549,8 +554,6 @@ add blacklistv6 2001:df4:e140::/48
 # AS214927 PSB HOSTING LTD
 add blacklistv6 2a0c:7886:105::/48
 add blacklistv6 2a0f:e7c6:1000::/48
-# AS215826 Partner Hosting LTD
-add blacklistv6 2a0c:9a40:9404::/47
 # AS52053 REDHEBERG Association declaree
 add blacklistv6 2a14:1d00::/44
 # AS138699 TIKTOK PTE. LTD.
@@ -580,6 +583,8 @@ add blacklistv6 2a13:9500:126::/48
 add blacklistv6 2a12:3200:f000::/36
 # AS25198 INTERKVM HOST SRL
 add blacklistv6 2a01:7120:7::/48
+add blacklistv6 2a10:3c82::/32
+add blacklistv6 2a10:7500::/29
 add blacklistv6 2a12:3200::/35
 add blacklistv6 2a12:3200:2000::/36
 add blacklistv6 2a12:3200:4000::/35
@@ -587,6 +592,7 @@ add blacklistv6 2a12:3200:7000::/36
 add blacklistv6 2a12:3200:8000::/36
 add blacklistv6 2a12:3200:9000::/48
 add blacklistv6 2a13:8c85::/32
+add blacklistv6 2a13:ddc0::/29
 # AS132825 MYTEK TRADING PTY LTD
 add blacklistv6 2001:df0:fbc0::/48
 add blacklistv6 2407:1100::/32
@@ -597,7 +603,8 @@ add blacklistv6 2401:e3a0:1::/48
 add blacklistv6 2407:d340:8000::/40
 add blacklistv6 2a13:aac0::/29
 # AS206728 Media Land LLC
-add blacklistv6 2a0b:7ec0::/29
+add blacklistv6 2a0b:7ec0:1320::/48
+add blacklistv6 2a0b:7ec0:7701::/48
 # AS214668 AxusHost B.V.
 add blacklistv6 2a11:1400:2000::/48
 # AS50917 Diederik Focko de Zee
@@ -610,7 +617,7 @@ add blacklistv6 2a05:dfc7::/32
 add blacklistv6 2a06:a000::/32
 add blacklistv6 2a0a:7747::/32
 add blacklistv6 2a0c:4ac0:1100::/40
-add blacklistv6 2a0c:4ac0:1200::/40
+add blacklistv6 2a0c:4ac0:1200::/39
 add blacklistv6 2a0c:4ac1::/32
 add blacklistv6 2a0d:1180::/29
 add blacklistv6 2a0d:5940::/29
@@ -717,10 +724,10 @@ add blacklistv6 2a12:bec4:1d50::/44
 add blacklistv6 2a12:bec4:1ec0::/44
 add blacklistv6 2a12:bec4:1f20::/44
 add blacklistv6 2a14:7580:fc00::/40
-add blacklistv6 2a14:7584:1000::/36
 add blacklistv6 2a14:7584:5000::/36
 add blacklistv6 2a14:7586:1000::/36
 # AS215120 Evolus IT Solutions GmbH
+add blacklistv6 2a07:cec0:5::/48
 add blacklistv6 2a07:cec0:4500::/48
 add blacklistv6 2a07:cec0:4600::/48
 add blacklistv6 2a07:cec4::/30
@@ -904,14 +911,9 @@ add blacklistv6 2a11::/48
 # AS26737 TREE TELECOM
 add blacklistv6 2602:f894:103::/48
 add blacklistv6 2602:f894:105::/48
-add blacklistv6 2602:f894:106::/47
+add blacklistv6 2602:f894:106::/48
+add blacklistv6 2602:f894:10b::/48
 add blacklistv6 2602:f894:10c::/48
-add blacklistv6 2602:f894:10e::/47
-add blacklistv6 2602:f894:300::/48
-add blacklistv6 2602:f894:303::/48
-add blacklistv6 2602:f894:30a::/47
-add blacklistv6 2602:f894:30d::/48
-add blacklistv6 2602:f894:30e::/47
 # AS210387 Guardy Limited
 add blacklistv6 2a14:9401:4000::/36
 # AS132088 Wind Cloud Network Technology Co Ltd
@@ -939,7 +941,7 @@ add blacklistv6 2a0d:4cc0::/29
 add blacklistv6 2a0e:5100::/29
 add blacklistv6 2a0e:b540::/29
 # AS211138 Private-Hosting di Cipriano oscar
-add blacklistv6 2a05:4140:500::/47
+add blacklistv6 2a05:4140:501::/48
 # AS198037 SPACECORE SOLUTION LTD
 add blacklistv6 2a13:7dc0:1000::/36
 add blacklistv6 2a13:7dc0:2000::/36
@@ -980,14 +982,13 @@ add blacklistv6 2a13:a440:8::/48
 add blacklistv6 2a06:de01:100::/44
 add blacklistv6 2a07:8dc0::/31
 add blacklistv6 2a0d:e680::/32
+add blacklistv6 2a14:7583:5a00::/40
 # AS213693 Imad Nabil Daher trading as ID Performance
 add blacklistv6 2a0f:85c1:b36::/48
 # AS215925 VPSVAULT.HOST LTD
 add blacklistv6 2604:be0:fff0::/44
 # AS210456 EastCoastHost Ltd
 add blacklistv6 2604:be0:ffe1::/48
-# AS213613 BOTSHIELD LTD
-add blacklistv6 2a0f:ca82:b00b::/48
 # AS203363 Kuroit Limited
 add blacklistv6 2401:8360:a2::/47
 add blacklistv6 2a05:4140:19::/48
@@ -1008,7 +1009,6 @@ add blacklistv6 2a0a:6044:6405::/48
 add blacklistv6 2a14:7581:3705::/48
 add blacklistv6 2a14:7581:3709::/48
 add blacklistv6 2a14:7586:7010::/44
-add blacklistv6 2a14:7586:7050::/44
 add blacklistv6 2a14:7586:7090::/44
 add blacklistv6 2a14:7586:9001::/48
 add blacklistv6 2a14:7586:9002::/47
@@ -1027,7 +1027,6 @@ add blacklistv6 2a04:5340:4::/47
 add blacklistv6 2a0f:85c1:356::/48
 # AS210718 FIVE CYBER HOST SECURITY S.R.L.
 add blacklistv6 2a0f:9400:7e01::/48
-add blacklistv6 2a0f:9400:7e50::/48
 # AS212512 Detai Prosperous Technologies Limited
 add blacklistv6 2403:fbc0:a001::/48
 add blacklistv6 2403:fbc0:a002::/48
@@ -1041,7 +1040,6 @@ add blacklistv6 2a03:1b20:c::/47
 add blacklistv6 2a03:1b20:901::/48
 add blacklistv6 2a03:1b20:bef1::/48
 add blacklistv6 2a03:1b20:bef2::/48
-add blacklistv6 2a03:1b21:100::/48
 add blacklistv6 2a07:e344::/32
 # AS59939 WIBO Baltic UAB
 add blacklistv6 2a04:9640::/31
@@ -1102,6 +1100,9 @@ add blacklistv6 2001:67c:b58::/48
 add blacklistv6 2a14:7c0:e0::/43
 add blacklistv6 2a14:9e00:800::/39
 #add blacklistv6 2a14:c380:31::/48
+#add blacklistv6 2a14:c380:370::/44
+#add blacklistv6 2a14:c380:380::/44
+#add blacklistv6 2a14:c380:600::/40
 # AS211507 Julian Achter
 add blacklistv6 2a14:c380::/29
 # AS50219 Valence Technology Co.
@@ -1173,7 +1174,11 @@ add blacklistv6 2a07:54c1:c000::/44
 add blacklistv6 2a0f:85c1:80b::/48
 add blacklistv6 2a0f:b240:5c00::/40
 add blacklistv6 2a13:9500:53::/48
+add blacklistv6 2a13:c8c4:1000::/36
+add blacklistv6 2a14:7580:ff9c::/48
 add blacklistv6 2a14:7585:4000::/48
+add blacklistv6 2a14:7585:d200::/44
+add blacklistv6 2a14:7585:d400::/44
 # AS401401 Unredacted Inc
 add blacklistv6 2602:f7d8::/48
 # AS213520 Senko Digital LLC
@@ -1186,7 +1191,6 @@ add blacklistv6 2a12:bec4:1de0::/44
 add blacklistv6 2a12:bec4:1e50::/44
 # AS400529 Infraly, LLC
 add blacklistv6 2600:3500:c20::/48
-add blacklistv6 2602:fabf::/40
 # AS14490 Nexavo Ltd.
 add blacklistv6 2602:fa70:30::/44
 add blacklistv6 2602:fa70:b0::/44
