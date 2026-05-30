@@ -1,5 +1,5 @@
 #
-# Last Update: 26/05/2026
+# Last Update: 30/05/2026
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -102,6 +102,8 @@
 -A INPUT -s 2a12:5940:2000::/35 -j DROP
 -A INPUT -s 2a12:5940:4000::/34 -j DROP
 -A INPUT -s 2a12:5940:8000::/33 -j DROP
+-A INPUT -s 2a14:a084::/35 -j DROP
+-A INPUT -s 2a14:a084:2000::/36 -j DROP
 # AS205397 69HOST LLC
 -A INPUT -s 2a03:5840:130::/48 -j DROP
 # AS215590 DpkgSoft International Limited
@@ -168,7 +170,7 @@
 -A INPUT -s 2a05:541:150::/46 -j DROP
 -A INPUT -s 2a05:541:156::/47 -j DROP
 -A INPUT -s 2a05:541:158::/47 -j DROP
--A INPUT -s 2a05:541:170::/47 -j DROP
+-A INPUT -s 2a05:541:170::/48 -j DROP
 # AS132203 Tencent Building, Kejizhongyi Avenue
 -A INPUT -s 240d:c000:1000::/36 -j DROP
 -A INPUT -s 240d:c000:2000::/35 -j DROP
@@ -197,6 +199,8 @@
 -A INPUT -s 2a0b:f4c0:400::/48 -j DROP
 # AS14987 Rethem Hosting LLC
 -A INPUT -s 2607:8500::/32 -j DROP
+# AS214961 Stellar Group SAS
+-A INPUT -s 2a10:4646:700::/48 -j DROP
 # AS150156 99IT
 -A INPUT -s 2001:df1:1940::/48 -j DROP
 # AS133398 Tele Asia Limited (UAB Host Baltic)
@@ -382,6 +386,7 @@
 -A INPUT -s 2a12:3e80:404::/48 -j DROP
 -A INPUT -s 2a12:3e80:500::/40 -j DROP
 # AS216081 Paulo Gobbato trading as Gobbato IT Loesungen
+-A INPUT -s 2a12:3e80:69a::/48 -j DROP
 -A INPUT -s 2a12:3e80:69f::/48 -j DROP
 -A INPUT -s 2a12:3e80:6a0::/44 -j DROP
 -A INPUT -s 2a12:3e80:6f5::/48 -j DROP
@@ -577,7 +582,7 @@
 # AS25198 INTERKVM HOST SRL
 -A INPUT -s 2a01:7120:7::/48 -j DROP
 -A INPUT -s 2a10:3c82::/32 -j DROP
--A INPUT -s 2a10:3c86::/32 -j DROP
+-A INPUT -s 2a10:3c87::/32 -j DROP
 -A INPUT -s 2a10:7500::/29 -j DROP
 -A INPUT -s 2a12:3200::/35 -j DROP
 -A INPUT -s 2a12:3200:2000::/36 -j DROP
@@ -709,7 +714,6 @@
 -A INPUT -s 2607:740:49::/48 -j DROP
 -A INPUT -s 2a0c:e641::/32 -j DROP
 -A INPUT -s 2a0f:1584:1::/48 -j DROP
--A INPUT -s 2a0f:7803:f611::/48 -j DROP
 -A INPUT -s 2a0f:9400:611f::/48 -j DROP
 -A INPUT -s 2a0f:9400:6939::/48 -j DROP
 -A INPUT -s 2a0f:9400:7385::/48 -j DROP
@@ -912,6 +916,8 @@
 # AS210387 Guardy Limited
 -A INPUT -s 2a14:9401:4000::/36 -j DROP
 # AS19377 Cloud Carib Limited
+-A INPUT -s 2605:ecc0::/36 -j DROP
+-A INPUT -s 2605:ecc0:5000::/36 -j DROP
 -A INPUT -s 2605:ecc0:8000::/36 -j DROP
 # AS132088 Wind Cloud Network Technology Co Ltd
 -A INPUT -s 2402:e940:20::/43 -j DROP
@@ -978,6 +984,7 @@
 # AS35661 VIRTUA SYSTEMS SAS
 -A INPUT -s 2a07:8dc0::/31 -j DROP
 -A INPUT -s 2a0d:e680::/32 -j DROP
+-A INPUT -s 2a13:9500:187::/48 -j DROP
 -A INPUT -s 2a14:7583:5a00::/40 -j DROP
 # AS213693 Imad Nabil Daher trading as ID Performance
 -A INPUT -s 2a0f:85c1:b36::/48 -j DROP
@@ -1226,5 +1233,5 @@
 -A INPUT -s 2803:c310:ff00::/44 -j DROP
 -A INPUT -s 2803:c310:ff10::/48 -j DROP
 #
-# Count of \64: 4510942298112.0
+# Count of \64: 4512284540928.0
 #

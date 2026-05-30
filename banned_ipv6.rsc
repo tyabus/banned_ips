@@ -1,5 +1,5 @@
 #
-# Last Update: 26/05/2026
+# Last Update: 30/05/2026
 #
 /ipv6 firewall address-list
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
@@ -96,6 +96,8 @@ add list=Blacklist comment="210644" address=2a12:5940:1000::/36
 add list=Blacklist comment="210644" address=2a12:5940:2000::/35
 add list=Blacklist comment="210644" address=2a12:5940:4000::/34
 add list=Blacklist comment="210644" address=2a12:5940:8000::/33
+add list=Blacklist comment="210644" address=2a14:a084::/35
+add list=Blacklist comment="210644" address=2a14:a084:2000::/36
 # AS205397 69HOST LLC
 add list=Blacklist comment="205397" address=2a03:5840:130::/48
 # AS215590 DpkgSoft International Limited
@@ -162,7 +164,7 @@ add list=Blacklist comment="215540" address=2a05:541:141::/48
 add list=Blacklist comment="215540" address=2a05:541:150::/46
 add list=Blacklist comment="215540" address=2a05:541:156::/47
 add list=Blacklist comment="215540" address=2a05:541:158::/47
-add list=Blacklist comment="215540" address=2a05:541:170::/47
+add list=Blacklist comment="215540" address=2a05:541:170::/48
 # AS132203 Tencent Building, Kejizhongyi Avenue
 add list=Blacklist comment="132203" address=240d:c000:1000::/36
 add list=Blacklist comment="132203" address=240d:c000:2000::/35
@@ -191,6 +193,8 @@ add list=Blacklist comment="205100" address=2a0b:f4c0:1b4::/48
 add list=Blacklist comment="205100" address=2a0b:f4c0:400::/48
 # AS14987 Rethem Hosting LLC
 add list=Blacklist comment="14987" address=2607:8500::/32
+# AS214961 Stellar Group SAS
+add list=Blacklist comment="214961" address=2a10:4646:700::/48
 # AS150156 99IT
 add list=Blacklist comment="150156" address=2001:df1:1940::/48
 # AS133398 Tele Asia Limited
@@ -376,6 +380,7 @@ add list=Blacklist comment="200482" address=2a12:3e80:402::/47
 add list=Blacklist comment="200482" address=2a12:3e80:404::/48
 add list=Blacklist comment="200482" address=2a12:3e80:500::/40
 # AS216081 Paulo Gobbato trading as Gobbato IT Loesungen
+add list=Blacklist comment="216081" address=2a12:3e80:69a::/48
 add list=Blacklist comment="216081" address=2a12:3e80:69f::/48
 add list=Blacklist comment="216081" address=2a12:3e80:6a0::/44
 add list=Blacklist comment="216081" address=2a12:3e80:6f5::/48
@@ -571,7 +576,7 @@ add list=Blacklist comment="6204" address=2a12:3200:f000::/36
 # AS25198 INTERKVM HOST SRL
 add list=Blacklist comment="25198" address=2a01:7120:7::/48
 add list=Blacklist comment="25198" address=2a10:3c82::/32
-add list=Blacklist comment="25198" address=2a10:3c86::/32
+add list=Blacklist comment="25198" address=2a10:3c87::/32
 add list=Blacklist comment="25198" address=2a10:7500::/29
 add list=Blacklist comment="25198" address=2a12:3200::/35
 add list=Blacklist comment="25198" address=2a12:3200:2000::/36
@@ -703,7 +708,6 @@ add list=Blacklist comment="26042" address=2606:fc40:4020::/44
 add list=Blacklist comment="26042" address=2607:740:49::/48
 add list=Blacklist comment="26042" address=2a0c:e641::/32
 add list=Blacklist comment="26042" address=2a0f:1584:1::/48
-add list=Blacklist comment="26042" address=2a0f:7803:f611::/48
 add list=Blacklist comment="26042" address=2a0f:9400:611f::/48
 add list=Blacklist comment="26042" address=2a0f:9400:6939::/48
 add list=Blacklist comment="26042" address=2a0f:9400:7385::/48
@@ -906,6 +910,8 @@ add list=Blacklist comment="26737" address=2602:f894:30e::/47
 # AS210387 Guardy Limited
 add list=Blacklist comment="210387" address=2a14:9401:4000::/36
 # AS19377 Cloud Carib Limited
+add list=Blacklist comment="19377" address=2605:ecc0::/36
+add list=Blacklist comment="19377" address=2605:ecc0:5000::/36
 add list=Blacklist comment="19377" address=2605:ecc0:8000::/36
 # AS132088 Wind Cloud Network Technology Co Ltd
 add list=Blacklist comment="132088" address=2402:e940:20::/43
@@ -972,6 +978,7 @@ add list=Blacklist comment="214382" address=2a13:a440:8::/48
 # AS35661 VIRTUA SYSTEMS SAS
 add list=Blacklist comment="35661" address=2a07:8dc0::/31
 add list=Blacklist comment="35661" address=2a0d:e680::/32
+add list=Blacklist comment="35661" address=2a13:9500:187::/48
 add list=Blacklist comment="35661" address=2a14:7583:5a00::/40
 # AS213693 Imad Nabil Daher trading as ID Performance
 add list=Blacklist comment="213693" address=2a0f:85c1:b36::/48
