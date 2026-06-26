@@ -1,5 +1,5 @@
 #
-# Last Update: 19/06/2026
+# Last Update: 26/06/2026
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -105,8 +105,6 @@
 -A INPUT -s 2a14:a084:2000::/36 -j DROP
 # AS198556 Marcel Hanisch
 -A INPUT -s 2a09:3f00:1002::/48 -j DROP
-# AS205397 69HOST LLC
--A INPUT -s 2a03:5840:130::/48 -j DROP
 # AS215590 DpkgSoft International Limited
 -A INPUT -s 2a01:ecc0:1::/48 -j DROP
 -A INPUT -s 2a01:ecc0:5::/48 -j DROP
@@ -144,9 +142,7 @@
 # AS210352 Yijia Xu
 -A INPUT -s 2406:840:9178::/48 -j DROP
 -A INPUT -s 2602:f92a:a47d::/48 -j DROP
--A INPUT -s 2a0f:1cc5:f01::/48 -j DROP
--A INPUT -s 2a0f:1cc5:f02::/47 -j DROP
--A INPUT -s 2a0f:1cc5:f04::/46 -j DROP
+-A INPUT -s 2a0f:1cc5:f00::/45 -j DROP
 -A INPUT -s 2a0f:1cc5:f08::/47 -j DROP
 -A INPUT -s 2a0f:1cc5:fff::/48 -j DROP
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
@@ -367,7 +363,6 @@
 -A INPUT -s 2a12:b200::/29 -j DROP
 -A INPUT -s 2a12:de40::/32 -j DROP
 # AS213200 Ferdinand Zink trading as Tube-Hosting
--A INPUT -s 2a0f:2705::/32 -j DROP
 -A INPUT -s 2a10:4a00::/29 -j DROP
 # AS214339 SRV.RENT UG (haftungsbeschraenkt)
 -A INPUT -s 2a07:6d40:2::/48 -j DROP
@@ -578,7 +573,7 @@
 -A INPUT -s 2a12:3200:f000::/36 -j DROP
 # AS25198 INTERKVM HOST SRL
 -A INPUT -s 2a01:7120:7::/48 -j DROP
--A INPUT -s 2a10:3c82::/32 -j DROP
+-A INPUT -s 2a10:3c82::/31 -j DROP
 -A INPUT -s 2a10:3c86::/31 -j DROP
 -A INPUT -s 2a12:3200::/34 -j DROP
 -A INPUT -s 2a12:3200:4000::/35 -j DROP
@@ -586,6 +581,8 @@
 -A INPUT -s 2a12:3200:8000::/36 -j DROP
 -A INPUT -s 2a12:3200:9000::/48 -j DROP
 -A INPUT -s 2a13:8c85::/32 -j DROP
+-A INPUT -s 2a13:d0c0::/32 -j DROP
+-A INPUT -s 2a13:d0c5::/32 -j DROP
 -A INPUT -s 2a13:ddc0::/29 -j DROP
 # AS132825 MYTEK TRADING PTY LTD
 -A INPUT -s 2001:df0:fbc0::/48 -j DROP
@@ -649,7 +646,7 @@
 -A INPUT -s 2a13:9500:177::/48 -j DROP
 # AS57974 Teracast Networks LLC
 -A INPUT -s 2602:2d4:d00::/40 -j DROP
--A INPUT -s 2602:2d4:e00::/39 -j DROP
+-A INPUT -s 2602:2d4:e00::/40 -j DROP
 # AS44947 AMWAJ ALKHYR COMMERCIAL BROKERS CO. (UAB Host Baltic)
 -A INPUT -s 2001:3b80::/29 -j DROP
 -A INPUT -s 2a09:cbc0::/29 -j DROP
@@ -695,6 +692,7 @@
 # AS26042 FiberState, LLC
 -A INPUT -s 2602:294::/47 -j DROP
 -A INPUT -s 2602:294:2::/48 -j DROP
+-A INPUT -s 2602:294:4::/48 -j DROP
 -A INPUT -s 2602:f66f:10::/48 -j DROP
 -A INPUT -s 2602:f919:100::/48 -j DROP
 -A INPUT -s 2602:f919:102::/48 -j DROP
@@ -905,7 +903,8 @@
 # AS19377 Cloud Carib Limited
 -A INPUT -s 2605:ecc0::/40 -j DROP
 -A INPUT -s 2605:ecc0:500::/40 -j DROP
--A INPUT -s 2605:ecc0:8000::/36 -j DROP
+-A INPUT -s 2605:ecc0:800::/40 -j DROP
+-A INPUT -s 2605:ecc0:ff00::/40 -j DROP
 # AS132088 Wind Cloud Network Technology Co Ltd
 -A INPUT -s 2402:e940:20::/43 -j DROP
 -A INPUT -s 2402:e940:40::/44 -j DROP
@@ -928,7 +927,6 @@
 -A INPUT -s 2a09:38c0::/29 -j DROP
 -A INPUT -s 2a0c:6a40::/29 -j DROP
 -A INPUT -s 2a0d:4cc0::/29 -j DROP
--A INPUT -s 2a0e:5100::/29 -j DROP
 -A INPUT -s 2a0e:b540::/29 -j DROP
 # AS211138 Private-Hosting di Cipriano oscar
 -A INPUT -s 2a05:4140:500::/48 -j DROP
@@ -970,8 +968,7 @@
 -A INPUT -s 2602:f72e:800::/37 -j DROP
 -A INPUT -s 2a07:8dc0::/31 -j DROP
 -A INPUT -s 2a0d:e680::/32 -j DROP
--A INPUT -s 2a0e:15c6::/32 -j DROP
--A INPUT -s 2a13:d47::/32 -j DROP
+-A INPUT -s 2a10:fa80:7::/48 -j DROP
 -A INPUT -s 2a13:9500:187::/48 -j DROP
 -A INPUT -s 2a14:7583:5a00::/40 -j DROP
 # AS213693 Imad Nabil Daher trading as ID Performance
@@ -1026,6 +1023,8 @@
 -A INPUT -s 2a03:1b20:901::/48 -j DROP
 -A INPUT -s 2a03:1b20:bef1::/48 -j DROP
 -A INPUT -s 2a03:1b20:bef2::/48 -j DROP
+-A INPUT -s 2a07:bdc3::/32 -j DROP
+-A INPUT -s 2a07:bdc4::/32 -j DROP
 -A INPUT -s 2a07:e344::/32 -j DROP
 # AS59939 WIBO Baltic UAB
 -A INPUT -s 2a04:9640::/31 -j DROP
@@ -1085,8 +1084,6 @@
 # AS202520 SkyPass Solutions Sp. z.o.o.
 -A INPUT -s 2001:67c:b58::/48 -j DROP
 # AS216078 Liam Kremer
--A INPUT -s 2a14:7c0:e0::/45 -j DROP
--A INPUT -s 2a14:9e00:800::/39 -j DROP
 #-A INPUT -s 2a14:c380:31::/48 -j DROP
 #-A INPUT -s 2a14:c380:32::/47 -j DROP
 #-A INPUT -s 2a14:c380:3000::/40 -j DROP
@@ -1169,7 +1166,6 @@
 -A INPUT -s 2a13:9500:53::/48 -j DROP
 -A INPUT -s 2a13:9500:136::/48 -j DROP
 -A INPUT -s 2a13:c8c4:1000::/36 -j DROP
--A INPUT -s 2a14:7580:ff9c::/48 -j DROP
 -A INPUT -s 2a14:7585:4000::/48 -j DROP
 -A INPUT -s 2a14:7585:d200::/44 -j DROP
 -A INPUT -s 2a14:7585:d400::/44 -j DROP
@@ -1234,6 +1230,17 @@
 -A INPUT -s 2a0b:7140:1::/48 -j DROP
 # AS61193 Guillaume ROBIER
 -A INPUT -s 2a10:dc00::/29 -j DROP
+# AS210457 Kyonix Networks Limited
+-A INPUT -s 2a01:ecc0:5c0::/42 -j DROP
+-A INPUT -s 2a12:bec4:1970::/44 -j DROP
+# AS212552 BitCommand LLC
+-A INPUT -s 2a14:7981:467::/48 -j DROP
+-A INPUT -s 2a14:7981:470::/46 -j DROP
+-A INPUT -s 2a14:7981:2002::/48 -j DROP
+-A INPUT -s 2a14:7981:3008::/48 -j DROP
+# AS202269 BitCommand LLC
+-A INPUT -s 2a0e:b084::/30 -j DROP
+-A INPUT -s 2a14:7980::/32 -j DROP
 #
-# Count of \64: 4498590007296.0
+# Count of \64: 4494015070208.0
 #
