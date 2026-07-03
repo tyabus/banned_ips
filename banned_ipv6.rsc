@@ -1,5 +1,5 @@
 #
-# Last Update: 26/06/2026
+# Last Update: 03/07/2026
 #
 /ipv6 firewall address-list
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
@@ -11,6 +11,10 @@ add list=Blacklist comment="https://bgp.tools/rir-owner/ru.avm ( XHOST LP )" add
 add list=Blacklist comment="https://bgp.tools/rir-owner/ru.avm ( XHOST LP )" address=2a0d:65c0::/29
 add list=Blacklist comment="https://bgp.tools/rir-owner/ca.blackhost ( BlackHOST )" address=2a01:e940::/29
 add list=Blacklist comment="https://bgp.tools/rir-owner/fr.julesd" address=2a13:c7c0::/29
+add list=Blacklist comment="servinga GmbH at Glesys AB" address=2a0b:7140:3::/48
+add list=Blacklist comment="servinga GmbH at M247" address=2a0b:7140:7::/48
+add list=Blacklist comment="servinga GmbH at Eonix" address=2a0b:7140:8::/48
+add list=Blacklist comment="servinga GmbH at Datasource AG" address=2a0b:7140:4::/48
 # AS398324 Censys, Inc.
 add list=Blacklist comment="398324" address=2602:80d:1001::/48
 add list=Blacklist comment="398324" address=2602:80d:1006::/47
@@ -119,6 +123,7 @@ add list=Blacklist comment="49418" address=2a01:ecc0:640::/42
 add list=Blacklist comment="49418" address=2a0f:cdc6:1005::/48
 # AS43278 Castles LLC
 add list=Blacklist comment="43278" address=2a06:1301:4350::/48
+add list=Blacklist comment="43278" address=2a12:5947::/48
 # AS212477 RoyaleHosting BV
 add list=Blacklist comment="212477" address=2001:678:1200::/48
 add list=Blacklist comment="212477" address=2602:f7f8:4::/48
@@ -380,6 +385,7 @@ add list=Blacklist comment="197477" address=2a06:de01:70::/48
 add list=Blacklist comment="197477" address=2a06:de01:7a::/47
 add list=Blacklist comment="197477" address=2a06:de01:7c::/47
 add list=Blacklist comment="197477" address=2a06:de01:7e::/48
+add list=Blacklist comment="197477" address=2a10:ccc0:150::/46
 add list=Blacklist comment="197477" address=2a10:ccc2:1330::/44
 add list=Blacklist comment="197477" address=2a13:e3c0::/31
 # AS215691 AP INTERACTIVE SOLUTIONS SL
@@ -395,6 +401,7 @@ add list=Blacklist comment="215681" address=2a0e:8f02:207f::/48
 # AS203728 BAHU LTD
 add list=Blacklist comment="203728" address=2001:678:90c::/48
 # AS216063 24fire GmbH
+add list=Blacklist comment="216063" address=2a01:bc2::/32
 #add list=Blacklist comment="216063" address=2a12:de40:20::/47
 #add list=Blacklist comment="216063" address=2a12:de40:200::/40
 # AS215365 Tom Gewiese
@@ -539,6 +546,7 @@ add list=Blacklist comment="58062" address=2401:b60:3145::/48
 add list=Blacklist comment="214927" address=2a0c:7886:105::/48
 add list=Blacklist comment="214927" address=2a0f:e7c6:1000::/48
 # AS52053 REDHEBERG Association declaree
+add list=Blacklist comment="52053" address=2a13:9500:e7::/48
 add list=Blacklist comment="52053" address=2a14:1d00::/44
 # AS138699 TIKTOK PTE. LTD.
 add list=Blacklist comment="138699" address=2404:9dc0:c002::/48
@@ -944,6 +952,7 @@ add list=Blacklist comment="62000" address=2a09:6387:b00b::/48
 add list=Blacklist comment="62000" address=2a0b:b140::/29
 # AS214138 Julian Kempf trading as Host-Zentrum
 add list=Blacklist comment="214138" address=2a11:29c0:4d::/48
+add list=Blacklist comment="214138" address=2a13:9500:199::/48
 # AS203391 Cloud DNS Ltd
 add list=Blacklist comment="203391" address=2a06:fb00:1::/48
 add list=Blacklist comment="203391" address=2a06:fb00:2::/47
@@ -989,7 +998,6 @@ add list=Blacklist comment="43641" address=2a13:e104::/32
 add list=Blacklist comment="43641" address=2a14:7586:7000::/36
 # AS214223 Luis Jakob Bartel
 add list=Blacklist comment="214223" address=2a05:dfc3:fa05::/48
-add list=Blacklist comment="214223" address=2a0a:6044:6405::/48
 add list=Blacklist comment="214223" address=2a14:7581:3705::/48
 add list=Blacklist comment="214223" address=2a14:7581:3709::/48
 # AS200081 Netversor GmbH
@@ -1160,6 +1168,7 @@ add list=Blacklist comment="214762" address=2a0f:b240:5c00::/40
 add list=Blacklist comment="214762" address=2a13:9500:53::/48
 add list=Blacklist comment="214762" address=2a13:9500:136::/48
 add list=Blacklist comment="214762" address=2a13:c8c4:1000::/36
+add list=Blacklist comment="214762" address=2a14:7580:ff9c::/48
 add list=Blacklist comment="214762" address=2a14:7585:4000::/48
 add list=Blacklist comment="214762" address=2a14:7585:d200::/44
 add list=Blacklist comment="214762" address=2a14:7585:d400::/44
@@ -1220,8 +1229,19 @@ add list=Blacklist comment="141679" address=240e:981:f500::/40
 # AS23246 gigaipnet.com Inc
 add list=Blacklist comment="23246" address=2803:c310:ff00::/44
 add list=Blacklist comment="23246" address=2803:c310:ff10::/48
+# AS39378 servinga GmbH
+add list=Blacklist comment="39378" address=2a07:fc00::/48
+add list=Blacklist comment="39378" address=2a0b:7140::/48
+add list=Blacklist comment="39378" address=2a0b:7140:5::/48
+# AS58329 servinga GmbH
+add list=Blacklist comment="58329" address=2001:67c:2ae8::/48
+add list=Blacklist comment="58329" address=2a0b:7140:6::/48
+# AS200220 servinga GmbH
+add list=Blacklist comment="200220" address=2a0b:7140:9::/48
 # AS207408 servinga GmbH
 add list=Blacklist comment="207408" address=2a0b:7140:1::/48
+# AS212228 servinga GmbH
+add list=Blacklist comment="212228" address=2a0b:7140:2::/48
 # AS61193 Guillaume ROBIER
 add list=Blacklist comment="61193" address=2a10:dc00::/29
 # AS210457 Kyonix Networks Limited

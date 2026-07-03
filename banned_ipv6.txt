@@ -1,5 +1,5 @@
 #
-# Last Update: 26/06/2026
+# Last Update: 03/07/2026
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -17,6 +17,14 @@
 -A INPUT -s 2a01:e940::/29 -j DROP
 # https://bgp.tools/rir-owner/fr.julesd
 -A INPUT -s 2a13:c7c0::/29 -j DROP
+# servinga GmbH at Glesys AB
+-A INPUT -s 2a0b:7140:3::/48 -j DROP
+# servinga GmbH at M247
+-A INPUT -s 2a0b:7140:7::/48 -j DROP
+# servinga GmbH at Eonix
+-A INPUT -s 2a0b:7140:8::/48 -j DROP
+# servinga GmbH at Datasource AG
+-A INPUT -s 2a0b:7140:4::/48 -j DROP
 # AS398324 Censys, Inc.
 -A INPUT -s 2602:80d:1001::/48 -j DROP
 -A INPUT -s 2602:80d:1006::/47 -j DROP
@@ -125,6 +133,7 @@
 -A INPUT -s 2a0f:cdc6:1005::/48 -j DROP
 # AS43278 Castles LLC
 -A INPUT -s 2a06:1301:4350::/48 -j DROP
+-A INPUT -s 2a12:5947::/48 -j DROP
 # AS212477 RoyaleHosting BV
 -A INPUT -s 2001:678:1200::/48 -j DROP
 -A INPUT -s 2602:f7f8:4::/48 -j DROP
@@ -386,6 +395,7 @@
 -A INPUT -s 2a06:de01:7a::/47 -j DROP
 -A INPUT -s 2a06:de01:7c::/47 -j DROP
 -A INPUT -s 2a06:de01:7e::/48 -j DROP
+-A INPUT -s 2a10:ccc0:150::/46 -j DROP
 -A INPUT -s 2a10:ccc2:1330::/44 -j DROP
 -A INPUT -s 2a13:e3c0::/31 -j DROP
 # AS215691 AP INTERACTIVE SOLUTIONS SL
@@ -401,6 +411,7 @@
 # AS203728 BAHU LTD
 -A INPUT -s 2001:678:90c::/48 -j DROP
 # AS216063 24fire GmbH
+-A INPUT -s 2a01:bc2::/32 -j DROP
 #-A INPUT -s 2a12:de40:20::/47 -j DROP
 #-A INPUT -s 2a12:de40:200::/40 -j DROP
 # AS215365 Tom Gewiese
@@ -545,6 +556,7 @@
 -A INPUT -s 2a0c:7886:105::/48 -j DROP
 -A INPUT -s 2a0f:e7c6:1000::/48 -j DROP
 # AS52053 REDHEBERG Association declaree
+-A INPUT -s 2a13:9500:e7::/48 -j DROP
 -A INPUT -s 2a14:1d00::/44 -j DROP
 # AS138699 TIKTOK PTE. LTD.
 -A INPUT -s 2404:9dc0:c002::/48 -j DROP
@@ -950,6 +962,7 @@
 -A INPUT -s 2a0b:b140::/29 -j DROP
 # AS214138 Julian Kempf trading as Host-Zentrum
 -A INPUT -s 2a11:29c0:4d::/48 -j DROP
+-A INPUT -s 2a13:9500:199::/48 -j DROP
 # AS203391 Cloud DNS Ltd
 -A INPUT -s 2a06:fb00:1::/48 -j DROP
 -A INPUT -s 2a06:fb00:2::/47 -j DROP
@@ -995,7 +1008,6 @@
 -A INPUT -s 2a14:7586:7000::/36 -j DROP
 # AS214223 Luis Jakob Bartel
 -A INPUT -s 2a05:dfc3:fa05::/48 -j DROP
--A INPUT -s 2a0a:6044:6405::/48 -j DROP
 -A INPUT -s 2a14:7581:3705::/48 -j DROP
 -A INPUT -s 2a14:7581:3709::/48 -j DROP
 # AS200081 Netversor GmbH
@@ -1166,6 +1178,7 @@
 -A INPUT -s 2a13:9500:53::/48 -j DROP
 -A INPUT -s 2a13:9500:136::/48 -j DROP
 -A INPUT -s 2a13:c8c4:1000::/36 -j DROP
+-A INPUT -s 2a14:7580:ff9c::/48 -j DROP
 -A INPUT -s 2a14:7585:4000::/48 -j DROP
 -A INPUT -s 2a14:7585:d200::/44 -j DROP
 -A INPUT -s 2a14:7585:d400::/44 -j DROP
@@ -1226,8 +1239,19 @@
 # AS23246 gigaipnet.com Inc
 -A INPUT -s 2803:c310:ff00::/44 -j DROP
 -A INPUT -s 2803:c310:ff10::/48 -j DROP
+# AS39378 servinga GmbH
+-A INPUT -s 2a07:fc00::/48 -j DROP
+-A INPUT -s 2a0b:7140::/48 -j DROP
+-A INPUT -s 2a0b:7140:5::/48 -j DROP
+# AS58329 servinga GmbH
+-A INPUT -s 2001:67c:2ae8::/48 -j DROP
+-A INPUT -s 2a0b:7140:6::/48 -j DROP
+# AS200220 servinga GmbH
+-A INPUT -s 2a0b:7140:9::/48 -j DROP
 # AS207408 servinga GmbH
 -A INPUT -s 2a0b:7140:1::/48 -j DROP
+# AS212228 servinga GmbH
+-A INPUT -s 2a0b:7140:2::/48 -j DROP
 # AS61193 Guillaume ROBIER
 -A INPUT -s 2a10:dc00::/29 -j DROP
 # AS210457 Kyonix Networks Limited
@@ -1242,5 +1266,5 @@
 -A INPUT -s 2a0e:b084::/30 -j DROP
 -A INPUT -s 2a14:7980::/32 -j DROP
 #
-# Count of \64: 4494015070208.0
+# Count of \64: 4498310955008.0
 #

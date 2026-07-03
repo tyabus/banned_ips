@@ -1,5 +1,5 @@
 #
-# Last Update: 26/06/2026
+# Last Update: 03/07/2026
 #
 #
 # static ingoing traffic blocklist
@@ -61,6 +61,9 @@
 -A INPUT -s 216.180.246.0/24 -j REJECT --reject-with icmp-host-unreachable
 # https://bgp.tools/rir-owner/sc.ad ( Address Management Inc. )
 -A INPUT -s 103.160.58.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.163.52.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 103.166.154.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 155.254.192.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.147.124.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.17.42.0/24 -j REJECT --reject-with icmp-host-unreachable
 # https://bgp.tools/rir-owner/ru.avm ( XHOST LP )
@@ -91,6 +94,16 @@
 -A INPUT -s 203.55.81.0/24 -j REJECT --reject-with icmp-host-unreachable
 # Censys.io at AS52998
 -A INPUT -s 206.168.34.0/24 -j REJECT --reject-with icmp-host-unreachable
+# servinga GmbH at Glesys AB
+-A INPUT -s 45.11.182.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.242.219.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 109.230.199.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.76.224.0/24 -j REJECT --reject-with icmp-host-unreachable
+# servinga GmbH at M247
+-A INPUT -s 45.11.181.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.158.248.0/24 -j REJECT --reject-with icmp-host-unreachable
+# servinga GmbH at Eonix
+-A INPUT -s 95.133.228.0/22 -j REJECT --reject-with icmp-host-unreachable
 # AS398324 Censys, Inc.
 -A INPUT -s 66.132.148.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 66.132.153.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -293,7 +306,6 @@
 -A INPUT -s 89.42.231.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 89.249.49.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 93.123.72.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 94.154.43.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 94.156.33.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 103.28.88.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 103.46.141.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -582,7 +594,6 @@
 -A INPUT -s 217.144.185.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.144.186.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.144.188.0/22 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 217.197.107.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS205089 Alfahost LLC
 -A INPUT -s 77.239.124.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 144.31.24.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -710,11 +721,16 @@
 -A INPUT -s 62.233.36.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 77.87.126.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.17.70.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 78.17.212.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 79.110.236.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.174.4.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.174.6.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.174.200.0/21 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 84.245.18.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 84.245.29.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 85.203.40.0/22 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 87.85.172.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 87.85.168.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 87.85.172.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 87.101.2.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 89.47.89.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 89.125.50.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -848,7 +864,6 @@
 -A INPUT -s 78.153.131.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.153.139.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.153.144.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 78.153.150.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.153.155.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.159.131.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 80.66.72.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -897,7 +912,7 @@
 -A INPUT -s 138.124.181.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 138.124.186.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 138.124.244.0/22 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 138.124.248.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 138.124.249.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 138.124.250.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 138.124.252.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 139.28.240.0/23 -j REJECT --reject-with icmp-host-unreachable
@@ -1182,6 +1197,7 @@
 -A INPUT -s 104.239.66.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 104.249.10.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 195.177.94.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 217.217.97.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS394711 KorGrid, LLC
 -A INPUT -s 208.94.212.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS50448 System Service Ltd.
@@ -1257,9 +1273,7 @@
 -A INPUT -s 91.217.200.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.226.227.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.230.49.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 141.11.244.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 146.19.248.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 151.246.197.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 178.214.222.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.46.70.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.224.129.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -1447,6 +1461,7 @@
 -A INPUT -s 185.56.45.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 192.208.12.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.59.30.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 198.99.75.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 199.178.168.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 199.178.170.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 200.13.200.0/21 -j REJECT --reject-with icmp-host-unreachable
@@ -1585,10 +1600,6 @@
 # AS215728 Kamatera Inc
 -A INPUT -s 50.114.70.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 104.252.213.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 115.167.3.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 115.167.4.0/22 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 115.167.10.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 115.167.12.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 136.0.211.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 142.111.5.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 142.111.172.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -1668,9 +1679,7 @@
 # AS25820 IT7 Networks Inc
 -A INPUT -s 23.83.224.0/19 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 23.105.192.0/19 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 23.106.128.0/20 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 23.106.144.0/22 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 23.106.152.0/21 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 23.106.128.0/19 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 23.252.96.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 23.252.101.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 23.252.104.0/21 -j REJECT --reject-with icmp-host-unreachable
@@ -1899,7 +1908,6 @@
 -A INPUT -s 45.89.142.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.142.112.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 109.71.254.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 141.195.113.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.187.255.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS216081 Paulo Gobbato trading as Gobbato IT Loesungen
 -A INPUT -s 37.114.61.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -1947,6 +1955,7 @@
 -A INPUT -s 45.147.7.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 88.151.194.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.117.224.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.10.226.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS215365 Tom Gewiese
 -A INPUT -s 5.231.118.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 5.231.123.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2047,6 +2056,8 @@
 -A INPUT -s 45.135.193.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.135.194.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 77.83.207.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 85.133.236.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 85.133.238.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 85.208.84.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 88.214.50.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 89.45.35.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2078,6 +2089,7 @@
 -A INPUT -s 151.242.30.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS214515 Amir Mohammad Masoudi
 -A INPUT -s 37.32.41.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.11.184.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 109.122.244.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.243.51.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS215085 Maik Polman trading as PixelHosting
@@ -2100,10 +2112,13 @@
 -A INPUT -s 45.134.39.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.137.70.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 64.204.166.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 64.204.182.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 64.204.203.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 82.29.103.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 82.47.19.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 86.38.156.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 87.84.224.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.143.180.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 92.242.166.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 93.90.74.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 140.150.224.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2236,7 +2251,10 @@
 -A INPUT -s 45.135.192.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.153.33.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 64.89.162.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 78.154.116.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 85.133.216.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 87.229.56.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 87.248.132.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.206.28.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.245.220.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 92.246.87.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2269,7 +2287,6 @@
 -A INPUT -s 150.40.100.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.140.55.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS207350 Arshia Asadi
-#-A INPUT -s 81.12.46.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 195.24.237.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS49372 w1n ltd
 -A INPUT -s 91.234.196.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2436,6 +2453,8 @@
 # AS25198 INTERKVM HOST SRL
 -A INPUT -s 2.27.92.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.131.106.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.135.225.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.139.182.0/24 -j REJECT --reject-with icmp-host-unreachable
 #-A INPUT -s 45.196.241.0/24 -j REJECT --reject-with icmp-host-unreachable
 #-A INPUT -s 45.198.74.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 46.229.243.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2450,9 +2469,11 @@
 -A INPUT -s 80.68.211.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 82.25.4.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 82.47.51.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 82.109.11.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 82.109.207.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 82.110.60.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 83.229.61.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 83.245.3.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 84.21.188.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 84.32.91.0/24 -j REJECT --reject-with icmp-host-unreachable
 #-A INPUT -s 85.204.107.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2462,20 +2483,26 @@
 #-A INPUT -s 89.34.27.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 89.36.94.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 89.41.180.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.238.93.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 92.42.100.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 92.113.14.0/24 -j REJECT --reject-with icmp-host-unreachable
 #-A INPUT -s 93.114.194.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 95.133.244.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 95.133.247.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 95.214.178.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 103.112.171.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 103.121.48.0/23 -j REJECT --reject-with icmp-host-unreachable
 #-A INPUT -s 103.126.50.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 103.244.144.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 103.246.248.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 109.72.124.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 130.12.102.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 132.243.215.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 140.233.161.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 140.233.167.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 140.233.177.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 147.79.19.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 147.79.56.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 149.57.231.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 150.251.228.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 162.141.65.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2493,6 +2520,7 @@
 -A INPUT -s 188.211.233.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 188.241.218.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.5.11.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.24.1.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.124.205.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.142.4.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.77.78.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2511,10 +2539,13 @@
 -A INPUT -s 212.189.98.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 212.189.116.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 212.222.171.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 216.46.68.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 216.75.150.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 216.75.157.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 216.83.52.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 216.122.120.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.8.194.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 217.8.196.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS58612 INTERKVM HOST SRL
 #-A INPUT -s 45.142.1.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS42405 PAN-NET SRL
@@ -2559,7 +2590,9 @@
 -A INPUT -s 212.237.231.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS60539 Huicast Telecom Limited
 -A INPUT -s 5.160.111.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 104.37.192.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 130.12.44.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 155.103.100.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 161.248.28.0/23 -j REJECT --reject-with icmp-host-unreachable
 # AS205207 Padiz Dadeh Resan PJSC
 -A INPUT -s 5.160.153.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2597,6 +2630,7 @@
 -A INPUT -s 2.26.185.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 81.161.238.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 87.76.205.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 89.30.158.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 147.90.219.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 150.251.230.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 151.241.16.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2606,6 +2640,7 @@
 -A INPUT -s 193.29.183.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.37.41.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 193.37.44.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 213.214.99.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS50917 Diederik Focko de Zee
 -A INPUT -s 45.152.39.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 89.37.98.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2709,6 +2744,7 @@
 -A INPUT -s 82.21.6.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS36829 Winstri Corporation
 -A INPUT -s 104.156.148.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 104.224.52.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 141.195.98.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 172.111.56.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 206.83.151.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2751,13 +2787,13 @@
 -A INPUT -s 185.194.177.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.213.240.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 191.96.94.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 195.162.253.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 207.244.199.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 212.189.119.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS214062 ITITAN HOSTING SOLUTIONS SRL
 -A INPUT -s 82.23.183.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.200.220.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS57974 Teracast Networks LLC
--A INPUT -s 23.153.72.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 130.12.32.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.108.205.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 199.48.60.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2794,6 +2830,7 @@
 -A INPUT -s 93.152.224.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 94.26.83.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 94.26.90.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 96.62.218.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 151.240.151.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 151.243.18.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 151.243.28.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -2911,6 +2948,7 @@
 -A INPUT -s 154.54.249.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.113.194.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 217.113.196.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 217.113.199.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS64476 Shadow SAS
 -A INPUT -s 46.247.136.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 46.247.140.0/23 -j REJECT --reject-with icmp-host-unreachable
@@ -3172,8 +3210,7 @@
 -A INPUT -s 84.75.202.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 103.85.72.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 103.223.120.0/22 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 163.128.100.0/23 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 165.101.122.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 163.128.100.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 203.175.12.0/22 -j REJECT --reject-with icmp-host-unreachable
 # AS43861 Circle B B.V.
 -A INPUT -s 45.134.176.0/22 -j REJECT --reject-with icmp-host-unreachable
@@ -3748,6 +3785,7 @@
 -A INPUT -s 91.149.235.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 150.40.109.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 150.40.110.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 150.40.112.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 150.40.116.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 203.31.217.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS37518 Fiber Grid INC
@@ -3773,6 +3811,7 @@
 -A INPUT -s 82.23.54.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 84.37.44.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 85.137.51.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 85.137.60.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.222.172.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.222.174.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.239.77.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -4147,7 +4186,6 @@
 -A INPUT -s 37.152.173.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 37.152.174.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 62.60.138.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 62.60.144.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 62.60.147.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 62.60.160.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 62.60.218.0/23 -j REJECT --reject-with icmp-host-unreachable
@@ -4176,6 +4214,7 @@
 -A INPUT -s 45.194.92.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.198.224.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.205.1.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 154.90.70.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS210456 EastCoastHost Ltd
 -A INPUT -s 103.102.231.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS201409 HOSTSHIELD LTD
@@ -4479,7 +4518,8 @@
 -A INPUT -s 95.38.160.0/21 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 95.38.176.0/20 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 95.38.232.0/22 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 95.38.236.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 95.38.236.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 95.38.238.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 128.0.105.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.74.165.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.97.116.0/22 -j REJECT --reject-with icmp-host-unreachable
@@ -4512,8 +4552,7 @@
 -A INPUT -s 31.76.76.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 31.76.80.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 31.77.128.0/22 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 31.77.144.0/23 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 31.77.146.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 31.77.144.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 31.77.156.0/22 -j REJECT --reject-with icmp-host-unreachable
 #-A INPUT -s 38.226.218.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.8.93.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -4613,6 +4652,7 @@
 -A INPUT -s 23.186.168.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 130.12.111.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS48715 Sefroyek Pardaz Engineering PJSC
+-A INPUT -s 37.32.32.0/21 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 78.110.120.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 80.71.149.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 80.249.114.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -4723,13 +4763,13 @@
 -A INPUT -s 45.137.201.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.141.117.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.141.119.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 85.8.192.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 92.119.164.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.132.53.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS210006 Shereverov Marat Ahmedovich
 -A INPUT -s 45.87.249.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 45.154.244.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 86.54.25.0/24 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 91.92.21.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 178.20.210.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS50219 Valence Technology Co.
 -A INPUT -s 194.164.107.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -4796,6 +4836,7 @@
 -A INPUT -s 151.245.32.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 154.29.80.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 157.254.153.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 158.51.113.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 165.140.94.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 166.0.112.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 166.0.169.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -4816,6 +4857,7 @@
 -A INPUT -s 194.50.111.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 199.91.97.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 199.127.60.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 199.127.218.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 206.221.176.0/20 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 206.232.5.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 208.67.104.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -4916,6 +4958,7 @@
 -A INPUT -s 89.33.194.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.209.71.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 91.250.253.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 155.117.241.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 185.171.202.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS19879 Qomro, LLC
 -A INPUT -s 23.169.88.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -5174,16 +5217,46 @@
 # AS23246 gigaipnet.com Inc
 -A INPUT -s 66.231.64.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 66.231.76.0/22 -j REJECT --reject-with icmp-host-unreachable
--A INPUT -s 205.235.2.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 205.235.2.0/23 -j REJECT --reject-with icmp-host-unreachable
 # AS402253 SKN Subnet & Telecom Ltd
 -A INPUT -s 40.183.136.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 66.198.225.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 104.251.180.0/22 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 209.99.184.0/21 -j REJECT --reject-with icmp-host-unreachable
+# AS39378 servinga GmbH
+-A INPUT -s 79.132.130.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.241.93.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.90.162.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.158.251.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.212.44.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.219.220.0/22 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.76.226.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS58329 servinga GmbH
+-A INPUT -s 31.214.157.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.155.249.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.132.128.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.132.133.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.158.249.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 193.242.210.0/23 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.76.225.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS200220 servinga GmbH
+-A INPUT -s 63.251.122.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 78.138.9.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 79.132.135.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 162.248.162.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.178.231.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 194.154.28.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS207408 servinga GmbH
 -A INPUT -s 45.11.183.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 80.77.25.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 194.76.227.0/24 -j REJECT --reject-with icmp-host-unreachable
+# AS212228 servinga GmbH
+-A INPUT -s 37.10.71.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 45.11.180.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 80.77.23.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.240.202.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 91.242.217.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 185.158.250.0/24 -j REJECT --reject-with icmp-host-unreachable
 # AS135392 MillenialHost Limited
 -A INPUT -s 45.84.242.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 64.253.89.0/24 -j REJECT --reject-with icmp-host-unreachable
@@ -5278,6 +5351,7 @@
 -A INPUT -s 2.26.122.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 2.26.224.0/23 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 2.26.226.0/24 -j REJECT --reject-with icmp-host-unreachable
+-A INPUT -s 13.143.132.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 31.76.30.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 31.76.94.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 31.76.100.0/22 -j REJECT --reject-with icmp-host-unreachable
@@ -5290,5 +5364,5 @@
 -A INPUT -s 144.31.223.0/24 -j REJECT --reject-with icmp-host-unreachable
 -A INPUT -s 144.31.238.0/24 -j REJECT --reject-with icmp-host-unreachable
 #
-# List size: 6,213,376 addresses
+# List size: 6,237,952 addresses
 #
