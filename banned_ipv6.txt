@@ -1,5 +1,5 @@
 #
-# Last Update: 03/07/2026
+# Last Update: 10/07/2026
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -176,6 +176,8 @@
 -A INPUT -s 2a05:541:150::/46 -j DROP
 -A INPUT -s 2a05:541:156::/47 -j DROP
 -A INPUT -s 2a05:541:158::/47 -j DROP
+-A INPUT -s 2a05:541:173::/48 -j DROP
+-A INPUT -s 2a05:541:174::/48 -j DROP
 # AS132203 Tencent Building, Kejizhongyi Avenue
 -A INPUT -s 240d:c000:1000::/36 -j DROP
 -A INPUT -s 240d:c000:2000::/35 -j DROP
@@ -262,6 +264,11 @@
 # AS207208 MEVSPACE sp. z o.o.
 -A INPUT -s 2001:67c:2498::/48 -j DROP
 #-A INPUT -s 2a09:d581::/32 -j DROP
+# AS201176 DUND MC2 B.V.
+-A INPUT -s 2a10:ab80:3fa::/47 -j DROP
+# AS201861 Aleksejs Pinajevs
+-A INPUT -s 2a0d:d940:110::/44 -j DROP
+-A INPUT -s 2a0d:d940:150::/44 -j DROP
 # AS61280 FGUP GRCHC (Russian goverment)
 -A INPUT -s 2a0c:a9c7:156::/47 -j DROP
 -A INPUT -s 2a0c:a9c7:158::/48 -j DROP
@@ -398,8 +405,6 @@
 -A INPUT -s 2a10:ccc0:150::/46 -j DROP
 -A INPUT -s 2a10:ccc2:1330::/44 -j DROP
 -A INPUT -s 2a13:e3c0::/31 -j DROP
-# AS215691 AP INTERACTIVE SOLUTIONS SL
--A INPUT -s 2a14:8880::/29 -j DROP
 # AS212762 Casper Krook trading as Ck IT Solutions
 -A INPUT -s 2a05:dfc1:5503::/48 -j DROP
 -A INPUT -s 2a05:dfc1:5506::/48 -j DROP
@@ -434,7 +439,7 @@
 -A INPUT -s 2a0f:1e06::/32 -j DROP
 -A INPUT -s 2a0f:e841::/32 -j DROP
 -A INPUT -s 2a10:7b00::/29 -j DROP
-#-A INPUT -s 2a14:c380:12::/48 -j DROP
+-A INPUT -s 2a14:c380:12::/48 -j DROP
 # AS54990 1337 Services LLC
 -A INPUT -s 2001:67c:235c::/48 -j DROP
 # AS39287 Materialism s.r.l.
@@ -604,6 +609,7 @@
 # AS60539 Huicast Telecom Limited
 -A INPUT -s 2401:e3a0:1::/48 -j DROP
 -A INPUT -s 2407:d340:8000::/40 -j DROP
+-A INPUT -s 2602:f959::/40 -j DROP
 -A INPUT -s 2a13:aac0::/29 -j DROP
 # AS206728 media-land-llc
 -A INPUT -s 2a0b:7ec0:1320::/48 -j DROP
@@ -629,7 +635,7 @@
 -A INPUT -s 2a0d:d907::/32 -j DROP
 -A INPUT -s 2a0f:5b02::/32 -j DROP
 -A INPUT -s 2a10:fa81:800::/40 -j DROP
-#-A INPUT -s 2a14:c380:140::/44 -j DROP
+-A INPUT -s 2a14:c380:140::/44 -j DROP
 # AS212935 Theori Inc
 -A INPUT -s 2602:f90a::/48 -j DROP
 # AS202306 HOSTGLOBAL.PLUS LTD
@@ -986,6 +992,8 @@
 -A INPUT -s 2a14:7583:5a00::/40 -j DROP
 # AS213693 Imad Nabil Daher trading as ID Performance
 -A INPUT -s 2a0f:85c1:b36::/48 -j DROP
+# AS211693 NolimitCloud s.r.o
+-A INPUT -s 2a13:9500:19d::/48 -j DROP
 # AS215925 VPSVAULT.HOST LTD
 -A INPUT -s 2604:be0:fff0::/44 -j DROP
 # AS210456 EastCoastHost Ltd
@@ -993,6 +1001,8 @@
 # AS203363 Kuroit Limited
 -A INPUT -s 2401:8360:a3::/48 -j DROP
 -A INPUT -s 2a05:4140:19::/48 -j DROP
+# AS214657 Bls Services Tecnologia em Software Ltda
+-A INPUT -s 2a11:29c0:478::/48 -j DROP
 # AS214329 BGP Network LLC
 -A INPUT -s 2a03:5840:120::/48 -j DROP
 # AS215762 Bullet Group LTD
@@ -1008,7 +1018,6 @@
 -A INPUT -s 2a14:7586:7000::/36 -j DROP
 # AS214223 Luis Jakob Bartel
 -A INPUT -s 2a05:dfc3:fa05::/48 -j DROP
--A INPUT -s 2a14:7581:3705::/48 -j DROP
 -A INPUT -s 2a14:7581:3709::/48 -j DROP
 # AS200081 Netversor GmbH
 -A INPUT -s 2a01:ea00::/48 -j DROP
@@ -1094,14 +1103,20 @@
 # AS215311 Regxa Company for Information Technology Ltd
 -A INPUT -s 2a14:4200::/29 -j DROP
 # AS202520 SkyPass Solutions Sp. z.o.o.
+-A INPUT -s 2001:678:8e8::/48 -j DROP
 -A INPUT -s 2001:67c:b58::/48 -j DROP
 # AS216078 Liam Kremer
-#-A INPUT -s 2a14:c380:31::/48 -j DROP
-#-A INPUT -s 2a14:c380:32::/47 -j DROP
-#-A INPUT -s 2a14:c380:3000::/40 -j DROP
-#-A INPUT -s 2a14:c380:4000::/40 -j DROP
+-A INPUT -s 2a14:c380:31::/48 -j DROP
+-A INPUT -s 2a14:c380:32::/47 -j DROP
+-A INPUT -s 2a14:c380:3000::/40 -j DROP
+-A INPUT -s 2a14:c380:4000::/40 -j DROP
 # AS211507 Julian Achter
--A INPUT -s 2a14:c380::/29 -j DROP
+-A INPUT -s 2a14:c380:50::/44 -j DROP
+-A INPUT -s 2a14:c380:70::/44 -j DROP
+-A INPUT -s 2a14:c380:90::/44 -j DROP
+-A INPUT -s 2a14:c380:130::/44 -j DROP
+-A INPUT -s 2a14:c380:c70::/44 -j DROP
+-A INPUT -s 2a14:c380:d70::/44 -j DROP
 # AS50219 Valence Technology Co.
 -A INPUT -s 2602:f71d::/48 -j DROP
 -A INPUT -s 2602:f71d:200::/48 -j DROP
@@ -1208,6 +1223,8 @@
 -A INPUT -s 2a13:3f83::/32 -j DROP
 -A INPUT -s 2a13:3f86::/31 -j DROP
 -A INPUT -s 2a14:6380::/29 -j DROP
+# AS209207 Digital Hosting Provider LLC
+-A INPUT -s 2a05:541:176::/47 -j DROP
 # AS213737 AYOSOFT LTD
 -A INPUT -s 2a14:db80:4::/48 -j DROP
 -A INPUT -s 2a14:db80:10::/48 -j DROP
@@ -1224,6 +1241,8 @@
 -A INPUT -s 2a0f:6284:1a0::/44 -j DROP
 -A INPUT -s 2a0f:6284:1f0::/48 -j DROP
 -A INPUT -s 2a0f:6284:4200::/44 -j DROP
+# AS215460 Daniel Mishayev
+-A INPUT -s 2a13:d2c7::/32 -j DROP
 # AS206888 HanMing HK Limited
 -A INPUT -s 2001:df4:cb80::/48 -j DROP
 -A INPUT -s 2400:7ac0::/32 -j DROP
@@ -1256,6 +1275,7 @@
 -A INPUT -s 2a10:dc00::/29 -j DROP
 # AS210457 Kyonix Networks Limited
 -A INPUT -s 2a01:ecc0:5c0::/42 -j DROP
+-A INPUT -s 2a01:ecc0:680::/44 -j DROP
 -A INPUT -s 2a12:bec4:1970::/44 -j DROP
 # AS212552 BitCommand LLC
 -A INPUT -s 2a14:7981:467::/48 -j DROP
@@ -1265,6 +1285,43 @@
 # AS202269 BitCommand LLC
 -A INPUT -s 2a0e:b084::/30 -j DROP
 -A INPUT -s 2a14:7980::/32 -j DROP
+# AS213905 ISPLABS LIMITED
+-A INPUT -s 2a0b:4e07:45::/48 -j DROP
+-A INPUT -s 2a14:c380:152::/48 -j DROP
+-A INPUT -s 2a14:c380:155::/48 -j DROP
+# AS25369 Hydra Communications Ltd
+-A INPUT -s 2a00:10e8:101::/48 -j DROP
+-A INPUT -s 2a00:1a30::/32 -j DROP
+-A INPUT -s 2a01:4020::/32 -j DROP
+-A INPUT -s 2a09:a702:6::/47 -j DROP
+-A INPUT -s 2a09:a702:8::/47 -j DROP
+-A INPUT -s 2a0b:b840::/29 -j DROP
+-A INPUT -s 2a0f:2c80:1::/48 -j DROP
+# AS215125 Church of Cyberology
+-A INPUT -s 2001:67c:e60::/48 -j DROP
+# AS215691 AP INTERACTIVE SOLUTIONS SL
+-A INPUT -s 2a14:8880::/29 -j DROP
+# AS214639 TAKEHOST OU
+-A INPUT -s 2a14:7580:b000::/36 -j DROP
+-A INPUT -s 2a14:7583:2900::/40 -j DROP
+-A INPUT -s 2a14:7583:9000::/36 -j DROP
+-A INPUT -s 2a14:7583:fa00::/40 -j DROP
+-A INPUT -s 2a14:7584:d000::/36 -j DROP
+-A INPUT -s 2a14:7586:4000::/36 -j DROP
+-A INPUT -s 2a14:7586:8000::/40 -j DROP
+# AS198364 BANATSYNC SRL
+-A INPUT -s 2a14:7583:fb00::/40 -j DROP
+# AS202147 VPSUS LTD
+-A INPUT -s 2a14:7581:ff0::/48 -j DROP
+# AS206491 BANATSYNC SRL
+-A INPUT -s 2a14:7580:ff98::/48 -j DROP
+# AS199417 Serghei Samoilov
+-A INPUT -s 2a0e:97c0:c60::/48 -j DROP
+-A INPUT -s 2a10:ab80:3f1::/48 -j DROP
+# AS204785 Raul Ghita trading as 'Ghita Telekom'
+-A INPUT -s 2a0f:85c1:d92::/48 -j DROP
+# AS154383 ZORNTECH WEB SOLUTIONS
+-A INPUT -s 2001:df6:5940::/48 -j DROP
 #
-# Count of \64: 4498310955008.0
+# Count of \64: 4512399360000.0
 #

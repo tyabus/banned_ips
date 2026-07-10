@@ -1,5 +1,5 @@
 #
-# Last Update: 03/07/2026
+# Last Update: 10/07/2026
 #
 /ipv6 firewall address-list
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
@@ -166,6 +166,8 @@ add list=Blacklist comment="215540" address=2a05:541:141::/48
 add list=Blacklist comment="215540" address=2a05:541:150::/46
 add list=Blacklist comment="215540" address=2a05:541:156::/47
 add list=Blacklist comment="215540" address=2a05:541:158::/47
+add list=Blacklist comment="215540" address=2a05:541:173::/48
+add list=Blacklist comment="215540" address=2a05:541:174::/48
 # AS132203 Tencent Building, Kejizhongyi Avenue
 add list=Blacklist comment="132203" address=240d:c000:1000::/36
 add list=Blacklist comment="132203" address=240d:c000:2000::/35
@@ -252,6 +254,11 @@ add list=Blacklist comment="201814" address=2a12:a800:2::/48
 # AS207208 MEVSPACE sp. z o.o.
 add list=Blacklist comment="207208" address=2001:67c:2498::/48
 #add list=Blacklist comment="207208" address=2a09:d581::/32
+# AS201176 DUND MC2 B.V.
+add list=Blacklist comment="201176" address=2a10:ab80:3fa::/47
+# AS201861 Aleksejs Pinajevs
+add list=Blacklist comment="201861" address=2a0d:d940:110::/44
+add list=Blacklist comment="201861" address=2a0d:d940:150::/44
 # AS61280 FGUP GRCHC
 add list=Blacklist comment="61280" address=2a0c:a9c7:156::/47
 add list=Blacklist comment="61280" address=2a0c:a9c7:158::/48
@@ -388,8 +395,6 @@ add list=Blacklist comment="197477" address=2a06:de01:7e::/48
 add list=Blacklist comment="197477" address=2a10:ccc0:150::/46
 add list=Blacklist comment="197477" address=2a10:ccc2:1330::/44
 add list=Blacklist comment="197477" address=2a13:e3c0::/31
-# AS215691 AP INTERACTIVE SOLUTIONS SL
-add list=Blacklist comment="215691" address=2a14:8880::/29
 # AS212762 Casper Krook trading as Ck IT Solutions
 add list=Blacklist comment="212762" address=2a05:dfc1:5503::/48
 add list=Blacklist comment="212762" address=2a05:dfc1:5506::/48
@@ -424,7 +429,7 @@ add list=Blacklist comment="400328" address=2a0a:2d02::/32
 add list=Blacklist comment="400328" address=2a0f:1e06::/32
 add list=Blacklist comment="400328" address=2a0f:e841::/32
 add list=Blacklist comment="400328" address=2a10:7b00::/29
-#add list=Blacklist comment="400328" address=2a14:c380:12::/48
+add list=Blacklist comment="400328" address=2a14:c380:12::/48
 # AS54990 1337 Services LLC
 add list=Blacklist comment="54990" address=2001:67c:235c::/48
 # AS39287 Materialism s.r.l.
@@ -594,6 +599,7 @@ add list=Blacklist comment="3920" address=2a13:adc0::/46
 # AS60539 Huicast Telecom Limited
 add list=Blacklist comment="60539" address=2401:e3a0:1::/48
 add list=Blacklist comment="60539" address=2407:d340:8000::/40
+add list=Blacklist comment="60539" address=2602:f959::/40
 add list=Blacklist comment="60539" address=2a13:aac0::/29
 # AS206728 media-land-llc
 add list=Blacklist comment="206728" address=2a0b:7ec0:1320::/48
@@ -619,7 +625,7 @@ add list=Blacklist comment="58212" address=2a0d:5940::/29
 add list=Blacklist comment="58212" address=2a0d:d907::/32
 add list=Blacklist comment="58212" address=2a0f:5b02::/32
 add list=Blacklist comment="58212" address=2a10:fa81:800::/40
-#add list=Blacklist comment="58212" address=2a14:c380:140::/44
+add list=Blacklist comment="58212" address=2a14:c380:140::/44
 # AS212935 Theori Inc
 add list=Blacklist comment="212935" address=2602:f90a::/48
 # AS202306 HOSTGLOBAL.PLUS LTD
@@ -976,6 +982,8 @@ add list=Blacklist comment="35661" address=2a13:9500:187::/48
 add list=Blacklist comment="35661" address=2a14:7583:5a00::/40
 # AS213693 Imad Nabil Daher trading as ID Performance
 add list=Blacklist comment="213693" address=2a0f:85c1:b36::/48
+# AS211693 NolimitCloud s.r.o
+add list=Blacklist comment="211693" address=2a13:9500:19d::/48
 # AS215925 VPSVAULT.HOST LTD
 add list=Blacklist comment="215925" address=2604:be0:fff0::/44
 # AS210456 EastCoastHost Ltd
@@ -983,6 +991,8 @@ add list=Blacklist comment="210456" address=2604:be0:ffe1::/48
 # AS203363 Kuroit Limited
 add list=Blacklist comment="203363" address=2401:8360:a3::/48
 add list=Blacklist comment="203363" address=2a05:4140:19::/48
+# AS214657 Bls Services Tecnologia em Software Ltda
+add list=Blacklist comment="214657" address=2a11:29c0:478::/48
 # AS214329 BGP Network LLC
 add list=Blacklist comment="214329" address=2a03:5840:120::/48
 # AS215762 Bullet Group LTD
@@ -998,7 +1008,6 @@ add list=Blacklist comment="43641" address=2a13:e104::/32
 add list=Blacklist comment="43641" address=2a14:7586:7000::/36
 # AS214223 Luis Jakob Bartel
 add list=Blacklist comment="214223" address=2a05:dfc3:fa05::/48
-add list=Blacklist comment="214223" address=2a14:7581:3705::/48
 add list=Blacklist comment="214223" address=2a14:7581:3709::/48
 # AS200081 Netversor GmbH
 add list=Blacklist comment="200081" address=2a01:ea00::/48
@@ -1084,14 +1093,20 @@ add list=Blacklist comment="214481" address=2a14:1ec7:1200::/40
 # AS215311 Regxa Company for Information Technology Ltd
 add list=Blacklist comment="215311" address=2a14:4200::/29
 # AS202520 SkyPass Solutions Sp. z.o.o.
+add list=Blacklist comment="202520" address=2001:678:8e8::/48
 add list=Blacklist comment="202520" address=2001:67c:b58::/48
 # AS216078 Liam Kremer
-#add list=Blacklist comment="216078" address=2a14:c380:31::/48
-#add list=Blacklist comment="216078" address=2a14:c380:32::/47
-#add list=Blacklist comment="216078" address=2a14:c380:3000::/40
-#add list=Blacklist comment="216078" address=2a14:c380:4000::/40
+add list=Blacklist comment="216078" address=2a14:c380:31::/48
+add list=Blacklist comment="216078" address=2a14:c380:32::/47
+add list=Blacklist comment="216078" address=2a14:c380:3000::/40
+add list=Blacklist comment="216078" address=2a14:c380:4000::/40
 # AS211507 Julian Achter
-add list=Blacklist comment="211507" address=2a14:c380::/29
+add list=Blacklist comment="211507" address=2a14:c380:50::/44
+add list=Blacklist comment="211507" address=2a14:c380:70::/44
+add list=Blacklist comment="211507" address=2a14:c380:90::/44
+add list=Blacklist comment="211507" address=2a14:c380:130::/44
+add list=Blacklist comment="211507" address=2a14:c380:c70::/44
+add list=Blacklist comment="211507" address=2a14:c380:d70::/44
 # AS50219 Valence Technology Co.
 add list=Blacklist comment="50219" address=2602:f71d::/48
 add list=Blacklist comment="50219" address=2602:f71d:200::/48
@@ -1198,6 +1213,8 @@ add list=Blacklist comment="200373" address=2a13:3f80::/32
 add list=Blacklist comment="200373" address=2a13:3f83::/32
 add list=Blacklist comment="200373" address=2a13:3f86::/31
 add list=Blacklist comment="200373" address=2a14:6380::/29
+# AS209207 Digital Hosting Provider LLC
+add list=Blacklist comment="209207" address=2a05:541:176::/47
 # AS213737 AYOSOFT LTD
 add list=Blacklist comment="213737" address=2a14:db80:4::/48
 add list=Blacklist comment="213737" address=2a14:db80:10::/48
@@ -1214,6 +1231,8 @@ add list=Blacklist comment="207113" address=2a0f:6284:180::/44
 add list=Blacklist comment="207113" address=2a0f:6284:1a0::/44
 add list=Blacklist comment="207113" address=2a0f:6284:1f0::/48
 add list=Blacklist comment="207113" address=2a0f:6284:4200::/44
+# AS215460 Daniel Mishayev
+add list=Blacklist comment="215460" address=2a13:d2c7::/32
 # AS206888 HanMing HK Limited
 add list=Blacklist comment="206888" address=2001:df4:cb80::/48
 add list=Blacklist comment="206888" address=2400:7ac0::/32
@@ -1246,6 +1265,7 @@ add list=Blacklist comment="212228" address=2a0b:7140:2::/48
 add list=Blacklist comment="61193" address=2a10:dc00::/29
 # AS210457 Kyonix Networks Limited
 add list=Blacklist comment="210457" address=2a01:ecc0:5c0::/42
+add list=Blacklist comment="210457" address=2a01:ecc0:680::/44
 add list=Blacklist comment="210457" address=2a12:bec4:1970::/44
 # AS212552 BitCommand LLC
 add list=Blacklist comment="212552" address=2a14:7981:467::/48
@@ -1255,3 +1275,40 @@ add list=Blacklist comment="212552" address=2a14:7981:3008::/48
 # AS202269 BitCommand LLC
 add list=Blacklist comment="202269" address=2a0e:b084::/30
 add list=Blacklist comment="202269" address=2a14:7980::/32
+# AS213905 ISPLABS LIMITED
+add list=Blacklist comment="213905" address=2a0b:4e07:45::/48
+add list=Blacklist comment="213905" address=2a14:c380:152::/48
+add list=Blacklist comment="213905" address=2a14:c380:155::/48
+# AS25369 Hydra Communications Ltd
+add list=Blacklist comment="25369" address=2a00:10e8:101::/48
+add list=Blacklist comment="25369" address=2a00:1a30::/32
+add list=Blacklist comment="25369" address=2a01:4020::/32
+add list=Blacklist comment="25369" address=2a09:a702:6::/47
+add list=Blacklist comment="25369" address=2a09:a702:8::/47
+add list=Blacklist comment="25369" address=2a0b:b840::/29
+add list=Blacklist comment="25369" address=2a0f:2c80:1::/48
+# AS215125 Church of Cyberology
+add list=Blacklist comment="215125" address=2001:67c:e60::/48
+# AS215691 AP INTERACTIVE SOLUTIONS SL
+add list=Blacklist comment="215691" address=2a14:8880::/29
+# AS214639 TAKEHOST OU
+add list=Blacklist comment="214639" address=2a14:7580:b000::/36
+add list=Blacklist comment="214639" address=2a14:7583:2900::/40
+add list=Blacklist comment="214639" address=2a14:7583:9000::/36
+add list=Blacklist comment="214639" address=2a14:7583:fa00::/40
+add list=Blacklist comment="214639" address=2a14:7584:d000::/36
+add list=Blacklist comment="214639" address=2a14:7586:4000::/36
+add list=Blacklist comment="214639" address=2a14:7586:8000::/40
+# AS198364 BANATSYNC SRL
+add list=Blacklist comment="198364" address=2a14:7583:fb00::/40
+# AS202147 VPSUS LTD
+add list=Blacklist comment="202147" address=2a14:7581:ff0::/48
+# AS206491 BANATSYNC SRL
+add list=Blacklist comment="206491" address=2a14:7580:ff98::/48
+# AS199417 Serghei Samoilov
+add list=Blacklist comment="199417" address=2a0e:97c0:c60::/48
+add list=Blacklist comment="199417" address=2a10:ab80:3f1::/48
+# AS204785 Raul Ghita trading as 'Ghita Telekom'
+add list=Blacklist comment="204785" address=2a0f:85c1:d92::/48
+# AS154383 ZORNTECH WEB SOLUTIONS
+add list=Blacklist comment="154383" address=2001:df6:5940::/48
