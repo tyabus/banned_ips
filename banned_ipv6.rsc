@@ -1,5 +1,5 @@
 #
-# Last Update: 17/07/2026
+# Last Update: 24/07/2026
 #
 /ipv6 firewall address-list
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
@@ -34,7 +34,7 @@ add list=Blacklist comment="10439" address=2607:ff10::/32
 # AS211680 NSEC - Sistemas Informaticos, S.A.
 add list=Blacklist comment="211680" address=2a10:3c0:2::/48
 add list=Blacklist comment="211680" address=2a10:3c0:100::/47
-# AS12989 BlackHOST-LTD
+# AS12989 Black HOST Ltd
 add list=Blacklist comment="12989" address=2a01:e940::/48
 add list=Blacklist comment="12989" address=2a01:e943::/48
 add list=Blacklist comment="12989" address=2a01:e944::/48
@@ -108,6 +108,8 @@ add list=Blacklist comment="210644" address=2a14:a084::/35
 add list=Blacklist comment="210644" address=2a14:a084:2000::/36
 # AS198556 Marcel Hanisch
 add list=Blacklist comment="198556" address=2a09:3f00:1002::/48
+# AS205397 69HOST LLC
+#add list=Blacklist comment="205397" address=2a03:5840:130::/48
 # AS215590 DpkgSoft International Limited
 add list=Blacklist comment="215590" address=2a01:ecc0:1::/48
 add list=Blacklist comment="215590" address=2a01:ecc0:5::/48
@@ -139,7 +141,6 @@ add list=Blacklist comment="212477" address=2a0b:b680::/29
 add list=Blacklist comment="212477" address=2a0e:97c0:180::/44
 add list=Blacklist comment="212477" address=2a12:bec0:340::/44
 add list=Blacklist comment="212477" address=2a13:9402::/32
-add list=Blacklist comment="212477" address=2a14:5200::/29
 # AS204603 LOWPINGS DIGITAL SERVICES S.R.L
 add list=Blacklist comment="204603" address=2a14:7580:ffff::/48
 # AS210352 Yijia Xu
@@ -385,6 +386,7 @@ add list=Blacklist comment="213151" address=2a06:e881:7300::/40
 add list=Blacklist comment="399820" address=2602:fc2f:f00::/48
 # AS200482 nexserv GmbH
 add list=Blacklist comment="200482" address=2a12:3e80::/38
+add list=Blacklist comment="200482" address=2a12:3e80:401::/48
 add list=Blacklist comment="200482" address=2a12:3e80:402::/47
 add list=Blacklist comment="200482" address=2a12:3e80:404::/48
 # AS216081 Paulo Gobbato trading as Gobbato IT Loesungen
@@ -396,7 +398,7 @@ add list=Blacklist comment="197477" address=2a06:de01:70::/48
 add list=Blacklist comment="197477" address=2a06:de01:7a::/47
 add list=Blacklist comment="197477" address=2a06:de01:7c::/47
 add list=Blacklist comment="197477" address=2a06:de01:7e::/48
-add list=Blacklist comment="197477" address=2a10:ccc2:1330::/44
+add list=Blacklist comment="197477" address=2a10:ccc0:150::/46
 add list=Blacklist comment="197477" address=2a13:e3c0::/31
 # AS212762 Casper Krook trading as Ck IT Solutions
 add list=Blacklist comment="212762" address=2a05:dfc1:5503::/48
@@ -587,6 +589,7 @@ add list=Blacklist comment="25198" address=2a12:3200:7000::/36
 add list=Blacklist comment="25198" address=2a12:3200:8000::/36
 add list=Blacklist comment="25198" address=2a12:3200:9000::/48
 add list=Blacklist comment="25198" address=2a13:8c85::/32
+add list=Blacklist comment="25198" address=2a13:b9c0::/29
 add list=Blacklist comment="25198" address=2a13:c040::/32
 add list=Blacklist comment="25198" address=2a13:d0c0::/32
 add list=Blacklist comment="25198" address=2a13:d0c5::/32
@@ -662,6 +665,8 @@ add list=Blacklist comment="44947" address=2a13:1640::/29
 add list=Blacklist comment="44947" address=2a13:3cc0::/29
 add list=Blacklist comment="44947" address=2a13:9600::/29
 add list=Blacklist comment="44947" address=2a13:9e40::/29
+# AS207043 DEDIK SERVICES LIMITED
+#add list=Blacklist comment="207043" address=2a03:5840:129::/48
 # AS51852 Private Layer INC
 add list=Blacklist comment="51852" address=2a02:29b8::/32
 add list=Blacklist comment="51852" address=2a09:4d45::/32
@@ -687,6 +692,7 @@ add list=Blacklist comment="202592" address=2a07:5b47::/32
 add list=Blacklist comment="210743" address=2001:978:1b04::/47
 # AS64476 Shadow SAS
 add list=Blacklist comment="64476" address=2a0a:e805:210::/44
+add list=Blacklist comment="64476" address=2a0a:e805:500::/40
 add list=Blacklist comment="64476" address=2a0a:e805:610::/44
 add list=Blacklist comment="64476" address=2a0a:e805:710::/44
 # AS53828 NETWORK INNOVATIONS, LLC
@@ -855,6 +861,7 @@ add list=Blacklist comment="43180" address=2a09:2dc2::/31
 # AS213438 ColocaTel Inc.
 add list=Blacklist comment="213438" address=2a06:a001:a010::/44
 add list=Blacklist comment="213438" address=2a0f:ca80::/47
+add list=Blacklist comment="213438" address=2a0f:ca80:616::/48
 add list=Blacklist comment="213438" address=2a0f:ca80:619::/48
 add list=Blacklist comment="213438" address=2a0f:ca80:1100::/40
 add list=Blacklist comment="213438" address=2a0f:ca80:1337::/48
@@ -868,7 +875,7 @@ add list=Blacklist comment="213438" address=2a0f:ca86::/40
 add list=Blacklist comment="213438" address=2a13:29c0::/29
 # AS37740 IPTP Inc
 add list=Blacklist comment="37740" address=2a03:9d40:4000::/40
-# AS213373 IPConnect
+# AS213373 IP Connect Inc
 add list=Blacklist comment="213373" address=2a10:5fc0::/31
 # AS328543 Sun Network Company Limited
 add list=Blacklist comment="328543" address=2a0c:640::/29
@@ -887,8 +894,7 @@ add list=Blacklist comment="43357" address=2a07:d881:3::/48
 add list=Blacklist comment="43357" address=2a07:d883:200::/48
 add list=Blacklist comment="43357" address=2a07:d883:300::/48
 add list=Blacklist comment="43357" address=2a07:d883:400::/48
-add list=Blacklist comment="43357" address=2a07:d883:700::/47
-add list=Blacklist comment="43357" address=2a07:d883:702::/48
+add list=Blacklist comment="43357" address=2a07:d883:700::/46
 add list=Blacklist comment="43357" address=2a07:d883:704::/48
 add list=Blacklist comment="43357" address=2a07:d884::/48
 add list=Blacklist comment="43357" address=2a07:d884:100::/48
@@ -999,6 +1005,8 @@ add list=Blacklist comment="203363" address=2401:8360:a3::/48
 add list=Blacklist comment="203363" address=2a05:4140:19::/48
 # AS214657 Bls Services Tecnologia em Software Ltda
 add list=Blacklist comment="214657" address=2a11:29c0:478::/48
+# AS197170 TechTies Inc.
+add list=Blacklist comment="197170" address=2a0f:ca80:b00b::/48
 # AS214329 BGP Network LLC
 #add list=Blacklist comment="214329" address=2a03:5840:120::/48
 # AS215762 Bullet Group LTD
@@ -1285,7 +1293,7 @@ add list=Blacklist comment="202269" address=2a14:7980::/32
 add list=Blacklist comment="213905" address=2a0b:4e07:45::/48
 add list=Blacklist comment="213905" address=2a14:c380:152::/48
 add list=Blacklist comment="213905" address=2a14:c380:155::/48
-add list=Blacklist comment="213905" address=2a14:c380:a22::/47
+add list=Blacklist comment="213905" address=2a14:c380:a20::/44
 # AS25369 Hydra Communications Ltd
 add list=Blacklist comment="25369" address=2a00:10e8:101::/48
 add list=Blacklist comment="25369" address=2a00:1a30::/32
