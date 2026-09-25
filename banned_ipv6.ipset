@@ -1,5 +1,5 @@
 #
-# Last Update: 18/09/2026
+# Last Update: 24/09/2026
 #
 create blacklistv6 hash:net family inet6 hashsize 8192 -exist
 # The Shadowserver Foundation, Inc.
@@ -31,10 +31,11 @@ add blacklistv6 2a10:3c0:5::/48
 # Bunea TELECOM SRL (https://bgp.tools/rir-owner/ro.btel14)
 add blacklistv6 2a0c:9f00::/29
 # AS398324 Censys, Inc.
-add blacklistv6 2602:80d:1001::/48
+add blacklistv6 2602:80d:1000::/47
 add blacklistv6 2602:80d:1006::/47
 add blacklistv6 2602:80d:1008::/47
 add blacklistv6 2602:80d:100a::/48
+add blacklistv6 2620:96:e000::/48
 # AS398722 Censys, Inc.
 add blacklistv6 2602:80d:1003::/48
 add blacklistv6 2602:80d:1004::/48
@@ -551,6 +552,8 @@ add blacklistv6 2a0e:97c0:3ea::/48
 add blacklistv6 2a0e:97c0:470::/48
 add blacklistv6 2a0e:97c0:472::/47
 add blacklistv6 2a0f:6282:b000::/36
+# AS401626 Netiface America, Inc.
+add blacklistv6 2a14:c380:1300::/40
 # AS207567 Intezio Worldwide Limited
 add blacklistv6 2a0d:d940:3d::/48
 add blacklistv6 2a0d:d940:90a0::/48
@@ -621,6 +624,7 @@ add blacklistv6 2a07:bd80::/29
 add blacklistv6 2a0f:2b86:10::/48
 add blacklistv6 2a13:9500:126::/48
 # AS6204 INTERKVM HOST SRL
+#add blacklistv6 2a12:3200:1000::/36
 add blacklistv6 2a12:3200:f000::/36
 # AS25198 INTERKVM HOST SRL
 add blacklistv6 2a01:7120:7::/48
@@ -682,6 +686,7 @@ add blacklistv6 2a01:e901::/44
 add blacklistv6 2401:5da0:1::/48
 add blacklistv6 2401:5da0:2::/48
 add blacklistv6 2401:5da0:53::/48
+add blacklistv6 2401:5da0:666::/48
 # AS36829 Winstri Corporation
 add blacklistv6 2602:fc64:a00::/48
 add blacklistv6 2602:fc64:a000::/47
@@ -710,6 +715,7 @@ add blacklistv6 2a0a:20c0::/29
 # AS210937 Xiufeng Guo
 add blacklistv6 2a09:1::/48
 add blacklistv6 2a11:1d40::/48
+add blacklistv6 2a11:1d43::/48
 # AS60404 The Infrastructure Group B.V.
 add blacklistv6 2a01:6340::/29
 add blacklistv6 2a04:52c0::/32
@@ -802,6 +808,8 @@ add blacklistv6 2001:550:d0c::/48
 add blacklistv6 2620:24:c040::/48
 # AS152320 GOALNOW NETWORK TECHNOLOGY CO., LIMITED
 add blacklistv6 2001:df0:a640::/47
+add blacklistv6 2a06:1281:403a::/48
+add blacklistv6 2a0f:1cc5:208::/48
 add blacklistv6 2a10:fa80:14::/47
 add blacklistv6 2a10:fa81:1d00::/40
 # AS43861 Circle B B.V.
@@ -844,6 +852,8 @@ add blacklistv6 2a11:aac4::/32
 add blacklistv6 2a11:c107::/32
 # AS201211 LLC Drugoy Telecom
 add blacklistv6 2a05:3e80::/29
+# AS60230 Neterra Ltd.
+add blacklistv6 2a00:1728:a::/48
 # AS207713 GLOBAL INTERNET SOLUTIONS LLC
 #add blacklistv6 2a00:b703:fff2::/48
 add blacklistv6 2a05:541:100::/48
@@ -941,7 +951,7 @@ add blacklistv6 2a11:3:500::/40
 # AS23959 Owl Limited
 add blacklistv6 2a07:d883:600::/40
 # AS213205 COOOLBE LTD
-add blacklistv6 2a13:2380:359::/48
+add blacklistv6 2a13:2380::/29
 # AS24013 SB Professional Services
 add blacklistv6 2a09::/48
 add blacklistv6 2a11::/48
@@ -1017,7 +1027,9 @@ add blacklistv6 2602:fa02:f00::/40
 add blacklistv6 2a03:5840::/32
 add blacklistv6 2a07:8dc0::/31
 add blacklistv6 2a0d:e680::/32
+add blacklistv6 2a0f:9400:738b::/48
 add blacklistv6 2a10:fa80:7::/48
+add blacklistv6 2a10:fa80:120::/44
 add blacklistv6 2a13:9500:187::/48
 add blacklistv6 2a14:7583:5a00::/40
 # AS35372 GeniusMind S.A.
@@ -1029,6 +1041,8 @@ add blacklistv6 2a13:9500:19d::/48
 # AS203363 Kuroit Limited
 add blacklistv6 2401:8360:a3::/48
 add blacklistv6 2a05:4140:19::/48
+# AS197170 TechTies Inc.
+add blacklistv6 2a0f:ca80:b00b::/48
 # AS214329 BGP Network LLC
 #add blacklistv6 2a03:5840:120::/48
 # AS215762 Bullet Group LTD
@@ -1044,10 +1058,7 @@ add blacklistv6 2a13:e104::/32
 add blacklistv6 2a14:7586:7000::/36
 # AS214223 Luis Jakob Bartel
 add blacklistv6 2a05:dfc3:fa05::/48
-add blacklistv6 2a0a:6044:6403::/48
 add blacklistv6 2a0a:6044:6405::/48
-add blacklistv6 2a0b:4e07:2c03::/48
-add blacklistv6 2a14:7582::/36
 # AS200081 Netversor GmbH
 add blacklistv6 2a02:6aa0::/32
 add blacklistv6 2a04:5340::/47
@@ -1088,6 +1099,7 @@ add blacklistv6 2a01:ecc0:b00::/40
 add blacklistv6 2a01:ecc0:c00::/40
 add blacklistv6 2a01:ecc0:d00::/41
 add blacklistv6 2a01:ecc0:d80::/42
+add blacklistv6 2a01:ecc0:8000::/42
 # AS62403 PletX GmbH
 #add blacklistv6 2a12:de40:49::/48
 #add blacklistv6 2a12:de40:50::/48
@@ -1392,6 +1404,7 @@ add blacklistv6 2a0c:b641:610::/46
 add blacklistv6 2a0c:b641:614::/47
 add blacklistv6 2a0c:b641:616::/48
 add blacklistv6 2a0d:d940:700::/40
+add blacklistv6 2a0e:e000::/32
 # AS14956 RouterHosting LLC
 #add blacklistv6 2602:fa59:2::/47
 #add blacklistv6 2602:fa59:4::/46
@@ -1420,6 +1433,7 @@ add blacklistv6 2401:eaa0:1::/48
 add blacklistv6 2604:ea80:6200::/40
 add blacklistv6 2604:ea80:6600::/40
 add blacklistv6 2a01:1b8:5::/48
+add blacklistv6 2a03:efc0:2100::/40
 add blacklistv6 2a06:a000:1e1::/48
 add blacklistv6 2a0b:b87:ffd7::/48
 add blacklistv6 2a0e:4940:1::/48

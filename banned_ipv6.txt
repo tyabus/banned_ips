@@ -1,5 +1,5 @@
 #
-# Last Update: 18/09/2026
+# Last Update: 24/09/2026
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -32,10 +32,11 @@
 # Bunea TELECOM SRL (https://bgp.tools/rir-owner/ro.btel14)
 -A INPUT -s 2a0c:9f00::/29 -j DROP
 # AS398324 Censys, Inc.
--A INPUT -s 2602:80d:1001::/48 -j DROP
+-A INPUT -s 2602:80d:1000::/47 -j DROP
 -A INPUT -s 2602:80d:1006::/47 -j DROP
 -A INPUT -s 2602:80d:1008::/47 -j DROP
 -A INPUT -s 2602:80d:100a::/48 -j DROP
+-A INPUT -s 2620:96:e000::/48 -j DROP
 # AS398722 Censys, Inc.
 -A INPUT -s 2602:80d:1003::/48 -j DROP
 -A INPUT -s 2602:80d:1004::/48 -j DROP
@@ -552,6 +553,8 @@
 -A INPUT -s 2a0e:97c0:470::/48 -j DROP
 -A INPUT -s 2a0e:97c0:472::/47 -j DROP
 -A INPUT -s 2a0f:6282:b000::/36 -j DROP
+# AS401626 Netiface America, Inc.
+-A INPUT -s 2a14:c380:1300::/40 -j DROP
 # AS207567 Intezio Worldwide Limited
 -A INPUT -s 2a0d:d940:3d::/48 -j DROP
 -A INPUT -s 2a0d:d940:90a0::/48 -j DROP
@@ -622,6 +625,7 @@
 -A INPUT -s 2a0f:2b86:10::/48 -j DROP
 -A INPUT -s 2a13:9500:126::/48 -j DROP
 # AS6204 INTERKVM HOST SRL
+#-A INPUT -s 2a12:3200:1000::/36 -j DROP
 -A INPUT -s 2a12:3200:f000::/36 -j DROP
 # AS25198 INTERKVM HOST SRL
 -A INPUT -s 2a01:7120:7::/48 -j DROP
@@ -683,6 +687,7 @@
 -A INPUT -s 2401:5da0:1::/48 -j DROP
 -A INPUT -s 2401:5da0:2::/48 -j DROP
 -A INPUT -s 2401:5da0:53::/48 -j DROP
+-A INPUT -s 2401:5da0:666::/48 -j DROP
 # AS36829 Winstri Corporation
 -A INPUT -s 2602:fc64:a00::/48 -j DROP
 -A INPUT -s 2602:fc64:a000::/47 -j DROP
@@ -711,6 +716,7 @@
 # AS210937 Xiufeng Guo
 -A INPUT -s 2a09:1::/48 -j DROP
 -A INPUT -s 2a11:1d40::/48 -j DROP
+-A INPUT -s 2a11:1d43::/48 -j DROP
 # AS60404 The Infrastructure Group B.V.
 -A INPUT -s 2a01:6340::/29 -j DROP
 -A INPUT -s 2a04:52c0::/32 -j DROP
@@ -803,6 +809,8 @@
 -A INPUT -s 2620:24:c040::/48 -j DROP
 # AS152320 GOALNOW NETWORK TECHNOLOGY CO., LIMITED
 -A INPUT -s 2001:df0:a640::/47 -j DROP
+-A INPUT -s 2a06:1281:403a::/48 -j DROP
+-A INPUT -s 2a0f:1cc5:208::/48 -j DROP
 -A INPUT -s 2a10:fa80:14::/47 -j DROP
 -A INPUT -s 2a10:fa81:1d00::/40 -j DROP
 # AS43861 Circle B B.V.
@@ -845,6 +853,8 @@
 -A INPUT -s 2a11:c107::/32 -j DROP
 # AS201211 LLC Drugoy Telecom
 -A INPUT -s 2a05:3e80::/29 -j DROP
+# AS60230 Neterra Ltd.
+-A INPUT -s 2a00:1728:a::/48 -j DROP
 # AS207713 GLOBAL INTERNET SOLUTIONS LLC
 #-A INPUT -s 2a00:b703:fff2::/48 -j DROP
 -A INPUT -s 2a05:541:100::/48 -j DROP
@@ -942,7 +952,7 @@
 # AS23959 Owl Limited
 -A INPUT -s 2a07:d883:600::/40 -j DROP
 # AS213205 COOOLBE LTD
--A INPUT -s 2a13:2380:359::/48 -j DROP
+-A INPUT -s 2a13:2380::/29 -j DROP
 # AS24013 SB Professional Services
 -A INPUT -s 2a09::/48 -j DROP
 -A INPUT -s 2a11::/48 -j DROP
@@ -1018,7 +1028,9 @@
 -A INPUT -s 2a03:5840::/32 -j DROP
 -A INPUT -s 2a07:8dc0::/31 -j DROP
 -A INPUT -s 2a0d:e680::/32 -j DROP
+-A INPUT -s 2a0f:9400:738b::/48 -j DROP
 -A INPUT -s 2a10:fa80:7::/48 -j DROP
+-A INPUT -s 2a10:fa80:120::/44 -j DROP
 -A INPUT -s 2a13:9500:187::/48 -j DROP
 -A INPUT -s 2a14:7583:5a00::/40 -j DROP
 # AS35372 GeniusMind S.A.
@@ -1030,6 +1042,8 @@
 # AS203363 Kuroit Limited
 -A INPUT -s 2401:8360:a3::/48 -j DROP
 -A INPUT -s 2a05:4140:19::/48 -j DROP
+# AS197170 TechTies Inc.
+-A INPUT -s 2a0f:ca80:b00b::/48 -j DROP
 # AS214329 BGP Network LLC
 #-A INPUT -s 2a03:5840:120::/48 -j DROP
 # AS215762 Bullet Group LTD
@@ -1045,10 +1059,7 @@
 -A INPUT -s 2a14:7586:7000::/36 -j DROP
 # AS214223 Luis Jakob Bartel
 -A INPUT -s 2a05:dfc3:fa05::/48 -j DROP
--A INPUT -s 2a0a:6044:6403::/48 -j DROP
 -A INPUT -s 2a0a:6044:6405::/48 -j DROP
--A INPUT -s 2a0b:4e07:2c03::/48 -j DROP
--A INPUT -s 2a14:7582::/36 -j DROP
 # AS200081 Netversor GmbH
 -A INPUT -s 2a02:6aa0::/32 -j DROP
 -A INPUT -s 2a04:5340::/47 -j DROP
@@ -1089,6 +1100,7 @@
 -A INPUT -s 2a01:ecc0:c00::/40 -j DROP
 -A INPUT -s 2a01:ecc0:d00::/41 -j DROP
 -A INPUT -s 2a01:ecc0:d80::/42 -j DROP
+-A INPUT -s 2a01:ecc0:8000::/42 -j DROP
 # AS62403 PletX GmbH
 #-A INPUT -s 2a12:de40:49::/48 -j DROP
 #-A INPUT -s 2a12:de40:50::/48 -j DROP
@@ -1393,6 +1405,7 @@
 -A INPUT -s 2a0c:b641:614::/47 -j DROP
 -A INPUT -s 2a0c:b641:616::/48 -j DROP
 -A INPUT -s 2a0d:d940:700::/40 -j DROP
+-A INPUT -s 2a0e:e000::/32 -j DROP
 # AS14956 RouterHosting LLC
 #-A INPUT -s 2602:fa59:2::/47 -j DROP
 #-A INPUT -s 2602:fa59:4::/46 -j DROP
@@ -1421,6 +1434,7 @@
 -A INPUT -s 2604:ea80:6200::/40 -j DROP
 -A INPUT -s 2604:ea80:6600::/40 -j DROP
 -A INPUT -s 2a01:1b8:5::/48 -j DROP
+-A INPUT -s 2a03:efc0:2100::/40 -j DROP
 -A INPUT -s 2a06:a000:1e1::/48 -j DROP
 -A INPUT -s 2a0b:b87:ffd7::/48 -j DROP
 -A INPUT -s 2a0e:4940:1::/48 -j DROP
@@ -1466,5 +1480,5 @@
 -A INPUT -s 2a14:7c0:1800::/38 -j DROP
 -A INPUT -s 2a14:7c0:4800::/40 -j DROP
 #
-# Count of \64: 5497034833920.0
+# Count of \64: 5535460294656.0
 #
