@@ -1,5 +1,5 @@
 #
-# Last Update: 23/10/2026
+# Last Update: 30/10/2026
 #
 /ipv6 firewall address-list
 add list=Blacklist comment="The Shadowserver Foundation, Inc." address=2001:470:1:c84::/64
@@ -170,8 +170,8 @@ add list=Blacklist comment="210352" address=2406:840:9178::/48
 add list=Blacklist comment="210352" address=2602:f92a:a47d::/48
 add list=Blacklist comment="210352" address=2a0f:1cc5:f00::/45
 add list=Blacklist comment="210352" address=2a0f:1cc5:f08::/47
-add list=Blacklist comment="210352" address=2a0f:1cc5:f10::/46
-add list=Blacklist comment="210352" address=2a0f:1cc5:f14::/48
+add list=Blacklist comment="210352" address=2a0f:1cc5:f10::/48
+add list=Blacklist comment="210352" address=2a0f:1cc5:f12::/47
 add list=Blacklist comment="210352" address=2a0f:1cc5:fff::/48
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
 add list=Blacklist comment="215540" address=2a00:b703:fff1::/48
@@ -284,7 +284,9 @@ add list=Blacklist comment="201814" address=2a12:a800:2::/48
 # AS207208 MEVSPACE sp. z o.o.
 add list=Blacklist comment="207208" address=2001:67c:2498::/48
 #add list=Blacklist comment="207208" address=2a09:d581::/32
+add list=Blacklist comment="207208" address=2a0f:2f80::/29
 add list=Blacklist comment="207208" address=2a10:fa81:1b00::/48
+add list=Blacklist comment="207208" address=2a11:b100:e100::/48
 # AS201176 DUND MC2 B.V.
 add list=Blacklist comment="201176" address=2a10:ab80:3fa::/47
 add list=Blacklist comment="201176" address=2a13:9500:1be::/48
@@ -334,7 +336,6 @@ add list=Blacklist comment="210558" address=2a12:a800:4::/46
 add list=Blacklist comment="210558" address=2a12:a800:8::/48
 # AS215599 Zkillu SAS
 add list=Blacklist comment="215599" address=2a0c:b641:b0::/44
-add list=Blacklist comment="215599" address=2a10:4646:410::/44
 # AS47890 UNMANAGED LTD
 add list=Blacklist comment="47890" address=2a0c:9f00:2::/48
 add list=Blacklist comment="47890" address=2a0e:1d80:7::/48
@@ -520,8 +521,6 @@ add list=Blacklist comment="214209" address=2a0f:9400:7e11::/48
 add list=Blacklist comment="214497" address=2a06:de07:fc00::/44
 add list=Blacklist comment="214497" address=2a10:ccc7:b110::/44
 add list=Blacklist comment="214497" address=2a14:7c0:1740::/48
-# AS215462 Noel Nayasha Materke
-add list=Blacklist comment="215462" address=2a05:f682::/32
 # AS215085 Maik Polman trading as PixelHosting
 add list=Blacklist comment="215085" address=2a06:9f41::/32
 add list=Blacklist comment="215085" address=2a06:9f46::/32
@@ -641,6 +640,7 @@ add list=Blacklist comment="206728" address=2a0b:7ec0:1320::/48
 add list=Blacklist comment="206728" address=2a0b:7ec0:7701::/48
 # AS50917 Diederik Focko de Zee
 add list=Blacklist comment="50917" address=2001:678:7ec::/48
+add list=Blacklist comment="50917" address=2a10:9903:201::/48
 # AS58212 dataforest GmbH
 add list=Blacklist comment="58212" address=2407:9d00:20::/48
 add list=Blacklist comment="58212" address=2a03:403:4000::/34
@@ -696,6 +696,7 @@ add list=Blacklist comment="44947" address=2a13:9e40::/29
 # AS51852 Private Layer INC
 add list=Blacklist comment="51852" address=2a02:29b8::/32
 add list=Blacklist comment="51852" address=2a09:4d45::/32
+add list=Blacklist comment="51852" address=2a0f:dd40::/29
 # AS264617 GRUPO PANAGLOBAL 15 S.A
 add list=Blacklist comment="264617" address=2803:9e40::/32
 add list=Blacklist comment="264617" address=2a0a:20c0::/29
@@ -954,6 +955,7 @@ add list=Blacklist comment="24013" address=2a11::/48
 add list=Blacklist comment="19377" address=2605:ecc0::/40
 add list=Blacklist comment="19377" address=2605:ecc0:500::/40
 add list=Blacklist comment="19377" address=2605:ecc0:800::/40
+add list=Blacklist comment="19377" address=2605:ecc0:1000::/40
 add list=Blacklist comment="19377" address=2605:ecc0:ff00::/40
 # AS132088 Wind Cloud Network Technology Co Ltd
 add list=Blacklist comment="132088" address=2402:e940:20::/43
@@ -1221,6 +1223,8 @@ add list=Blacklist comment="212815" address=2a0f:6280:10a0::/45
 add list=Blacklist comment="212815" address=2a10:4640::/32
 # AS19879 Qomro, LLC
 add list=Blacklist comment="19879" address=2602:f9a6::/36
+# AS216222 Julien Bellier
+add list=Blacklist comment="216222" address=2a13:cc87:fc01::/48
 # AS61756 NETPONTAL PROVEDOR DE INTERNET LTDA - ME
 add list=Blacklist comment="61756" address=2804:1be8::/32
 # AS212441 Cloud assets LLC
@@ -1248,7 +1252,6 @@ add list=Blacklist comment="401401" address=2602:f7d8::/48
 add list=Blacklist comment="401401" address=2602:f7d8:2::/48
 # AS213520 Senko Digital LLC
 add list=Blacklist comment="213520" address=2a06:9f43::/32
-add list=Blacklist comment="213520" address=2a0d:d902::/31
 add list=Blacklist comment="213520" address=2a12:bec4:1b50::/44
 add list=Blacklist comment="213520" address=2a12:bec4:1bb0::/44
 add list=Blacklist comment="213520" address=2a12:bec4:1d60::/43
@@ -1413,7 +1416,6 @@ add list=Blacklist comment="202831" address=2a0e:e000::/32
 #add list=Blacklist comment="14956" address=2602:fa59:20::/48
 add list=Blacklist comment="14956" address=2605:7980::/48
 # AS215114 Stevan Durand--L'Hours t/a SLBCLOUD
-add list=Blacklist comment="215114" address=2a06:5fc0::/29
 add list=Blacklist comment="215114" address=2a12:bec4:1190::/44
 add list=Blacklist comment="215114" address=2a13:9500:145::/48
 add list=Blacklist comment="215114" address=2a13:bfc2::/32
@@ -1473,7 +1475,6 @@ add list=Blacklist comment="25540" address=2a0e:4180::/29
 add list=Blacklist comment="27176" address=2605:aa80::/39
 add list=Blacklist comment="27176" address=2605:aa80:c000::/40
 add list=Blacklist comment="27176" address=2a07:6c80::/29
-add list=Blacklist comment="27176" address=2a0b:b87:ffd2::/48
 # AS40662 Layer7 Technologies Inc
 add list=Blacklist comment="40662" address=2a01:efc0::/29
 add list=Blacklist comment="40662" address=2a0b:b480::/29

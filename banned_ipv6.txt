@@ -1,5 +1,5 @@
 #
-# Last Update: 23/10/2026
+# Last Update: 30/10/2026
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -182,8 +182,8 @@
 -A INPUT -s 2602:f92a:a47d::/48 -j DROP
 -A INPUT -s 2a0f:1cc5:f00::/45 -j DROP
 -A INPUT -s 2a0f:1cc5:f08::/47 -j DROP
--A INPUT -s 2a0f:1cc5:f10::/46 -j DROP
--A INPUT -s 2a0f:1cc5:f14::/48 -j DROP
+-A INPUT -s 2a0f:1cc5:f10::/48 -j DROP
+-A INPUT -s 2a0f:1cc5:f12::/47 -j DROP
 -A INPUT -s 2a0f:1cc5:fff::/48 -j DROP
 # AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP
 -A INPUT -s 2a00:b703:fff1::/48 -j DROP
@@ -296,7 +296,9 @@
 # AS207208 MEVSPACE sp. z o.o.
 -A INPUT -s 2001:67c:2498::/48 -j DROP
 #-A INPUT -s 2a09:d581::/32 -j DROP
+-A INPUT -s 2a0f:2f80::/29 -j DROP
 -A INPUT -s 2a10:fa81:1b00::/48 -j DROP
+-A INPUT -s 2a11:b100:e100::/48 -j DROP
 # AS201176 DUND MC2 B.V.
 -A INPUT -s 2a10:ab80:3fa::/47 -j DROP
 -A INPUT -s 2a13:9500:1be::/48 -j DROP
@@ -346,7 +348,6 @@
 -A INPUT -s 2a12:a800:8::/48 -j DROP
 # AS215599 Zkillu SAS
 -A INPUT -s 2a0c:b641:b0::/44 -j DROP
--A INPUT -s 2a10:4646:410::/44 -j DROP
 # AS47890 UNMANAGED LTD
 -A INPUT -s 2a0c:9f00:2::/48 -j DROP
 -A INPUT -s 2a0e:1d80:7::/48 -j DROP
@@ -532,8 +533,6 @@
 -A INPUT -s 2a06:de07:fc00::/44 -j DROP
 -A INPUT -s 2a10:ccc7:b110::/44 -j DROP
 -A INPUT -s 2a14:7c0:1740::/48 -j DROP
-# AS215462 Noel Nayasha Materke
--A INPUT -s 2a05:f682::/32 -j DROP
 # AS215085 Maik Polman trading as PixelHosting
 -A INPUT -s 2a06:9f41::/32 -j DROP
 -A INPUT -s 2a06:9f46::/32 -j DROP
@@ -653,6 +652,7 @@
 -A INPUT -s 2a0b:7ec0:7701::/48 -j DROP
 # AS50917 Diederik Focko de Zee
 -A INPUT -s 2001:678:7ec::/48 -j DROP
+-A INPUT -s 2a10:9903:201::/48 -j DROP
 # AS58212 dataforest GmbH
 -A INPUT -s 2407:9d00:20::/48 -j DROP
 -A INPUT -s 2a03:403:4000::/34 -j DROP
@@ -708,6 +708,7 @@
 # AS51852 Private Layer INC
 -A INPUT -s 2a02:29b8::/32 -j DROP
 -A INPUT -s 2a09:4d45::/32 -j DROP
+-A INPUT -s 2a0f:dd40::/29 -j DROP
 # AS264617 GRUPO PANAGLOBAL 15 S.A
 -A INPUT -s 2803:9e40::/32 -j DROP
 -A INPUT -s 2a0a:20c0::/29 -j DROP
@@ -966,6 +967,7 @@
 -A INPUT -s 2605:ecc0::/40 -j DROP
 -A INPUT -s 2605:ecc0:500::/40 -j DROP
 -A INPUT -s 2605:ecc0:800::/40 -j DROP
+-A INPUT -s 2605:ecc0:1000::/40 -j DROP
 -A INPUT -s 2605:ecc0:ff00::/40 -j DROP
 # AS132088 Wind Cloud Network Technology Co Ltd
 -A INPUT -s 2402:e940:20::/43 -j DROP
@@ -1233,6 +1235,8 @@
 -A INPUT -s 2a10:4640::/32 -j DROP
 # AS19879 Qomro, LLC
 -A INPUT -s 2602:f9a6::/36 -j DROP
+# AS216222 Julien Bellier
+-A INPUT -s 2a13:cc87:fc01::/48 -j DROP
 # AS61756 NETPONTAL PROVEDOR DE INTERNET LTDA - ME
 -A INPUT -s 2804:1be8::/32 -j DROP
 # AS212441 Cloud assets LLC
@@ -1260,7 +1264,6 @@
 -A INPUT -s 2602:f7d8:2::/48 -j DROP
 # AS213520 Senko Digital LLC
 -A INPUT -s 2a06:9f43::/32 -j DROP
--A INPUT -s 2a0d:d902::/31 -j DROP
 -A INPUT -s 2a12:bec4:1b50::/44 -j DROP
 -A INPUT -s 2a12:bec4:1bb0::/44 -j DROP
 -A INPUT -s 2a12:bec4:1d60::/43 -j DROP
@@ -1425,7 +1428,6 @@
 #-A INPUT -s 2602:fa59:20::/48 -j DROP
 -A INPUT -s 2605:7980::/48 -j DROP
 # AS215114 Stevan Durand--L'Hours t/a SLBCLOUD
--A INPUT -s 2a06:5fc0::/29 -j DROP
 -A INPUT -s 2a12:bec4:1190::/44 -j DROP
 -A INPUT -s 2a13:9500:145::/48 -j DROP
 -A INPUT -s 2a13:bfc2::/32 -j DROP
@@ -1485,7 +1487,6 @@
 -A INPUT -s 2605:aa80::/39 -j DROP
 -A INPUT -s 2605:aa80:c000::/40 -j DROP
 -A INPUT -s 2a07:6c80::/29 -j DROP
--A INPUT -s 2a0b:b87:ffd2::/48 -j DROP
 # AS40662 Layer7 Technologies Inc
 -A INPUT -s 2a01:efc0::/29 -j DROP
 -A INPUT -s 2a0b:b480::/29 -j DROP
@@ -1495,5 +1496,5 @@
 # AS401661 EMBNEX, LLC
 -A INPUT -s 2604:be0::/32 -j DROP
 #
-# Count of \64: 5030354092032.0
+# Count of \64: 5051844657152.0
 #

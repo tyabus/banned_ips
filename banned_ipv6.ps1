@@ -1,5 +1,5 @@
 #
-# Last Update: 23/10/2026
+# Last Update: 30/10/2026
 #
 function Remove-ExistingRules {
     param([string]$Name)
@@ -324,7 +324,7 @@ $Networksv6 = @(
 	( "# AS210352 Yijia Xu",
 		( 
 
-			"2406:840:9178::/48","2602:f92a:a47d::/48","2a0f:1cc5:f00::/45","2a0f:1cc5:f08::/47","2a0f:1cc5:f10::/46","2a0f:1cc5:f14::/48","2a0f:1cc5:fff::/48"
+			"2406:840:9178::/48","2602:f92a:a47d::/48","2a0f:1cc5:f00::/45","2a0f:1cc5:f08::/47","2a0f:1cc5:f10::/48","2a0f:1cc5:f12::/47","2a0f:1cc5:fff::/48"
 		)
 	),
 	( "# AS215540 GLOBAL CONNECTIVITY SOLUTIONS LLP",
@@ -468,7 +468,7 @@ $Networksv6 = @(
 	( "# AS207208 MEVSPACE sp. z o.o.",
 		( 
 
-			"2001:67c:2498::/48","2a10:fa81:1b00::/48"
+			"2001:67c:2498::/48","2a0f:2f80::/29","2a10:fa81:1b00::/48","2a11:b100:e100::/48"
 		)
 	),
 	( "# AS201176 DUND MC2 B.V.",
@@ -534,7 +534,7 @@ $Networksv6 = @(
 	( "# AS215599 Zkillu SAS",
 		( 
 
-			"2a0c:b641:b0::/44","2a10:4646:410::/44"
+			"2a0c:b641:b0::/44"
 		)
 	),
 	( "# AS47890 UNMANAGED LTD",
@@ -735,12 +735,6 @@ $Networksv6 = @(
 			"2a06:de07:fc00::/44","2a10:ccc7:b110::/44","2a14:7c0:1740::/48"
 		)
 	),
-	( "# AS215462 Noel Nayasha Materke",
-		( 
-
-			"2a05:f682::/32"
-		)
-	),
 	( "# AS215085 Maik Polman trading as PixelHosting",
 		( 
 
@@ -906,7 +900,7 @@ $Networksv6 = @(
 	( "# AS50917 Diederik Focko de Zee",
 		( 
 
-			"2001:678:7ec::/48"
+			"2001:678:7ec::/48","2a10:9903:201::/48"
 		)
 	),
 	( "# AS58212 dataforest GmbH",
@@ -978,7 +972,7 @@ $Networksv6 = @(
 	( "# AS51852 Private Layer INC",
 		( 
 
-			"2a02:29b8::/32","2a09:4d45::/32"
+			"2a02:29b8::/32","2a09:4d45::/32","2a0f:dd40::/29"
 		)
 	),
 	( "# AS264617 GRUPO PANAGLOBAL 15 S.A",
@@ -1290,7 +1284,7 @@ $Networksv6 = @(
 	( "# AS19377 Cloud Carib Limited",
 		( 
 
-			"2605:ecc0::/40","2605:ecc0:500::/40","2605:ecc0:800::/40","2605:ecc0:ff00::/40"
+			"2605:ecc0::/40","2605:ecc0:500::/40","2605:ecc0:800::/40","2605:ecc0:1000::/40","2605:ecc0:ff00::/40"
 		)
 	),
 	( "# AS132088 Wind Cloud Network Technology Co Ltd",
@@ -1623,6 +1617,12 @@ $Networksv6 = @(
 			"2602:f9a6::/36"
 		)
 	),
+	( "# AS216222 Julien Bellier",
+		( 
+
+			"2a13:cc87:fc01::/48"
+		)
+	),
 	( "# AS61756 NETPONTAL PROVEDOR DE INTERNET LTDA - ME",
 		( 
 
@@ -1662,7 +1662,7 @@ $Networksv6 = @(
 	( "# AS213520 Senko Digital LLC",
 		( 
 
-			"2a06:9f43::/32","2a0d:d902::/31","2a12:bec4:1b50::/44","2a12:bec4:1bb0::/44","2a12:bec4:1d60::/43","2a12:bec4:1de0::/44","2a12:bec4:1e50::/44"
+			"2a06:9f43::/32","2a12:bec4:1b50::/44","2a12:bec4:1bb0::/44","2a12:bec4:1d60::/43","2a12:bec4:1de0::/44","2a12:bec4:1e50::/44"
 		)
 	),
 	( "# AS400529 Infraly, LLC",
@@ -1914,7 +1914,7 @@ $Networksv6 = @(
 	( "# AS215114 Stevan Durand--L'Hours t/a SLBCLOUD",
 		( 
 
-			"2a06:5fc0::/29","2a12:bec4:1190::/44","2a13:9500:145::/48","2a13:bfc2::/32"
+			"2a12:bec4:1190::/44","2a13:9500:145::/48","2a13:bfc2::/32"
 		)
 	),
 	( "# AS35278 SPRINTHOST.RU LLC",
@@ -1980,7 +1980,7 @@ $Networksv6 = @(
 	( "# AS27176 DataWagon LLC",
 		( 
 
-			"2605:aa80::/39","2605:aa80:c000::/40","2a07:6c80::/29","2a0b:b87:ffd2::/48"
+			"2605:aa80::/39","2605:aa80:c000::/40","2a07:6c80::/29"
 		)
 	),
 	( "# AS40662 Layer7 Technologies Inc",
