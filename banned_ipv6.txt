@@ -1,5 +1,5 @@
 #
-# Last Update: 06/11/2026
+# Last Update: 13/11/2026
 #
 #
 # IPv6 static ingoing traffic blocklist
@@ -36,6 +36,9 @@
 -A INPUT -s 2602:80d:1006::/47 -j DROP
 -A INPUT -s 2602:80d:1008::/47 -j DROP
 -A INPUT -s 2602:80d:100a::/48 -j DROP
+# AS398722 Censys, Inc.
+-A INPUT -s 2602:80d:1003::/48 -j DROP
+-A INPUT -s 2602:80d:1004::/48 -j DROP
 # AS398705 Censys, Inc.
 -A INPUT -s 2602:80d:1002::/48 -j DROP
 -A INPUT -s 2602:80d:1005::/48 -j DROP
@@ -82,6 +85,8 @@
 -A INPUT -s 2402:7980::/32 -j DROP
 # AS42318 FastBit AB
 -A INPUT -s 2a05:5580::/29 -j DROP
+# AS209605 UAB Host Baltic
+-A INPUT -s 2a0f:8a40:1::/48 -j DROP
 # AS43463 INFOCOM UK LTD (UAB Host Baltic)
 -A INPUT -s 2a00:ea60:200::/40 -j DROP
 # AS208393 Dedcloud Network Ltd (UAB Host Baltic)
@@ -244,6 +249,7 @@
 # AS48721 Flyservers S.A. (UAB Host Baltic)
 -A INPUT -s 2a10:9100:3::/48 -j DROP
 # AS209588 Flyservers S.A. (UAB Host Baltic)
+-A INPUT -s 2a10:9100:7::/48 -j DROP
 -A INPUT -s 2a10:9100:9::/48 -j DROP
 # AS267784 Flyservers S.A. (UAB Host Baltic)
 -A INPUT -s 2803:5120:c000::/36 -j DROP
@@ -341,6 +347,7 @@
 -A INPUT -s 2a0c:b641:b0::/44 -j DROP
 # AS47890 UNMANAGED LTD
 -A INPUT -s 2a0c:9f00:2::/48 -j DROP
+-A INPUT -s 2a0e:1d80:7::/48 -j DROP
 -A INPUT -s 2a10:9100:6::/48 -j DROP
 -A INPUT -s 2a10:9100:a::/48 -j DROP
 # AS39798 MivoCloud SRL
@@ -494,10 +501,12 @@
 -A INPUT -s 2401:5b60::/48 -j DROP
 # AS51396 Pfcloud UG (haftungsbeschrankt)
 -A INPUT -s 2602:f915::/40 -j DROP
+-A INPUT -s 2a04:a5c0::/29 -j DROP
 -A INPUT -s 2a05:b0c6:5800::/37 -j DROP
 -A INPUT -s 2a05:b0c6:a200::/39 -j DROP
 -A INPUT -s 2a05:b0c7:6000::/36 -j DROP
 -A INPUT -s 2a0a:e2c0::/29 -j DROP
+-A INPUT -s 2a0e:d00::/29 -j DROP
 -A INPUT -s 2a0e:4001:2000::/36 -j DROP
 -A INPUT -s 2a11:5780::/29 -j DROP
 -A INPUT -s 2a12:1cc7::/32 -j DROP
@@ -617,7 +626,6 @@
 -A INPUT -s 2a0f:2b86:10::/48 -j DROP
 -A INPUT -s 2a13:9500:126::/48 -j DROP
 # AS6204 INTERKVM HOST SRL
-#-A INPUT -s 2a12:3200:1000::/36 -j DROP
 -A INPUT -s 2a12:3200:f000::/36 -j DROP
 # AS25198 INTERKVM HOST SRL
 -A INPUT -s 2a01:7120:7::/48 -j DROP
@@ -744,6 +752,7 @@
 -A INPUT -s 2602:f988:212::/48 -j DROP
 -A INPUT -s 2602:f992:c0::/44 -j DROP
 -A INPUT -s 2602:f992:f7::/48 -j DROP
+-A INPUT -s 2602:fa02:10c::/48 -j DROP
 -A INPUT -s 2602:fa02:a00::/40 -j DROP
 -A INPUT -s 2602:fa3d:a92::/48 -j DROP
 -A INPUT -s 2602:fa42:300::/40 -j DROP
@@ -759,7 +768,6 @@
 -A INPUT -s 2a12:bec4:1d50::/44 -j DROP
 -A INPUT -s 2a12:bec4:1ec0::/44 -j DROP
 -A INPUT -s 2a12:bec4:1f20::/44 -j DROP
--A INPUT -s 2a14:7580:fc00::/40 -j DROP
 -A INPUT -s 2a14:7584:5000::/36 -j DROP
 -A INPUT -s 2a14:7586:1000::/36 -j DROP
 # AS215120 Evolus IT Solutions GmbH
@@ -834,6 +842,7 @@
 -A INPUT -s 2a12:5541:2::/48 -j DROP
 -A INPUT -s 2a12:5541:a::/48 -j DROP
 -A INPUT -s 2a12:5541:100::/48 -j DROP
+-A INPUT -s 2a12:5541:200::/48 -j DROP
 -A INPUT -s 2a12:5541:331::/48 -j DROP
 -A INPUT -s 2a12:5542::/32 -j DROP
 # AS210924 SSD Networks Limited
@@ -964,7 +973,6 @@
 -A INPUT -s 2605:ecc0::/40 -j DROP
 -A INPUT -s 2605:ecc0:500::/40 -j DROP
 -A INPUT -s 2605:ecc0:800::/40 -j DROP
--A INPUT -s 2605:ecc0:1000::/40 -j DROP
 -A INPUT -s 2605:ecc0:ff00::/40 -j DROP
 # AS132088 Wind Cloud Network Technology Co Ltd
 -A INPUT -s 2402:e940:20::/43 -j DROP
@@ -1040,7 +1048,7 @@
 -A INPUT -s 2a10:fa80:7::/48 -j DROP
 -A INPUT -s 2a10:fa80:120::/44 -j DROP
 -A INPUT -s 2a13:9500:187::/48 -j DROP
--A INPUT -s 2a14:7581:9f91::/48 -j DROP
+-A INPUT -s 2a14:7581:9f90::/47 -j DROP
 -A INPUT -s 2a14:7583:5a00::/40 -j DROP
 # AS35372 GeniusMind S.A.
 -A INPUT -s 2a0c:b100::/47 -j DROP
@@ -1064,6 +1072,7 @@
 -A INPUT -s 2a0d:d940:160::/44 -j DROP
 -A INPUT -s 2a10:fa82:d000::/36 -j DROP
 -A INPUT -s 2a11:6100::/31 -j DROP
+-A INPUT -s 2a13:e104::/32 -j DROP
 -A INPUT -s 2a14:7586:7000::/36 -j DROP
 # AS214223 Luis Jakob Bartel
 -A INPUT -s 2a05:dfc3:fa05::/48 -j DROP
@@ -1074,6 +1083,7 @@
 -A INPUT -s 2a04:5340:2::/48 -j DROP
 -A INPUT -s 2a04:5340:4::/47 -j DROP
 # AS215659 Aokigahara SRL
+-A INPUT -s 2604:b480:2::/48 -j DROP
 -A INPUT -s 2a0e:bfc7:1400::/48 -j DROP
 -A INPUT -s 2a0f:85c1:356::/48 -j DROP
 # AS210718 FIVE CYBER HOST SECURITY S.R.L.
@@ -1081,7 +1091,7 @@
 # AS212512 Detai Prosperous Technologies Limited
 #-A INPUT -s 2403:fbc0:a001::/48 -j DROP
 #-A INPUT -s 2403:fbc0:a002::/48 -j DROP
-#-A INPUT -s 2a07:d885::/46 -j DROP
+#-A INPUT -s 2a07:d885::/47 -j DROP
 #-A INPUT -s 2a07:d885:4::/47 -j DROP
 #-A INPUT -s 2a07:d885:6::/48 -j DROP
 # AS39351 31173 Services AB
@@ -1121,6 +1131,7 @@
 -A INPUT -s 2a10:ed40:2::/48 -j DROP
 -A INPUT -s 2a10:ed40:4::/47 -j DROP
 -A INPUT -s 2a10:ed40:9::/48 -j DROP
+-A INPUT -s 2a10:ed40:a::/47 -j DROP
 # AS202468 AbrArvan
 -A INPUT -s 2a07:3900::/29 -j DROP
 # AS215439 PLAY2GO INTERNATIONAL LIMITED
@@ -1168,6 +1179,7 @@
 -A INPUT -s 2a13:bb40::/29 -j DROP
 -A INPUT -s 2a14:1100::/29 -j DROP
 -A INPUT -s 2a14:6a40::/29 -j DROP
+-A INPUT -s 2a14:c380:2c::/47 -j DROP
 -A INPUT -s 2a14:c380:31::/48 -j DROP
 -A INPUT -s 2a14:c380:32::/47 -j DROP
 -A INPUT -s 2a14:c380:3000::/40 -j DROP
@@ -1192,6 +1204,7 @@
 -A INPUT -s 2602:f71d:400::/48 -j DROP
 # AS23470 ReliableSite.Net LLC
 -A INPUT -s 2407:9d00:10::/48 -j DROP
+-A INPUT -s 2602:f27a::/48 -j DROP
 -A INPUT -s 2602:f7f8:6::/48 -j DROP
 -A INPUT -s 2602:fa4f:300::/40 -j DROP
 -A INPUT -s 2602:fafd:fe0::/48 -j DROP
@@ -1207,6 +1220,7 @@
 -A INPUT -s 2605:9880:380::/41 -j DROP
 -A INPUT -s 2605:9880:400::/41 -j DROP
 -A INPUT -s 2620:e1:8000::/48 -j DROP
+-A INPUT -s 2a02:2fc0:2d::/48 -j DROP
 -A INPUT -s 2a0c:8fc3::/40 -j DROP
 -A INPUT -s 2a0c:8fc3:6400::/40 -j DROP
 -A INPUT -s 2a0c:8fc3:8000::/40 -j DROP
@@ -1216,6 +1230,7 @@
 -A INPUT -s 2804:e6c:4000::/36 -j DROP
 # AS213887 WAIcore Ltd
 -A INPUT -s 2a0b:4141::/35 -j DROP
+-A INPUT -s 2a0b:4141:3000::/36 -j DROP
 -A INPUT -s 2a0b:4141:9000::/36 -j DROP
 -A INPUT -s 2a0b:4141:e000::/36 -j DROP
 -A INPUT -s 2a0d:d940:1c00::/40 -j DROP
@@ -1358,8 +1373,8 @@
 -A INPUT -s 2a0b:4e07:45::/48 -j DROP
 -A INPUT -s 2a14:c380:152::/48 -j DROP
 -A INPUT -s 2a14:c380:155::/48 -j DROP
--A INPUT -s 2a14:c380:a20::/47 -j DROP
--A INPUT -s 2a14:c380:a22::/48 -j DROP
+-A INPUT -s 2a14:c380:a20::/46 -j DROP
+-A INPUT -s 2a14:c380:a24::/47 -j DROP
 # AS201988 VPSPay Networks LTD
 -A INPUT -s 2a0e:e001::/47 -j DROP
 -A INPUT -s 2a0e:e001:2::/48 -j DROP
@@ -1425,9 +1440,10 @@
 #-A INPUT -s 2602:fa59:9::/48 -j DROP
 #-A INPUT -s 2602:fa59:10::/45 -j DROP
 #-A INPUT -s 2602:fa59:18::/47 -j DROP
-#-A INPUT -s 2602:fa59:20::/48 -j DROP
+#-A INPUT -s 2602:fa59:20::/46 -j DROP
 -A INPUT -s 2605:7980::/48 -j DROP
 # AS215114 Stevan Durand--L'Hours t/a SLBCLOUD
+-A INPUT -s 2a06:5fc0::/29 -j DROP
 -A INPUT -s 2a12:bec4:1190::/44 -j DROP
 -A INPUT -s 2a13:9500:145::/48 -j DROP
 -A INPUT -s 2a13:bfc2::/32 -j DROP
@@ -1499,6 +1515,14 @@
 -A INPUT -s 2a10:a000:2::/47 -j DROP
 -A INPUT -s 2a10:a000:4::/46 -j DROP
 -A INPUT -s 2a10:a000:8::/48 -j DROP
+# AS42675 Obehosting AB
+-A INPUT -s 2a07:a880:3101::/48 -j DROP
+-A INPUT -s 2a07:a880:4601::/48 -j DROP
+-A INPUT -s 2a07:a880:4602::/47 -j DROP
+-A INPUT -s 2a07:a880:4604::/48 -j DROP
+-A INPUT -s 2a07:a880:4701::/48 -j DROP
+-A INPUT -s 2a0c:dd40::/29 -j DROP
+-A INPUT -s 2a0e:1c80:3::/48 -j DROP
 #
-# Count of \64: 5013203910656.0
+# Count of \64: 5155174350848.0
 #
